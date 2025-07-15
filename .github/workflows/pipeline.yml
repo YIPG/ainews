@@ -1,0 +1,97 @@
+name: AI Newsletter Pipeline
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC (9:00 AM JST)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+env:
+  PYTHON_VERSION: '3.9'
+
+jobs:
+  translate-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Cache pip dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('pyproject.toml') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -e .
+    
+    - name: Fetch latest newsletter
+      env:
+        FEED_URL: ${{ secrets.FEED_URL }}
+      run: |
+        python scripts/fetch.py
+      continue-on-error: false
+    
+    - name: Convert HTML to Markdown
+      run: |
+        python scripts/convert.py issue.html > issue.md
+      continue-on-error: false
+    
+    - name: Translate to Japanese
+      env:
+        AOAI_ENDPOINT: ${{ secrets.AOAI_ENDPOINT }}
+        AOAI_KEY: ${{ secrets.AOAI_KEY }}
+        AOAI_DEPLOYMENT: ${{ secrets.AOAI_DEPLOYMENT }}
+      run: |
+        python scripts/translate.py issue.md > issue_ja.md
+      continue-on-error: false
+    
+    - name: Render email
+      run: |
+        python scripts/render.py meta.json issue_ja.md > email.html
+      continue-on-error: false
+    
+    - name: Publish to Buttondown
+      env:
+        BD_API_KEY: ${{ secrets.BD_API_KEY }}
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      run: |
+        python scripts/publish.py email.html
+      continue-on-error: false
+    
+    - name: Update processed GUID
+      if: success()
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add latest.txt
+        git diff --staged --quiet || git commit -m "Update processed GUID [skip ci]"
+    
+    - name: Push changes
+      if: success()
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
+    
+    - name: Send failure notification
+      if: failure()
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      run: |
+        if [ ! -z "$SLACK_WEBHOOK" ]; then
+          curl -X POST -H 'Content-type: application/json' \
+            --data '{"text":"❌ Japanese AI Newsletter pipeline failed. Please check the GitHub Actions logs."}' \
+            $SLACK_WEBHOOK
+        fi
