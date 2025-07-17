@@ -41,6 +41,14 @@ email.html
 meta.json
 latest.txt
 
+# Generated output files
+output/
+*_issue.html
+*_issue.md
+*_issue_ja.md
+*_meta.json
+test_translation.md
+
 # Testing
 .pytest_cache/
 .coverage

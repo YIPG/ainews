@@ -1,4 +1,4 @@
-.PHONY: venv test-run send-draft clean install lint format type-check test help
+.PHONY: venv test-run clean install lint format type-check test help
 
 # Variables
 PYTHON = python3
@@ -12,8 +12,7 @@ help:
 	@echo "Available targets:"
 	@echo "  venv        - Create Python virtual environment"
 	@echo "  install     - Install dependencies"
-	@echo "  test-run    - Process latest feed but do not publish"
-	@echo "  send-draft  - Publish to Buttondown as draft"
+	@echo "  test-run    - Process latest feed and translate (no publishing)"
 	@echo "  lint        - Run code linting"
 	@echo "  format      - Format code with black"
 	@echo "  type-check  - Run type checking with mypy"
@@ -30,23 +29,14 @@ venv:
 install: venv
 	$(PIP_VENV) install -e ".[dev]"
 
-# Test run - process latest feed but do not publish
+# Test run - process latest feed and translate
 test-run:
-	@echo "Running pipeline in test mode..."
+	@echo "Running translation pipeline in test mode..."
 	@$(PYTHON_VENV) scripts/fetch.py
-	@$(PYTHON_VENV) scripts/convert.py issue.html > issue.md
-	@$(PYTHON_VENV) scripts/translate.py issue.md > issue_ja.md
-	@$(PYTHON_VENV) scripts/render.py meta.json issue_ja.md > email.html
-	@echo "Test run completed. Check email.html for result."
-
-# Send draft to Buttondown
-send-draft:
-	@echo "Publishing draft to Buttondown..."
-	@$(PYTHON_VENV) scripts/fetch.py
-	@$(PYTHON_VENV) scripts/convert.py issue.html > issue.md
-	@$(PYTHON_VENV) scripts/translate.py issue.md > issue_ja.md
-	@$(PYTHON_VENV) scripts/render.py meta.json issue_ja.md > email.html
-	@$(PYTHON_VENV) scripts/publish.py email.html --draft
+	@DATE_PREFIX=$$(date -u +%Y-%m-%d); \
+	$(PYTHON_VENV) scripts/convert.py "$${DATE_PREFIX}_issue.html" > "$${DATE_PREFIX}_issue.md"; \
+	$(PYTHON_VENV) scripts/translate.py "$${DATE_PREFIX}_issue.md" > "$${DATE_PREFIX}_issue_ja.md"
+	@echo "Test run completed. Check *_issue_ja.md for translated result."
 
 # Development tools
 lint:
@@ -64,7 +54,7 @@ test:
 # Clean up
 clean:
 	rm -rf $(VENV_DIR)
-	rm -f issue.html issue.md issue_ja.md email.html meta.json
+	rm -f *_issue.html *_issue.md *_issue_ja.md *_meta.json
 	rm -rf __pycache__
 	rm -rf .pytest_cache
 	rm -rf .mypy_cache

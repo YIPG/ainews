@@ -4,14 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Japanese AI Newsletter Pipeline that automatically translates Smol AI newsletters from English to Japanese and publishes them via Buttondown. The system is designed to be fully automated with minimal maintenance, running on GitHub Actions with Azure OpenAI for translation.
+This is a Japanese AI Newsletter Translation Pipeline that automatically translates AI newsletters from English to Japanese. The system is designed to be fully automated with minimal maintenance, running on GitHub Actions with Azure OpenAI for translation. Translated content is stored as GitHub Actions artifacts for archival purposes.
 
 ## Architecture
 
 - **Frontend**: Static HTML/CSS landing page served from gh-pages branch (public/index.html)
 - **Backend**: GitHub Actions workflow (.github/workflows/pipeline.yml) that runs daily at 00:00 UTC
 - **Translation**: Azure OpenAI GPT-4 for English to Japanese translation
-- **Publishing**: Buttondown API for email distribution
+- **Storage**: GitHub Actions artifacts for storing translated content (30-day retention)
 - **Monitoring**: Optional Slack notifications on failure
 
 ## Development Commands
@@ -20,26 +20,24 @@ Based on the PRD, the following Makefile targets should be available:
 
 ```bash
 make venv          # Create Python virtual environment
-make test-run      # Process latest feed but do not publish
-make send-draft    # Publish to Buttondown as draft
+make test-run      # Process latest feed and translate (no publishing)
 ```
 
 ## Pipeline Components
 
 The automated pipeline consists of these Python scripts (in scripts/ directory):
 
-1. **fetch.py** - Retrieves RSS feed from news.smol.ai, writes issue.html & meta.json
+1. **fetch.py** - Retrieves RSS feed from configured source, writes YYYY-MM-DD_issue.html & YYYY-MM-DD_meta.json
 2. **convert.py** - Converts HTML to Markdown using html2text
 3. **translate.py** - Translates English to Japanese using Azure OpenAI
-4. **render.py** - Composes email using Jinja2 template (templates/issue.j2)
-5. **publish.py** - Publishes to Buttondown via REST API
+
+All files use YYYY-MM-DD date prefixes for organization and artifact storage.
 
 ## Required Secrets
 
 The following GitHub Secrets must be configured:
 
-- `FEED_URL` - RSS feed URL (https://news.smol.ai/feed/)
-- `BD_API_KEY` - Buttondown API token
+- `FEED_URL` - RSS feed URL
 - `AOAI_ENDPOINT` - Azure OpenAI endpoint
 - `AOAI_KEY` - Azure OpenAI API key
 - `AOAI_DEPLOYMENT` - Azure OpenAI deployment name

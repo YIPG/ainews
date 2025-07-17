@@ -10,6 +10,10 @@ import time
 from typing import Optional
 
 from openai import AzureOpenAI
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 
 def load_translation_prompt() -> str:
@@ -55,7 +59,7 @@ def translate_with_retry(client: AzureOpenAI, content: str, system_prompt: str, 
                     {"role": "user", "content": content}
                 ],
                 temperature=0.2,
-                max_tokens=4096,
+                max_tokens=16384,
                 top_p=1.0,
                 frequency_penalty=0,
                 presence_penalty=0
@@ -110,7 +114,7 @@ def quality_check(client: AzureOpenAI, original: str, translated: str) -> float:
                 {"role": "user", "content": quality_prompt.format(original=original, translated=translated)}
             ],
             temperature=0.1,
-            max_tokens=10
+            max_tokens=100
         )
         
         score_text = response.choices[0].message.content.strip()
@@ -143,7 +147,7 @@ def main() -> None:
     """Main function to translate markdown content."""
     if len(sys.argv) != 2:
         print("Usage: python translate.py <markdown_file>")
-        print("Example: python translate.py issue.md")
+        print("Example: python translate.py 2024-01-15_issue.md")
         sys.exit(1)
     
     markdown_file = sys.argv[1]

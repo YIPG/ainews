@@ -48,7 +48,7 @@ def main() -> None:
     """Main function to convert HTML to Markdown."""
     if len(sys.argv) != 2:
         print("Usage: python convert.py <html_file>")
-        print("Example: python convert.py issue.html")
+        print("Example: python convert.py 2024-01-15_issue.html")
         sys.exit(1)
     
     html_file = sys.argv[1]

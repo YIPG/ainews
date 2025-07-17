@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 RSS feed fetching script with deduplication.
-Fetches latest entry from Smol AI RSS feed and saves HTML content and metadata.
+Fetches latest entry from RSS feed and saves HTML content and metadata.
 """
 
 import json
@@ -12,6 +12,10 @@ from typing import Dict, Any, Optional
 
 import feedparser
 import requests
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 
 def load_last_guid() -> Optional[str]:
@@ -80,7 +84,13 @@ def extract_html_content(entry: Dict[str, Any]) -> str:
 
 def main() -> None:
     """Main function to fetch and process RSS feed."""
-    feed_url = os.environ.get("FEED_URL", "https://news.smol.ai/feed/")
+    feed_url = os.environ.get("FEED_URL")
+    if not feed_url:
+        print("Error: FEED_URL environment variable is required")
+        sys.exit(1)
+    
+    # Generate date prefix for filenames
+    date_prefix = datetime.now().strftime("%Y-%m-%d")
     
     # Fetch the RSS feed
     feed = fetch_feed(feed_url)
@@ -101,8 +111,10 @@ def main() -> None:
         print("No HTML content found in entry")
         sys.exit(1)
     
-    # Save HTML content
-    with open("issue.html", "w", encoding="utf-8") as f:
+    # Save HTML content with date prefix
+    html_filename = f"output/{date_prefix}_issue.html"
+    os.makedirs("output", exist_ok=True)
+    with open(html_filename, "w", encoding="utf-8") as f:
         f.write(html_content)
     
     # Save metadata
@@ -116,7 +128,8 @@ def main() -> None:
         "processed_at": datetime.now().isoformat(),
     }
     
-    with open("meta.json", "w", encoding="utf-8") as f:
+    meta_filename = f"output/{date_prefix}_meta.json"
+    with open(meta_filename, "w", encoding="utf-8") as f:
         json.dump(metadata, f, indent=2, ensure_ascii=False)
     
     # Save the GUID for deduplication
@@ -125,6 +138,7 @@ def main() -> None:
     print(f"Successfully processed: {latest_entry['title']}")
     print(f"GUID: {current_guid}")
     print(f"Published: {latest_entry['published']}")
+    print(f"Output files: {html_filename}, {meta_filename}")
 
 
 if __name__ == "__main__":

@@ -1,16 +1,16 @@
-name: AI Newsletter Pipeline
+name: AI Newsletter Translation Pipeline
 
 on:
   schedule:
-    # Run daily at 00:00 UTC (9:00 AM JST)
-    - cron: '0 0 * * *'
+    # Run weekdays at 8 AM Pacific Time (15:00 UTC)
+    - cron: '0 15 * * 1-5'
   workflow_dispatch: # Allow manual trigger
 
 env:
   PYTHON_VERSION: '3.9'
 
 jobs:
-  translate-and-publish:
+  translate-newsletter:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     
@@ -45,7 +45,8 @@ jobs:
     
     - name: Convert HTML to Markdown
       run: |
-        python scripts/convert.py issue.html > issue.md
+        DATE_PREFIX=$(date -u +%Y-%m-%d)
+        python scripts/convert.py "output/${DATE_PREFIX}_issue.html" > "output/${DATE_PREFIX}_issue.md"
       continue-on-error: false
     
     - name: Translate to Japanese
@@ -54,21 +55,21 @@ jobs:
         AOAI_KEY: ${{ secrets.AOAI_KEY }}
         AOAI_DEPLOYMENT: ${{ secrets.AOAI_DEPLOYMENT }}
       run: |
-        python scripts/translate.py issue.md > issue_ja.md
+        DATE_PREFIX=$(date -u +%Y-%m-%d)
+        python scripts/translate.py "output/${DATE_PREFIX}_issue.md" > "output/${DATE_PREFIX}_issue_ja.md"
       continue-on-error: false
     
-    - name: Render email
-      run: |
-        python scripts/render.py meta.json issue_ja.md > email.html
-      continue-on-error: false
-    
-    - name: Publish to Buttondown
-      env:
-        BD_API_KEY: ${{ secrets.BD_API_KEY }}
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-      run: |
-        python scripts/publish.py email.html
-      continue-on-error: false
+    - name: Upload translation artifacts
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: translation-artifacts-${{ github.run_id }}
+        path: |
+          output/*_issue.html
+          output/*_issue.md
+          output/*_issue_ja.md
+          output/*_meta.json
+        retention-days: 30
     
     - name: Update processed GUID
       if: success()
@@ -92,6 +93,6 @@ jobs:
       run: |
         if [ ! -z "$SLACK_WEBHOOK" ]; then
           curl -X POST -H 'Content-type: application/json' \
-            --data '{"text":"❌ Japanese AI Newsletter pipeline failed. Please check the GitHub Actions logs."}' \
+            --data '{"text":"❌ Japanese AI Newsletter translation pipeline failed. Please check the GitHub Actions logs."}' \
             $SLACK_WEBHOOK
         fi
