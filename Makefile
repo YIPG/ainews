@@ -34,9 +34,9 @@ test-run:
 	@echo "Running translation pipeline in test mode..."
 	@$(PYTHON_VENV) scripts/fetch.py
 	@DATE_PREFIX=$$(date -u +%Y-%m-%d); \
-	$(PYTHON_VENV) scripts/convert.py "$${DATE_PREFIX}_issue.html" > "$${DATE_PREFIX}_issue.md"; \
-	$(PYTHON_VENV) scripts/translate.py "$${DATE_PREFIX}_issue.md" > "$${DATE_PREFIX}_issue_ja.md"
-	@echo "Test run completed. Check *_issue_ja.md for translated result."
+	$(PYTHON_VENV) scripts/convert.py "output/$${DATE_PREFIX}_issue.html" > "output/$${DATE_PREFIX}_issue.md"; \
+	$(PYTHON_VENV) scripts/translate.py "output/$${DATE_PREFIX}_issue.md" > "output/$${DATE_PREFIX}_issue_ja.md"
+	@echo "Test run completed. Check output/*_issue_ja.md for translated result."
 
 # Development tools
 lint:

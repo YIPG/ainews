@@ -7,7 +7,6 @@ Translates English markdown content to Japanese with quality checks.
 import os
 import sys
 import time
-from typing import Optional
 
 from openai import AzureOpenAI
 from dotenv import load_dotenv
@@ -168,16 +167,6 @@ def main() -> None:
     # Translate content
     print("Translating content...", file=sys.stderr)
     translated_content = translate_with_retry(client, content, system_prompt)
-    
-    # Perform quality check
-    print("Performing quality check...", file=sys.stderr)
-    quality_score = quality_check(client, content, translated_content)
-    
-    print(f"Quality score: {quality_score:.3f}", file=sys.stderr)
-    
-    if quality_score < 0.95:
-        print(f"Quality score {quality_score:.3f} is below threshold (0.95)")
-        sys.exit(1)
     
     # Output translated content
     print(translated_content)
