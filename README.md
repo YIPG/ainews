@@ -1,151 +1,153 @@
+
 # AI Newsletter Japan
 
-日本語版AIニュースレター翻訳アーカイブシステム - AI技術ニュースレターの内容を自動的に日本語に翻訳してGitHub Actionsにアーカイブし、Discordに通知します。
+A Japanese translation and archive system for AI newsletters – Automatically translates AI newsletter content into Japanese, archives it via GitHub Actions, and sends notifications to Discord.
 
-## 概要
+## Overview
 
-このプロジェクトは、指定されたRSSフィードから最新のAIニュースレターを取得し、Azure OpenAI GPT-4oを使用して日本語に翻訳し、GitHub Actionsアーティファクトとして保存する自動化パイプラインです。翻訳完了時にはDiscordに要約付きで通知されます。
+This project is an automated pipeline that retrieves the latest AI newsletters from specified RSS feeds, translates them into Japanese using Azure OpenAI GPT-4o, and stores them as GitHub Actions artifacts. A summary is also sent to Discord upon completion.
 
-## 機能
+## Features
 
-- 🔄 RSS フィードからの自動取得と重複チェック
-- 🌐 Azure OpenAI GPT-4oによる高品質な日本語翻訳
-- ✅ 翻訳品質の自動チェック（スコア0.95以上）
-- 📦 GitHub Actionsアーティファクトへの自動保存（30日間保持）
-- 💬 Discord Webhookによる翻訳完了通知（要約付き）
-- 🕐 平日15:00 UTC（太平洋時間8:00）に自動実行
-- 🔔 SlackおよびDiscordへのエラー通知（オプション）
+* 🔄 Automatic retrieval and deduplication from RSS feeds
+* 🌐 High-quality Japanese translation via Azure OpenAI GPT-4o
+* ✅ Automatic translation quality check (score ≥ 0.95)
+* 📦 Auto-archiving to GitHub Actions artifacts (retained for 30 days)
+* 💬 Discord webhook notifications with summary
+* 🕐 Runs automatically on weekdays at 15:00 UTC (8:00 AM Pacific Time)
+* 🔔 Optional error notifications via Slack and Discord
 
-## セットアップ
+## Setup
 
-### 前提条件
+### Prerequisites
 
-- Python 3.8以上
-- Azure OpenAIアカウントとGPT-4oデプロイメント
-- GitHubアカウント（GitHub Actions用）
-- Discord Webhook URL（オプション、通知用）
+* Python 3.8 or later
+* Azure OpenAI account with GPT-4o deployment
+* GitHub account (for GitHub Actions)
+* Discord Webhook URL (optional, for notifications)
 
-### 1. リポジトリのクローン
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/ainews.git
 cd ainews
 ```
 
-### 2. 仮想環境のセットアップ
+### 2. Set up the virtual environment
 
 ```bash
 make venv
 ```
 
-### 3. 環境変数の設定
+### 3. Set environment variables
 
-ローカルテスト用に以下の環境変数を設定してください：
+Set the following environment variables for local testing:
 
 ```bash
 export FEED_URL="your-rss-feed-url"
 export AOAI_ENDPOINT="https://your-resource.openai.azure.com/"
 export AOAI_KEY="your-azure-openai-key"
 export AOAI_DEPLOYMENT="your-gpt4o-deployment-name"
-export DISCORD_WEBHOOK="your-discord-webhook-url"  # オプション
-export SLACK_WEBHOOK="your-slack-webhook-url"      # オプション
+export DISCORD_WEBHOOK="your-discord-webhook-url"  # optional
+export SLACK_WEBHOOK="your-slack-webhook-url"      # optional
 ```
 
-### 4. GitHub Secretsの設定
+### 4. Set GitHub Secrets
 
-GitHub リポジトリの Settings → Secrets and variables → Actions で以下のシークレットを追加：
+Go to GitHub repo: Settings → Secrets and variables → Actions, and add the following secrets:
 
-- `FEED_URL` - RSS フィードURL
-- `AOAI_ENDPOINT` - Azure OpenAIエンドポイント
-- `AOAI_KEY` - Azure OpenAI APIキー
-- `AOAI_DEPLOYMENT` - GPT-4oデプロイメント名
-- `DISCORD_WEBHOOK` - Discord Webhook URL（オプション）
-- `SLACK_WEBHOOK` - Slack Webhook URL（オプション）
+* `FEED_URL` – RSS feed URL
+* `AOAI_ENDPOINT` – Azure OpenAI endpoint
+* `AOAI_KEY` – Azure OpenAI API key
+* `AOAI_DEPLOYMENT` – GPT-4o deployment name
+* `DISCORD_WEBHOOK` – Discord webhook URL (optional)
+* `SLACK_WEBHOOK` – Slack webhook URL (optional)
 
-### 5. GitHub Pagesの有効化
+### 5. Enable GitHub Pages
 
-1. Settings → Pages
+1. Go to Settings → Pages
 2. Source: Deploy from a branch
-3. Branch: main / folder: /public
+3. Branch: `main` / folder: `/public`
 4. Save
 
-### 6. 自動実行の設定
+### 6. Schedule automation
 
-GitHub Actionsは平日15:00 UTC（太平洋時間8:00）に自動的に実行されます。手動実行も可能です。
+GitHub Actions will run automatically on weekdays at 15:00 UTC (8:00 AM PT). Manual runs are also possible.
 
-## 使用方法
+## Usage
 
-### ローカルテスト（公開せずに実行）
+### Local test run (without publishing)
 
 ```bash
 make test-run
 ```
 
-生成された`email.html`ファイルで結果を確認できます。
+You can check the result in the generated `email.html` file.
 
-このコマンドは、最新のフィードを取得して翻訳しますが、公開はしません。翻訳結果は `YYYY-MM-DD_translated.md` として保存されます。
+This command fetches and translates the latest feed but does not publish it. The translation result is saved as `YYYY-MM-DD_translated.md`.
 
-### 手動でGitHub Actionsを実行
+### Run GitHub Actions manually
 
-1. Actions タブを開く
-2. "AI Newsletter Pipeline" ワークフローを選択
-3. "Run workflow" をクリック
+1. Open the Actions tab
+2. Select the "AI Newsletter Pipeline" workflow
+3. Click "Run workflow"
 
-## プロジェクト構成
+## Project Structure
 
 ```
 ainews/
-├── scripts/              # パイプラインスクリプト
-│   ├── fetch.py         # RSSフィード取得
-│   ├── convert.py       # HTML→Markdown変換
-│   ├── translate.py     # 日本語翻訳
-│   └── summarize.py     # Discord用要約生成
-├── prompts/             # プロンプト
-│   └── translator.txt   # 翻訳プロンプト
-├── public/              # 静的サイト
-│   └── index.html       # ランディングページ
+├── scripts/              # Pipeline scripts
+│   ├── fetch.py         # RSS feed fetching
+│   ├── convert.py       # HTML to Markdown conversion
+│   ├── translate.py     # Japanese translation
+│   └── summarize.py     # Discord summary generation
+├── prompts/             # Prompt templates
+│   └── translator.txt   # Translation prompt
+├── public/              # Static site content
+│   └── index.html       # Landing page
 ├── .github/
 │   └── workflows/
-│       └── pipeline.yml # GitHub Actions設定
-├── pyproject.toml       # Pythonプロジェクト設定
-├── Makefile            # 開発コマンド
-├── latest.txt          # 処理済みGUID追跡
-├── PRD.md              # プロダクト要求定義書
-├── CLAUDE.md           # Claude Code用ガイド
-└── README.md           # このファイル
+│       └── pipeline.yml # GitHub Actions workflow
+├── pyproject.toml       # Python project config
+├── Makefile             # Dev commands
+├── latest.txt           # Processed GUID tracking
+├── PRD.md               # Product requirements doc
+├── CLAUDE.md            # Claude Code guidance
+└── README.md            # This file
 ```
 
-## トラブルシューティング
+## Troubleshooting
 
-### 翻訳品質エラー
+### Translation Quality Error
 
-品質スコアが0.95未満の場合、翻訳は失敗します。以下を確認してください：
-- Azure OpenAIのクォータ制限
-- GPT-4デプロイメントの設定
-- プロンプトファイルの内容
+If the quality score is below 0.95, translation fails. Check the following:
 
-### RSS フィードエラー
+* Azure OpenAI quota limits
+* GPT-4 deployment configuration
+* Contents of the prompt file
 
-- `latest.txt`ファイルを削除して重複チェックをリセット
-- フィードURLが正しいか確認
+### RSS Feed Error
 
-### Discord通知エラー
+* Delete `latest.txt` to reset duplication checks
+* Ensure the feed URL is correct
 
-- Webhook URLの有効性を確認
-- Discordサーバーの権限設定を確認
+### Discord Notification Error
 
-## 翻訳アーカイブの取得
+* Check if the webhook URL is valid
+* Verify Discord server permissions
 
-翻訳されたニュースレターは、GitHub Actionsの各実行のアーティファクトとして保存されます：
+## Retrieve Translated Archives
 
-1. Actions タブを開く
-2. 実行履歴から目的の日付を選択
-3. "Artifacts" セクションから `translated-newsletter-YYYY-MM-DD` をダウンロード
+Translated newsletters are stored as GitHub Actions artifacts:
 
-## ライセンス
+1. Open the Actions tab
+2. Select the run by date
+3. Download `translated-newsletter-YYYY-MM-DD` from the "Artifacts" section
+
+## License
 
 MIT License
 
-## 貢献
+## Contributing
 
-プルリクエストを歓迎します。大きな変更の場合は、まずイシューを作成して変更内容を議論してください。
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
