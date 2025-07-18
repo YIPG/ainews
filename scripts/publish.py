@@ -96,13 +96,13 @@ def markdown_to_html(markdown_content, title, date):
     <meta name="description" content="{title} - AIニュース {date}。最新のAI技術動向を日本語でお届け。">
     <meta name="keywords" content="AI,人工知能,ニュースレター,{date},機械学習,深層学習,日本語">
     <meta name="author" content="AIニュース">
-    <link rel="canonical" href="https://yipg.github.io/ainews/newsletters/{date}.html">
+    <link rel="canonical" href="https://yipg.github.io/ainews/docs/newsletters/{date}.html">
     
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="{title} | AIニュース">
     <meta property="og:description" content="{title} - AIニュース {date}。最新のAI技術動向を日本語でお届け。">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://yipg.github.io/ainews/newsletters/{date}.html">
+    <meta property="og:url" content="https://yipg.github.io/ainews/docs/newsletters/{date}.html">
     <meta property="og:site_name" content="AIニュース">
     <meta property="og:locale" content="ja_JP">
     <meta property="article:published_time" content="{date}T09:00:00+00:00">
@@ -386,7 +386,7 @@ def markdown_to_html(markdown_content, title, date):
 
 def update_archive_index(date, title, summary, filename):
     """Update the archive index JSON file."""
-    index_path = Path("public/newsletters/index.json")
+    index_path = Path("docs/newsletters/index.json")
     
     # Load existing data
     if index_path.exists():
@@ -426,7 +426,7 @@ def update_archive_index(date, title, summary, filename):
 
 def generate_rss_feed():
     """Generate RSS feed for the newsletters."""
-    index_path = Path("public/newsletters/index.json")
+    index_path = Path("docs/newsletters/index.json")
     
     if not index_path.exists():
         return
@@ -444,10 +444,10 @@ def generate_rss_feed():
     for newsletter in newsletters:
         rss_items.append(f"""    <item>
       <title>{newsletter['title']}</title>
-      <link>https://yipg.github.io/ainews/newsletters/{newsletter['filename']}</link>
+      <link>https://yipg.github.io/ainews/docs/newsletters/{newsletter['filename']}</link>
       <description><![CDATA[{newsletter['summary']}]]></description>
       <pubDate>{datetime.strptime(newsletter['date'], '%Y-%m-%d').strftime('%a, %d %b %Y 09:00:00 +0000')}</pubDate>
-      <guid>https://yipg.github.io/ainews/newsletters/{newsletter['filename']}</guid>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/{newsletter['filename']}</guid>
     </item>""")
     
     rss_content = f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -463,7 +463,7 @@ def generate_rss_feed():
   </channel>
 </rss>"""
     
-    with open("public/feed.xml", 'w', encoding='utf-8') as f:
+    with open("docs/feed.xml", 'w', encoding='utf-8') as f:
         f.write(rss_content)
 
 def main():
@@ -487,7 +487,7 @@ def main():
     
     date = date_match.group(1)
     output_filename = f"{date}.html"
-    output_path = f"public/newsletters/{output_filename}"
+    output_path = f"docs/newsletters/{output_filename}"
     
     # Read markdown content
     with open(markdown_file, 'r', encoding='utf-8') as f:
@@ -500,7 +500,7 @@ def main():
     html_content = markdown_to_html(markdown_content, title, date)
     
     # Ensure output directory exists
-    os.makedirs("public/newsletters", exist_ok=True)
+    os.makedirs("docs/newsletters", exist_ok=True)
     
     # Write HTML file
     with open(output_path, 'w', encoding='utf-8') as f:

@@ -84,7 +84,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add latest.txt public/newsletters/ public/feed.xml
+        git add latest.txt docs/newsletters/ docs/feed.xml
         git diff --staged --quiet || git commit -m "Publish newsletter $(date -u +%Y-%m-%d) [skip ci]"
     
     - name: Push changes
