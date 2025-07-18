@@ -1,213 +1,206 @@
-ign Document — Japanese AI Newsletter Pipeline (Smol AI → Buttondown)
+# Product Requirements Document — Japanese AI Newsletter Translation Archive
 
-Version: 0.1   Author: ChatGPT   Status: Draft
-
-
----
-
-1. Objective
-
-Provide a minimal‑maintenance pipeline that
-
-1. Lets users subscribe via a single email field (Buttondown embed on a static page).
-
-
-2. Retrieves the news@smol.ai RSS feed once a day.
-
-
-3. Produces a high‑quality Japanese translation.
-
-
-4. Publishes the translated issue through Buttondown as an email broadcast.
-
-
-
-Goal: fully automated, <$1/month runtime under MS employee Azure credit.
-
+Version: 1.0   Author: AI Team   Status: Production
 
 ---
 
-2. Scope
+## 1. Objective
 
-In scope – frontend landing page, GitHub Actions workflow, translation via Azure OpenAI (GPT‑4.1), Buttondown API integration, basic monitoring.
+Provide a minimal-maintenance pipeline that:
 
-Out of scope – paid subscription tiers, analytics beyond Buttondown default, multi‑language support.
+1. Retrieves AI newsletters from RSS feeds daily (weekdays only)
+2. Produces high-quality Japanese translations using Azure OpenAI GPT-4o
+3. Archives translated content as GitHub Actions artifacts (30-day retention)
+4. Sends Discord notifications with summaries when new translations are available
+5. Maintains a static landing page for project information
 
-
-
----
-
-3. Glossary
-
-Term	Definition
-
-Issue	One Smol AI newsletter article (HTML)
-Pipeline	The GH Actions job that processes an issue.
-BD	Buttondown.
-AOAI	Azure OpenAI.
-
-
+Goal: Fully automated, <$3/month runtime cost, zero-maintenance operation
 
 ---
 
-4. Architecture Overview
+## 2. Scope
 
-User ──▶ Static Site (GitHub Pages) ──▶ Buttondown (Subscriber DB)
-                                             ▲
-                                             │ (REST API)
-GitHub Actions ── cron 00:00 UTC ──▶ Pipeline ─┘
+**In scope:**
+- Frontend landing page (static HTML/CSS)
+- GitHub Actions workflow for automation
+- Translation via Azure OpenAI GPT-4o
+- GitHub Actions artifact storage
+- Discord webhook integration for notifications
+- Basic error monitoring via Slack/Discord
 
-Static site is pure HTML/CSS served from gh-pages branch.
-
-Pipeline lives in main branch under .github/workflows/pipeline.yml.
-
-AOAI handles translation; secrets stored in GitHub Secrets.
-
-
-
----
-
-5. Component Design
-
-5.1 Static Landing Page
-
-File: public/index.html
-
-Uses BD embed form:
-
-<form action="https://buttondown.email/api/emails/subscribe" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/<ACCOUNT>', 'popupwindow');return true;">
-  <input type="email" name="email" placeholder="メールアドレス" required>
-  <input type="hidden" name="embed" value="1">
-  <button type="submit">購読する</button>
-</form>
-
-Optional reCaptcha is disabled (set in BD dashboard).
-
-
-5.2 GitHub Actions Workflow
-
-Step	Tool	Key Points
-
-fetch_feed	feedparser	Save latest entry GUID to artifact latest.txt for dedup.
-html_to_md	html2text==2020.1.16	Preserve headings/links.
-translate	openai>=1.3.5 (Azure)	System prompt stored in repo prompts/translator.txt. Temperature 0.2, max_tokens 4096.
-quality_check	same AOAI call	Ask model to detect missing sentences & hallucinations. Fail build if score < 0.95.
-compose_email	Jinja2 template	Template at templates/issue.j2 (front‑matter for BD).
-publish	curl to BD REST	POST /emails with draft=false.
-notify	actions/slack@v2 (optional)	Alert on failure.
-
-
-5.2.1 Secrets
-
-Name	Used by	Example
-
-FEED_URL	fetch_feed	https://news.smol.ai/feed/
-BD_API_KEY	publish	xxxxxxxx_token
-AOAI_ENDPOINT	translate	https://aoai-jp-east.openai.azure.com/
-AOAI_KEY	translate	xxxxxxxxxxxx
-AOAI_DEPLOYMENT	translate	gpt4-1-translation
-SLACK_WEBHOOK	notify	(optional)
-
-
-5.3 Translation Prompt (system)
-
-あなたはバイリンガル編集者です。入力はMarkdownの英語ニュースレターです。以下のルールで日本語に翻訳してください。
-- 見出しは全角。
-- 固有名詞・社名は原文のまま。
-- 箇条書きはMarkdownのまま保持。
-- 口語ではなく、ビジネス向けの丁寧体。
-
-5.4 Error Handling
-
-If feed returns 304 or no new GUID → job exits 0 (skip).
-
-If AOAI raises 429 → retry w/ exponential backoff 3×.
-
-Any failure after translate sends Slack alert.
-
-
+**Out of scope:**
+- Email distribution system
+- Subscription management
+- Paid tiers or monetization
+- Multi-language support beyond Japanese
+- Long-term archival beyond 30 days
 
 ---
 
-6. Data Flow Detail
+## 3. Glossary
 
-1. Pull RSS: python scripts/fetch.py writes issue.html & meta.json.
-
-
-2. Convert: python scripts/convert.py issue.html > issue.md.
-
-
-3. Translate: python scripts/translate.py issue.md > issue_ja.md.
-
-
-4. Compose: python scripts/render.py meta.json issue_ja.md > email.html.
-
-
-5. Publish: python scripts/publish.py email.html.
-
-
-
-All scripts share a common virtualenv defined in pyproject.toml.
-
+| Term | Definition |
+|------|------------|
+| Issue | One AI newsletter article (HTML/Markdown) |
+| Pipeline | The GitHub Actions job that processes an issue |
+| AOAI | Azure OpenAI |
+| Artifact | GitHub Actions storage for translated content |
+| GUID | Unique identifier for RSS feed items |
 
 ---
 
-7. Non‑Functional Requirements
+## 4. Architecture Overview
 
-Area	Target
+```
+RSS Feed ──▶ GitHub Actions ──▶ Azure OpenAI ──▶ GH Artifacts
+                    │                               │
+                    └─── Weekdays 15:00 UTC ────────┘
+                                                    │
+                                                    ▼
+                                            Discord Webhook
+```
 
-Latency	< 5 min per run (AOAI biggest chunk)
-Error rate	< 1% monthly (manual resend allowed)
-Cost	< $3/month at 30 issues
-Security	All secrets via GitHub OIDC (no plaintext).
-
-
-
----
-
-8. Local Development (Makefile targets)
-
-make venv          # create .venv
-make test-run      # process latest feed but do not publish
-make send-draft    # publish to BD as draft
-
+- Static site served from gh-pages branch (informational only)
+- Pipeline runs in main branch via .github/workflows/pipeline.yml
+- Translations stored as GitHub Actions artifacts
+- Discord receives notifications with summaries
 
 ---
 
-9. Future Work
+## 5. Component Design
 
-Switch BD→Listmonk+SES for cost scaling.
+### 5.1 Static Landing Page
 
-Add caching to avoid re‑translating unchanged sentences.
+**File:** `public/index.html`
 
-Hook Lighthouse CI for landing page accessibility.
+Simple informational page explaining the project:
+- Project description in Japanese
+- Link to GitHub repository
+- No subscription functionality (archive-only system)
 
-Multilingual (en → ja/ko/zh) via matrix job.
+### 5.2 GitHub Actions Workflow
 
+| Step | Script | Description |
+|------|--------|-------------|
+| fetch_feed | `scripts/fetch.py` | Downloads RSS feed, saves HTML/metadata, checks GUID |
+| convert | `scripts/convert.py` | Converts HTML to Markdown using html2text |
+| translate | `scripts/translate.py` | Translates to Japanese via Azure OpenAI |
+| summarize | `scripts/summarize.py` | Extracts title and ~1500 char summary |
+| upload | GitHub Actions | Stores translated content as artifact |
+| notify | Discord webhook | Sends summary with download link |
+| update_guid | Git commit | Updates latest.txt with processed GUID |
 
+### 5.3 Required Secrets
+
+| Name | Purpose | Example |
+|------|---------|---------|
+| FEED_URL | RSS feed URL | https://example.com/feed/ |
+| AOAI_ENDPOINT | Azure OpenAI endpoint | https://resource.openai.azure.com/ |
+| AOAI_KEY | Azure OpenAI API key | xxxxxxxxxxxx |
+| AOAI_DEPLOYMENT | GPT-4o deployment name | gpt-4o-deployment |
+| DISCORD_WEBHOOK | Discord notifications | https://discord.com/api/webhooks/... |
+| SLACK_WEBHOOK | Error notifications (optional) | https://hooks.slack.com/... |
+
+### 5.4 Translation Configuration
+
+**System Prompt** (`prompts/translator.txt`):
+- Business-appropriate Japanese (丁寧体)
+- Preserve proper nouns in original language
+- Full-width characters for headers
+- Maintain Markdown formatting
+- Temperature: 0.2, max_tokens: 4096
+
+### 5.5 Error Handling
+
+- Feed returns 304 or duplicate GUID → Skip (exit 0)
+- Azure OpenAI 429 errors → Retry with exponential backoff (3x)
+- Translation quality < 0.95 → Build fails
+- Any failure → Slack/Discord alert sent
 
 ---
 
-10. Acceptance Criteria (for AI Coding Agent)
+## 6. Data Flow
 
-1. gh workflow run publishes a real Buttondown email in draft mode when a new RSS item appears.
+1. **Fetch:** RSS feed → `YYYY-MM-DD_issue.html` + `YYYY-MM-DD_meta.json`
+2. **Convert:** HTML → `YYYY-MM-DD_markdown.md`
+3. **Translate:** English Markdown → `YYYY-MM-DD_translated.md`
+4. **Archive:** Upload all files as GitHub Actions artifact
+5. **Notify:** Extract summary → Send to Discord with artifact link
+6. **Track:** Update `latest.txt` with processed GUID
 
+---
 
-2. Generated email passes BD preview with correct Japanese, links, and no layout break.
+## 7. Non-Functional Requirements
 
+| Area | Target |
+|------|--------|
+| Pipeline Latency | < 5 minutes per run |
+| Error Rate | < 1% monthly |
+| Cost | < $3/month (30 issues) |
+| Retention | 30 days (GitHub Actions limit) |
+| Schedule | Weekdays 15:00 UTC |
+| Security | All secrets via GitHub Secrets |
 
-3. On second run with no new item, workflow exits successfully without sending.
+---
 
+## 8. Development Commands
 
-4. Total GitHub Action duration ≤ 300 sec.
+```bash
+make venv          # Create Python virtual environment
+make test-run      # Process latest feed locally (no publishing)
+```
 
+---
 
-5. README includes setup guide & secrets list.
+## 9. Discord Notification Format
 
+**Success Message:**
+- Title: "🗾 AI技術ニュースレター - YYYY-MM-DD"
+- Description: ~1500 character summary
+- Link: Download full version from GitHub Actions
+- Footer: "Translated by Azure OpenAI GPT-4o"
+- Color: Green (#00ff00)
 
+**Error Message:**
+- Title: "❌ Translation Pipeline Failed"
+- Description: Error details
+- Link: GitHub Actions logs
+- Color: Red (#ff0000)
 
+---
+
+## 10. Migration from Original Design
+
+This system has pivoted from the original email distribution design:
+
+| Original | Current | Reason |
+|----------|---------|---------|
+| Buttondown email delivery | GitHub Actions artifacts | Simpler, no subscription management |
+| Email subscriber database | Discord notifications | No user data to manage |
+| Jinja2 email templates | Direct Markdown storage | Cleaner archival format |
+| Daily at 00:00 UTC | Weekdays at 15:00 UTC | Better alignment with content publishing |
+
+---
+
+## 11. Future Considerations
+
+- Add web UI to browse archived translations
+- Implement RSS feed for translated content
+- Support multiple newsletter sources
+- Add search functionality for archives
+- Consider long-term storage solution beyond 30 days
+
+---
+
+## 12. Acceptance Criteria
+
+1. ✅ Pipeline successfully fetches and translates new RSS items
+2. ✅ Translations achieve quality score ≥ 0.95
+3. ✅ Discord receives formatted notifications with summaries
+4. ✅ Duplicate items are skipped without errors
+5. ✅ Total GitHub Action duration ≤ 300 seconds
+6. ✅ All secrets properly configured and documented
 
 ---
 
 End of Document
-
