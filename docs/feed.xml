@@ -5,14 +5,21 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 18 Jul 2025 02:44:12 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Jul 2025 20:05:52 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
     <item>
       <title>ChatGPTはこれさえあれば十分</title>
-      <link>https://yipg.github.io/ainews/newsletters/2025-07-18.html</link>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-07-18.html</link>
       <description><![CDATA[OpenAIのSama氏とチームは、「ChatGPT Agent」を発表しました。この発表は、10am PTのライブストリームで行われ、注目を集めました。...]]></description>
       <pubDate>Fri, 18 Jul 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/newsletters/2025-07-18.html</guid>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-07-18.html</guid>
+    </item>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-07-17.html</link>
+      <description><![CDATA[Claude Codeの未来やAnthropicの1000億ドルの資金調達に関心がある方には、注目の人事異動がありました。また、Falの1.5億ドルのシリーズC資金調達がリークされました（詳細はこちら）。さらに、Clineが初めて出演したポッドキャストも公開されています。...]]></description>
+      <pubDate>Thu, 17 Jul 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-07-17.html</guid>
     </item>
   </channel>
 </rss>
