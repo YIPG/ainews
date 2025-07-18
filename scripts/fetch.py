@@ -102,6 +102,7 @@ def main() -> None:
     # Check if this is a new entry
     if current_guid == last_guid:
         print("No new entries found. Skipping...")
+        print("::set-output name=has_new_content::false")
         sys.exit(0)
     
     # Extract HTML content
@@ -139,6 +140,7 @@ def main() -> None:
     print(f"GUID: {current_guid}")
     print(f"Published: {latest_entry['published']}")
     print(f"Output files: {html_filename}, {meta_filename}")
+    print("::set-output name=has_new_content::true")
 
 
 if __name__ == "__main__":

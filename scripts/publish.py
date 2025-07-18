@@ -366,6 +366,7 @@ def markdown_to_html(markdown_content, title, date):
             <a href="../index.html">ホーム</a>
             <a href="./archive.html">アーカイブ</a>
             <a href="../feed.xml">RSS</a>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
         </div>
     </nav>
 

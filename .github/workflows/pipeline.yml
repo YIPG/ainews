@@ -39,6 +39,7 @@ jobs:
         pip install -e .
     
     - name: Fetch latest newsletter
+      id: fetch
       env:
         FEED_URL: ${{ secrets.FEED_URL }}
       run: |
@@ -46,12 +47,14 @@ jobs:
       continue-on-error: false
     
     - name: Convert HTML to Markdown
+      if: steps.fetch.outputs.has_new_content == 'true'
       run: |
         DATE_PREFIX=$(date -u +%Y-%m-%d)
         python scripts/convert.py "output/${DATE_PREFIX}_issue.html" > "output/${DATE_PREFIX}_issue.md"
       continue-on-error: false
     
     - name: Translate to Japanese
+      if: steps.fetch.outputs.has_new_content == 'true'
       env:
         AOAI_ENDPOINT: ${{ secrets.AOAI_ENDPOINT }}
         AOAI_KEY: ${{ secrets.AOAI_KEY }}
@@ -62,6 +65,7 @@ jobs:
       continue-on-error: false
     
     - name: Publish to GitHub Pages
+      if: steps.fetch.outputs.has_new_content == 'true'
       run: |
         DATE_PREFIX=$(date -u +%Y-%m-%d)
         python scripts/publish.py "output/${DATE_PREFIX}_issue_ja.md"
@@ -69,7 +73,7 @@ jobs:
     
     - name: Upload translation artifacts
       uses: actions/upload-artifact@v4
-      if: always()
+      if: steps.fetch.outputs.has_new_content == 'true'
       with:
         name: translation-artifacts-${{ github.run_id }}
         path: |
@@ -80,7 +84,7 @@ jobs:
         retention-days: 30
     
     - name: Commit published newsletter
-      if: success()
+      if: steps.fetch.outputs.has_new_content == 'true'
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
@@ -88,14 +92,14 @@ jobs:
         git diff --staged --quiet || git commit -m "Publish newsletter $(date -u +%Y-%m-%d) [skip ci]"
     
     - name: Push changes
-      if: success()
+      if: steps.fetch.outputs.has_new_content == 'true'
       uses: ad-m/github-push-action@v0.8.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
     
     - name: Send Discord notification
-      if: success()
+      if: steps.fetch.outputs.has_new_content == 'true'
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       run: |
@@ -137,6 +141,32 @@ jobs:
           )
           
           # Send to Discord
+          curl -X POST -H "Content-Type: application/json" \
+            -d "$PAYLOAD" \
+            "$DISCORD_WEBHOOK"
+        fi
+    
+    - name: Send Discord notification for no new content
+      if: steps.fetch.outputs.has_new_content == 'false'
+      env:
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+      run: |
+        if [ ! -z "$DISCORD_WEBHOOK" ]; then
+          PAYLOAD=$(cat <<EOF
+        {
+          "embeds": [{
+            "title": "📭 本日の更新はありません",
+            "description": "AIニュースレターに新しい記事はありませんでした。次回の更新をお待ちください。",
+            "color": 8421504,
+            "footer": {
+              "text": "AI Newsletter Translation System"
+            },
+            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%S.000Z)"
+          }]
+        }
+        EOF
+          )
+          
           curl -X POST -H "Content-Type: application/json" \
             -d "$PAYLOAD" \
             "$DISCORD_WEBHOOK"
