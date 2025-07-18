@@ -3,16 +3,18 @@
 
 A Japanese translation and archive system for AI newsletters – Automatically translates AI newsletter content into Japanese, archives it via GitHub Actions, and sends notifications to Discord.
 
+**🌐 Live Site: https://yipg.github.io/ainews/**
+
 ## Overview
 
-This project is an automated pipeline that retrieves the latest AI newsletters from specified RSS feeds, translates them into Japanese using Azure OpenAI GPT-4o, and stores them as GitHub Actions artifacts. A summary is also sent to Discord upon completion.
+This project is an automated pipeline that retrieves the latest AI newsletters from specified RSS feeds, translates them into Japanese using Azure OpenAI GPT-4o, and publishes them to a GitHub Pages website. A summary is also sent to Discord upon completion.
 
 ## Features
 
 * 🔄 Automatic retrieval and deduplication from RSS feeds
 * 🌐 High-quality Japanese translation via Azure OpenAI GPT-4o
 * ✅ Automatic translation quality check (score ≥ 0.95)
-* 📦 Auto-archiving to GitHub Actions artifacts (retained for 30 days)
+* 📖 Auto-publishing to GitHub Pages with RSS feed
 * 💬 Discord webhook notifications with summary
 * 🕐 Runs automatically on weekdays at 15:00 UTC (8:00 AM Pacific Time)
 * 🔔 Optional error notifications via Slack and Discord
@@ -67,7 +69,7 @@ Go to GitHub repo: Settings → Secrets and variables → Actions, and add the f
 
 1. Go to Settings → Pages
 2. Source: Deploy from a branch
-3. Branch: `main` / folder: `/public`
+3. Branch: `main` / folder: `/docs`
 4. Save
 
 ### 6. Schedule automation
@@ -103,8 +105,10 @@ ainews/
 │   └── summarize.py     # Discord summary generation
 ├── prompts/             # Prompt templates
 │   └── translator.txt   # Translation prompt
-├── public/              # Static site content
-│   └── index.html       # Landing page
+├── docs/                # GitHub Pages content
+│   ├── index.html       # Landing page
+│   ├── feed.xml         # RSS feed
+│   └── newsletters/     # Published newsletters
 ├── .github/
 │   └── workflows/
 │       └── pipeline.yml # GitHub Actions workflow
@@ -136,13 +140,15 @@ If the quality score is below 0.95, translation fails. Check the following:
 * Check if the webhook URL is valid
 * Verify Discord server permissions
 
-## Retrieve Translated Archives
+## Access Translated Newsletters
 
-Translated newsletters are stored as GitHub Actions artifacts:
+All translated newsletters are available on the live website:
 
-1. Open the Actions tab
-2. Select the run by date
-3. Download `translated-newsletter-YYYY-MM-DD` from the "Artifacts" section
+* **Live Site**: https://yipg.github.io/ainews/
+* **RSS Feed**: https://yipg.github.io/ainews/docs/feed.xml
+* **Archive**: Browse all newsletters from the homepage
+
+GitHub Actions artifacts are also retained for 30 days as backup.
 
 ## License
 
