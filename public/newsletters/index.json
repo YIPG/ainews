@@ -2,11 +2,11 @@
   "newsletters": [
     {
       "date": "2025-07-18",
-      "title": "Mistralがオープンモデルの世界に復帰！",
-      "summary": "Miraの20億ドルのThinking Machines資金調達が予想されていた一方で、Mistralは突如として新しい音声認識モデル「Voxtral」を発表しました。このモデルは「Whisper large-v3を包括的に上回り」、「GPT-4o mini TranscribeやGemini...",
+      "title": "ChatGPTはこれさえあれば十分",
+      "summary": "OpenAIのSama氏とチームは、「ChatGPT Agent」を発表しました。この発表は、10am PTのライブストリームで行われ、注目を集めました。...",
       "filename": "2025-07-18.html"
     }
   ],
-  "lastUpdated": "2025-07-17T19:36:35.345715",
+  "lastUpdated": "2025-07-18T02:44:12.479328",
   "totalCount": 1
 }
