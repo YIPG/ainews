@@ -13,6 +13,8 @@ jobs:
   translate-newsletter:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: write
     
     steps:
     - name: Checkout repository
@@ -86,13 +88,88 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
     
+    - name: Send Discord notification
+      if: success()
+      env:
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+      run: |
+        if [ ! -z "$DISCORD_WEBHOOK" ]; then
+          DATE_PREFIX=$(date -u +%Y-%m-%d)
+          
+          # Extract summary using the summarize script
+          SUMMARY_OUTPUT=$(python scripts/summarize.py "output/${DATE_PREFIX}_issue_ja.md")
+          
+          # Parse the output
+          TITLE=$(echo "$SUMMARY_OUTPUT" | grep "^TITLE:" | cut -d: -f2-)
+          DATE=$(echo "$SUMMARY_OUTPUT" | grep "^DATE:" | cut -d: -f2-)
+          SUMMARY=$(echo "$SUMMARY_OUTPUT" | sed -n '/SUMMARY_START/,/SUMMARY_END/p' | sed '1d;$d')
+          
+          # Escape the summary for JSON
+          SUMMARY_JSON=$(echo "$SUMMARY" | jq -Rs .)
+          
+          # Build Discord webhook payload
+          PAYLOAD=$(cat <<EOF
+        {
+          "embeds": [{
+            "title": "🗾 AI技術ニュースレター - ${DATE}",
+            "description": ${SUMMARY_JSON},
+            "color": 5814783,
+            "fields": [
+              {
+                "name": "📥 完全版をダウンロード",
+                "value": "[GitHub Actionsから取得](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})",
+                "inline": false
+              }
+            ],
+            "footer": {
+              "text": "Azure OpenAI GPT-4oにより翻訳"
+            },
+            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%S.000Z)"
+          }]
+        }
+        EOF
+          )
+          
+          # Send to Discord
+          curl -X POST -H "Content-Type: application/json" \
+            -d "$PAYLOAD" \
+            "$DISCORD_WEBHOOK"
+        fi
+    
     - name: Send failure notification
       if: failure()
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       run: |
+        # Send to Slack if configured
         if [ ! -z "$SLACK_WEBHOOK" ]; then
           curl -X POST -H 'Content-type: application/json' \
             --data '{"text":"❌ Japanese AI Newsletter translation pipeline failed. Please check the GitHub Actions logs."}' \
             $SLACK_WEBHOOK
+        fi
+        
+        # Send to Discord if configured
+        if [ ! -z "$DISCORD_WEBHOOK" ]; then
+          PAYLOAD=$(cat <<EOF
+        {
+          "embeds": [{
+            "title": "❌ Pipeline Failed",
+            "description": "Japanese AI Newsletter translation pipeline failed.",
+            "color": 15548997,
+            "fields": [
+              {
+                "name": "Action",
+                "value": "Please check the [GitHub Actions logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+              }
+            ],
+            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%S.000Z)"
+          }]
+        }
+        EOF
+          )
+          
+          curl -X POST -H "Content-Type: application/json" \
+            -d "$PAYLOAD" \
+            "$DISCORD_WEBHOOK"
         fi
