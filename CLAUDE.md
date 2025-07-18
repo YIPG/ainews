@@ -4,12 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Japanese AI Newsletter Translation Archive System that automatically translates AI newsletters from English to Japanese. The system is designed to be fully automated with minimal maintenance, running on GitHub Actions with Azure OpenAI GPT-4o for translation. Translated content is stored as GitHub Actions artifacts (30-day retention) and notifications are sent to Discord with summaries.
+This is a Japanese AI Newsletter Translation Archive System that automatically translates AI newsletters from English to Japanese. The system is designed to be fully automated with minimal maintenance, running on GitHub Actions every 6 hours on weekdays with Azure OpenAI GPT-4o for translation. Translated content is stored as GitHub Actions artifacts (30-day retention) and notifications are sent to Discord with summaries.
 
 ## Architecture
 
 - **Frontend**: Static HTML/CSS landing page served from gh-pages branch (public/index.html) - informational only
-- **Backend**: GitHub Actions workflow (.github/workflows/pipeline.yml) that runs weekdays at 15:00 UTC
+- **Backend**: GitHub Actions workflow (.github/workflows/pipeline.yml) that runs every 6 hours on weekdays (00:00, 06:00, 12:00, 18:00 UTC)
 - **Translation**: Azure OpenAI GPT-4o for English to Japanese translation
 - **Storage**: GitHub Actions artifacts for storing translated content (30-day retention)
 - **Notifications**: Discord webhook for success notifications with summaries
