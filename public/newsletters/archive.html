@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIニュース - アーカイブ | 全ての記事</title>
+    <meta name="description" content="AIニュースのアーカイブページ。過去のAI技術ニュースレターの日本語翻訳記事を時系列で閲覧できます。">
+    <meta name="keywords" content="AI,アーカイブ,バックナンバー,人工知能,ニュースレター,日本語">
+    <meta name="author" content="AIニュース">
+    <link rel="canonical" href="https://yipg.github.io/ainews/newsletters/archive.html">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="AIニュース - アーカイブ | 全ての記事">
+    <meta property="og:description" content="AIニュースのアーカイブページ。過去のAI技術ニュースレターの日本語翻訳記事を時系列で閲覧できます。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yipg.github.io/ainews/newsletters/archive.html">
+    <meta property="og:site_name" content="AIニュース">
+    <meta property="og:locale" content="ja_JP">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="AIニュース - アーカイブ | 全ての記事">
+    <meta name="twitter:description" content="AIニュースのアーカイブページ。過去のAI技術ニュースレターの日本語翻訳記事を時系列で閲覧できます。">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+    <link rel="alternate icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="AIニュース RSS Feed" href="../feed.xml">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 1em;
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            color: #111;
+            word-wrap: break-word;
+        }
+        
+        nav {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        
+        .site-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #111;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        
+        .site-title:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-links {
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+        
+        .nav-links a {
+            color: #111;
+            text-decoration: none;
+            margin-left: 12px;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        
+        h2 {
+            margin: 35px 0 25px 0;
+            font-size: 1.3em;
+            color: #111;
+            letter-spacing: 0.01em;
+        }
+        
+        .newsletter-item {
+            padding: 25px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .newsletter-item:last-child {
+            border-bottom: none;
+        }
+        
+        .newsletter-date {
+            color: #555;
+            font-size: 0.8em;
+            font-family: monospace;
+            margin-bottom: 12px;
+        }
+        
+        .newsletter-title {
+            font-size: 1.15em;
+            font-weight: bold;
+            margin: 12px 0 15px 0;
+            line-height: 1.4;
+        }
+        
+        .newsletter-title a {
+            color: #111;
+            text-decoration: none;
+        }
+        
+        .newsletter-title a:hover {
+            color: #0969da;
+            text-decoration: underline;
+        }
+        
+        .newsletter-summary {
+            color: #555;
+            margin: 15px 0;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+        
+        .loading {
+            color: #555;
+            font-size: 0.9em;
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #555;
+            font-size: 0.85em;
+        }
+        
+        footer a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+                font-size: 0.95em;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .nav-links {
+                font-size: 0.8em;
+            }
+            
+            .nav-links a {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+            
+            .newsletter-item {
+                padding: 20px 0;
+            }
+            
+            .newsletter-title {
+                font-size: 1.1em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 0.9em;
+                padding: 12px;
+            }
+            
+            .site-title {
+                font-size: 1em;
+            }
+            
+            .nav-links {
+                font-size: 0.75em;
+            }
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+                color: #eee;
+            }
+            
+            nav {
+                border-bottom-color: #444;
+            }
+            
+            .site-title, .nav-links a, h2, .newsletter-title a {
+                color: #eee;
+            }
+            
+            .newsletter-date, .newsletter-summary {
+                color: #ccc;
+            }
+            
+            .newsletter-item {
+                border-bottom-color: #444;
+            }
+            
+            .newsletter-title a:hover {
+                color: #4db8ff;
+            }
+            
+            footer {
+                border-color: #444;
+            }
+            
+            footer, footer a {
+                color: #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="site-title">✏️ AIニュース</a>
+        <div class="nav-links">
+            <a href="../index.html">ホーム</a>
+            <a href="../feed.xml">RSS</a>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+        </div>
+    </nav>
+
+    <main>
+        <h2>全ての記事</h2>
+        
+        <div id="loading" class="loading">
+            アーカイブを読み込み中...
+        </div>
+        
+        <div id="newsletter-content"></div>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+            <a href="https://news.smol.ai/">news.smol.ai</a>
+        </p>
+    </footer>
+
+    <script>
+        // Fallback data for when running locally without a server
+        const fallbackData = {
+            "newsletters": [
+                {
+                    "date": "2025-07-18",
+                    "title": "Mistralが再びオープンモデルの世界へ！",
+                    "summary": "条件なしで他モデルを圧倒することは素晴らしく、さらにオープンモデルである点が一層魅力的です。Voxtral 3BおよびVoxtral 24Bモデルは、単なる音声認識を超えた機能を備えています。",
+                    "filename": "2025-07-18.html"
+                }
+            ]
+        };
+
+        async function loadArchive() {
+            let data;
+            
+            try {
+                const response = await fetch('./index.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                data = await response.json();
+            } catch (error) {
+                console.warn('Could not fetch archive data, using fallback:', error);
+                data = fallbackData;
+            }
+            
+            const loading = document.getElementById('loading');
+            const content = document.getElementById('newsletter-content');
+            
+            if (!data || !data.newsletters || data.newsletters.length === 0) {
+                content.innerHTML = '<p class="loading">まだニュースレターはありません。</p>';
+            } else {
+                const newsletters = data.newsletters.sort((a, b) => new Date(b.date) - new Date(a.date));
+                content.innerHTML = newsletters.map(newsletter => `
+                    <div class="newsletter-item">
+                        <div class="newsletter-date">${newsletter.date}</div>
+                        <div class="newsletter-title">
+                            <a href="./${newsletter.filename}">${newsletter.title}</a>
+                        </div>
+                        <div class="newsletter-summary">${newsletter.summary}</div>
+                    </div>
+                `).join('');
+            }
+            
+            loading.style.display = 'none';
+        }
+
+        document.addEventListener('DOMContentLoaded', loadArchive);
+    </script>
+</body>
+</html>

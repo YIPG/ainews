@@ -61,6 +61,12 @@ jobs:
         python scripts/translate.py "output/${DATE_PREFIX}_issue.md" > "output/${DATE_PREFIX}_issue_ja.md"
       continue-on-error: false
     
+    - name: Publish to GitHub Pages
+      run: |
+        DATE_PREFIX=$(date -u +%Y-%m-%d)
+        python scripts/publish.py "output/${DATE_PREFIX}_issue_ja.md"
+      continue-on-error: false
+    
     - name: Upload translation artifacts
       uses: actions/upload-artifact@v4
       if: always()
@@ -73,13 +79,13 @@ jobs:
           output/*_meta.json
         retention-days: 30
     
-    - name: Update processed GUID
+    - name: Commit published newsletter
       if: success()
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add latest.txt
-        git diff --staged --quiet || git commit -m "Update processed GUID [skip ci]"
+        git add latest.txt public/newsletters/ public/feed.xml
+        git diff --staged --quiet || git commit -m "Publish newsletter $(date -u +%Y-%m-%d) [skip ci]"
     
     - name: Push changes
       if: success()
@@ -116,8 +122,8 @@ jobs:
             "color": 5814783,
             "fields": [
               {
-                "name": "📥 完全版をダウンロード",
-                "value": "[GitHub Actionsから取得](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})",
+                "name": "📖 記事を読む",
+                "value": "[GitHub Pagesで読む](https://yipg.github.io/ainews/newsletters/${DATE}.html)",
                 "inline": false
               }
             ],
