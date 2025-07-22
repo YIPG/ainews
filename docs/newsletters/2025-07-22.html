@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汎用的な強化学習がすべてを解決します | AIニュース</title>
+    <meta name="description" content="汎用的な強化学習がすべてを解決します - AIニュース 2025-07-22。最新のAI技術動向を日本語でお届け。">
+    <meta name="keywords" content="AI,人工知能,ニュースレター,2025-07-22,機械学習,深層学習,日本語">
+    <meta name="author" content="AIニュース">
+    <link rel="canonical" href="https://yipg.github.io/ainews/docs/newsletters/2025-07-22.html">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="汎用的な強化学習がすべてを解決します | AIニュース">
+    <meta property="og:description" content="汎用的な強化学習がすべてを解決します - AIニュース 2025-07-22。最新のAI技術動向を日本語でお届け。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yipg.github.io/ainews/docs/newsletters/2025-07-22.html">
+    <meta property="og:site_name" content="AIニュース">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2025-07-22T09:00:00+00:00">
+    <meta property="article:author" content="AIニュース">
+    <meta property="article:section" content="AI技術ニュース">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="汎用的な強化学習がすべてを解決します | AIニュース">
+    <meta name="twitter:description" content="汎用的な強化学習がすべてを解決します - AIニュース 2025-07-22。最新のAI技術動向を日本語でお届け。">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+    <link rel="alternate icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="AIニュース RSS Feed" href="../feed.xml">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 1em;
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            color: #111;
+            word-wrap: break-word;
+        }
+        
+        nav {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        
+        .site-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #111;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        
+        .site-title:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-links {
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+        
+        .nav-links a {
+            color: #111;
+            text-decoration: none;
+            margin-left: 12px;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        h1, h2, h3, h4, h5, h6 {
+            margin: 35px 0 20px 0;
+            line-height: 1.3;
+            color: #111;
+            letter-spacing: 0.01em;
+        }
+        
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.3em; }
+        h3 { font-size: 1.1em; }
+        
+        p {
+            margin: 20px 0;
+        }
+        
+        a {
+            color: #0969da;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        blockquote {
+            border-left: 3px solid #ccc;
+            margin: 25px 0;
+            padding: 0 25px;
+            color: #555;
+            font-style: italic;
+        }
+        
+        code {
+            background-color: #f6f8fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            padding: 20px;
+            overflow-x: auto;
+            margin: 25px 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 25px 0;
+            border-radius: 3px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 35px 0;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #555;
+            font-size: 0.85em;
+        }
+        
+        footer a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+                font-size: 0.95em;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .nav-links {
+                font-size: 0.8em;
+            }
+            
+            .nav-links a {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+            
+            .article-title {
+                font-size: 1.4em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 0.9em;
+                padding: 12px;
+            }
+            
+            .site-title {
+                font-size: 1em;
+            }
+            
+            .nav-links {
+                font-size: 0.75em;
+            }
+            
+            .article-title {
+                font-size: 1.3em;
+            }
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+                color: #eee;
+            }
+            
+            nav {
+                border-bottom-color: #444;
+            }
+            
+            .site-title, .nav-links a, .article-title, h1, h2, h3, h4, h5, h6 {
+                color: #eee;
+            }
+            
+            .article-date {
+                color: #ccc;
+            }
+            
+            blockquote {
+                border-left-color: #555;
+                color: #ccc;
+            }
+            
+            code {
+                background-color: #2d3748;
+                color: #e2e8f0;
+            }
+            
+            pre {
+                background-color: #2d3748;
+            }
+            
+            hr, footer {
+                border-color: #444;
+            }
+            
+            footer, footer a {
+                color: #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="site-title">✏️ AIニュース</a>
+        <div class="nav-links">
+            <a href="../index.html">ホーム</a>
+            <a href="./archive.html">アーカイブ</a>
+            <a href="../feed.xml">RSS</a>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1 id="_1">汎用的な強化学習がすべてを解決します</h1>
+<p>昨年のこの時期、GDMは<a href="https://news.smol.ai/issues/24-07-25-ainews-alphaproof-alphageometry2-reach-1-point-short-of-imo-gold">AlphaProofとAlphaGeometry2</a>（<a href="https://x.com/deedydas/status/1946987560875766212">Alphaシリーズの長い歴史</a>の最新作）の発表を行い、IMO 2024の問題6問中4問を完全に解決し、金メダルの基準点に1点届かなかったことを明らかにしました。しかし、このシステムは一部の問題で60時間以上を要し、人間に許される4.5時間を大幅に超えていました。</p>
+<p>今年は、OpenAI（「実験的な研究モデルであり、GPT5には未搭載」 - <a href="https://github.com/aw31/openai-imo-2025-proofs/">彼らの解答はこちら</a>）とGDM（「<a href="https://deepmind.google/discover/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/">Gemini Deep Thinkの高度版</a>」 - <a href="https://storage.googleapis.com/deepmind-media/gemini/IMO_2025.pdf">彼らの解答はこちら</a>）が、IMO 2025の問題6問中5問を完全に解決したことを発表しました（<a href="https://x.com/ErnestRyu/status/1946698896375492746">P6は通常最も難しい問題</a>）。両者とも4.5時間以内に解決し、IMO金メダルを獲得しました。この結果は、<a href="https://www.notion.so/really-delete-1cc3eeb8e42a8082891cf977ab364a0f?pvs=21">Paul ChristianoとEliezer Yudkowskyの3年前のAIベット</a>を解決するものであり、Paulが2022年2月にその成功確率を4%未満と予測していたものです。興味深いことに、市場がこの成功の確率を低く見積もり続けていたにもかかわらず、昨年のGDM発表後に50-80%に急上昇しました。</p>
+<p><img alt="" src="https://resend-attachments.s3.amazonaws.com/U57EKNnXxiRSMig" /></p>
+<p>さらに驚くべき点は、この金メダル獲得が、Leanのような専門的なツールやインターネットへのアクセスを使用せず、純粋な「重み内推論」（つまり「<a href="https://x.com/fchollet/status/1947337944215523567">トークンスペース内での検索</a>」）によって達成されたことです。</p>
+<ul>
+<li><a href="https://x.com/OriolVinyalsML/status/1947341047547199802">Oriol Vinyals</a>（<a href="https://x.com/VraserX/status/1947368827253076001">詳細な反論はこちら</a>）</li>
+</ul>
+<p><img alt="" src="https://resend-attachments.s3.amazonaws.com/jgT7oIHSut6DWT6" /></p>
+<ul>
+<li><a href="https://x.com/alexwei_/status/1946477742855532918">Alexander Wei</a>: 「この能力レベルに到達するために、狭いタスク特化型の方法論ではなく、汎用的な強化学習とテスト時の計算スケーリングで新たな地平を切り開きました。」および<a href="https://x.com/millionint/status/1946551400365994077?s=46">Jerry Tworek</a>: 「IMO特化型の作業はほとんど行わず、汎用モデルのトレーニングを続けました。すべて自然言語による証明で、評価ハーネスは使用していません。」</li>
+</ul>
+<p><img alt="" src="https://resend-attachments.s3.amazonaws.com/rdKul9ieUsAC8Ks" /></p>
+<p>数学者たちは主に<a href="https://x.com/ErnestRyu/status/1946700798001574202">脅威を感じていない</a>ようで、この結果を歓迎していますが、<a href="https://x.com/pli_cachete/status/1946692267915304991?s=46">Terence Taoは方法論とメダルの主張について強い疑念を抱いています</a>（<a href="https://x.com/BorisMPower/status/1946859525270859955">回答はこちら</a>）。</p>
+<p>創造性を必要とする組み合わせ問題P6のおかげで、2025年には<a href="https://x.com/damekdavis/status/1947357679040569520/photo/1">26人の人間</a>がIMOでAIを上回っています。<a href="https://x.com/deedydas/status/1946250774960537927">挑戦してみてください</a>。</p>
+<p><img alt="" src="https://resend-attachments.s3.amazonaws.com/cVkjruv83R3VCmj" /></p>
+<p>ちなみに、SOTA（最先端）の<a href="https://x.com/deedydas/status/1946244012278722616?s=46">公開モデルが同じIMOでどのように成績を収めたかはこちらです:</a>「<a href="https://matharena.ai/imo/">銅メダルにも届かない</a>」。</p>
+<p><img alt="" src="https://resend-attachments.s3.amazonaws.com/TUcyMIly1MYzBeY" /></p>
+<ul>
+<li><a href="https://x.com/morqon/status/1947344915945451848">*一部の論争あり</a>、OpenAIが最初に発表しましたが、その<a href="https://x.com/ErnestRyu/status/1946699212307259659">PRドラマ</a>を無視することをお勧めします。他の研究所（例: <a href="https://x.com/HarmonicMath/status/1947023450578763991">Harmonic</a>）もこのマイルストーンを達成した可能性がありますが、IMOが要請したとされる7月28日まで発表を控えています（<a href="https://x.com/zjasper666/status/1947013036382068971?s=46">詳細はこちら</a>）。</li>
+<li><a href="https://x.com/nsaphra/status/1946804513114882227?s=46"><em>Grok 4はどこにあるのか</em></a>?</li>
+</ul>
+<hr />
+<h1 id="ai-twitter-recap">AI Twitter Recap</h1>
+<p><strong>AIがIMO金メダルを獲得: 競争、結果、反応</strong></p>
+<ul>
+<li><strong>OpenAIとGoogle DeepMindが国際数学オリンピック（IMO）で金メダルの成績を発表</strong>: <strong>OpenAI</strong>は最初に発表し、<a href="https://twitter.com/gdb/status/1946479692485431465">@gdb</a>と<a href="https://twitter.com/polynoamial/status/1946526143433015349">@polynoamial</a>が、<strong>実験的な推論型LLM</strong>が<strong>6問中5問</strong>を人間と同じルール（4.5時間、ツールなし）で解き、<strong>自然言語による証明</strong>を生成したと詳細を述べました。その後すぐに、<strong>Google DeepMind</strong>が<strong>Gemini Deep Think</strong>の高度版が<strong>35/42の金メダルスコア</strong>を達成し、その結果がIMO審査員によって公式に検証されたと発表しました（<a href="https://twitter.com/fchollet/status/1947337944215523567">@fchollet</a>と<a href="https://twitter.com/koraykv/status/1947335096740049112">@koraykv</a>が共有）。<a href="https://twitter.com/YiTayML/status/1947350087941951596">@YiTayML</a>は、この汎用的なDeep Thinkモデルが将来的にユーザーに提供される予定であると述べています。</li>
+<li><strong>コミュニティの反応と精査</strong>: 発表は大きな議論と一部の論争を引き起こしました。<a href="https://twitter.com/SebastienBubeck/status/1946577650405056722">@SebastienBubeck</a>は、次単語予測マシンが真に創造的な証明を生成したことを強調し、これをAIの<strong>「月面着陸の瞬間」</strong>と呼びました。しかし、<a href="https://twitter.com/Mihonarium/status/1947072974621982839">@Mihonarium</a>は、IMOがAI企業に対して人間の参加者を目立たせないようにするため、結果発表を1週間待つよう要請したと報告しました。このため、特に<strong>Google DeepMind</strong>が公式確認を待った後に発表したことに対し、<strong>OpenAI</strong>のタイミングが批判されました。<a href="https://twitter.com/Yuchenj_UW/status/1947339774257402217">@Yuchenj_UW</a>は「私の尊敬を勝ち取った」と述べています。<a href="https://twitter.com/lmthang/status/1946960256439058844">@lmthang</a>によるさらなる分析では、公式採点ガイドラインなしではメダルの主張は最終的なものではなく、1点の減点で<strong>銀メダル</strong>になる可能性があることが明らかにされました。<strong>MathArena</strong>チームによる<strong>2025 IMO</strong>でのLLMの独立分析も<a href="https://twitter.com/hardmaru/status/1946942279807308210">@hardmaru</a>によって共有されました。</li>
+<li><strong>「AGIバー」の議論</strong>: IMOの成果は、AGIへの進歩を示すマイルストーンが何を意味するのかについての議論を再燃させました。<a href="https://twitter.com/DrJimFan/status/1946593477460189340">@DrJimFan</a>は、AIがどのキッチンでも夕食を作れるようになる<strong>「物理的チューリングテスト」</strong>が、<strong>モラベックのパラドックス</strong>のためにより難しい問題であると主張しています。この感情は<a href="https://twitter.com/jxmnop/status/1946675650686746879">@jxmnop</a>によっても反映され、AIがこの数学的偉業を達成できるが、ボストンへの旅行を確実に予約することはまだできないと冗談を言っています。一方で、<a href="https://twitter.com/_aidan_clark_/status/1947178461765775510">@<em>aidan_clark</em></a>は、すべての人間の労働を<strong>ナノボットの群れ</strong>によって置き換えることを基準として設定しています。</li>
+</ul>
+<p><strong>新しいモデル、アーキテクチャ、性能</strong></p>
+<ul>
+<li><strong>Qwen3-235B-A22Bのリリースとアーキテクチャ</strong>: <strong>Alibaba</strong>のQwenチームは更新された<strong>Qwen3-235B-A22B</strong>をリリースしました。<a href="https://twitter.com/huybery/status/1947345040470380614">@huybery</a>によれば、これは非推論モデルであり、<a href="https://twitter.com/scaling01/status/1947350866840748521">@scaling01</a>は、これが<strong>Kimi-K2</strong>、<strong>Claude-4 Opus</strong>、<strong>DeepSeek V3</strong>のような推論モデルを<strong>GPQA</strong>、<strong>AIME</strong>、<strong>ARC-AGI</strong>のベンチマークで上回ると述べています。<a href="https://twitter.com/rasbt/status/1947393814496190712">@rasbt</a>は詳細な技術的分析を提供し、そのアーキテクチャを<strong>Kimi 2</strong>と比較しました。<strong>Qwen3</strong>は全体で<strong>4.25倍小型化</strong>され、アクティブパラメータが少なく（<strong>22B</strong>対<strong>32B</strong>）、<strong>128</strong>の専門家を使用するMoEレイヤーがKimiの<strong>384</strong>に比べて少ないです。</li>
+<li><strong>Kimi K2技術レポートと性能</strong>: <strong>Kimi K2</strong>技術レポートが公開され、<a href="https://twitter.com/scaling01/status/1947384137892966693">@scaling01</a>によって共有された<strong>約1Tパラメータ</strong>モデルの詳細が明らかになりました。コミュニティメンバーの<a href="https://twitter.com/cline/status/1946389822043504745">@pashmerepat</a>は、ベンチマークではなく実世界のタスクで、テレメトリが<strong>Kimi K2</strong>が<strong>Gemini</strong>を上回ることを示していると指摘しました。</li>
+<li><strong>GPT-5の噂とモデルルーター</strong>: <a href="https://twitter.com/Yuchenj_UW/status/1946777842131632427">@Yuchenj_UW</a>は、<strong>GPT-5</strong>が単一モデルではなく、推論、非推論、ツール使用のバリアント間を切り替えるルーターを備えた複数モデルのシステムになるという噂を共有しました。この噂は議論を引き起こし、<a href="https://twitter.com/scaling01/status/1946903963200262523">@scaling01</a>は、プロユーザーの性能劣化を避けるために計算節約措置を避ける手動モデル選択を好むと述べました。</li>
+<li><strong>アーキテクチャレビューとその他のモデルアップデート</strong>: <a href="https://twitter.com/rasbt/status/1946549778319339931">@rasbt</a>は、<strong>DeepSeek-V3</strong>、<strong>Kimi 2</strong>、<strong>Multi-head Latent Attention</strong>、<strong>NoPE</strong>、<strong>shared-expert MoEs</strong>などの技術を含む2025年の主要LLMアーキテクチャの包括的なレビューを公開しました。<strong>Microsoft</strong>は、SoTAハイブリッドモデルである<strong>Phi-4-mini-Flash</strong>の事前トレーニングコードをオープンソース化し、<a href="https://twitter.com/algo_diver/status/1946397862767767921">@algo_diver</a>によって強調されました。</li>
+</ul>
+<p><strong>エージェントシステム、ツール、開発者体験</strong></p>
+<ul>
+<li><strong>Perplexity Cometと生成UI</strong>: <strong>Perplexity</strong>は<strong>Comet</strong>を立ち上げ、<a href="https://twitter.com/AravSrinivas/status/1946398572955766979">@AravSrinivas</a>がエンドツーエンドの深い研究ワークフローでデモを行いました。このプラットフォームは、メール送信やカレンダー招待の参加などのタスクに対してインタラクティブカードを即座に生成する<strong>生成UI</strong>を備えており、Perplexityを「何でも聞ける」会社から「何でもできる」会社へと変貌させています。</li>
+<li><strong>Clineのオープンソース戦略とインセンティブ整合性</strong>: <a href="https://twitter.com/cline/status/1946704096888533005">@cline</a>は、AIコーディングアシスタントをオープンソース化し、推論を再販しないという決定を説明する詳細なスレッドを公開しました。</li>
+<li><strong>新しいツールと開発者統合</strong>: <code>gut</code>という新しいCLIツールがリリースされ、自然言語をgitコマンドに変換するAIエージェントとして機能します。これは<a href="https://twitter.com/jerryjliu0/status/1947026118260949146">@jerryjliu0</a>によって強調されました。</li>
+<li><strong>エージェント設計とフレームワーク</strong>: <a href="https://twitter.com/jerryjliu0/status/1946358807875244398">@jerryjliu0</a>は、LLMの構造化出力スキーマを作成するためのベストプラクティスを共有しました。</li>
+</ul>
+<p><strong>AI研究、インフラストラクチャ、技術的概念</strong></p>
+<ul>
+<li><strong>GPUインフラストラクチャと最適化</strong>: <a href="https://twitter.com/tri_dao/status/1947188520340398200">@tri_dao</a>は、<strong>CuTe</strong>（<strong>CUTLASS 3.x</strong>の一部）の階層的レイアウトが高性能GPUカーネルの強力な抽象化であり、<strong>FlashAttention 2</strong>の書き直しのインスピレーションとなったことを指摘しました。</li>
+<li><strong>プロダクトマネジメントのボトルネック</strong>: <a href="https://twitter.com/AndrewYNg/status/1947308544916889979">@AndrewYNg</a>は、エージェントコーディングが開発を加速するにつれて、新たなボトルネックが「何を構築するか」を決定することになると主張しました。</li>
+<li><strong>AIの核心概念と論文</strong>: <strong>François Chollet</strong>は、知能をスキルの集合ではなく、新しいスキルを取得し展開する効率性として定義しました。</li>
+<li><strong>オープンソースデータセット</strong>: <strong>Nous Research</strong>の<strong>Hermes 3</strong>データセットがHugging Faceでトレンド1位となり、<a href="https://twitter.com/Teknium1/status/1946824832764785135">@Teknium1</a>とNousチームによって祝われました。</li>
+</ul>
+<p><strong>AI業界、企業、地政学</strong></p>
+<ul>
+<li><strong>企業文化と実行力</strong>: <strong>Windsurf</strong>の<strong>Cognition</strong>による買収に関するストーリーが<a href="https://twitter.com/russelljkaplan/status/1946382813546045505">@russelljkaplan</a>によって共有されました。</li>
+<li><strong>オープンソースAIにおける米国対中国</strong>: AIコミュニティは中国モデルの強力なパフォーマンスに注目し、<a href="https://twitter.com/bigeagle_xd/status/1946426600838586476">@bigeagle_xd</a>はトップ4のオープンモデルが中国から来ていることを指摘しました。</li>
+<li><strong>AIのビジネスと創業者インセンティブ</strong>: <a href="https://twitter.com/c_valenzuelab/status/1947309109902037056">@c_valenzuelab</a>は、<strong>「プロセスに対する支払い」から「結果に対する支払い」</strong>への市場移行を説明しました。</li>
+</ul>
+<p><strong>ユーモア/ミーム</strong></p>
+<ul>
+<li><strong>Gary Marcusのタイミング</strong>: <a href="https://twitter.com/scaling01/status/1946530148813025544">@scaling01</a>は、<strong>Gary Marcus</strong>が「純粋なLLMは数学オリンピックで銀メダルを獲得するには程遠い」と主張したツイートを強調しました。</li>
+<li><strong>AIエージェントの痛み</strong>: <a href="https://twitter.com/jayelmnop/status/1946432132424818943">@mckaywrigley</a>は、<strong>Claude</strong>がASCIIアートを描き、<code>time.sleep(28800)</code>を実行して「寝る時間だ」と決定したスクリーンショットを共有しました。</li>
+<li><strong>共感できる技術生活</strong>: <a href="https://twitter.com/willdepue/status/1946656141427060816">@willdepue</a>は、コンパスがニューヨークで機能しない理由を尋ね、「Bushwickの下に巨大な磁鉄鉱の塊がある」と非難しました。</li>
+</ul>
+<hr />
+<h1 id="ai-reddit-recap">AI Reddit Recap</h1>
+<h2 id="rlocalllama-rlocalllm-recap">/r/LocalLlama + /r/localLLM Recap</h2>
+<h3 id="1-qwen3-235b-a22b-2507">1. Qwen3-235B-A22B-2507の発売と期待</h3>
+<ul>
+<li><a href="https://x.com/Alibaba_Qwen/status/1947344511988076547"><strong>Qwen3-235B-A22B-2507がリリースされました！</strong></a> (<a href="https://www.reddit.com/r/LocalLLaMA/comments/1m5owi8/qwen3235ba22b2507_released/">スコア: 379, コメント: 121</a>): <strong>AlibabaのQwenチームがQwen3-235B-A22B-Instruct-2507とそのFP8バリアントをリリースしました。以前のハイブリッド思考モードから、InstructとThinkingモデルの専用トレーニングに移行しました。このアプローチはコミュニティのフィードバックに基づいており、全体的なモデル品質と性能が向上していると報告されています。技術的なベンチマークとリリース情報は<a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507">Hugging Faceモデルカード</a>で詳述されており、チャットやダウンロードオプションがQwen Chat、Hugging Face、ModelScopeで利用可能です。</strong> コメントでは、OpenAIがQwenの進歩を考慮して安全性テストを強化する必要があるかもしれないとの意見があり、AlibabaがオープンソースLLMの進展をリードしていることが認識されています。</li>
+</ul>
+<hr />
+<p>以下のセクションは省略されましたが、必要に応じて追加できます。</p>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+            <a href="https://news.smol.ai/">news.smol.ai</a>
+        </p>
+    </footer>
+</body>
+</html>
