@@ -99,7 +99,8 @@ jobs:
         # Extract date and title from the translated markdown file (uses RSS published date)
         MARKDOWN_FILE=$(ls output/*_issue_ja.md)
         RSS_DATE=$(basename "$MARKDOWN_FILE" | sed 's/_issue_ja.md//')
-        TITLE=$(head -20 "$MARKDOWN_FILE" | grep "^# " | head -1 | sed 's/^# //')
+        # Extract title from first non-empty line, handling bold (**title**), italic (*title*), or heading (# title)
+        TITLE=$(head -10 "$MARKDOWN_FILE" | grep -v "^$" | head -1 | sed 's/^# *//' | sed 's/^\*\*\(.*\)\*\*$/\1/' | sed 's/^\*\(.*\)\*$/\1/')
         # Ensure OG directory exists
         mkdir -p docs/newsletters/og
         cd og-generator

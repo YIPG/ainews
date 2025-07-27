@@ -18,12 +18,31 @@ def extract_title_and_summary(markdown_content):
     """Extract title and create a summary from markdown content."""
     lines = markdown_content.strip().split('\n')
     
-    # Find the first header (title)
+    # Find the title (handles headers, bold, and italic formats)
     title = "AI技術ニュースレター"
     for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+        
+        # Check for header format (# title or ＃ title)
         if line.startswith('＃ ') or line.startswith('# '):
             title = line.replace('＃ ', '').replace('# ', '').strip()
             break
+        
+        # Check for bold format (**title**)
+        if line.startswith('**') and line.endswith('**') and len(line) > 4:
+            title = line[2:-2].strip()
+            break
+            
+        # Check for italic format (*title*)
+        if line.startswith('*') and line.endswith('*') and len(line) > 2 and not line.startswith('**'):
+            title = line[1:-1].strip()
+            break
+        
+        # If it's the first non-empty line and none of the above, use it as title
+        title = line
+        break
     
     # Create summary from first few meaningful paragraphs
     summary_lines = []

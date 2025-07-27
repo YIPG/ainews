@@ -29,53 +29,48 @@ def is_quiet_day(content: str) -> bool:
     return False
 
 
-def extract_tweet_summary(content: str, max_length: int = 100) -> str:
+def extract_title(content: str) -> str:
     """
-    Extract a very short summary suitable for tweeting.
-    Looks for the first major news item or key point.
+    Extract the main title from markdown content.
+    Handles bold (**title**), italic (*title*), or heading (# title) formats.
     """
     lines = content.strip().split('\n')
     
-    # Look for first bullet point or major news item
-    found_content = False
-    for i, line in enumerate(lines):
+    # Look for the first non-empty line which should be the title
+    for line in lines:
         line = line.strip()
-        
-        # Skip headers and metadata
-        if line.startswith('#') or line.startswith('>') or not line:
+        if not line:
             continue
-            
-        # Look for bullet points with actual news
-        if line.startswith('- ') and '**' in line:
-            # Extract the bold title
-            match = re.search(r'\*\*([^*]+)\*\*', line)
-            if match:
-                title = match.group(1)
-                # Clean up and return
-                return title.strip()
         
-        # Look for first substantial paragraph after headers
-        if not found_content and len(line) > 30 and not line.startswith('['):
-            found_content = True
-            # Extract first sentence
-            sentence_match = re.match(r'^([^。！？]+[。！？])', line)
-            if sentence_match:
-                summary = sentence_match.group(1)
-            else:
-                summary = line
-            
-            # Truncate if needed
-            if len(summary) > max_length:
-                if '、' in summary[:max_length-3]:
-                    cut_point = summary[:max_length-3].rfind('、')
-                    summary = summary[:cut_point] + '...'
-                else:
-                    summary = summary[:max_length-3] + '...'
-            
-            return summary
+        # Remove heading prefix (# title)
+        if line.startswith('#'):
+            line = re.sub(r'^#+\s*', '', line)
+        
+        # Remove bold formatting (**title**)
+        line = re.sub(r'^\*\*(.+)\*\*$', r'\1', line)
+        
+        # Remove italic formatting (*title*)
+        line = re.sub(r'^\*(.+)\*$', r'\1', line)
+        
+        return line.strip()
     
-    # Fallback
-    return "AIニュースレターの最新号を公開しました"
+    return "AIニュース"
+
+def extract_tweet_summary(content: str, max_length: int = 100) -> str:
+    """
+    Extract the main title for tweeting.
+    """
+    title = extract_title(content)
+    
+    # Truncate if needed for tweet
+    if len(title) > max_length:
+        if '、' in title[:max_length-3]:
+            cut_point = title[:max_length-3].rfind('、')
+            title = title[:cut_point] + '...'
+        else:
+            title = title[:max_length-3] + '...'
+    
+    return title
 
 
 def post_tweet(message: str) -> bool:
