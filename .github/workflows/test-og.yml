@@ -33,7 +33,7 @@ jobs:
         cd og-generator
         npm ci
     
-    - name: Debug: Check package.json and tsconfig
+    - name: Debug - Check package.json and tsconfig
       run: |
         echo "=== package.json ==="
         cat og-generator/package.json
@@ -45,7 +45,7 @@ jobs:
         cd og-generator
         npm run build
     
-    - name: Debug: Check compiled files
+    - name: Debug - Check compiled files
       run: |
         echo "=== dist directory ==="
         find og-generator/dist -type f -name "*.js" | head -10
