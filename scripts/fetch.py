@@ -89,12 +89,19 @@ def main() -> None:
         print("Error: FEED_URL environment variable is required")
         sys.exit(1)
     
-    # Generate date prefix for filenames
-    date_prefix = datetime.now().strftime("%Y-%m-%d")
-    
     # Fetch the RSS feed
     feed = fetch_feed(feed_url)
     latest_entry = get_latest_entry(feed)
+    
+    # Generate date prefix from RSS published date
+    try:
+        # Parse RSS published date (e.g., "Thu, 17 Jul 2025 05:44:39 GMT")
+        published_date = datetime.strptime(latest_entry["published"], "%a, %d %b %Y %H:%M:%S %Z")
+        date_prefix = published_date.strftime("%Y-%m-%d")
+    except (ValueError, KeyError):
+        # Fallback to system date if parsing fails
+        print("Warning: Could not parse RSS published date, using system date")
+        date_prefix = datetime.now().strftime("%Y-%m-%d")
     
     current_guid = latest_entry["guid"]
     last_guid = load_last_guid()

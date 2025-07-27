@@ -66,8 +66,10 @@ jobs:
     - name: Convert HTML to Markdown
       if: steps.fetch.outputs.has_new_content == 'true'
       run: |
-        DATE_PREFIX=$(date -u +%Y-%m-%d)
-        python scripts/convert.py "output/${DATE_PREFIX}_issue.html" > "output/${DATE_PREFIX}_issue.md"
+        # Use RSS published date from filename
+        HTML_FILE=$(ls output/*_issue.html)
+        MD_FILE="${HTML_FILE%_issue.html}_issue.md"
+        python scripts/convert.py "$HTML_FILE" > "$MD_FILE"
       continue-on-error: false
     
     - name: Translate to Japanese
@@ -77,27 +79,31 @@ jobs:
         AOAI_KEY: ${{ secrets.AOAI_KEY }}
         AOAI_DEPLOYMENT: ${{ secrets.AOAI_DEPLOYMENT }}
       run: |
-        DATE_PREFIX=$(date -u +%Y-%m-%d)
-        python scripts/translate.py "output/${DATE_PREFIX}_issue.md" > "output/${DATE_PREFIX}_issue_ja.md"
+        # Use RSS published date from filename
+        MD_FILE=$(ls output/*_issue.md)
+        JA_FILE="${MD_FILE%_issue.md}_issue_ja.md"
+        python scripts/translate.py "$MD_FILE" > "$JA_FILE"
       continue-on-error: false
     
     - name: Publish to GitHub Pages
       if: steps.fetch.outputs.has_new_content == 'true'
       run: |
-        DATE_PREFIX=$(date -u +%Y-%m-%d)
-        python scripts/publish.py "output/${DATE_PREFIX}_issue_ja.md"
+        # Use RSS published date from filename
+        MARKDOWN_FILE=$(ls output/*_issue_ja.md)
+        python scripts/publish.py "$MARKDOWN_FILE"
       continue-on-error: false
     
     - name: Generate OG images
       if: steps.fetch.outputs.has_new_content == 'true'
       run: |
-        DATE_PREFIX=$(date -u +%Y-%m-%d)
-        # Extract title from the first heading in translated markdown
-        TITLE=$(head -20 "output/${DATE_PREFIX}_issue_ja.md" | grep "^# " | head -1 | sed 's/^# //')
+        # Extract date and title from the translated markdown file (uses RSS published date)
+        MARKDOWN_FILE=$(ls output/*_issue_ja.md)
+        RSS_DATE=$(basename "$MARKDOWN_FILE" | sed 's/_issue_ja.md//')
+        TITLE=$(head -20 "$MARKDOWN_FILE" | grep "^# " | head -1 | sed 's/^# //')
         # Ensure OG directory exists
         mkdir -p docs/newsletters/og
         cd og-generator
-        node dist/generate.js --title "$TITLE" --date "$DATE_PREFIX" --output "../docs/newsletters/og/${DATE_PREFIX}.png"
+        node dist/generate.js --title "$TITLE" --date "$RSS_DATE" --output "../docs/newsletters/og/${RSS_DATE}.png"
       continue-on-error: true
     
     - name: Upload translation artifacts
@@ -135,8 +141,10 @@ jobs:
         TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
         TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
       run: |
-        DATE_PREFIX=$(date -u +%Y-%m-%d)
-        python scripts/tweet.py "output/${DATE_PREFIX}_issue_ja.md" "${DATE_PREFIX}"
+        # Use RSS published date from filename
+        MARKDOWN_FILE=$(ls output/*_issue_ja.md)
+        RSS_DATE=$(basename "$MARKDOWN_FILE" | sed 's/_issue_ja.md//')
+        python scripts/tweet.py "$MARKDOWN_FILE" "$RSS_DATE"
       continue-on-error: true
     
     - name: Send Discord notification
@@ -145,10 +153,11 @@ jobs:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       run: |
         if [ ! -z "$DISCORD_WEBHOOK" ]; then
-          DATE_PREFIX=$(date -u +%Y-%m-%d)
+          # Use RSS published date from filename
+          MARKDOWN_FILE=$(ls output/*_issue_ja.md)
           
           # Extract summary using the summarize script
-          SUMMARY_OUTPUT=$(python scripts/summarize.py "output/${DATE_PREFIX}_issue_ja.md")
+          SUMMARY_OUTPUT=$(python scripts/summarize.py "$MARKDOWN_FILE")
           
           # Parse the output
           TITLE=$(echo "$SUMMARY_OUTPUT" | grep "^TITLE:" | cut -d: -f2-)
