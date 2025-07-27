@@ -92,13 +92,8 @@ jobs:
       if: steps.fetch.outputs.has_new_content == 'true'
       run: |
         DATE_PREFIX=$(date -u +%Y-%m-%d)
-        # Get title from published newsletter
-        TITLE=$(python -c "
-        import json
-        with open('docs/newsletters/index.json') as f:
-            data = json.load(f)
-            print(data['newsletters'][0]['title'])
-        ")
+        # Extract title from the first heading in translated markdown
+        TITLE=$(head -20 "output/${DATE_PREFIX}_issue_ja.md" | grep "^# " | head -1 | sed 's/^# //')
         # Ensure OG directory exists
         mkdir -p docs/newsletters/og
         cd og-generator
