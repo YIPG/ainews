@@ -88,6 +88,23 @@ jobs:
         python scripts/publish.py "output/${DATE_PREFIX}_issue_ja.md"
       continue-on-error: false
     
+    - name: Generate OG images
+      if: steps.fetch.outputs.has_new_content == 'true'
+      run: |
+        DATE_PREFIX=$(date -u +%Y-%m-%d)
+        # Get title from published newsletter
+        TITLE=$(python -c "
+        import json
+        with open('docs/newsletters/index.json') as f:
+            data = json.load(f)
+            print(data['newsletters'][0]['title'])
+        ")
+        # Ensure OG directory exists
+        mkdir -p docs/newsletters/og
+        cd og-generator
+        node dist/generate.js --title "$TITLE" --date "$DATE_PREFIX" --output "../docs/newsletters/og/${DATE_PREFIX}.png"
+      continue-on-error: true
+    
     - name: Upload translation artifacts
       uses: actions/upload-artifact@v4
       if: steps.fetch.outputs.has_new_content == 'true'

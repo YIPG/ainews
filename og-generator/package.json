@@ -2,6 +2,7 @@
   "name": "ainews-og-generator",
   "version": "1.0.0",
   "description": "OG image generator for AI Newsletter using Satori",
+  "type": "module",
   "main": "dist/generate.js",
   "scripts": {
     "build": "tsc",
