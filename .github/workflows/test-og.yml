@@ -1,0 +1,79 @@
+name: Test OG Image Generation
+
+on:
+  workflow_dispatch: # Manual trigger only
+    inputs:
+      title:
+        description: 'Newsletter title'
+        required: true
+        default: 'Test Newsletter Title'
+      date:
+        description: 'Date (YYYY-MM-DD)'
+        required: true
+        default: '2025-01-01'
+
+jobs:
+  test-og-generation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: 'og-generator/package-lock.json'
+    
+    - name: Install dependencies
+      run: |
+        cd og-generator
+        npm ci
+    
+    - name: Debug: Check package.json and tsconfig
+      run: |
+        echo "=== package.json ==="
+        cat og-generator/package.json
+        echo -e "\n=== tsconfig.json ==="
+        cat og-generator/tsconfig.json
+    
+    - name: Build TypeScript
+      run: |
+        cd og-generator
+        npm run build
+    
+    - name: Debug: Check compiled files
+      run: |
+        echo "=== dist directory ==="
+        find og-generator/dist -type f -name "*.js" | head -10
+        echo -e "\n=== generate.js imports ==="
+        head -20 og-generator/dist/generate.js
+    
+    - name: Test OG generation
+      run: |
+        mkdir -p test-output
+        cd og-generator
+        echo "Testing with title: ${{ github.event.inputs.title }}"
+        echo "Testing with date: ${{ github.event.inputs.date }}"
+        node dist/generate.js --title "${{ github.event.inputs.title }}" --date "${{ github.event.inputs.date }}" --output "../test-output/test.png"
+    
+    - name: Verify output
+      run: |
+        if [ -f test-output/test.png ]; then
+          echo "✅ OG image generated successfully"
+          ls -la test-output/test.png
+        else
+          echo "❌ OG image was not created"
+          exit 1
+        fi
+    
+    - name: Upload test image
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: test-og-image
+        path: test-output/test.png
+        retention-days: 1
