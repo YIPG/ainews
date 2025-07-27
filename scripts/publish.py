@@ -8,6 +8,7 @@ import json
 import re
 import os
 import sys
+import subprocess
 from datetime import datetime
 from pathlib import Path
 import markdown
@@ -69,6 +70,101 @@ def extract_title_and_summary(markdown_content):
     
     return title, summary
 
+def generate_og_image(title, date, output_path):
+    """Generate OG image using the TypeScript generator."""
+    try:
+        # Check if Node.js is available
+        try:
+            node_version = subprocess.run(
+                ["node", "--version"], 
+                capture_output=True, 
+                text=True, 
+                timeout=10
+            )
+            if node_version.returncode != 0:
+                print("Warning: Node.js not available, skipping OG image generation")
+                return False
+            print(f"Using Node.js {node_version.stdout.strip()}")
+        except (subprocess.TimeoutExpired, FileNotFoundError):
+            print("Warning: Node.js not found, skipping OG image generation")
+            return False
+        
+        # Ensure OG generator directory exists
+        og_generator_dir = Path("og-generator")
+        if not og_generator_dir.exists():
+            print("Warning: OG generator directory not found, skipping OG image generation")
+            return False
+        
+        # Install dependencies if needed (skip in GitHub Actions as they're pre-installed)
+        if not (og_generator_dir / "node_modules").exists():
+            print("Installing OG generator dependencies...")
+            try:
+                subprocess.run(
+                    ["npm", "ci"], 
+                    cwd=og_generator_dir, 
+                    check=True, 
+                    timeout=120,
+                    capture_output=True,
+                    text=True
+                )
+            except subprocess.TimeoutExpired:
+                print("Warning: npm install timed out, skipping OG image generation")
+                return False
+        
+        # Build if needed (skip in GitHub Actions as it's pre-built)
+        if not (og_generator_dir / "dist" / "generate.js").exists():
+            print("Building OG generator...")
+            try:
+                subprocess.run(
+                    ["npm", "run", "build"], 
+                    cwd=og_generator_dir, 
+                    check=True, 
+                    timeout=60,
+                    capture_output=True,
+                    text=True
+                )
+            except subprocess.TimeoutExpired:
+                print("Warning: npm build timed out, skipping OG image generation")
+                return False
+        
+        # Ensure output directory exists
+        output_dir = Path(output_path).parent
+        output_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Generate the OG image
+        print(f"Generating OG image for {date}...")
+        try:
+            result = subprocess.run([
+                "node",
+                "dist/generate.js",
+                "--title", title,
+                "--date", date,
+                "--output", f"../{output_path}"
+            ], cwd=og_generator_dir, capture_output=True, text=True, timeout=30)
+            
+            if result.returncode != 0:
+                print(f"Warning: OG image generation failed:")
+                print(f"  stdout: {result.stdout}")
+                print(f"  stderr: {result.stderr}")
+                return False
+            
+            # Verify the output file was created
+            if not Path(output_path).exists():
+                print(f"Warning: OG image file was not created: {output_path}")
+                return False
+            
+            print(f"✅ OG image generated: {output_path}")
+            return True
+            
+        except subprocess.TimeoutExpired:
+            print("Warning: OG image generation timed out")
+            return False
+        
+    except Exception as e:
+        print(f"Warning: Could not generate OG image: {e}")
+        return False
+
+
 def markdown_to_html(markdown_content, title, date):
     """Convert markdown content to HTML with custom styling."""
     
@@ -103,6 +199,10 @@ def markdown_to_html(markdown_content, title, date):
     <meta property="og:description" content="{title} - AIニュース {date}。最新のAI技術動向を日本語でお届け。">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://yipg.github.io/ainews/docs/newsletters/{date}.html">
+    <meta property="og:image" content="https://yipg.github.io/ainews/newsletters/og/{date}.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
     <meta property="og:site_name" content="AIニュース">
     <meta property="og:locale" content="ja_JP">
     <meta property="article:published_time" content="{date}T09:00:00+00:00">
@@ -113,6 +213,7 @@ def markdown_to_html(markdown_content, title, date):
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{title} | AIニュース">
     <meta name="twitter:description" content="{title} - AIニュース {date}。最新のAI技術動向を日本語でお届け。">
+    <meta name="twitter:image" content="https://yipg.github.io/ainews/newsletters/og/{date}.png">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
@@ -502,10 +603,17 @@ def main():
     
     # Ensure output directory exists
     os.makedirs("docs/newsletters", exist_ok=True)
+    os.makedirs("docs/newsletters/og", exist_ok=True)
     
     # Write HTML file
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(html_content)
+    
+    # Generate OG image (optional - continues if it fails)
+    og_image_path = f"docs/newsletters/og/{date}.png"
+    og_success = generate_og_image(title, date, og_image_path)
+    if not og_success:
+        print("⚠️  Newsletter will be published without OG image")
     
     # Update archive index
     update_archive_index(date, title, summary, output_filename)

@@ -1,0 +1,28 @@
+{
+  "name": "ainews-og-generator",
+  "version": "1.0.0",
+  "description": "OG image generator for AI Newsletter using Satori",
+  "main": "dist/generate.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/generate.ts",
+    "generate": "node dist/generate.js"
+  },
+  "dependencies": {
+    "@vercel/og": "^0.6.2",
+    "react": "^19.1.0",
+    "satori": "^0.10.13",
+    "sharp": "^0.33.2",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "@types/react": "^19.1.8",
+    "@types/yargs": "^17.0.32",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

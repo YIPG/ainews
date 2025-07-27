@@ -25,6 +25,13 @@ jobs:
       with:
         python-version: ${{ env.PYTHON_VERSION }}
     
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: 'og-generator/package-lock.json'
+    
     - name: Cache pip dependencies
       uses: actions/cache@v4
       with:
@@ -33,10 +40,20 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-
     
-    - name: Install dependencies
+    - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -e .
+    
+    - name: Install OG generator dependencies
+      run: |
+        cd og-generator
+        npm ci
+    
+    - name: Build OG generator
+      run: |
+        cd og-generator
+        npm run build
     
     - name: Fetch latest newsletter
       id: fetch
