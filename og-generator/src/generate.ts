@@ -5,7 +5,6 @@ import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 import fs from 'fs/promises';
 import path from 'path';
-import { loadNotoSansJP } from './utils/fontLoader.js';
 
 interface Arguments {
   title: string;
@@ -20,25 +19,7 @@ async function generateOGImage(args: Arguments) {
     console.log(`Date: ${args.date}`);
     console.log(`Output: ${args.output}`);
 
-    // Noto Sans JP フォントを読み込み
-    console.log('Loading Noto Sans JP font...');
-    const notoSansJP = await loadNotoSansJP();
-    
-    const fonts = [];
-    
-    if (notoSansJP) {
-      fonts.push({
-        name: 'Noto Sans JP',
-        data: notoSansJP,
-        weight: 700 as const,
-        style: 'normal' as const,
-      });
-      console.log('✅ Using Noto Sans JP font');
-    } else {
-      console.log('⚠️  Using default font (Noto Sans JP not available)');
-    }
-
-    // Generate the image using Satori
+    // Generate the image using Satori with system fonts
     const imageResponse = new ImageResponse(
       NewsletterTemplate({
         title: args.title,
@@ -47,7 +28,7 @@ async function generateOGImage(args: Arguments) {
       {
         width: 1200,
         height: 630,
-        fonts,
+        // Use system fonts - Satori will fall back to built-in fonts
       }
     );
 

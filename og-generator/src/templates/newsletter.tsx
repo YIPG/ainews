@@ -17,7 +17,7 @@ export function NewsletterTemplate({ title, date }: NewsletterTemplateProps) {
         justifyContent: 'center',
         backgroundColor: '#0F2027',
         backgroundImage: 'linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%)',
-        fontFamily: 'Noto Sans JP',
+        fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
         position: 'relative',
       }}
     >
