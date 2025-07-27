@@ -1,11 +1,11 @@
 import { ImageResponse } from '@vercel/og';
-import { NewsletterTemplate } from './templates/newsletter';
+import { NewsletterTemplate } from './templates/newsletter.js';
 import sharp from 'sharp';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 import fs from 'fs/promises';
 import path from 'path';
-import { loadNotoSansJP } from './utils/fontLoader';
+import { loadNotoSansJP } from './utils/fontLoader.js';
 
 interface Arguments {
   title: string;
