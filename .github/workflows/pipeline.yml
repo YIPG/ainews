@@ -98,6 +98,18 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
     
+    - name: Post tweet
+      if: steps.fetch.outputs.has_new_content == 'true'
+      env:
+        TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+        TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+        TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+        TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+      run: |
+        DATE_PREFIX=$(date -u +%Y-%m-%d)
+        python scripts/tweet.py "output/${DATE_PREFIX}_issue_ja.md" "${DATE_PREFIX}"
+      continue-on-error: true
+    
     - name: Send Discord notification
       if: steps.fetch.outputs.has_new_content == 'true'
       env:
@@ -146,31 +158,6 @@ jobs:
             "$DISCORD_WEBHOOK"
         fi
     
-    - name: Send Discord notification for no new content
-      if: steps.fetch.outputs.has_new_content == 'false'
-      env:
-        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-      run: |
-        if [ ! -z "$DISCORD_WEBHOOK" ]; then
-          PAYLOAD=$(cat <<EOF
-        {
-          "embeds": [{
-            "title": "📭 本日の更新はありません",
-            "description": "AIニュースレターに新しい記事はありませんでした。次回の更新をお待ちください。",
-            "color": 8421504,
-            "footer": {
-              "text": "AI Newsletter Translation System"
-            },
-            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%S.000Z)"
-          }]
-        }
-        EOF
-          )
-          
-          curl -X POST -H "Content-Type: application/json" \
-            -d "$PAYLOAD" \
-            "$DISCORD_WEBHOOK"
-        fi
     
     - name: Send failure notification
       if: failure()

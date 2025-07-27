@@ -32,6 +32,7 @@ The automated pipeline consists of these Python scripts (in scripts/ directory):
 2. **convert.py** - Converts HTML to Markdown using html2text
 3. **translate.py** - Translates English to Japanese using Azure OpenAI GPT-4o
 4. **summarize.py** - Extracts title and ~1500 character summary for Discord notification
+5. **tweet.py** - Posts a short summary (≤140 chars) to Twitter/X with link to full article
 
 All files use YYYY-MM-DD date prefixes for organization and artifact storage. The latest.txt file tracks the last processed GUID to prevent duplicate processing.
 
@@ -45,6 +46,10 @@ The following GitHub Secrets must be configured:
 - `AOAI_DEPLOYMENT` - Azure OpenAI GPT-4o deployment name
 - `DISCORD_WEBHOOK` - Discord webhook URL for success notifications (optional)
 - `SLACK_WEBHOOK` - Slack webhook URL for error notifications (optional)
+- `TWITTER_API_KEY` - Twitter/X API key for posting tweets (optional)
+- `TWITTER_API_SECRET` - Twitter/X API secret (optional)
+- `TWITTER_ACCESS_TOKEN` - Twitter/X access token (optional)
+- `TWITTER_ACCESS_TOKEN_SECRET` - Twitter/X access token secret (optional)
 
 ## Translation Guidelines
 
@@ -86,5 +91,14 @@ The system has evolved from the original email distribution design:
 When a translation completes successfully, the system sends a Discord webhook with:
 - Title: "🗾 AI技術ニュースレター - YYYY-MM-DD"
 - Summary: ~1500 characters extracted from the translated content
-- Link: Direct link to download the full translation from GitHub Actions artifacts
+- Link: Direct link to the published article on GitHub Pages
 - Footer: "Translated by Azure OpenAI GPT-4o"
+
+Note: The system no longer sends notifications when there is no new content.
+
+## Twitter/X Integration
+
+When new content is translated, the system automatically posts a tweet with:
+- Short summary (≤100 characters) extracted from the translated content
+- Direct link to the full article: `https://yipg.github.io/ainews/newsletters/YYYY-MM-DD.html`
+- Total tweet length limited to 140 characters
