@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 27 Jul 2025 07:51:21 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Jul 2025 06:15:43 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>Muon is all you need?</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-07-28.html</link>
+      <description><![CDATA[Z.aiは、フロンティアモデルとしての基準を満たすだけでなく、トークン効率（最も難しい指標の一つ）など、エージェント的な用途にとって重要な新しい測定基準を強調しています。...]]></description>
+      <pubDate>Mon, 28 Jul 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-07-28.html</guid>
+    </item>
     <item>
       <title>オープンソースAIにとって良い日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-07-25.html</link>
