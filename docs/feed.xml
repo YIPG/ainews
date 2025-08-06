@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 05 Aug 2025 18:41:49 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Aug 2025 02:11:50 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>OpenAIが再び「オープン」に！</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-05.html</link>
+      <description><![CDATA[最初に注目すべきは、OpenAIの新しいオープンウェイトモデル「GPT-OSS」です。このモデルは、デスクトップ（60GB GPU）やスマートフォン（12GB）で動作可能なo4-miniクラスの推論能力を提供します。新しいgpt-oss playgroundで試すことができます。...]]></description>
+      <pubDate>Tue, 05 Aug 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-05.html</guid>
+    </item>
     <item>
       <title>Qwenはすべてを解決します</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-04.html</link>
