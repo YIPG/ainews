@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 07 Aug 2025 02:12:28 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Aug 2025 02:12:46 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>GPT-5はこれ一つで十分かもしれません</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-07.html</link>
+      <description><![CDATA[ライブストリームはやや期待外れでしたが（特に面白いチャートのミスを除いて）、ベンチマークはOpenAIの既存のSOTA（最先端技術）モデルに対する漸進的な改善にとどまりました。しかし、価格設定には驚かされました。OpenAIはGDMから知能のパレートフロンティアを取り戻したようです。...]]></description>
+      <pubDate>Thu, 07 Aug 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-07.html</guid>
+    </item>
     <item>
       <title>嵐の前の静けさ</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-06.html</link>
