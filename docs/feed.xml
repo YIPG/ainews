@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 11 Aug 2025 02:12:05 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Aug 2025 12:53:06 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>特別号: RL（強化学習）がすべて？</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-11.html</link>
+      <description><![CDATA[先月、OpenAIがIMOで金メダル級のパフォーマンスを達成したことは記憶に新しいですが、今回のIOI（国際情報オリンピック）の結果も同様に注目すべき内容です。...]]></description>
+      <pubDate>Mon, 11 Aug 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-11.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-08.html</link>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特別号: RL（強化学習）がすべて？ | AIニュース</title>
+    <meta name="description" content="特別号: RL（強化学習）がすべて？ - AIニュース 2025-08-11。最新のAI技術動向を日本語でお届け。">
+    <meta name="keywords" content="AI,人工知能,ニュースレター,2025-08-11,機械学習,深層学習,日本語">
+    <meta name="author" content="AIニュース">
+    <link rel="canonical" href="https://yipg.github.io/ainews/docs/newsletters/2025-08-11.html">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="特別号: RL（強化学習）がすべて？ | AIニュース">
+    <meta property="og:description" content="特別号: RL（強化学習）がすべて？ - AIニュース 2025-08-11。最新のAI技術動向を日本語でお届け。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yipg.github.io/ainews/docs/newsletters/2025-08-11.html">
+    <meta property="og:image" content="https://yipg.github.io/ainews/newsletters/og/2025-08-11.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:site_name" content="AIニュース">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2025-08-11T09:00:00+00:00">
+    <meta property="article:author" content="AIニュース">
+    <meta property="article:section" content="AI技術ニュース">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="特別号: RL（強化学習）がすべて？ | AIニュース">
+    <meta name="twitter:description" content="特別号: RL（強化学習）がすべて？ - AIニュース 2025-08-11。最新のAI技術動向を日本語でお届け。">
+    <meta name="twitter:image" content="https://yipg.github.io/ainews/newsletters/og/2025-08-11.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+    <link rel="alternate icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="AIニュース RSS Feed" href="../feed.xml">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 1em;
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            color: #111;
+            word-wrap: break-word;
+        }
+        
+        nav {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        
+        .site-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #111;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        
+        .site-title:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-links {
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+        
+        .nav-links a {
+            color: #111;
+            text-decoration: none;
+            margin-left: 12px;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        h1, h2, h3, h4, h5, h6 {
+            margin: 35px 0 20px 0;
+            line-height: 1.3;
+            color: #111;
+            letter-spacing: 0.01em;
+        }
+        
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.3em; }
+        h3 { font-size: 1.1em; }
+        
+        p {
+            margin: 20px 0;
+        }
+        
+        a {
+            color: #0969da;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        blockquote {
+            border-left: 3px solid #ccc;
+            margin: 25px 0;
+            padding: 0 25px;
+            color: #555;
+            font-style: italic;
+        }
+        
+        code {
+            background-color: #f6f8fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            padding: 20px;
+            overflow-x: auto;
+            margin: 25px 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 25px 0;
+            border-radius: 3px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 35px 0;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #555;
+            font-size: 0.85em;
+        }
+        
+        footer a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+                font-size: 0.95em;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .nav-links {
+                font-size: 0.8em;
+            }
+            
+            .nav-links a {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+            
+            .article-title {
+                font-size: 1.4em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 0.9em;
+                padding: 12px;
+            }
+            
+            .site-title {
+                font-size: 1em;
+            }
+            
+            .nav-links {
+                font-size: 0.75em;
+            }
+            
+            .article-title {
+                font-size: 1.3em;
+            }
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+                color: #eee;
+            }
+            
+            nav {
+                border-bottom-color: #444;
+            }
+            
+            .site-title, .nav-links a, .article-title, h1, h2, h3, h4, h5, h6 {
+                color: #eee;
+            }
+            
+            .article-date {
+                color: #ccc;
+            }
+            
+            blockquote {
+                border-left-color: #555;
+                color: #ccc;
+            }
+            
+            code {
+                background-color: #2d3748;
+                color: #e2e8f0;
+            }
+            
+            pre {
+                background-color: #2d3748;
+            }
+            
+            hr, footer {
+                border-color: #444;
+            }
+            
+            footer, footer a {
+                color: #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="site-title">✏️ AIニュース</a>
+        <div class="nav-links">
+            <a href="../index.html">ホーム</a>
+            <a href="./archive.html">アーカイブ</a>
+            <a href="../feed.xml">RSS</a>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1 id="rl">特別号: RL（強化学習）がすべて？</h1>
+<blockquote>
+<p>2025年8月8日から8月11日までのAIニュースをお届けします。新しいウェブサイトでは、過去のニュースレターをメタデータ検索や美しいプレゼンテーションで閲覧可能です。詳細は <a href="https://news.smol.ai/">https://news.smol.ai/</a> をご覧ください。</p>
+</blockquote>
+<p>先月、OpenAIが<a href="https://news.smol.ai/issues/25-07-21-imo-gold">IMOで金メダル級のパフォーマンスを達成</a>したことは記憶に新しいですが、今回のIOI（国際情報オリンピック）の結果も同様に注目すべき内容です。</p>
+<p>最近では、ツイートがプレスリリースの役割を果たすことが多く、<a href="https://x.com/SherylHsu02/status/1954966109851119921">Sheryl Hsu</a>が、OpenAIが<a href="https://x.com/OpenAI/status/1954969035713687975">人間のプログラマーの中で6位にランクイン</a>したことを発表しました。</p>
+<p><img alt="" src="https://resend-attachments.s3.amazonaws.com/PSHAbL9neaSannc" /></p>
+<p><a href="https://x.com/ahelkky/status/1954973043320819907">Ahmed El-Kishky</a>、<a href="https://x.com/MillionInt/status/1954977818128888311">Jerry Tworek</a>、<a href="https://x.com/polynoamial/status/1954966398989635668">Noam Brown</a>、<a href="https://x.com/alexwei_/status/1954966574408012003">Alex Wei</a>などの研究者が、2年前には競技プログラミングでほとんど何もできなかったシステムが、ここまで進化したことについて振り返っています。特にNoamのスレッドは、進化の背景にある構造について洞察を提供しています。</p>
+<p><img alt="" src="https://resend-attachments.s3.amazonaws.com/Pvv6mYev7K03DhI" /></p>
+<p>また、Alexはテストの難しさについても共有しています。</p>
+<p><img alt="" src="https://resend-attachments.s3.amazonaws.com/U6kzGv8wpSFqyKK" /></p>
+<hr />
+<h1 id="ai-twitter-recap">AI Twitter Recap</h1>
+<h2 id="gpt-5">GPT-5のローンチ: パフォーマンス、命名、ユーザーの反応</h2>
+<ul>
+<li>
+<p><strong>ユーザーの反発と制限緩和</strong>: <strong>GPT-5</strong>のローンチは、初期の制限的な使用制限やユーザーコントロールの削除により、「ChatGPT Plusの反乱」と呼ばれるほどのユーザーの反発を招きました。これを受けて、<strong>OpenAI</strong>は制限を緩和し、<a href="https://twitter.com/yanndubs/status/1954621287713915192">@yanndubs</a>や<a href="https://twitter.com/scaling01/status/1954611571923255468">@scaling01</a>が、Plusユーザー向けに「Thinking」モデルのリクエスト数を週3,000回に増加したことを確認しました。</p>
+</li>
+<li>
+<p><strong>命名とベンチマークの混乱</strong>: <strong>OpenAI</strong>のモデル命名戦略は混乱を招いており、<a href="https://twitter.com/scaling01/status/1954292296704250005">@scaling01</a>が指摘するように、「mini」「nano」「chat-latest」などの名前が乱立しています。このため、ベンチマーク比較が困難になっています。</p>
+</li>
+<li>
+<p><strong>パフォーマンスの賛否</strong>: <strong>GPT-5</strong>の性能については意見が分かれています。<a href="https://twitter.com/ericmitchellai/status/1954739395719807370">@ericmitchellai</a>は「ほとんど幻覚を起こさない」と主張していますが、<a href="https://twitter.com/jon_durbin/status/1954263916202316001">@jon_durbin</a>は「ほとんど使い物にならない」と批判しています。</p>
+</li>
+<li>
+<p><strong>プロンプトとモデルの挙動</strong>: 特定のプロンプトが重要であることが強調されています。<a href="https://twitter.com/ericmitchellai/status/1954418339536683078">@ericmitchellai</a>や<a href="https://twitter.com/jeremyphoward/status/1954366856627978684">@jeremyphoward</a>は、モデルに「深く考える」よう明示的に指示する必要があると述べています。</p>
+</li>
+</ul>
+<hr />
+<h2 id="_1">モデルとベンチマークの進展</h2>
+<ul>
+<li>
+<p><strong>スケーリング法則の懸念とオープンソースの勢い</strong>: <strong>GPT-5</strong>のローンチは、AIの進歩が停滞する可能性についての議論を引き起こしました。<a href="https://twitter.com/jeremyphoward/status/1954346846845129158">@jeremyphoward</a>は、「スケーリング法則の時代は終わりに近づいている」と述べています。</p>
+</li>
+<li>
+<p><strong>中国の新モデル: GLM-4.5とQwen</strong>: <strong>Zhipu AI</strong>は、効率的なRLトレーニングのための「slime」フレームワークを使用した<strong>GLM-4.5</strong>の技術レポートを発表しました。</p>
+</li>
+<li>
+<p><strong>拡散モデル vs 自己回帰モデル</strong>: 拡散言語モデル（DLM）と自己回帰モデル（AR）の比較に関する論文が話題になっています。<a href="https://twitter.com/arankomatsuzaki/status/1954242373145543134">@arankomatsuzaki</a>などが、DLMがデータ効率に優れていると指摘しています。</p>
+</li>
+<li>
+<p><strong>推論と競技プログラミングのベンチマーク</strong>: <strong>OpenAI</strong>は、推論システムが<a href="https://twitter.com/gdb/status/1954984230343282808">国際情報オリンピック（IOI）で金メダル級のパフォーマンスを達成</a>したと発表しました。</p>
+</li>
+</ul>
+<hr />
+<h2 id="_2">フレームワーク、ツール、インフラストラクチャ</h2>
+<ul>
+<li>
+<p><strong>エージェントのメモリと会話履歴</strong>: <strong>Anthropic</strong>は、<strong>Claude</strong>が過去のチャットを参照して文脈を維持できるようになったと発表しました。</p>
+</li>
+<li>
+<p><strong>LangChainエコシステムの更新</strong>: <strong>LangChain</strong>チームは、エージェントの信頼性に関する実践ガイドや、ウェブスクレイピングのためのOxylabsとの統合を発表しました。</p>
+</li>
+<li>
+<p><strong>インフラと低レベルツール</strong>: <strong>whisper.cpp</strong>がffmpegに統合される予定であることが発表されました。</p>
+</li>
+<li>
+<p><strong>KerasとJAXの統合</strong>: <a href="https://twitter.com/fchollet/status/1954686735646068772">@fchollet</a>は、<strong>JAX</strong>と<strong>Keras 3</strong>の組み合わせが非常に強力であると述べています。</p>
+</li>
+</ul>
+<hr />
+<h2 id="ai">AI研究と科学的ブレークスルー</h2>
+<ul>
+<li>
+<p><strong>Metaの脳モデリングの勝利</strong>: <strong>Meta AI</strong>のBrain &amp; AIチームが、Algonauts 2025脳モデリングコンペティションで1位を獲得しました。</p>
+</li>
+<li>
+<p><strong>最短経路アルゴリズムの新発見</strong>: <strong>清華大学</strong>の教授が、40年ぶりに最速の最短経路アルゴリズムを発見しました。</p>
+</li>
+<li>
+<p><strong>AIとロボティクス</strong>: <a href="https://twitter.com/adcock_brett/status/1954295121694122430">@adcock_brett</a>は、ヒューマノイドロボットが今後数年でほとんどの物理的なタスクを処理するようになると予測しています。</p>
+</li>
+<li>
+<p><strong>GoogleのLangExtractライブラリ</strong>: <strong>Google</strong>は、非構造化文書から構造化データを抽出するためのPythonライブラリ<strong>LangExtract</strong>をリリースしました。</p>
+</li>
+</ul>
+<hr />
+<h2 id="ai_1">社会におけるAIの広がり</h2>
+<ul>
+<li>
+<p><strong>AIの仲間としての役割とメンタルヘルス</strong>: <strong>Stanford</strong>と<strong>Carnegie Mellon</strong>の研究によると、AIボットへの依存が高いユーザーほど孤独感が強いことが示されました。</p>
+</li>
+<li>
+<p><strong>AIと人間の会話の本質</strong>: <a href="https://twitter.com/ID_AA_Carmack/status/1954930438322954532">@ID_AA_Carmack</a>は、自然な会話をモデル化する難しさについて考察しています。</p>
+</li>
+<li>
+<p><strong>懐疑論、誇大広告、ユーザー採用</strong>: <a href="https://twitter.com/random_walker/status/1954912993747128554">@random_walker</a>は、AIの採用と行動変化は技術の進歩ほど速くないと主張しています。</p>
+</li>
+<li>
+<p><strong>合成データとモデルの個性</strong>: <a href="https://twitter.com/typedfemale/status/1954284624076767705">@typedfemale</a>は、合成データに依存しすぎることの危険性を警告しています。</p>
+</li>
+</ul>
+<hr />
+<h2 id="_3">ユーモア/ミーム</h2>
+<ul>
+<li>
+<p><strong>業界の風刺</strong>: <a href="https://twitter.com/Yuchenj_UW/status/1954756616907362328">@Yuchenj_UW</a>は、「もしJensenが本当にAGIが近いと信じているなら、Nvidiaは1枚のGPUも売らないだろう」とジョークを飛ばしました。</p>
+</li>
+<li>
+<p><strong>エンジニアの共感できる問題</strong>: <a href="https://twitter.com/vikhyatk/status/1954507093488349597">@vikhyatk</a>は、新しいフレームワークを追加したいという欲求と、それを拒む疲れたエンジニアの間で揺れる心情を共有しました。</p>
+</li>
+<li>
+<p><strong>GPT-5の失敗談</strong>: GPT-5のローンチに関連するミームが多数投稿されました。</p>
+</li>
+<li>
+<p><strong>一般的なユーモア</strong>: <a href="https://twitter.com/willdepue/status/1954473883832033690">@willdepue</a>は、「お金持ちだって？じゃあ、いくつの茶畑を持っているんだ？」と投稿しました。</p>
+</li>
+</ul>
+<hr />
+<h1 id="ai-reddit-recap">AI Reddit Recap</h1>
+<h2 id="rlocalllama-rlocalllm-recap">/r/LocalLlama + /r/localLLM Recap</h2>
+<h3 id="1-gpt-oss-120b">1. gpt-oss-120bモデルの性能とベンチマークの議論</h3>
+<ul>
+<li>
+<p><strong>gpt-oss-120bがlmarena.aiで16位にランクイン</strong>: このモデルは、他の多くの競合モデルを上回る性能を示しました。</p>
+</li>
+<li>
+<p><strong>GPT-OSSのベンチマーク結果</strong>: GPT-OSS-120Bは、実世界のタスクでトップのパフォーマンスを発揮しました。</p>
+</li>
+</ul>
+<h3 id="2-llm">2. 革新的なLLMトレーニングと蒸留アプローチ</h3>
+<ul>
+<li>
+<p><strong>1800年代の本だけでLLMをトレーニング</strong>: 歴史的なテキストに基づいたモデルのトレーニングが進行中です。</p>
+</li>
+<li>
+<p><strong>Qwen3-Coderの新バージョン</strong>: 蒸留プロセスの改善により、性能が向上しました。</p>
+</li>
+</ul>
+<h3 id="3-ollama">3. Ollamaの統合とコミュニティの意見</h3>
+<ul>
+<li>
+<p><strong>Excel用Ollamaアドインを作成</strong>: ExcelでLLMを活用する新しい方法が紹介されました。</p>
+</li>
+<li>
+<p><strong>Ollamaに対する批判</strong>: 一部のユーザーは、Ollamaの価値に疑問を呈しています。</p>
+</li>
+</ul>
+<hr />
+<h2 id="less-technical-ai-subreddit-recap">Less Technical AI Subreddit Recap</h2>
+<h3 id="1-gpt-5">1. GPT-5のベンチマーク、性能、コミュニティの反応</h3>
+<ul>
+<li>
+<p><strong>GPT-5の性能評価</strong>: GPT-5は、特定のタスクで競合モデルに劣る場合があるものの、コスト効率が高いと評価されています。</p>
+</li>
+<li>
+<p><strong>GPT-5とClaude Opus 4.1の比較</strong>: GPT-5は、コストと速度の面で優れているとされています。</p>
+</li>
+<li>
+<p><strong>GPTの「劣化」についての議論</strong>: GPT-5のリリース後、モデルの応答が過度に安全志向になったとの批判が寄せられています。</p>
+</li>
+<li>
+<p><strong>GPT-5の問題点</strong>: 一部のユーザーは、GPT-5が以前のモデルよりも指示の遵守や文脈の保持が劣ると感じています。</p>
+</li>
+</ul>
+<hr />
+<h2 id="openai">OpenAIの競争力と計算スケーリング</h2>
+<ul>
+<li>
+<p><strong>OpenAIのIOIでの成功</strong>: OpenAIのモデルが、IOIで人間のプログラマーの上位2%にランクインしました。</p>
+</li>
+<li>
+<p><strong>OpenAIの計算リソースの倍増計画</strong>: OpenAIは、今後5か月で計算リソースを倍増させる計画を発表しました。</p>
+</li>
+</ul>
+<hr />
+<h2 id="claude-ai">Claude AIの革新とコミュニティツール</h2>
+<ul>
+<li>
+<p><strong>Claudeの新機能: 過去の会話の参照</strong>: Claudeが過去のチャットを参照できるようになり、ワークフローが改善されました。</p>
+</li>
+<li>
+<p><strong>コードベース全体をClaudeのコンテキストとして使用</strong>: 大規模なコードベースを効率的に検索するための新しいプラグインが紹介されました。</p>
+</li>
+</ul>
+<hr />
+<h2 id="ai-discord-recap">AI Discord Recap</h2>
+<h3 id="gpt-5_1">GPT-5の展開と反応</h3>
+<ul>
+<li>
+<p><strong>GPT-5のローンチ</strong>: OpenAIがGPT-5を全ユーザーに展開しましたが、地域やプラットフォームによってアクセスレベルが異なるとの報告があります。</p>
+</li>
+<li>
+<p><strong>GPT-5の制限と問題</strong>: 一部のユーザーは、GPT-5がPythonコードを700行以上受け付けないと報告しています。</p>
+</li>
+</ul>
+<hr />
+<p>以上が、最新のAIニュースの要約です。</p>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+            <a href="https://news.smol.ai/">news.smol.ai</a>
+        </p>
+    </footer>
+</body>
+</html>
