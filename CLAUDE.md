@@ -4,13 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Japanese AI Newsletter Translation Archive System that automatically translates AI newsletters from English to Japanese. The system is designed to be fully automated with minimal maintenance, running on GitHub Actions every 6 hours on weekdays with Azure OpenAI GPT-4o for translation. Translated content is stored as GitHub Actions artifacts (30-day retention) and notifications are sent to Discord with summaries.
+This is a Japanese AI Newsletter Translation Archive System that automatically translates AI newsletters from English to Japanese. The system is designed to be fully automated with minimal maintenance, running on GitHub Actions every 6 hours on weekdays with Azure OpenAI GPT-5 for translation. Translated content is stored as GitHub Actions artifacts (30-day retention) and notifications are sent to Discord with summaries.
 
 ## Architecture
 
 - **Frontend**: Static HTML/CSS landing page served from gh-pages branch (public/index.html) - informational only
 - **Backend**: GitHub Actions workflow (.github/workflows/pipeline.yml) that runs every 6 hours on weekdays (00:00, 06:00, 12:00, 18:00 UTC)
-- **Translation**: Azure OpenAI GPT-4o for English to Japanese translation
+- **Translation**: Azure OpenAI GPT-5 for English to Japanese translation
 - **Storage**: GitHub Actions artifacts for storing translated content (30-day retention)
 - **Notifications**: Discord webhook for success notifications with summaries
 - **Monitoring**: Optional Slack/Discord notifications on failure
@@ -30,7 +30,7 @@ The automated pipeline consists of these Python scripts (in scripts/ directory):
 
 1. **fetch.py** - Retrieves RSS feed from configured source, writes YYYY-MM-DD_issue.html & YYYY-MM-DD_meta.json, checks against latest.txt for duplicates
 2. **convert.py** - Converts HTML to Markdown using html2text
-3. **translate.py** - Translates English to Japanese using Azure OpenAI GPT-4o
+3. **translate.py** - Translates English to Japanese using Azure OpenAI GPT-5
 4. **summarize.py** - Extracts title and ~1500 character summary for Discord notification
 5. **tweet.py** - Posts a short summary (≤140 chars) to Twitter/X with link to full article
 
@@ -43,7 +43,7 @@ The following GitHub Secrets must be configured:
 - `FEED_URL` - RSS feed URL
 - `AOAI_ENDPOINT` - Azure OpenAI endpoint
 - `AOAI_KEY` - Azure OpenAI API key
-- `AOAI_DEPLOYMENT` - Azure OpenAI GPT-4o deployment name
+- `AOAI_DEPLOYMENT` - Azure OpenAI GPT-5 deployment name
 - `DISCORD_WEBHOOK` - Discord webhook URL for success notifications (optional)
 - `SLACK_WEBHOOK` - Slack webhook URL for error notifications (optional)
 - `TWITTER_API_KEY` - Twitter/X API key for posting tweets (optional)
@@ -92,7 +92,7 @@ When a translation completes successfully, the system sends a Discord webhook wi
 - Title: "🗾 AI技術ニュースレター - YYYY-MM-DD"
 - Summary: ~1500 characters extracted from the translated content
 - Link: Direct link to the published article on GitHub Pages
-- Footer: "Translated by Azure OpenAI GPT-4o"
+- Footer: "Translated by Azure OpenAI GPT-5"
 
 Note: The system no longer sends notifications when there is no new content.
 

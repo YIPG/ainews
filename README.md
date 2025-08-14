@@ -7,12 +7,12 @@ A Japanese translation and archive system for AI newsletters – Automatically t
 
 ## Overview
 
-This project is an automated pipeline that retrieves the latest AI newsletters from specified RSS feeds, translates them into Japanese using Azure OpenAI GPT-4o, and publishes them to a GitHub Pages website. A summary is also sent to Discord upon completion.
+This project is an automated pipeline that retrieves the latest AI newsletters from specified RSS feeds, translates them into Japanese using Azure OpenAI GPT-5, and publishes them to a GitHub Pages website. A summary is also sent to Discord upon completion.
 
 ## Features
 
 * 🔄 Automatic retrieval and deduplication from RSS feeds
-* 🌐 High-quality Japanese translation via Azure OpenAI GPT-4o
+* 🌐 High-quality Japanese translation via Azure OpenAI GPT-5
 * ✅ Automatic translation quality check (score ≥ 0.95)
 * 📖 Auto-publishing to GitHub Pages with RSS feed
 * 💬 Discord webhook notifications with summary
@@ -24,7 +24,7 @@ This project is an automated pipeline that retrieves the latest AI newsletters f
 ### Prerequisites
 
 * Python 3.8 or later
-* Azure OpenAI account with GPT-4o deployment
+* Azure OpenAI account with GPT-5 deployment
 * GitHub account (for GitHub Actions)
 * Discord Webhook URL (optional, for notifications)
 
@@ -49,7 +49,7 @@ Set the following environment variables for local testing:
 export FEED_URL="your-rss-feed-url"
 export AOAI_ENDPOINT="https://your-resource.openai.azure.com/"
 export AOAI_KEY="your-azure-openai-key"
-export AOAI_DEPLOYMENT="your-gpt4o-deployment-name"
+export AOAI_DEPLOYMENT="your-gpt5-deployment-name"
 export DISCORD_WEBHOOK="your-discord-webhook-url"  # optional
 export SLACK_WEBHOOK="your-slack-webhook-url"      # optional
 ```
@@ -61,7 +61,7 @@ Go to GitHub repo: Settings → Secrets and variables → Actions, and add the f
 * `FEED_URL` – RSS feed URL
 * `AOAI_ENDPOINT` – Azure OpenAI endpoint
 * `AOAI_KEY` – Azure OpenAI API key
-* `AOAI_DEPLOYMENT` – GPT-4o deployment name
+* `AOAI_DEPLOYMENT` – GPT-5 deployment name
 * `DISCORD_WEBHOOK` – Discord webhook URL (optional)
 * `SLACK_WEBHOOK` – Slack webhook URL (optional)
 

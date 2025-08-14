@@ -9,7 +9,7 @@ Version: 1.0   Author: AI Team   Status: Production
 Provide a minimal-maintenance pipeline that:
 
 1. Retrieves AI newsletters from RSS feeds daily (weekdays only)
-2. Produces high-quality Japanese translations using Azure OpenAI GPT-4o
+2. Produces high-quality Japanese translations using Azure OpenAI GPT-5
 3. Archives translated content as GitHub Actions artifacts (30-day retention)
 4. Sends Discord notifications with summaries when new translations are available
 5. Maintains a static landing page for project information
@@ -23,7 +23,7 @@ Goal: Fully automated, <$3/month runtime cost, zero-maintenance operation
 **In scope:**
 - Frontend landing page (static HTML/CSS)
 - GitHub Actions workflow for automation
-- Translation via Azure OpenAI GPT-4o
+- Translation via Azure OpenAI GPT-5
 - GitHub Actions artifact storage
 - Discord webhook integration for notifications
 - Basic error monitoring via Slack/Discord
@@ -97,7 +97,7 @@ Simple informational page explaining the project:
 | FEED_URL | RSS feed URL | https://example.com/feed/ |
 | AOAI_ENDPOINT | Azure OpenAI endpoint | https://resource.openai.azure.com/ |
 | AOAI_KEY | Azure OpenAI API key | xxxxxxxxxxxx |
-| AOAI_DEPLOYMENT | GPT-4o deployment name | gpt-4o-deployment |
+| AOAI_DEPLOYMENT | GPT-5 deployment name | gpt-5-deployment |
 | DISCORD_WEBHOOK | Discord notifications | https://discord.com/api/webhooks/... |
 | SLACK_WEBHOOK | Error notifications (optional) | https://hooks.slack.com/... |
 
@@ -158,7 +158,7 @@ make test-run      # Process latest feed locally (no publishing)
 - Title: "🗾 AI技術ニュースレター - YYYY-MM-DD"
 - Description: ~1500 character summary
 - Link: Download full version from GitHub Actions
-- Footer: "Translated by Azure OpenAI GPT-4o"
+- Footer: "Translated by Azure OpenAI GPT-5"
 - Color: Green (#00ff00)
 
 **Error Message:**
