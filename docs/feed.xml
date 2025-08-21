@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 18 Aug 2025 02:09:18 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Aug 2025 01:53:09 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>データとAIは好調です！</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-19.html</link>
+      <description><![CDATA[データとAIは好調です！ DeepSeek V3.1 Base/Instruct が本日リリースされましたが、DeepSeekは通常、モデル公開後に評価や論文を発表するため、それを待ってから本格的な特集を行う予定です。...]]></description>
+      <pubDate>Tue, 19 Aug 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-19.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-15.html</link>

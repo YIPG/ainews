@@ -107,8 +107,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 --- OpenAIのGPT‑5：製品展開、ルーティング、開発者向けツール Googleの最新情報：Imagen 4 GAとGemma 3 270M エージェント、評価ハーネス、ツール群 音声・ビジョン・マルチモーダルスタック...",
       "filename": "2025-08-15.html"
+    },
+    {
+      "date": "2025-08-19",
+      "title": "データとAIは好調です！",
+      "summary": "データとAIは好調です！ DeepSeek V3.1 Base/Instruct が本日リリースされましたが、DeepSeekは通常、モデル公開後に評価や論文を発表するため、それを待ってから本格的な特集を行う予定です。...",
+      "filename": "2025-08-19.html"
     }
   ],
-  "lastUpdated": "2025-08-18T02:09:18.185362",
-  "totalCount": 18
+  "lastUpdated": "2025-08-21T01:53:09.985434",
+  "totalCount": 19
 }
