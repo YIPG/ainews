@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 21 Aug 2025 18:32:55 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Aug 2025 06:36:16 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>新たなSOTAオープンモデル登場</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-21.html</link>
+      <description><![CDATA[新たなSOTAオープンモデル登場...]]></description>
+      <pubDate>Thu, 21 Aug 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-21.html</guid>
+    </item>
     <item>
       <title>遅れての投稿で申し訳ありません。DeepSeekの公式発表がかなり遅れました</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-20.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[OpenAIのSama氏とチームは、「ChatGPT Agent」を発表しました。この発表は、10am PTのライブストリームで行われ、注目を集めました。...]]></description>
       <pubDate>Fri, 18 Jul 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-07-18.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-07-17.html</link>
-      <description><![CDATA[Claude Codeの未来やAnthropicの1000億ドルの資金調達に関心がある方には、注目の人事異動がありました。また、Falの1.5億ドルのシリーズC資金調達がリークされました（詳細はこちら）。さらに、Clineが初めて出演したポッドキャストも公開されています。...]]></description>
-      <pubDate>Thu, 17 Jul 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-07-17.html</guid>
     </item>
   </channel>
 </rss>
