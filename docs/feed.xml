@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 22 Aug 2025 06:36:16 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Aug 2025 01:58:39 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-22.html</link>
+      <description><![CDATA[静かな一日 今週末、AI Engineer World’s Fair の最後の動画が公開予定ですので、こちらからご覧ください。 --- インタラクティブな世界シミュレーターとエンボディドトレーニング（Genie 3 + SIMA）...]]></description>
+      <pubDate>Fri, 22 Aug 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-22.html</guid>
+    </item>
     <item>
       <title>新たなSOTAオープンモデル登場</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-21.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[昨年のこの時期、GDMはAlphaProofとAlphaGeometry2（Alphaシリーズの長い歴史の最新作）の発表を行い、IMO 2024の問題6問中4問を完全に解決し、金メダルの基準点に1点届かなかったことを明らかにしました。しかし、このシステムは一部の問題で60時間以上を要し、人間に...]]></description>
       <pubDate>Tue, 22 Jul 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-07-22.html</guid>
-    </item>
-    <item>
-      <title>ChatGPTはこれさえあれば十分</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-07-18.html</link>
-      <description><![CDATA[OpenAIのSama氏とチームは、「ChatGPT Agent」を発表しました。この発表は、10am PTのライブストリームで行われ、注目を集めました。...]]></description>
-      <pubDate>Fri, 18 Jul 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-07-18.html</guid>
     </item>
   </channel>
 </rss>
