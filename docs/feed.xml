@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 25 Aug 2025 01:58:39 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 Aug 2025 06:37:37 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-25.html</link>
+      <description><![CDATA[静かな一日 今週はTwitterやRedditの動きを見ると、GDM関連の大きな発表が控えているようですが、今日は静かな一日です。 オープンウェイトモデルの公開：xAIのGrok-2/2.5、Microsoft VibeVoice、Motif-2.6B...]]></description>
+      <pubDate>Mon, 25 Aug 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-25.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-22.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[---...]]></description>
       <pubDate>Wed, 23 Jul 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-07-23.html</guid>
-    </item>
-    <item>
-      <title>汎用的な強化学習がすべてを解決します</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-07-22.html</link>
-      <description><![CDATA[昨年のこの時期、GDMはAlphaProofとAlphaGeometry2（Alphaシリーズの長い歴史の最新作）の発表を行い、IMO 2024の問題6問中4問を完全に解決し、金メダルの基準点に1点届かなかったことを明らかにしました。しかし、このシステムは一部の問題で60時間以上を要し、人間に...]]></description>
-      <pubDate>Tue, 22 Jul 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-07-22.html</guid>
     </item>
   </channel>
 </rss>
