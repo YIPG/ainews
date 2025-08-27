@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 26 Aug 2025 06:37:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Aug 2025 12:49:43 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>Gemini がすべてを制す</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-26.html</link>
+      <description><![CDATA[Gemini がすべてを制す Google が本日発表しました。 そしてLMArena の結果は明らかです。 --- Gemini 2.5 Flash Image（コードネーム “nano-banana”）が画像編集分野を席巻...]]></description>
+      <pubDate>Tue, 26 Aug 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-26.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-25.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[--- 新モデルリリース: Qwen3-Coder 米国AI政策と地政学 モデルアップデート、研究、技術 AIツール、フレームワーク、インフラ 企業、エコシステム、広範な影響 ユーモア/ミーム --- --- 以下のセクションは翻訳対象外です。...]]></description>
       <pubDate>Thu, 24 Jul 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-07-24.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-07-23.html</link>
-      <description><![CDATA[---...]]></description>
-      <pubDate>Wed, 23 Jul 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-07-23.html</guid>
     </item>
   </channel>
 </rss>

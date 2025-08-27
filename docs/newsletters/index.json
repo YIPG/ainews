@@ -137,8 +137,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 今週はTwitterやRedditの動きを見ると、GDM関連の大きな発表が控えているようですが、今日は静かな一日です。 オープンウェイトモデルの公開：xAIのGrok-2/2.5、Microsoft VibeVoice、Motif-2.6B...",
       "filename": "2025-08-25.html"
+    },
+    {
+      "date": "2025-08-26",
+      "title": "Gemini がすべてを制す",
+      "summary": "Gemini がすべてを制す Google が本日発表しました。 そしてLMArena の結果は明らかです。 --- Gemini 2.5 Flash Image（コードネーム “nano-banana”）が画像編集分野を席巻...",
+      "filename": "2025-08-26.html"
     }
   ],
-  "lastUpdated": "2025-08-26T06:37:37.439128",
-  "totalCount": 23
+  "lastUpdated": "2025-08-27T12:49:43.726536",
+  "totalCount": 24
 }
