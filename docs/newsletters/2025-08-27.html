@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Codexはこれだけで十分？ | AIニュース</title>
+    <meta name="description" content="OpenAI Codexはこれだけで十分？ - AIニュース 2025-08-27。最新のAI技術動向を日本語でお届け。">
+    <meta name="keywords" content="AI,人工知能,ニュースレター,2025-08-27,機械学習,深層学習,日本語">
+    <meta name="author" content="AIニュース">
+    <link rel="canonical" href="https://yipg.github.io/ainews/docs/newsletters/2025-08-27.html">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="OpenAI Codexはこれだけで十分？ | AIニュース">
+    <meta property="og:description" content="OpenAI Codexはこれだけで十分？ - AIニュース 2025-08-27。最新のAI技術動向を日本語でお届け。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yipg.github.io/ainews/docs/newsletters/2025-08-27.html">
+    <meta property="og:image" content="https://yipg.github.io/ainews/newsletters/og/2025-08-27.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:site_name" content="AIニュース">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2025-08-27T09:00:00+00:00">
+    <meta property="article:author" content="AIニュース">
+    <meta property="article:section" content="AI技術ニュース">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OpenAI Codexはこれだけで十分？ | AIニュース">
+    <meta name="twitter:description" content="OpenAI Codexはこれだけで十分？ - AIニュース 2025-08-27。最新のAI技術動向を日本語でお届け。">
+    <meta name="twitter:image" content="https://yipg.github.io/ainews/newsletters/og/2025-08-27.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+    <link rel="alternate icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="AIニュース RSS Feed" href="../feed.xml">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 1em;
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            color: #111;
+            word-wrap: break-word;
+        }
+        
+        nav {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        
+        .site-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #111;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        
+        .site-title:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-links {
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+        
+        .nav-links a {
+            color: #111;
+            text-decoration: none;
+            margin-left: 12px;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        h1, h2, h3, h4, h5, h6 {
+            margin: 35px 0 20px 0;
+            line-height: 1.3;
+            color: #111;
+            letter-spacing: 0.01em;
+        }
+        
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.3em; }
+        h3 { font-size: 1.1em; }
+        
+        p {
+            margin: 20px 0;
+        }
+        
+        a {
+            color: #0969da;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        blockquote {
+            border-left: 3px solid #ccc;
+            margin: 25px 0;
+            padding: 0 25px;
+            color: #555;
+            font-style: italic;
+        }
+        
+        code {
+            background-color: #f6f8fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            padding: 20px;
+            overflow-x: auto;
+            margin: 25px 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 25px 0;
+            border-radius: 3px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 35px 0;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #555;
+            font-size: 0.85em;
+        }
+        
+        footer a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+                font-size: 0.95em;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .nav-links {
+                font-size: 0.8em;
+            }
+            
+            .nav-links a {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+            
+            .article-title {
+                font-size: 1.4em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 0.9em;
+                padding: 12px;
+            }
+            
+            .site-title {
+                font-size: 1em;
+            }
+            
+            .nav-links {
+                font-size: 0.75em;
+            }
+            
+            .article-title {
+                font-size: 1.3em;
+            }
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+                color: #eee;
+            }
+            
+            nav {
+                border-bottom-color: #444;
+            }
+            
+            .site-title, .nav-links a, .article-title, h1, h2, h3, h4, h5, h6 {
+                color: #eee;
+            }
+            
+            .article-date {
+                color: #ccc;
+            }
+            
+            blockquote {
+                border-left-color: #555;
+                color: #ccc;
+            }
+            
+            code {
+                background-color: #2d3748;
+                color: #e2e8f0;
+            }
+            
+            pre {
+                background-color: #2d3748;
+            }
+            
+            hr, footer {
+                border-color: #444;
+            }
+            
+            footer, footer a {
+                color: #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="site-title">✏️ AIニュース</a>
+        <div class="nav-links">
+            <a href="../index.html">ホーム</a>
+            <a href="./archive.html">アーカイブ</a>
+            <a href="../feed.xml">RSS</a>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+        </div>
+    </nav>
+
+    <main>
+        <p><strong>OpenAI Codexはこれだけで十分？</strong></p>
+<p><a href="https://news.smol.ai/issues/25-05-16-codex">Codexの（再）ローンチ</a>からわずか3か月、<a href="https://news.smol.ai/issues/25-06-20-claude-code">Claude Code対Codexの競争</a>は加熱しており、<a href="https://x.com/VictorTaelin/status/1958543021324029980">複数のインフルエンサーがClaude CodeからCodexへ乗り換え</a>る動きが、<a href="https://x.com/embirico/status/1953526045573059056">GPT-5ローンチ当日にひっそりと発表された料金プラン統合</a>の影響もあって、今回のアップデート前から見られていました。そして本日、<a href="https://x.com/OpenAIDevs/status/1960809823387443479">IDE拡張機能の正式リリース</a>により、この流れはさらに加速しそうです。この拡張機能はタスクをクラウドに送信し、結果を戻すことができます。</p>
+<p><img alt="" src="https://resend-attachments.s3.amazonaws.com/ZFRfA43pgVsB01S" /></p>
+<p>具体的には以下の通りです。</p>
+<ul>
+<li><strong>IDE Extension:</strong> CodexをVS Code、Cursor、その他のVS Codeフォークに統合し、ローカルの変更をプレビューしながらコード編集が可能になります</li>
+<li><strong>Sign in with ChatGPT:</strong> IDEとCLIの両方で利用可能になり、APIキー設定が不要になり、既存のChatGPTプランから直接アクセスできます</li>
+<li><strong>シームレスなローカル↔クラウドのハンドオフ:</strong> 開発者はローカルでCodexとペア作業を行い、その後タスクをクラウドに非同期で委任し、状態を失うことなく実行できます</li>
+<li><strong>Codex CLIのアップグレード:</strong> UI刷新、新コマンド追加、バグ修正</li>
+<li><strong>GitHubでのコードレビュー:</strong> Codexを設定してリポジトリ内の新規PRを自動レビューさせたり、PR内で@codexをメンションしてレビューや修正提案を受けられます</li>
+</ul>
+<p>今後のCodexに関するすべての製品情報とアップデートは、<a href="http://developers.openai.com/codex"><strong>developers.openai.com/codex</strong></a>で発表されます。</p>
+<p>新機能の詳細や利用開始ガイドについては、ぜひサイトをご覧ください。</p>
+<p>Codexの詳細については、新しい<a href="http://developers.openai.com/codex"><strong>開発者サイト</strong></a>および一般向けヘルプ記事<a href="https://help.openai.com/en/articles/11369540"><strong>Using Codex with your ChatGPT plan</strong></a>をご参照ください。</p>
+<hr />
+<h1 id="ai-twitter-recap">AI Twitter Recap</h1>
+<p><strong>プロセスレベルの報酬モデリングと推論</strong></p>
+<ul>
+<li><strong>StepWiser（推論タスクとしてのプロセス報酬）</strong>: Facebook AIの研究者が、チェーン・オブ・ソートと評価を出力するステップごとのジャッジを導入しました。これはRLで相対的なロールアウト結果に基づき学習され、ProcessBenchでSOTAを達成。学習中のポリシー改善や推論時の探索強化（解答をチャンク単位で評価し、欠陥チャンクを拒否・再試行して自己修正、最大5回）を実現します。またStepWiserを用いて複数ロールアウトをスコアリングし、最良のものを学習データに選択することで、結果ベースのリジェクトサンプリングを上回る性能を示しました。詳細は<a href="https://twitter.com/jaseweston/status/1960529697055355037">@jaseweston</a>のスレッド参照。推論時探索の詳細は<a href="https://twitter.com/jaseweston/status/1960529706521862610">4/5</a>、データ選択は<a href="https://twitter.com/jaseweston/status/1960529709218836649">5/5</a>に記載。<a href="https://twitter.com/tesatory/status/1960533462672400724">@tesatory</a>は、最終結果のみの報酬ではクレジット割当が曖昧になる長期タスクにおいて、プロセス報酬への回帰が有効であるとコメントしています。</li>
+</ul>
+<p><strong>Gemini 2.5 Flash Image（“nano‑banana”）: 機能、ツール、ガイド</strong></p>
+<ul>
+<li><strong>空間推論と編集品質（デモ）</strong>: ユーザーは複数画像の融合や一貫した視点再構築（例: 「カメラマンを撮るカメラマン」の再帰構造やGoogle Mapsの「赤い矢印が見ているもの」の変換）における高い空間的整合性を報告。デモは<a href="https://twitter.com/BenjaminDEKR/status/1960566924884029539">@BenjaminDEKR</a>や<a href="https://twitter.com/tokumin/status/1960583251460022626">@tokumin</a>を参照。</li>
+<li><strong>開発者・クリエイター向けツール</strong>: Glifベースのワンクリックブラウザ拡張により、ウェブ上の任意の画像を右クリックしてGemini 2.5 Flash Imageでリミックス/編集可能（<a href="https://twitter.com/fabianstelzer/status/1960649240100647278">@fabianstelzer</a>）。Googleは構図、一貫したキャラクターデザイン、ターゲット変換などをカバーするプロンプトガイドを公開（<a href="https://twitter.com/googleaidevs/status/1960765662202061223">google AI devs</a>）。DeepMind研究者はモデル構築と今後の方向性を議論（<a href="https://twitter.com/OfficialLoganK/status/1960725463694753930">@OfficialLoganK</a>）。クリエイターはこれを動画ツール（例: Kling 2.1の最初/最後のフレーム）と組み合わせ、スムーズなトランジションを実現（<a href="https://twitter.com/heyglif/status/1960760956692136425">@heyglif</a>）。</li>
+</ul>
+<p><strong>NVIDIAのデータと効率化: Nemotron-CC-MathとJet‑Nemotron</strong></p>
+<ul>
+<li><strong>Nemotron‑CC‑Math（133Bトークン）データセット公開</strong>: CommonCrawl由来の大規模数学/コードコーパスをHTMLレンダリング（Lynx）で再処理し、LaTeX、MathML、インライン、画像コンテキストにおける数式を確実に取得。一般的なパーサーのカバレッジ不足を補い、追加後に数学・コードタスクで顕著な性能向上を報告。詳細は<a href="https://twitter.com/KarimiRabeeh/status/1960682448867426706">@KarimiRabeeh</a>、<a href="https://twitter.com/ctnzr/status/1960702543534989575">@ctnzr</a>。</li>
+<li><strong>Jet‑Nemotron（スループット最適化LM）</strong>: JetBlock（線形アテンション＋Vに対する動的畳み込み、Q/Kに対する静的畳み込みを除去）を導入し、ハードウェアに基づく設計知見として、デコード速度はパラメータ数よりKVキャッシュサイズに依存することを指摘。報告された高速化は64Kで最大47倍、256KでH100上でデコード53.6倍、プリフィル6.14倍。MMLU、BBH、数学、検索、コーディング、長文コンテキストで小型フルアテンションベースラインと同等以上の性能を達成。設計詳細は<a href="https://twitter.com/omarsar0/status/1960724749790929009">@omarsar0</a>のスレッド参照。</li>
+</ul>
+<p><strong>安全性、セキュリティ、政策</strong></p>
+<ul>
+<li><strong>OpenAI × Anthropicの相互評価</strong>: 両社が互いのモデルを内部の安全性/アラインメント評価でテストし、共同レポートを公開。結果は基礎的なもので各社の枠組みに依存しますが、共有安全性実践に向けた「トップへの競争」の兆候として注目。発表は<a href="https://twitter.com/woj_zaremba/status/1960757419245818343">@woj_zaremba</a>やOpenAI安全チーム（<a href="https://twitter.com/sleepinyourhat/status/1960749648110395467">@sleepinyourhat</a>）から。</li>
+<li><strong>サイバー悪用報告</strong>: AnthropicのThreat Intelligenceチームが、北朝鮮の不正雇用や低スキル攻撃者によるAI生成ランサムウェアなどのスキームを阻止した事例を報告（<a href="https://twitter.com/AnthropicAI/status/1960660063934194134">レポートスレッド</a>）。</li>
+<li><strong>公共部門アドバイザリー</strong>: Anthropicが米国および同盟国のニーズに沿うため、国防・情報・政策分野の上級者で構成される国家安全保障・公共部門アドバイザリー評議会を発表（<a href="https://twitter.com/AnthropicAI/status/1960696531863879712">発表</a>）。</li>
+<li><strong>医療評価</strong>: OpenAIがHugging Face上でHealthBenchを公開し、LLMの医療応用における厳密な評価を可能に（<a href="https://twitter.com/HuggingPapers/status/1960749923218895332">@HuggingPapers</a>）。</li>
+</ul>
+<p><strong>エージェント、環境、プロトコル</strong></p>
+<ul>
+<li><strong>RL/エージェント学習用オープン環境</strong>: Prime IntellectがEnvironments Hubを立ち上げ、エージェントモデルの学習・評価用に豊富で標準化されたインタラクティブ環境をクラウドソース化。<a href="https://twitter.com/karpathy/status/1960803117689397543">@karpathy</a>は、環境は「新たなデータ」であり、模倣を超えた相互作用とフィードバックを可能にすると主張。</li>
+<li><strong>エージェントプロトコルと統合ツール</strong>:<ul>
+<li>Zedの新しいAgent Client Protocol（ACP）は「AIエージェントのためのLanguage Server Protocol」を目指し、コーディングアシスタントをエディタから分離し、計画の可視化やマルチモーダルI/Oをサポート（<a href="https://twitter.com/imjaredz/status/1960742370229805552">概要</a>）。</li>
+<li>MCPエコシステムの成長: Postman経由で1分・ノーコードでMCPサーバーを生成し、10万以上のAPIと統合（<a href="https://twitter.com/_avichawla/status/1960590605480026244">ガイド</a>）。</li>
+<li>RAG向け構造化知識: Andrew NgのNeo4j短期講座で、エージェントチームがスキーマに基づく知識グラフを構築し、ベクトル検索を補完（<a href="https://twitter.com/DeepLearningAI/status/1960726499419676861">講座</a>）。</li>
+<li>大規模ブラウジング: Browserbaseが、ヘッドレスブラウザ群を運用して高コストなホスト型オペレーターエージェントの代替を提供（<a href="https://twitter.com/LiorOnAI/status/1960779777956106381">@LiorOnAI</a>）。</li>
+</ul>
+</li>
+</ul>
+<p><strong>開発者ツールとオープンモデル</strong></p>
+<ul>
+<li><strong>OpenAI Codex刷新（GPT‑5搭載）</strong>: CodexをIDE、ターミナル、クラウド、GitHub、モバイルにまたがる単一エージェントに統合し、VS Code/Cursor/Windsurf向け拡張、改良されたローカルCLI、ローカル↔クラウド間のシームレスなタスク移動、GitHubでのコードレビューを実現。ChatGPT Plus/Pro/Team/Edu/Enterpriseで利用可能。</li>
+<li><strong>Hermes 4（Nous）</strong>: Llama‑3.1を405Bおよび70Bでファインチューニングし、ハイブリッド推論、350万件の推論サンプル、192×B200で学習。検閲なしでユーザー操作可能。</li>
+<li><strong>DeepSeek V3.1本番稼働</strong>: Togetherが671Bハイブリッドをホストし、推論モードと思考モードを提供。推論ベンチマークで大幅な改善を報告（例: AIME 2024で66.3%→93.1%）。</li>
+<li><strong>コンパクトかつ効率的なインフラ</strong>: Weaviateの8ビット回転量子化により、ベクトルを4倍圧縮しつつスループットを15–50%向上、ほぼ完全なリコールを維持。</li>
+</ul>
+<p><strong>トップツイート（エンゲージメント順）</strong></p>
+<ul>
+<li>「It’s a good model, sir」 — <a href="https://twitter.com/elonmusk/status/1960807337285050436">@elonmusk</a></li>
+<li>OpenAI Codexアップデート: IDE/ターミナル/クラウド/GitHubを横断する統合エージェント — <a href="https://twitter.com/OpenAIDevs/status/1960809814596182163">@OpenAIDevs</a></li>
+<li>RL時代における環境 &gt; データ; RL報酬関数への慎重姿勢 — <a href="https://twitter.com/karpathy/status/1960803117689397543">@karpathy</a></li>
+<li>OpenAI × Anthropicの組織間安全性評価 — <a href="https://twitter.com/woj_zaremba/status/1960757419245818343">@woj_zaremba</a></li>
+<li>Anthropic Threat IntelligenceによるAI支援型サイバー犯罪の報告 — <a href="https://twitter.com/AnthropicAI/status/1960660063934194134">@AnthropicAI</a></li>
+<li>Gemini 2.5 Flash Image（“nano‑banana”）の構築と今後 — <a href="https://twitter.com/OfficialLoganK/status/1960725463694753930">@OfficialLoganK</a></li>
+</ul>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+            <a href="https://news.smol.ai/">news.smol.ai</a>
+        </p>
+    </footer>
+</body>
+</html>
