@@ -5,12 +5,12 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 29 Aug 2025 06:34:58 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Aug 2025 18:31:09 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
     <item>
       <title>リアルタイムこそ全て？</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-28.html</link>
-      <description><![CDATA[リアルタイムこそ全て？...]]></description>
+      <description><![CDATA[Realtime APIはこれまでプレビュー提供されていましたが、今回ついにGA（一般提供）となりました。画像入力、リモートMCPサーバー対応、SIP/PBX対応とプロンプトキャッシュ、そしてより優れた関数呼び出し機能が追加されています。これに合わせて新しいリアルタイムモデルも登場しました。残...]]></description>
       <pubDate>Thu, 28 Aug 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-28.html</guid>
     </item>
