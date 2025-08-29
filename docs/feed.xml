@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 27 Aug 2025 12:49:43 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Aug 2025 01:50:49 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>リアルタイムこそ全て？</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-28.html</link>
+      <description><![CDATA[リアルタイムこそ全て？...]]></description>
+      <pubDate>Thu, 28 Aug 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-28.html</guid>
+    </item>
     <item>
       <title>Gemini がすべてを制す</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-26.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[オープンソースAIにとって良い日 Qwen 3 ThinkingやAIE SWE Agents trackの完全公開版をチェックする価値があります。 --- 主要なモデルリリースとアップデート（オープンソース vs クローズドソース）...]]></description>
       <pubDate>Fri, 25 Jul 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-07-25.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-07-24.html</link>
-      <description><![CDATA[--- 新モデルリリース: Qwen3-Coder 米国AI政策と地政学 モデルアップデート、研究、技術 AIツール、フレームワーク、インフラ 企業、エコシステム、広範な影響 ユーモア/ミーム --- --- 以下のセクションは翻訳対象外です。...]]></description>
-      <pubDate>Thu, 24 Jul 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-07-24.html</guid>
     </item>
   </channel>
 </rss>
