@@ -155,8 +155,14 @@
       "title": "OpenAI Codexはこれだけで十分？",
       "summary": "OpenAI Codexはこれだけで十分？...",
       "filename": "2025-08-27.html"
+    },
+    {
+      "date": "2025-08-29",
+      "title": "静かな一日",
+      "summary": "静かな一日 --- Apple のオンデバイス VLM 推進（FastVLM, MobileCLIP2）と MLX アップグレード エージェント型コーディングスタック：Grok Code Fast、Codex/Xcode 26、CLI ネイティブワークフロー...",
+      "filename": "2025-08-29.html"
     }
   ],
-  "lastUpdated": "2025-08-29T18:31:09.649346",
-  "totalCount": 26
+  "lastUpdated": "2025-09-01T02:06:34.538141",
+  "totalCount": 27
 }

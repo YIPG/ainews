@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 29 Aug 2025 18:31:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Sep 2025 02:06:34 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-29.html</link>
+      <description><![CDATA[静かな一日 --- Apple のオンデバイス VLM 推進（FastVLM, MobileCLIP2）と MLX アップグレード エージェント型コーディングスタック：Grok Code Fast、Codex/Xcode 26、CLI ネイティブワークフロー...]]></description>
+      <pubDate>Fri, 29 Aug 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-29.html</guid>
+    </item>
     <item>
       <title>リアルタイムこそ全て？</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-28.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[明日GPT-5がリリースされるというTwitter匿名ユーザーの憶測により、多くの期待が寄せられています。 --- --- --- 以上が翻訳結果です。...]]></description>
       <pubDate>Wed, 30 Jul 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-07-30.html</guid>
-    </item>
-    <item>
-      <title>Muon is all you need?</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-07-28.html</link>
-      <description><![CDATA[Z.aiは、フロンティアモデルとしての基準を満たすだけでなく、トークン効率（最も難しい指標の一つ）など、エージェント的な用途にとって重要な新しい測定基準を強調しています。...]]></description>
-      <pubDate>Mon, 28 Jul 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-07-28.html</guid>
     </item>
   </channel>
 </rss>
