@@ -161,8 +161,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 --- Apple のオンデバイス VLM 推進（FastVLM, MobileCLIP2）と MLX アップグレード エージェント型コーディングスタック：Grok Code Fast、Codex/Xcode 26、CLI ネイティブワークフロー...",
       "filename": "2025-08-29.html"
+    },
+    {
+      "date": "2025-09-01",
+      "title": "静かなホリデーウィークエンド",
+      "summary": "静かなホリデーウィークエンド 新たに発表された AI Engineer Code Summit の応募を進めるには良い日です。 --- コーディング・コパイロット：GPT‑5がXcodeに統合、Grok Code Fastが急伸、Claude CodeのUX議論...",
+      "filename": "2025-09-01.html"
     }
   ],
-  "lastUpdated": "2025-09-01T02:06:34.538141",
-  "totalCount": 27
+  "lastUpdated": "2025-09-02T06:36:41.948110",
+  "totalCount": 28
 }
