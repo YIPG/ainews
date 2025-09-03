@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 02 Sep 2025 06:36:41 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Sep 2025 06:33:48 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>Antチーム、おめでとうございます！</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-02.html</link>
+      <description><![CDATA[Antチーム、おめでとうございます！ これは以前から広く噂されていましたが、最終的な評価額は予想を上回りました。彼らの発表から注目すべき数字をいくつかご紹介します。 Anthropic、本当におめでとうございます！...]]></description>
+      <pubDate>Tue, 02 Sep 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-02.html</guid>
+    </item>
     <item>
       <title>静かなホリデーウィークエンド</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-01.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[AlibabaのQwenチームが驚きのモデルを公開しました。20B MMDiTモデルは「ネイティブテキストを含む驚くべきグラフィックポスターの作成に特に強い」と発表されています。詳細は以下のリンクをご覧ください：ブログ、論文。...]]></description>
       <pubDate>Mon, 04 Aug 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-04.html</guid>
-    </item>
-    <item>
-      <title>世代を超えたウェブプラットフォームの成功物語</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-01.html</link>
-      <description><![CDATA[世代を超えたウェブプラットフォームの成功物語 --- モデルのリリース、アップデート、性能...]]></description>
-      <pubDate>Fri, 01 Aug 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-01.html</guid>
     </item>
   </channel>
 </rss>
