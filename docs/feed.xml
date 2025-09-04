@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 03 Sep 2025 06:33:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Sep 2025 01:46:05 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-03.html</link>
+      <description><![CDATA[静かな一日 静かな一日です。Exaの7億ドルのシリーズB調達、OpenPipeのCoreweaveによる買収、Statsig、そしてAlexのOpenAIによる買収、おめでとうございます。 --- エージェント基盤の標準化とプロトコル...]]></description>
+      <pubDate>Wed, 03 Sep 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-03.html</guid>
+    </item>
     <item>
       <title>Antチーム、おめでとうございます！</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-02.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[最初に注目すべきは、OpenAIの新しいオープンウェイトモデル「GPT-OSS」です。このモデルは、デスクトップ（60GB GPU）やスマートフォン（12GB）で動作可能なo4-miniクラスの推論能力を提供します。新しいgpt-oss playgroundで試すことができます。...]]></description>
       <pubDate>Tue, 05 Aug 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-05.html</guid>
-    </item>
-    <item>
-      <title>Qwenはすべてを解決します</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-04.html</link>
-      <description><![CDATA[AlibabaのQwenチームが驚きのモデルを公開しました。20B MMDiTモデルは「ネイティブテキストを含む驚くべきグラフィックポスターの作成に特に強い」と発表されています。詳細は以下のリンクをご覧ください：ブログ、論文。...]]></description>
-      <pubDate>Mon, 04 Aug 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-04.html</guid>
     </item>
   </channel>
 </rss>
