@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 05 Sep 2025 06:34:46 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Sep 2025 01:53:38 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>オープンモデルだけで十分？</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-05.html</link>
+      <description><![CDATA[7月に、Kimi K2 がこれまでで最大のSOTA OSSオープンモデルとしてリリースされたことについてコメントしましたが、本日 Moonshot AI がモデルの重みを更新し、論文で新たなベンチマークを公開しました。...]]></description>
+      <pubDate>Fri, 05 Sep 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-05.html</guid>
+    </item>
     <item>
       <title>みんなデカコーン時代。</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-04.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[ライブストリームはやや期待外れでしたが（特に面白いチャートのミスを除いて）、ベンチマークはOpenAIの既存のSOTA（最先端技術）モデルに対する漸進的な改善にとどまりました。しかし、価格設定には驚かされました。OpenAIはGDMから知能のパレートフロンティアを取り戻したようです。...]]></description>
       <pubDate>Thu, 07 Aug 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-07.html</guid>
-    </item>
-    <item>
-      <title>嵐の前の静けさ</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-06.html</link>
-      <description><![CDATA[明日午前10時（PT）にOpenAIのライブストリームをご覧ください。 また、本日のポッドキャストでは、メディアがどのようにリーク情報を取得し、主要なAIスタートアップを報道するかについて語られています。...]]></description>
-      <pubDate>Wed, 06 Aug 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-06.html</guid>
     </item>
   </channel>
 </rss>

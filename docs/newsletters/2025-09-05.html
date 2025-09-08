@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オープンモデルだけで十分？ | AIニュース</title>
+    <meta name="description" content="オープンモデルだけで十分？ - AIニュース 2025-09-05。最新のAI技術動向を日本語でお届け。">
+    <meta name="keywords" content="AI,人工知能,ニュースレター,2025-09-05,機械学習,深層学習,日本語">
+    <meta name="author" content="AIニュース">
+    <link rel="canonical" href="https://yipg.github.io/ainews/docs/newsletters/2025-09-05.html">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="オープンモデルだけで十分？ | AIニュース">
+    <meta property="og:description" content="オープンモデルだけで十分？ - AIニュース 2025-09-05。最新のAI技術動向を日本語でお届け。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yipg.github.io/ainews/docs/newsletters/2025-09-05.html">
+    <meta property="og:image" content="https://yipg.github.io/ainews/newsletters/og/2025-09-05.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:site_name" content="AIニュース">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2025-09-05T09:00:00+00:00">
+    <meta property="article:author" content="AIニュース">
+    <meta property="article:section" content="AI技術ニュース">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="オープンモデルだけで十分？ | AIニュース">
+    <meta name="twitter:description" content="オープンモデルだけで十分？ - AIニュース 2025-09-05。最新のAI技術動向を日本語でお届け。">
+    <meta name="twitter:image" content="https://yipg.github.io/ainews/newsletters/og/2025-09-05.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+    <link rel="alternate icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="AIニュース RSS Feed" href="../feed.xml">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 1em;
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            color: #111;
+            word-wrap: break-word;
+        }
+        
+        nav {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        
+        .site-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #111;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        
+        .site-title:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-links {
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+        
+        .nav-links a {
+            color: #111;
+            text-decoration: none;
+            margin-left: 12px;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        h1, h2, h3, h4, h5, h6 {
+            margin: 35px 0 20px 0;
+            line-height: 1.3;
+            color: #111;
+            letter-spacing: 0.01em;
+        }
+        
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.3em; }
+        h3 { font-size: 1.1em; }
+        
+        p {
+            margin: 20px 0;
+        }
+        
+        a {
+            color: #0969da;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        blockquote {
+            border-left: 3px solid #ccc;
+            margin: 25px 0;
+            padding: 0 25px;
+            color: #555;
+            font-style: italic;
+        }
+        
+        code {
+            background-color: #f6f8fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            padding: 20px;
+            overflow-x: auto;
+            margin: 25px 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 25px 0;
+            border-radius: 3px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 35px 0;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #555;
+            font-size: 0.85em;
+        }
+        
+        footer a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+                font-size: 0.95em;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .nav-links {
+                font-size: 0.8em;
+            }
+            
+            .nav-links a {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+            
+            .article-title {
+                font-size: 1.4em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 0.9em;
+                padding: 12px;
+            }
+            
+            .site-title {
+                font-size: 1em;
+            }
+            
+            .nav-links {
+                font-size: 0.75em;
+            }
+            
+            .article-title {
+                font-size: 1.3em;
+            }
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+                color: #eee;
+            }
+            
+            nav {
+                border-bottom-color: #444;
+            }
+            
+            .site-title, .nav-links a, .article-title, h1, h2, h3, h4, h5, h6 {
+                color: #eee;
+            }
+            
+            .article-date {
+                color: #ccc;
+            }
+            
+            blockquote {
+                border-left-color: #555;
+                color: #ccc;
+            }
+            
+            code {
+                background-color: #2d3748;
+                color: #e2e8f0;
+            }
+            
+            pre {
+                background-color: #2d3748;
+            }
+            
+            hr, footer {
+                border-color: #444;
+            }
+            
+            footer, footer a {
+                color: #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="site-title">✏️ AIニュース</a>
+        <div class="nav-links">
+            <a href="../index.html">ホーム</a>
+            <a href="./archive.html">アーカイブ</a>
+            <a href="../feed.xml">RSS</a>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1 id="_1">オープンモデルだけで十分？</h1>
+<p>7月に、<a href="https://news.smol.ai/issues/25-07-11-kimi-k2">Kimi K2 がこれまでで最大のSOTA OSSオープンモデルとしてリリースされた</a>ことについてコメントしましたが、本日 Moonshot AI が<a href="https://www.reddit.com/r/LocalLLaMA/comments/1n8ues8/kimik2instruct0905_released/">モデルの重みを更新</a>し、<a href="https://github.com/MoonshotAI/Kimi-K2/blob/main/tech_report.pdf">論文</a>で新たなベンチマークを公開しました。</p>
+<p><strong>しかし今回の大きな新顔</strong>は、<a href="https://x.com/Alibaba_Qwen/status/1963991502440562976">Qwen 3 Max が初めて1兆パラメータモデルをリリース</a>したことです。小型モデルを大きく上回る性能を示しています。ハイパーパラメータは公開せず「Max」と呼んでいますが、モデルの重みは間もなく公開される見込みで、なぜ自らのMoE命名規則を破ったのかは不明です。</p>
+<p>中国はオープンモデル戦争で圧倒的に優勢のようです。</p>
+<hr />
+<h1 id="ai-twitter">AI Twitterまとめ</h1>
+<p><strong>中国の長文コンテキスト対応コーディングの急伸：Kimi K2‑0905 と Qwen3‑Max プレビュー</strong></p>
+<ul>
+<li><strong>MoonshotのKimi K2‑0905（オープンウェイト）が実用的なエージェント機能を強化して登場</strong>：コンテキスト長を<strong>256k</strong>に倍増し、コーディングとツール呼び出しを改善、Cline、Claude Code、Rooなどのエージェントフレームワークとの統合を調整しました。すでに複数のスタックで利用可能です：<a href="https://twitter.com/bigeagle_xd/status/1963802450374369722">Hugging Face weights/code</a>、<a href="https://twitter.com/togethercompute/status/1963806032548843865">Together AI</a>、<a href="https://twitter.com/vllm_project/status/1963805972352188895">vLLMデプロイガイド</a>、<a href="https://twitter.com/lmsysorg/status/1963806184747491717">LMSYS SGLang runtime（60–100+ TPS）</a>、<a href="https://twitter.com/GroqInc/status/1963823577557606665">Groq即時推論（200+ T/s、$1.50/M tokens）</a>、<a href="https://twitter.com/cline/status/1963804927584833725">Cline統合</a>。コミュニティからは「エージェントは安定性とツール連携のために超長コンテキストが必要」との声があり（<a href="https://twitter.com/Teknium1/status/1963807244190900618">Teknium</a>）、デモでは「Sonnet 4に匹敵または上回る」との主張も出ていますが、Kimiのエンジニアは<strong>SWE‑Benchは依然として難しい</strong>と認めています（<a href="https://twitter.com/andrew_n_carr/status/1963805265356075336">@andrew_n_carr</a>、<a href="https://twitter.com/bigeagle_xd/status/1963808306545180792">@bigeagle_xd</a>）。</li>
+<li><strong>Qwen3‑Max‑Preview（Instruct）：1兆パラメータ規模、エージェント指向の挙動</strong>：Alibabaはこれまでで最大のモデル（<strong>1兆パラメータ超</strong>）を発表し、<strong>Qwen Chat</strong>、<strong>Alibaba Cloud API</strong>、<strong>OpenRouter</strong>で利用可能になりました（<a href="https://twitter.com/Alibaba_Qwen/status/1963991502440562976">発表</a>、<a href="https://twitter.com/Alibaba_Qwen/status/1964004112149754091">OpenRouter</a>）。ベンチマークや初期ユーザーの声では、従来のQwen3モデルに比べ会話、指示追従、エージェントタスクが強化されたとされます。コミュニティでは「米国最前線級モデル」と評され、価格やスループットも競争力があるとの反応です（<a href="https://twitter.com/teortaxesTex/status/1963994291765649716">反応</a>、<a href="https://twitter.com/huybery/status/1963998518667776250">規模の示唆</a>）。DenseかMoEかの詳細は公表されていません。</li>
+</ul>
+<p><strong>評価、エージェント、測るべきもの</strong></p>
+<ul>
+<li><strong>「評価なし」対「意味のある評価」</strong>：多くのトップコードエージェントチームは正式な評価なしで出荷している一方、ベンダーは評価を推奨しているとの議論が広まりました。初期の成功はドッグフーディングとエラー分析から始まり、その後評価を体系化することが多いとのことです（<a href="https://twitter.com/swyx/status/1963725773355057249">@swyx</a>、<a href="https://twitter.com/swyx/status/1963727193974153602">証拠</a>）。続く議論では、長期的能力（数か月にわたるタスク、プロトコル再現、戦略ゲーム、実世界設定）や業界特化のワークフローなど、現行リーダーボードが見落としている領域の評価が提案されました（<a href="https://twitter.com/willdepue/status/1963739518554489250">@willdepue</a>、<a href="https://twitter.com/willdepue/status/1963739522312646934">アイデア</a>、<a href="https://twitter.com/levie/status/1963802448780472529">@levie</a>、<a href="https://twitter.com/BEBischof/status/1963739648792117484">@BEBischof</a>）。実用的なヒントとして、モデルを判定器として使い出力をランク付けする方法も紹介されました（<a href="https://twitter.com/karpathy/status/1964026120191545346">@karpathy</a>）。</li>
+<li><strong>エージェントスタックでの評価とトレースの運用</strong>：CLI主体のエージェントとセマンティック検索の組み合わせが、文書タスクではアドホックなRAGを上回ることがあります。LlamaIndexは<strong>SemTools</strong>で1,000本のarXiv論文をUNIXツールとファジーセマンティック検索で処理しました（<a href="https://twitter.com/llama_index/status/1964009128973783135">投稿</a>）。RLパイプラインでは、THUDMのslimeがツール呼び出しと状態遷移を統合したクリーンなロールアウト抽象化を提供し、エージェント型RL実験でのグルーコードを削減します（<a href="https://twitter.com/Zai_org/status/1963836843633332457">概要</a>）。</li>
+</ul>
+<p><strong>推論とポストトレーニングの進展</strong></p>
+<ul>
+<li><strong>デコーディングと計画</strong>：Metaの<strong>Set Block Decoding（SBD）</strong>は将来トークンを並列サンプリングし、フォワードパスを<strong>3–5倍</strong>削減します。アーキテクチャ変更なしでKVキャッシュ互換性を維持し、訓練済みモデルは標準NTPと同等の次トークン予測性能を示します（<a href="https://twitter.com/arankomatsuzaki/status/1963817987506643350">概要</a>）。エージェントにおいては「常に推論（ReAct）」が最適ではなく、計画が必要なときだけ行うよう学習させ、テスト時の計算コストと性能を動的にバランスさせる新手法が登場しました（<a href="https://twitter.com/arankomatsuzaki/status/1963820986668626156">スレッド</a>、<a href="https://twitter.com/PaglieriDavide/status/1963971144584724939">論文背景</a>）。</li>
+<li><strong>ポストトレーニングの理論と成果</strong>：「RL’s Razor」は、オンポリシーRLはSFTより忘却が少ないと主張し、KL最小解にバイアスをかけることで破滅的忘却を減らせるとしています（<a href="https://twitter.com/arankomatsuzaki/status/1963823603469730114">概要</a>）。「Unified View of LLM Post‑Training」ではSFTとRLが同じ報酬＋KL目的を最適化していることを示し、<strong>Hybrid Post‑Training（HPT）</strong>は性能フィードバックに基づき両者を切り替えることで、規模やファミリーを問わず強力なベースラインを上回ります（<a href="https://twitter.com/omarsar0/status/1963971173735448858">概要</a>）。実証面では、Microsoftの<strong>rStar2‑Agent‑14B</strong>がエージェント型RLで数学分野の最前線レベルに到達しました（AIME24 <strong>80.6</strong>、AIME25 <strong>69.8</strong>）、わずか<strong>510</strong>ステップのRLで、より短く検証可能な思考連鎖を生成します（<a href="https://twitter.com/omarsar0/status/1964045125115662847">結果</a>）。</li>
+</ul>
+<p><strong>GPUスタック、カーネル、プラットフォーム</strong></p>
+<ul>
+<li><strong>PyTorchでのROCm品質低下</strong>：ROCm専用でスキップ/無効化されたテストが200件以上に増加しており、コアのトランスフォーマー演算（例：attention）さえ数か月間無効化されているとの報告があります。AMDは修正を優先する方針とされています（<a href="https://twitter.com/SemiAnalysis_/status/1963708743218339907">報告</a>）。PyTorchメンテナは、広範なテストスキップは全サブシステムで持続的な貢献が必要だと述べています（<a href="https://twitter.com/marksaroufim/status/1963844930620600457">背景</a>、<a href="https://twitter.com/dylan522p/status/1963711185225687267">コメント</a>）。別件として、PyTorchはTLX（Triton low‑level extensions）で実装された2‑simplicial attentionのカーネル解説を公開しました（<a href="https://twitter.com/PyTorch/status/1964012269123031452">カーネル記事</a>）。</li>
+<li><strong>インフラの勢いとミートアップ</strong>：Together AIは<strong>1億5千万ドルのシリーズD</strong>をBOND主導で調達し（Jay Simonsが取締役に参加）、推論インフラを拡大します（<a href="https://twitter.com/tuhinone/status/1963945981382451488">発表</a>）。Basetenも<strong>1億5千万ドルのシリーズD</strong>を調達し、性能改善やEmbeddingGemma対応を進めています（<a href="https://twitter.com/basetenco/status/1963981711647379653">発表</a>）。vLLMはトロントで分散推論、spec decode、FlashInferに関するミートアップを開催予定で（<a href="https://twitter.com/vllm_project/status/1963736578674893071">イベント</a>）、すでにKimi K2デプロイをサポートしています（<a href="https://twitter.com/vllm_project/status/1963805972352188895">サポート</a>）。</li>
+</ul>
+<p><strong>OpenAIエコシステム：ChatGPTの分岐、Responses API、Codex</strong></p>
+<ul>
+<li><strong>製品/APIの変化</strong>：ChatGPTが会話の分岐をサポートしました（<a href="https://twitter.com/gdb/status/1963780952187965746">@gdb</a>、<a href="https://twitter.com/sama/status/1964032860664582618">@sama</a>）。OpenAIの<strong>Responses API</strong>の詳細解説が公開され（<a href="https://twitter.com/prashantmital/status/1963801236391772372">スレッド</a>）、<strong>AI SDK v5</strong>ではOpenAIプロバイダのデフォルトがResponsesになりました（Completionsも利用可能）（<a href="https://twitter.com/aisdk/status/1963999103626727518">告知</a>）。一部の開発者はResponsesがコンテキストの移植性やステートレス利用を複雑にすると指摘する一方、継続的な会話での「思考連鎖の保持」が改善されたとの声もあります（<a href="https://twitter.com/sarahwooders/status/1964016384889016787">批判</a>、<a href="https://twitter.com/simonw/status/1963884158259728866">事例</a>）。</li>
+<li><strong>コーディングエージェントとGPT‑5 Pro</strong>：複数の実務者が、Codex内のGPT‑5 Proがより深く時間をかけた処理で難しいエンジニアリング課題を解決できると報告しました。「速さより賢さ」が重要との意見がSam Altmanとの公開やり取りで示されました（<a href="https://twitter.com/karpathy/status/1964020416139448359">体験談</a>、<a href="https://twitter.com/karpathy/status/1964036961750176232">続報</a>、<a href="https://twitter.com/sama/status/1964032346975588371">@sama</a>）。Codex CLI/IDEは急速に機能追加を続けています（<a href="https://twitter.com/dkundel/status/1963834846394147125">変更履歴</a>）。</li>
+</ul>
+<p><strong>埋め込みと検索のオンデバイス化（とその限界）</strong></p>
+<ul>
+<li><strong>小型・高速・ローカル</strong>：Googleの新しいオープンソースEmbeddingGemmaは、Basetenなどで即日対応され、M2 Max上で<strong>1.4M文書を約80分で無料埋め込み</strong>でき、従来の大型有料モデルより高品質との報告があります（<a href="https://twitter.com/basetenco/status/1963724754315284720">Baseten</a>、<a href="https://twitter.com/rishdotblog/status/1963805087014502497">現場結果</a>）。オンデバイス検索も容易になり、<strong>SQLite‑vec</strong>とEmbeddingGemmaの組み合わせで多言語・多ランタイム環境で完全オフライン動作が可能です（<a href="https://twitter.com/_philschmid/status/1963952204970078579">ガイド</a>）。</li>
+<li><strong>単一ベクトルの限界</strong>：新しい理論・ベンチマーク「LIMIT」は、固定次元の埋め込みでのtop‑k検索における厳しい下限を示し、SOTAモデルでも意図的にストレステストされた単純タスクで失敗することを明らかにしました。これは、単一ベクトル埋め込みでは本質的に取得不可能な文書組み合わせが存在することを示し、マルチベクトルや後段相互作用アプローチの必要性を示唆します（<a href="https://twitter.com/hsu_steve/status/1963999025025450008">概要</a>）。</li>
+</ul>
+<p><strong>エンゲージメント上位ツイート</strong></p>
+<ul>
+<li>「未来を予測する能力こそが知能の最良の尺度だ。」 — <a href="https://twitter.com/elonmusk/status/1963877113049580023">@elonmusk</a></li>
+<li>Kimi K2‑0905アップデート（256k、コーディング/ツール呼び出し、エージェント統合） — <a href="https://twitter.com/Kimi_Moonshot/status/1963802687230947698">@Kimi_Moonshot</a></li>
+<li>Qwen3‑Max‑Preview（Instruct）、1兆パラメータ超、Qwen Chat/Alibaba Cloudで利用可能 — <a href="https://twitter.com/Alibaba_Qwen/status/1963991502440562976">@Alibaba_Qwen</a></li>
+<li>ChatGPT会話分岐が利用可能に — <a href="https://twitter.com/gdb/status/1963780952187965746">@gdb</a></li>
+<li>Codex内のGPT‑5 Proが難しいコーディング課題を解決と称賛 — <a href="https://twitter.com/karpathy/status/1964020416139448359">@karpathy</a></li>
+<li>「非常に要望の多かった機能！」（ChatGPT分岐） — <a href="https://twitter.com/sama/status/1964032860664582618">@sama</a></li>
+<li>PyTorchテストでのROCm退行 — <a href="https://twitter.com/SemiAnalysis_/status/1963708743218339907">@SemiAnalysis_</a></li>
+<li>DeepMindの「Deep Loop Shaping」がLIGO重力波検出を改善 — <a href="https://twitter.com/demishassabis/status/1963795824854335528">@demishassabis</a></li>
+</ul>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+            <a href="https://news.smol.ai/">news.smol.ai</a>
+        </p>
+    </footer>
+</body>
+</html>
