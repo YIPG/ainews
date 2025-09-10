@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 09 Sep 2025 01:49:51 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Sep 2025 01:46:50 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-09.html</link>
+      <description><![CDATA[静かな一日 AppleのiPhoneイベントでは小規模なアップデートが発表されました。 --- コーディングエージェントとツール開発の加速 モデルと推論の進展 マルチモーダル生成、動画、"Vibe Coding"...]]></description>
+      <pubDate>Tue, 09 Sep 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-09.html</guid>
+    </item>
     <item>
       <title>**AI Twitterまとめ**</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-08.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[先月、OpenAIがIMOで金メダル級のパフォーマンスを達成したことは記憶に新しいですが、今回のIOI（国際情報オリンピック）の結果も同様に注目すべき内容です。...]]></description>
       <pubDate>Mon, 11 Aug 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-11.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-08.html</link>
-      <description><![CDATA[推定読書時間を節約（200wpmで計算）：1217分。 新しいウェブサイトでは、過去のすべてのニュースをメタデータ検索と美しいプレゼンテーションで閲覧できます。詳細はこちら。...]]></description>
-      <pubDate>Fri, 08 Aug 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-08.html</guid>
     </item>
   </channel>
 </rss>
