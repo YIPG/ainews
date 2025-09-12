@@ -209,8 +209,14 @@
       "title": "Oracleおめでとうございます！",
       "summary": "Oracleおめでとうございます！...",
       "filename": "2025-09-10.html"
+    },
+    {
+      "date": "2025-09-11",
+      "title": "Gated Attentionは本当に「All you need」なのか？",
+      "summary": "Noam Shazeer氏らが発明して以来、MoE（Mixture of Experts）モデルは着実に重要性を増し、GPT‑4やMixtral（8 experts）を経て、DeepSeek（160 experts）、Snowflake（128 experts）などがさらに疎構造化を推し進めま...",
+      "filename": "2025-09-11.html"
     }
   ],
-  "lastUpdated": "2025-09-11T06:35:48.589429",
-  "totalCount": 35
+  "lastUpdated": "2025-09-12T01:44:24.731320",
+  "totalCount": 36
 }

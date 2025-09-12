@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gated Attentionは本当に「All you need」なのか？ | AIニュース</title>
+    <meta name="description" content="Gated Attentionは本当に「All you need」なのか？ - AIニュース 2025-09-11。最新のAI技術動向を日本語でお届け。">
+    <meta name="keywords" content="AI,人工知能,ニュースレター,2025-09-11,機械学習,深層学習,日本語">
+    <meta name="author" content="AIニュース">
+    <link rel="canonical" href="https://yipg.github.io/ainews/docs/newsletters/2025-09-11.html">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Gated Attentionは本当に「All you need」なのか？ | AIニュース">
+    <meta property="og:description" content="Gated Attentionは本当に「All you need」なのか？ - AIニュース 2025-09-11。最新のAI技術動向を日本語でお届け。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yipg.github.io/ainews/docs/newsletters/2025-09-11.html">
+    <meta property="og:image" content="https://yipg.github.io/ainews/newsletters/og/2025-09-11.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:site_name" content="AIニュース">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2025-09-11T09:00:00+00:00">
+    <meta property="article:author" content="AIニュース">
+    <meta property="article:section" content="AI技術ニュース">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gated Attentionは本当に「All you need」なのか？ | AIニュース">
+    <meta name="twitter:description" content="Gated Attentionは本当に「All you need」なのか？ - AIニュース 2025-09-11。最新のAI技術動向を日本語でお届け。">
+    <meta name="twitter:image" content="https://yipg.github.io/ainews/newsletters/og/2025-09-11.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+    <link rel="alternate icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="AIニュース RSS Feed" href="../feed.xml">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 1em;
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            color: #111;
+            word-wrap: break-word;
+        }
+        
+        nav {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        
+        .site-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #111;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        
+        .site-title:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-links {
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+        
+        .nav-links a {
+            color: #111;
+            text-decoration: none;
+            margin-left: 12px;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        h1, h2, h3, h4, h5, h6 {
+            margin: 35px 0 20px 0;
+            line-height: 1.3;
+            color: #111;
+            letter-spacing: 0.01em;
+        }
+        
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.3em; }
+        h3 { font-size: 1.1em; }
+        
+        p {
+            margin: 20px 0;
+        }
+        
+        a {
+            color: #0969da;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        blockquote {
+            border-left: 3px solid #ccc;
+            margin: 25px 0;
+            padding: 0 25px;
+            color: #555;
+            font-style: italic;
+        }
+        
+        code {
+            background-color: #f6f8fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            padding: 20px;
+            overflow-x: auto;
+            margin: 25px 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 25px 0;
+            border-radius: 3px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 35px 0;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #555;
+            font-size: 0.85em;
+        }
+        
+        footer a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+                font-size: 0.95em;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .nav-links {
+                font-size: 0.8em;
+            }
+            
+            .nav-links a {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+            
+            .article-title {
+                font-size: 1.4em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 0.9em;
+                padding: 12px;
+            }
+            
+            .site-title {
+                font-size: 1em;
+            }
+            
+            .nav-links {
+                font-size: 0.75em;
+            }
+            
+            .article-title {
+                font-size: 1.3em;
+            }
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+                color: #eee;
+            }
+            
+            nav {
+                border-bottom-color: #444;
+            }
+            
+            .site-title, .nav-links a, .article-title, h1, h2, h3, h4, h5, h6 {
+                color: #eee;
+            }
+            
+            .article-date {
+                color: #ccc;
+            }
+            
+            blockquote {
+                border-left-color: #555;
+                color: #ccc;
+            }
+            
+            code {
+                background-color: #2d3748;
+                color: #e2e8f0;
+            }
+            
+            pre {
+                background-color: #2d3748;
+            }
+            
+            hr, footer {
+                border-color: #444;
+            }
+            
+            footer, footer a {
+                color: #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="site-title">✏️ AIニュース</a>
+        <div class="nav-links">
+            <a href="../index.html">ホーム</a>
+            <a href="./archive.html">アーカイブ</a>
+            <a href="../feed.xml">RSS</a>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1 id="gated-attentionall-you-need">Gated Attentionは本当に「All you need」なのか？</h1>
+<p>Noam Shazeer氏らが<a href="https://arxiv.org/abs/1701.06538">発明</a>して以来、MoE（Mixture of Experts）モデルは着実に重要性を増し、<a href="https://x.com/swyx/status/1671272883379908608?ref_src=twsrc%5Etfw">GPT‑4</a>や<a href="https://mistral.ai/news/mixtral-of-experts">Mixtral</a>（8 experts）を経て、<a href="https://news.smol.ai/issues/24-05-06-ainews-deepseek-v2-beats-mixtral-8x22b-with-greater160-experts-at-half-the-cost">DeepSeek</a>（160 experts）、<a href="https://news.smol.ai/issues/24-04-25-ainews-snowflake-arctic-fully-open-10b128x4b-dense-moe-hybrid-llm">Snowflake</a>（128 experts）などがさらに疎構造化を推し進めました。現在では、GeminiのようにMoE採用が公表されているモデルもあり、最先端モデルでMoEを使わないものはほぼ存在しないと言ってよい状況です。</p>
+<p>本日の<a href="https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&amp;from=research.latest-advancements-list">Qwen3‑Nextリリース</a>は、モデルの疎構造化をさらに進めています。業界は「エキスパート数」から「総パラメータ数とアクティブパラメータ数の比率」へと指標を移し、3.75%（3B / 80B）は <a href="https://news.smol.ai/issues/25-08-05-gpt-oss">GPT‑OSS</a> の4.3%や<a href="https://news.smol.ai/issues/25-04-28-qwen-3">Qwen3</a>の従来の10%よりも低い値です。</p>
+<p><img alt="" src="https://resend-attachments.s3.amazonaws.com/DJmyVCbWnbgSMfu" /></p>
+<p>彼らによると：</p>
+<blockquote>
+<p><strong>Ultra‑Sparse MoE: アクティブ化されるのはパラメータの3.7%のみ</strong><br />
+Qwen3‑Nextは非常に疎なMoE設計を採用しており、総パラメータ80Bのうち推論ステップごとにアクティブになるのは約3Bのみです。グローバル負荷分散を行い、アクティブなエキスパート数を固定したまま総エキスパートパラメータを増やすと、学習損失が着実に減少することが実験で示されました。Qwen3のMoE（総128エキスパート、8ルーティング）と比較して、<strong>Qwen3‑Nextは総512エキスパートに拡張し、10ルーティングエキスパート＋1共有エキスパートを組み合わせ</strong>、性能を損なわずにリソース利用を最大化しています。</p>
+</blockquote>
+<p>機械学習の専門家にとっては、事前学習で見られた明確なパレート改善がより大きな成果かもしれません。</p>
+<p><img alt="" src="https://resend-attachments.s3.amazonaws.com/aoT1VPauj4wiiUl" /></p>
+<p>著者らは以下のアーキテクチャ上の進歩を挙げています：</p>
+<ul>
+<li><strong>ハイブリッドアーキテクチャ: Gated DeltaNet + Gated Attention</strong><br />
+  Attention出力のゲーティング機構により、Attention SinkやMassive Activationといった問題を解消し、モデル全体の数値安定性を確保。</li>
+<li><strong>新しいLayer Norm</strong><br />
+  Qwen3ではQK‑Normを使用していましたが、一部のLayer Normの重みが異常に大きくなることがありました。これを修正し安定性をさらに高めるため、Qwen3‑NextではZero‑Centered RMSNormを採用し、Normの重みにweight decayを適用して無制限な成長を防止。</li>
+<li><strong>MoE選択の改善</strong><br />
+  初期化時にMoEルーターのパラメータを正規化し、学習初期から各エキスパートが偏りなく選択されるようにすることで、ランダム初期化によるノイズを低減。</li>
+</ul>
+<hr />
+<h1 id="ai-twitter-recap">AI Twitter Recap</h1>
+<p><strong>AlibabaのQwen3‑Nextハイブリッドアーキテクチャとエコシステム対応</strong></p>
+<ul>
+<li><strong>Qwen3‑Next‑80B‑A3B</strong><br />
+  Alibabaは新しいハイブリッドMoEファミリーを発表しました。総80Bパラメータ（512 experts; 10 routed + 1 shared）のうち、トークンごとに約3Bのみをルーティングし、<strong>Gated DeltaNet + Gated Attention</strong>、最適化されたマルチトークン予測、Zero‑Centered RMSNorm＋weight decayを組み合わせています。約15兆トークンで学習され、長文コンテキストではQwen3‑32B比で学習コスト10分の1、推論速度10倍を謳っています。「Thinking」版はGemini‑2.5‑Flash‑Thinkingを上回り、Instruct版は235Bフラッグシップに迫る性能とされています。発表とモデルリンク: <a href="https://twitter.com/Alibaba_Qwen/status/1966197643904000262">@Alibaba_Qwen</a>、<a href="https://twitter.com/Alibaba_Qwen/status/1966206151391064143">NVIDIA API catalog</a>。アーキテクチャ背景とリリース理由: <a href="https://twitter.com/JustinLin610/status/1966199996728156167">@JustinLin610</a>。Gated Attention/DeltaNet、疎構造、MTPの技術詳細: <a href="https://twitter.com/teortaxesTex/status/1966201258404204568">@teortaxesTex</a>。</li>
+<li><strong>デプロイとツールチェーン</strong><br />
+  Hugging Face上のHyperbolicでBF16推論に対応し、低レイテンシエンドポイントを提供（<a href="https://twitter.com/Yuchenj_UW/status/1966199037973200955">@Yuchenj_UW</a>、<a href="https://twitter.com/Yuchenj_UW/status/1966201249721888800">続報</a>）。ハイブリッドモデル向けの高速カーネルとメモリ管理を備えたvLLMネイティブ対応も開始（<a href="https://twitter.com/vllm_project/status/1966224816777928960">vLLM blog</a>）。Basetenは4×H100での専用デプロイを提供（<a href="https://twitter.com/basetenco/status/1966224960223158768">@basetenco</a>）。Hugging Face、ModelScope、Kaggleで利用可能で、Qwenチャットアプリでも試用可能（<a href="https://twitter.com/Alibaba_Qwen/status/1966197643904000262">@Alibaba_Qwen</a>）。</li>
+</ul>
+<hr />
+<p><strong>画像生成とOCR: ByteDance Seedream 4.0、Florence‑2、PaddleOCRv5、Points‑Reader</strong></p>
+<ul>
+<li><strong>Seedream 4.0（ByteDance）</strong><br />
+  新しいT2I/画像編集モデルであるSeedream 4.0は、Seedream 3とSeedEdit 3を統合し、LM Arenaで利用可能に（<a href="https://twitter.com/lmarena_ai/status/1965929099370889432">@lmarena_ai</a>）。独立テストではArtificial AnalysisのText‑to‑Imageランキングで首位、Image EditingではGoogle Gemini 2.5 Flash（Nano Banana）と同等または上回る性能を示し、テキスト描画も改善。価格は1,000生成あたり30ドルで、FAL、Replicate、BytePlusで利用可能（<a href="https://twitter.com/ArtificialAnlys/status/1966167814512980210">@ArtificialAnlys</a>）。LM Arenaはマルチターン画像編集ワークフローにも対応（<a href="https://twitter.com/lmarena_ai/status/1965929101799399757">@lmarena_ai</a>）。</li>
+<li><strong>OCRスタックの更新</strong>  </li>
+<li><strong>PP‑OCRv5</strong>: 高密度文書やエッジデバイス向けに設計された70Mパラメータのモジュール型OCRパイプライン（Apache‑2.0）がHugging Faceで公開（<a href="https://twitter.com/PaddlePaddle/status/1965957482716832193">@PaddlePaddle</a>、<a href="https://twitter.com/mervenoyann/status/1966097461640126704">@mervenoyann</a>）。</li>
+<li><strong>Points‑Reader（Tencent, 4B）</strong>: Qwen2.5‑VLアノテーション＋自己学習で訓練されたOCRモデル。複数ベンチマークでQwen2.5‑VLやMistralOCRを上回る性能。モデルとデモはHFで公開（<a href="https://twitter.com/mervenoyann/status/1966176133894098944">@mervenoyann</a>、<a href="https://twitter.com/mervenoyann/status/1966178434570412384">リンク</a>）。</li>
+<li><strong>Florence‑2</strong>: 人気のVLMがtransformersに公式対応、florence‑community org経由で利用可能（<a href="https://twitter.com/mervenoyann/status/1966122522723725420">@mervenoyann</a>）。</li>
+<li><strong>精密インペインティング</strong>: InstantXのQwen Image Inpainting ControlNet（HFモデル＋デモ）が高品質なターゲット編集に対応（<a href="https://twitter.com/multimodalart/status/1966190381340692748">@multimodalart</a>）。</li>
+</ul>
+<hr />
+<p><strong>開発者プラットフォーム: VS Code + Copilot、Hugging Face高速化、vLLM採用拡大</strong></p>
+<ul>
+<li><strong>VS Code v1.104</strong><br />
+  Copilot Chatの大幅アップデート（エージェント統合改善、モデル選択のAutoモード、ターミナル自動承認改善、UI向上）と、ルール/指示管理用の<a href="http://agents.md/">AGENTS.md</a>公式対応（<a href="https://twitter.com/code/status/1966145747566375215">リリース</a>、<a href="http://agents.md/">AGENTS.md</a> <a href="https://twitter.com/burkeholland/status/1966168396636238194">由来</a>）。新しいBYOK拡張APIでプロバイダーキーを直接利用可能に。</li>
+<li><strong>Copilot Chat内でのオープンモデル利用</strong><br />
+  Hugging Face Inference ProvidersがVS Codeに統合され、GLM‑4.5、Qwen3 Coder、DeepSeek 3.1、Kimi K2、GPT‑OSSなどのOSS LLMがワンクリックで利用可能に（<a href="https://twitter.com/reach_vb/status/1966185427582497171">@reach_vb</a>、<a href="https://twitter.com/reach_vb/status/1966185683187630344">ガイド</a>、<a href="https://twitter.com/hanouticelina/status/1966201072390701298">@hanouticelina</a>、<a href="https://twitter.com/ClementDelangue/status/1966248245304373736">マーケットプレイス</a>）。</li>
+<li><strong>Transformersの性能改善</strong><br />
+  GPT‑OSSリリースに伴い、MXFP4量子化、事前構築カーネル、テンソル/エキスパート並列、連続バッチ処理などの大幅な性能改善がtransformersに追加（<a href="https://twitter.com/ariG23498/status/1966111451481043402">@ariG23498</a>、<a href="https://twitter.com/reach_vb/status/1966134598682767507">ブログ</a>、<a href="https://twitter.com/LysandreJik/status/1966147345646780561">@LysandreJik</a>）。</li>
+<li><strong>vLLMの勢い</strong><br />
+  Thinking MachinesがvLLMチームを構築し、最先端モデルのオープンソース推論を推進。興味があれば連絡を（<a href="https://twitter.com/woosuk_k/status/1966245455815487703">@woosuk_k</a>）。</li>
+</ul>
+<hr />
+<p>（以下、他のセクションも同様の形式で日本語化）</p>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+            <a href="https://news.smol.ai/">news.smol.ai</a>
+        </p>
+    </footer>
+</body>
+</html>

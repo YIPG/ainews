@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 11 Sep 2025 06:35:48 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Sep 2025 01:44:24 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>Gated Attentionは本当に「All you need」なのか？</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-11.html</link>
+      <description><![CDATA[Noam Shazeer氏らが発明して以来、MoE（Mixture of Experts）モデルは着実に重要性を増し、GPT‑4やMixtral（8 experts）を経て、DeepSeek（160 experts）、Snowflake（128 experts）などがさらに疎構造化を推し進めま...]]></description>
+      <pubDate>Thu, 11 Sep 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-11.html</guid>
+    </item>
     <item>
       <title>Oracleおめでとうございます！</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-10.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[GPT5がPokemon Redを高速クリア（o3の3倍速）や、Perplexityが$200Mを調達し$20Bの評価額に到達といったニュースもありますが、本日の主役は今週大規模な資金注入を発表したオープンモデル陣営です。...]]></description>
       <pubDate>Thu, 14 Aug 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-14.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-13.html</link>
-      <description><![CDATA[GPT-5の小規模なアップデートが続いています（詳細はTwitter Recapをご覧ください）。 静かな日なので、エージェントを開発して、MiniMaxの友人たちと一緒に現金賞金15万ドルを目指してみてはいかがでしょうか？（MiniMax-M1で有名）。...]]></description>
-      <pubDate>Wed, 13 Aug 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-13.html</guid>
     </item>
   </channel>
 </rss>
