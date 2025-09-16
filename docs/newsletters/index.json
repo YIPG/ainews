@@ -221,8 +221,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 --- オンデバイス推論強化：MetaのMobileLLM-R1（サブ1B）がHFで公開 Qwen3‑Next‑80B（A3B）：ハイブリッドアテンション、256kコンテキスト、インフラ影響大 エージェント、評価修正、失敗分析...",
       "filename": "2025-09-13.html"
+    },
+    {
+      "date": "2025-09-15",
+      "title": "Codexはこれだけで十分？",
+      "summary": "Codexはこれだけで十分？...",
+      "filename": "2025-09-15.html"
     }
   ],
-  "lastUpdated": "2025-09-15T01:54:34.593442",
-  "totalCount": 37
+  "lastUpdated": "2025-09-16T06:35:16.438853",
+  "totalCount": 38
 }
