@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 17 Sep 2025 06:35:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Sep 2025 01:45:54 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日、のようなもの</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-17.html</link>
+      <description><![CDATA[静かな一日、のようなもの Anthropicが8月から9月にかけての信頼性問題に関する詳細なポストモーテムを公開しました。また、OpenAIとGoogleがICPC大会で金メダルを獲得しました。 ---...]]></description>
+      <pubDate>Wed, 17 Sep 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-17.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-16.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[新たなSOTAオープンモデル登場...]]></description>
       <pubDate>Thu, 21 Aug 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-21.html</guid>
-    </item>
-    <item>
-      <title>遅れての投稿で申し訳ありません。DeepSeekの公式発表がかなり遅れました</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-20.html</link>
-      <description><![CDATA[遅れての投稿で申し訳ありません。DeepSeekの公式発表がかなり遅れました 標準的な知識系ベンチマークの向上は漸進的です。 しかし、コーディングやエージェント系ベンチマークでは重要な改善が見られ、エージェント用途での有用性が増しています。...]]></description>
-      <pubDate>Wed, 20 Aug 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-20.html</guid>
     </item>
   </channel>
 </rss>
