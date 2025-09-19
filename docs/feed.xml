@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 18 Sep 2025 01:45:54 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Sep 2025 06:34:52 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>アメリカのAIスタックが動き出す</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-18.html</link>
+      <description><![CDATA[アメリカのAIスタックが動き出す Softbankと米国に関する複数のニュースが出ていますが、本日の最大の話題はNVIDIAとの提携です。Tom's Hardwareの見出しが端的に表しています。...]]></description>
+      <pubDate>Thu, 18 Sep 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-18.html</guid>
+    </item>
     <item>
       <title>静かな一日、のようなもの</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-17.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 今週末、AI Engineer World’s Fair の最後の動画が公開予定ですので、こちらからご覧ください。 --- インタラクティブな世界シミュレーターとエンボディドトレーニング（Genie 3 + SIMA）...]]></description>
       <pubDate>Fri, 22 Aug 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-22.html</guid>
-    </item>
-    <item>
-      <title>新たなSOTAオープンモデル登場</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-21.html</link>
-      <description><![CDATA[新たなSOTAオープンモデル登場...]]></description>
-      <pubDate>Thu, 21 Aug 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-21.html</guid>
     </item>
   </channel>
 </rss>
