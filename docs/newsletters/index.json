@@ -245,8 +245,14 @@
       "title": "アメリカのAIスタックが動き出す",
       "summary": "アメリカのAIスタックが動き出す Softbankと米国に関する複数のニュースが出ていますが、本日の最大の話題はNVIDIAとの提携です。Tom's Hardwareの見出しが端的に表しています。...",
       "filename": "2025-09-18.html"
+    },
+    {
+      "date": "2025-09-19",
+      "title": "xAIはこれさえあれば十分？",
+      "summary": "xAIはこれさえあれば十分？ フェイクニュースでAnthropicを上回る評価額になるという話もありましたが、実際にはxAIがGrok 4 Fastを発表しました。これは同社のFastモデルの2つ目で、キーワードは「効率」です。...",
+      "filename": "2025-09-19.html"
     }
   ],
-  "lastUpdated": "2025-09-19T06:34:52.847811",
-  "totalCount": 41
+  "lastUpdated": "2025-09-22T01:55:58.964446",
+  "totalCount": 42
 }
