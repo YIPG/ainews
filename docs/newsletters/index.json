@@ -251,8 +251,14 @@
       "title": "xAIはこれさえあれば十分？",
       "summary": "xAIはこれさえあれば十分？ フェイクニュースでAnthropicを上回る評価額になるという話もありましたが、実際にはxAIがGrok 4 Fastを発表しました。これは同社のFastモデルの2つ目で、キーワードは「効率」です。...",
       "filename": "2025-09-19.html"
+    },
+    {
+      "date": "2025-09-22",
+      "title": "何が起きているのか？",
+      "summary": "通常であれば、今日発表された Qwen3-Omniモデル や DeepSeek V3.1アップデート のような話題を取り上げるところですが、本日は再びNVIDIAの動きが中心です。過去1週間で、NVIDIAは Intelへの50億ドル投資、EnfabricaのCEO招聘に9億ドル、Wayneへ...",
+      "filename": "2025-09-22.html"
     }
   ],
-  "lastUpdated": "2025-09-22T01:55:58.964446",
-  "totalCount": 42
+  "lastUpdated": "2025-09-23T06:35:19.901876",
+  "totalCount": 43
 }

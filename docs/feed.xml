@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 22 Sep 2025 01:55:58 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Sep 2025 06:35:19 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>何が起きているのか？</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-22.html</link>
+      <description><![CDATA[通常であれば、今日発表された Qwen3-Omniモデル や DeepSeek V3.1アップデート のような話題を取り上げるところですが、本日は再びNVIDIAの動きが中心です。過去1週間で、NVIDIAは Intelへの50億ドル投資、EnfabricaのCEO招聘に9億ドル、Wayneへ...]]></description>
+      <pubDate>Mon, 22 Sep 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-22.html</guid>
+    </item>
     <item>
       <title>xAIはこれさえあれば十分？</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-19.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[Gemini がすべてを制す Google が本日発表しました。 そしてLMArena の結果は明らかです。 --- Gemini 2.5 Flash Image（コードネーム “nano-banana”）が画像編集分野を席巻...]]></description>
       <pubDate>Tue, 26 Aug 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-26.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-25.html</link>
-      <description><![CDATA[静かな一日 今週はTwitterやRedditの動きを見ると、GDM関連の大きな発表が控えているようですが、今日は静かな一日です。 オープンウェイトモデルの公開：xAIのGrok-2/2.5、Microsoft VibeVoice、Motif-2.6B...]]></description>
-      <pubDate>Mon, 25 Aug 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-25.html</guid>
     </item>
   </channel>
 </rss>
