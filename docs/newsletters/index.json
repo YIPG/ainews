@@ -257,8 +257,14 @@
       "title": "何が起きているのか？",
       "summary": "通常であれば、今日発表された Qwen3-Omniモデル や DeepSeek V3.1アップデート のような話題を取り上げるところですが、本日は再びNVIDIAの動きが中心です。過去1週間で、NVIDIAは Intelへの50億ドル投資、EnfabricaのCEO招聘に9億ドル、Wayneへ...",
       "filename": "2025-09-22.html"
+    },
+    {
+      "date": "2025-09-23",
+      "title": "Qwenは全てを満たすのか？",
+      "summary": "本日は AI Engineer Paris と AliCloud の年次 Yunqi（別名 Apsara）カンファレンス が開催され、Tongyi Qianwen（Qwen） チームは全モデルのアップデートを発表しました。中でも注目は、3週間前にプレビューされた1兆パラメータの大型モデル Qw...",
+      "filename": "2025-09-23.html"
     }
   ],
-  "lastUpdated": "2025-09-23T06:35:19.901876",
-  "totalCount": 43
+  "lastUpdated": "2025-09-24T12:49:24.627525",
+  "totalCount": 44
 }
