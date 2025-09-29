@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 26 Sep 2025 06:35:13 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Sep 2025 01:50:52 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな週末の締めくくり</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-26.html</link>
+      <description><![CDATA[静かな週末の締めくくり 来週は多くの新製品発表が予定されているため、今は一息つける状況です。AIE CODE 第2ラウンドへの応募はこちら。 --- Googleの9月アップデート：Gemini Robotics 1.5、Live、Veo 3、Flash価格改定...]]></description>
+      <pubDate>Fri, 26 Sep 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-26.html</guid>
+    </item>
     <item>
       <title>もうすぐ到達です！</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-25.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かなホリデーウィークエンド 新たに発表された AI Engineer Code Summit の応募を進めるには良い日です。 --- コーディング・コパイロット：GPT‑5がXcodeに統合、Grok Code Fastが急伸、Claude CodeのUX議論...]]></description>
       <pubDate>Mon, 01 Sep 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-01.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-08-29.html</link>
-      <description><![CDATA[静かな一日 --- Apple のオンデバイス VLM 推進（FastVLM, MobileCLIP2）と MLX アップグレード エージェント型コーディングスタック：Grok Code Fast、Codex/Xcode 26、CLI ネイティブワークフロー...]]></description>
-      <pubDate>Fri, 29 Aug 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-08-29.html</guid>
     </item>
   </channel>
 </rss>
