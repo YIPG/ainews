@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 29 Sep 2025 01:50:52 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Sep 2025 12:51:47 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>Claudeはこれさえあれば十分です。</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-29.html</link>
+      <description><![CDATA[Claudeはこれさえあれば十分です。...]]></description>
+      <pubDate>Mon, 29 Sep 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-29.html</guid>
+    </item>
     <item>
       <title>静かな週末の締めくくり</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-26.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[Antチーム、おめでとうございます！ これは以前から広く噂されていましたが、最終的な評価額は予想を上回りました。彼らの発表から注目すべき数字をいくつかご紹介します。 Anthropic、本当におめでとうございます！...]]></description>
       <pubDate>Tue, 02 Sep 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-02.html</guid>
-    </item>
-    <item>
-      <title>静かなホリデーウィークエンド</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-01.html</link>
-      <description><![CDATA[静かなホリデーウィークエンド 新たに発表された AI Engineer Code Summit の応募を進めるには良い日です。 --- コーディング・コパイロット：GPT‑5がXcodeに統合、Grok Code Fastが急伸、Claude CodeのUX議論...]]></description>
-      <pubDate>Mon, 01 Sep 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-01.html</guid>
     </item>
   </channel>
 </rss>
