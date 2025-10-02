@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 01 Oct 2025 01:58:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Oct 2025 06:34:57 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>Thinkerと名付けられたかもしれない？</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-01.html</link>
+      <description><![CDATA[Thinkerと名付けられたかもしれない？ タイミングが非常に偶然に重なっています。 ランディングページによると：...]]></description>
+      <pubDate>Wed, 01 Oct 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-01.html</guid>
+    </item>
     <item>
       <title>あなたの顔がすべてです。</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-30.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[みんなデカコーン時代。 Congrats to Sierra が最新の ~~Decagon~~、つまりデカコーンになったことを祝福します。...]]></description>
       <pubDate>Thu, 04 Sep 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-04.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-03.html</link>
-      <description><![CDATA[静かな一日 静かな一日です。Exaの7億ドルのシリーズB調達、OpenPipeのCoreweaveによる買収、Statsig、そしてAlexのOpenAIによる買収、おめでとうございます。 --- エージェント基盤の標準化とプロトコル...]]></description>
-      <pubDate>Wed, 03 Sep 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-03.html</guid>
     </item>
   </channel>
 </rss>
