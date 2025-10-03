@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 02 Oct 2025 06:34:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Oct 2025 06:34:17 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-02.html</link>
+      <description><![CDATA[静かな一日 今日は比較的静かなニュース日ですので、最新の Latent Space with Dylan Field のポッドキャストをご覧いただけます。 また、第一回 AI Engineer Code Summit の招待状配布も始まっています。...]]></description>
+      <pubDate>Thu, 02 Oct 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-02.html</guid>
+    </item>
     <item>
       <title>Thinkerと名付けられたかもしれない？</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-01.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[7月に、Kimi K2 がこれまでで最大のSOTA OSSオープンモデルとしてリリースされたことについてコメントしましたが、本日 Moonshot AI がモデルの重みを更新し、論文で新たなベンチマークを公開しました。...]]></description>
       <pubDate>Fri, 05 Sep 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-05.html</guid>
-    </item>
-    <item>
-      <title>みんなデカコーン時代。</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-04.html</link>
-      <description><![CDATA[みんなデカコーン時代。 Congrats to Sierra が最新の ~~Decagon~~、つまりデカコーンになったことを祝福します。...]]></description>
-      <pubDate>Thu, 04 Sep 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-04.html</guid>
     </item>
   </channel>
 </rss>
