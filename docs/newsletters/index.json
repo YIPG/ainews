@@ -305,8 +305,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 今日は比較的静かなニュース日ですので、最新の Latent Space with Dylan Field のポッドキャストをご覧いただけます。 また、第一回 AI Engineer Code Summit の招待状配布も始まっています。...",
       "filename": "2025-10-02.html"
+    },
+    {
+      "date": "2025-10-03",
+      "title": "DevDay前の静けさ",
+      "summary": "DevDay前の静けさ gm, Anthropic が新しいCTOを迎えました。 最前線のコーディングエージェントとモデル順位（Claude 4.5, Grok Code Fast, GoogleのJules, Qwenの命名, Arenaリーダーボード）...",
+      "filename": "2025-10-03.html"
     }
   ],
-  "lastUpdated": "2025-10-03T06:34:17.157895",
-  "totalCount": 51
+  "lastUpdated": "2025-10-06T01:49:31.958887",
+  "totalCount": 52
 }
