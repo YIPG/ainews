@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 06 Oct 2025 01:49:31 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Oct 2025 06:35:02 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>OpenAIは、あなたに必要なすべてかもしれません。</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-07.html</link>
+      <description><![CDATA[OpenAIは、あなたに必要なすべてかもしれません。 OpenAIのGPT‑5は、同社のDevDayイベントの要約を非常にうまく行ったため、本日のメールタイトルはそのまま採用しました。詳細な分析は明日のLatent Spaceポッドキャストに譲りますが、本日は見逃せないリンク集をご紹介します。...]]></description>
+      <pubDate>Tue, 07 Oct 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-07.html</guid>
+    </item>
     <item>
       <title>DevDay前の静けさ</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-03.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 AppleのiPhoneイベントでは小規模なアップデートが発表されました。 --- コーディングエージェントとツール開発の加速 モデルと推論の進展 マルチモーダル生成、動画、"Vibe Coding"...]]></description>
       <pubDate>Tue, 09 Sep 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-09.html</guid>
-    </item>
-    <item>
-      <title>**AI Twitterまとめ**</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-08.html</link>
-      <description><![CDATA[コーディングエージェントとツール開発の加速 モデルと推論の進展 マルチモーダル生成、動画、"Vibe Coding" エージェント、ポストトレーニングRL、評価手法 ロボティクスとエンボディAI ベンチマーク、リーダーボード、エンタープライズ...]]></description>
-      <pubDate>Mon, 08 Sep 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-08.html</guid>
     </item>
   </channel>
 </rss>
