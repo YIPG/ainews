@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 07 Oct 2025 06:35:02 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Oct 2025 06:36:21 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-08.html</link>
+      <description><![CDATA[静かな一日 OpenAIのDevDayで発表された内容について質問がある場合、OpenAIチームは明日のReddit AMAに向けて、特にAIエンジニアの皆様からの良い質問を募集しています。投稿はこちらからお願いします：here。...]]></description>
+      <pubDate>Wed, 08 Oct 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-08.html</guid>
+    </item>
     <item>
       <title>OpenAIは、あなたに必要なすべてかもしれません。</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-07.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[Oracleおめでとうございます！...]]></description>
       <pubDate>Wed, 10 Sep 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-10.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-09.html</link>
-      <description><![CDATA[静かな一日 AppleのiPhoneイベントでは小規模なアップデートが発表されました。 --- コーディングエージェントとツール開発の加速 モデルと推論の進展 マルチモーダル生成、動画、"Vibe Coding"...]]></description>
-      <pubDate>Tue, 09 Sep 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-09.html</guid>
     </item>
   </channel>
 </rss>
