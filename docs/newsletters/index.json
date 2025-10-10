@@ -323,8 +323,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 OpenAIのDevDayで発表された内容について質問がある場合、OpenAIチームは明日のReddit AMAに向けて、特にAIエンジニアの皆様からの良い質問を募集しています。投稿はこちらからお願いします：here。...",
       "filename": "2025-10-08.html"
+    },
+    {
+      "date": "2025-10-09",
+      "title": "300枚のスライドがあれば十分です。",
+      "summary": "300枚のスライドがあれば十分です。 Reflection、Mastra、Datacurve、Spellbook、Kernel の資金調達成功、おめでとうございます。...",
+      "filename": "2025-10-09.html"
     }
   ],
-  "lastUpdated": "2025-10-09T06:36:21.961090",
-  "totalCount": 54
+  "lastUpdated": "2025-10-10T06:36:04.424211",
+  "totalCount": 55
 }
