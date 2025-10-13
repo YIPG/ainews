@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 10 Oct 2025 06:36:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Oct 2025 01:55:57 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-10.html</link>
+      <description><![CDATA[静かな一日 AIE CODEの第2回応募はあと5日で締め切りです。 --- 推論：FrontierMath対決、Markovian Thinking、そして「推論トレーニング」が実際に教えること システムと推論：Blackwell + vLLM、適応型スペキュレーター、スパースアテンションKV階層化...]]></description>
+      <pubDate>Fri, 10 Oct 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-10.html</guid>
+    </item>
     <item>
       <title>300枚のスライドがあれば十分です。</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-09.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 --- オンデバイス推論強化：MetaのMobileLLM-R1（サブ1B）がHFで公開 Qwen3‑Next‑80B（A3B）：ハイブリッドアテンション、256kコンテキスト、インフラ影響大 エージェント、評価修正、失敗分析...]]></description>
       <pubDate>Sat, 13 Sep 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-13.html</guid>
-    </item>
-    <item>
-      <title>Gated Attentionは本当に「All you need」なのか？</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-11.html</link>
-      <description><![CDATA[Noam Shazeer氏らが発明して以来、MoE（Mixture of Experts）モデルは着実に重要性を増し、GPT‑4やMixtral（8 experts）を経て、DeepSeek（160 experts）、Snowflake（128 experts）などがさらに疎構造化を推し進めま...]]></description>
-      <pubDate>Thu, 11 Sep 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-11.html</guid>
     </item>
   </channel>
 </rss>
