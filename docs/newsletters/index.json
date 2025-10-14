@@ -335,8 +335,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 AIE CODEの第2回応募はあと5日で締め切りです。 --- 推論：FrontierMath対決、Markovian Thinking、そして「推論トレーニング」が実際に教えること システムと推論：Blackwell + vLLM、適応型スペキュレーター、スパースアテンションKV階層化...",
       "filename": "2025-10-10.html"
+    },
+    {
+      "date": "2025-10-13",
+      "title": "ASICこそが全て。",
+      "summary": "ASICこそが全て。 OpenAIは最近、「人類史上最大の共同産業プロジェクト」を目指し、数々の半導体取引を進めています。 そして本日、最後の一手が発表されました。 GoogleのTPU出身者を採用した後、噂通りのスケジュールで...",
+      "filename": "2025-10-13.html"
     }
   ],
-  "lastUpdated": "2025-10-13T01:55:57.068319",
-  "totalCount": 56
+  "lastUpdated": "2025-10-14T06:35:32.534948",
+  "totalCount": 57
 }
