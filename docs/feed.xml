@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 15 Oct 2025 12:52:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Oct 2025 12:52:20 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>yay fast Claude</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-15.html</link>
+      <description><![CDATA[yay fast Claude...]]></description>
+      <pubDate>Wed, 15 Oct 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-15.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-14.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日、のようなもの Anthropicが8月から9月にかけての信頼性問題に関する詳細なポストモーテムを公開しました。また、OpenAIとGoogleがICPC大会で金メダルを獲得しました。 ---...]]></description>
       <pubDate>Wed, 17 Sep 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-17.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-16.html</link>
-      <description><![CDATA[静かな一日 主要なニュースとして、TikTokの米国事業に関する大きな決着がありました。これはAIにも多少影響しますが、主にビジネス関連のニュースです。 --- エージェント型コーディングとIDE：GPT‑5 Codexの展開、IDEコンテキスト、MCPの普及...]]></description>
-      <pubDate>Tue, 16 Sep 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-16.html</guid>
     </item>
   </channel>
 </rss>
