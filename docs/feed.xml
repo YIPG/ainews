@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 16 Oct 2025 12:52:20 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Oct 2025 12:50:37 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>Claudeはこれだけで十分</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-17.html</link>
+      <description><![CDATA[Anthropicが珍しい快挙を達成しました。Agent Skillsという新機能で、ファイルやフォルダを使って専門的なエージェントを構築する新しい方法を発表し、連続してAIニュースの見出しを飾っています。最近Claudeが追加したPDF、Doc、PPTなどの作成・読み込み機能は、すべてこのS...]]></description>
+      <pubDate>Fri, 17 Oct 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-17.html</guid>
+    </item>
     <item>
       <title>yay fast Claude</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-15.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[アメリカのAIスタックが動き出す Softbankと米国に関する複数のニュースが出ていますが、本日の最大の話題はNVIDIAとの提携です。Tom's Hardwareの見出しが端的に表しています。...]]></description>
       <pubDate>Thu, 18 Sep 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-18.html</guid>
-    </item>
-    <item>
-      <title>静かな一日、のようなもの</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-17.html</link>
-      <description><![CDATA[静かな一日、のようなもの Anthropicが8月から9月にかけての信頼性問題に関する詳細なポストモーテムを公開しました。また、OpenAIとGoogleがICPC大会で金メダルを獲得しました。 ---...]]></description>
-      <pubDate>Wed, 17 Sep 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-17.html</guid>
     </item>
   </channel>
 </rss>

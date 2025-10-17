@@ -353,8 +353,14 @@
       "title": "yay fast Claude",
       "summary": "yay fast Claude...",
       "filename": "2025-10-15.html"
+    },
+    {
+      "date": "2025-10-17",
+      "title": "Claudeはこれだけで十分",
+      "summary": "Anthropicが珍しい快挙を達成しました。Agent Skillsという新機能で、ファイルやフォルダを使って専門的なエージェントを構築する新しい方法を発表し、連続してAIニュースの見出しを飾っています。最近Claudeが追加したPDF、Doc、PPTなどの作成・読み込み機能は、すべてこのS...",
+      "filename": "2025-10-17.html"
     }
   ],
-  "lastUpdated": "2025-10-16T12:52:20.098278",
-  "totalCount": 59
+  "lastUpdated": "2025-10-17T12:50:37.694500",
+  "totalCount": 60
 }
