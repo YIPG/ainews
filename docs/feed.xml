@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 17 Oct 2025 12:50:37 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Oct 2025 06:36:27 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>Visionはすべてに必要？</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-20.html</link>
+      <description><![CDATA[Visionはすべてに必要？ ハワイでICCVが開幕する中、DeepSeekが引き続き存在感を示しています。今回発表されたのは、著者3名による比較的小規模な論文と3Bモデルですが、SAM＋CLIP＋圧縮器を組み合わせたDeepEncoderという新しいアプローチが注目されています。...]]></description>
+      <pubDate>Mon, 20 Oct 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-20.html</guid>
+    </item>
     <item>
       <title>Claudeはこれだけで十分</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-17.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[xAIはこれさえあれば十分？ フェイクニュースでAnthropicを上回る評価額になるという話もありましたが、実際にはxAIがGrok 4 Fastを発表しました。これは同社のFastモデルの2つ目で、キーワードは「効率」です。...]]></description>
       <pubDate>Fri, 19 Sep 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-19.html</guid>
-    </item>
-    <item>
-      <title>アメリカのAIスタックが動き出す</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-18.html</link>
-      <description><![CDATA[アメリカのAIスタックが動き出す Softbankと米国に関する複数のニュースが出ていますが、本日の最大の話題はNVIDIAとの提携です。Tom's Hardwareの見出しが端的に表しています。...]]></description>
-      <pubDate>Thu, 18 Sep 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-18.html</guid>
     </item>
   </channel>
 </rss>
