@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 21 Oct 2025 06:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Oct 2025 06:36:43 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>Chromiumさえあれば十分です。</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-21.html</link>
+      <description><![CDATA[Chromiumさえあれば十分です。 7月にリークされた情報（さらに以前にも）通り、OpenAIはついにChromiumをベースにしたAIブラウザ「Atlas」をMacOS向けに発表しました（現時点ではMacOSのみですが、他プラットフォームも順次対応予定。ダウンロード／公式サイトはこちら）。...]]></description>
+      <pubDate>Tue, 21 Oct 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-21.html</guid>
+    </item>
     <item>
       <title>Visionはすべてに必要？</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-20.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[通常であれば、今日発表された Qwen3-Omniモデル や DeepSeek V3.1アップデート のような話題を取り上げるところですが、本日は再びNVIDIAの動きが中心です。過去1週間で、NVIDIAは Intelへの50億ドル投資、EnfabricaのCEO招聘に9億ドル、Wayneへ...]]></description>
       <pubDate>Mon, 22 Sep 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-22.html</guid>
-    </item>
-    <item>
-      <title>xAIはこれさえあれば十分？</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-19.html</link>
-      <description><![CDATA[xAIはこれさえあれば十分？ フェイクニュースでAnthropicを上回る評価額になるという話もありましたが、実際にはxAIがGrok 4 Fastを発表しました。これは同社のFastモデルの2つ目で、キーワードは「効率」です。...]]></description>
-      <pubDate>Fri, 19 Sep 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-19.html</guid>
     </item>
   </channel>
 </rss>

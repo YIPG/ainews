@@ -365,8 +365,14 @@
       "title": "Visionはすべてに必要？",
       "summary": "Visionはすべてに必要？ ハワイでICCVが開幕する中、DeepSeekが引き続き存在感を示しています。今回発表されたのは、著者3名による比較的小規模な論文と3Bモデルですが、SAM＋CLIP＋圧縮器を組み合わせたDeepEncoderという新しいアプローチが注目されています。...",
       "filename": "2025-10-20.html"
+    },
+    {
+      "date": "2025-10-21",
+      "title": "Chromiumさえあれば十分です。",
+      "summary": "Chromiumさえあれば十分です。 7月にリークされた情報（さらに以前にも）通り、OpenAIはついにChromiumをベースにしたAIブラウザ「Atlas」をMacOS向けに発表しました（現時点ではMacOSのみですが、他プラットフォームも順次対応予定。ダウンロード／公式サイトはこちら）。...",
+      "filename": "2025-10-21.html"
     }
   ],
-  "lastUpdated": "2025-10-21T06:36:27.443959",
-  "totalCount": 61
+  "lastUpdated": "2025-10-22T06:36:43.682388",
+  "totalCount": 62
 }
