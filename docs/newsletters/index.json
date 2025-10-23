@@ -371,8 +371,14 @@
       "title": "Chromiumさえあれば十分です。",
       "summary": "Chromiumさえあれば十分です。 7月にリークされた情報（さらに以前にも）通り、OpenAIはついにChromiumをベースにしたAIブラウザ「Atlas」をMacOS向けに発表しました（現時点ではMacOSのみですが、他プラットフォームも順次対応予定。ダウンロード／公式サイトはこちら）。...",
       "filename": "2025-10-21.html"
+    },
+    {
+      "date": "2025-10-22",
+      "title": "静かな一日。",
+      "summary": "静かな一日。...",
+      "filename": "2025-10-22.html"
     }
   ],
-  "lastUpdated": "2025-10-22T06:36:43.682388",
-  "totalCount": 62
+  "lastUpdated": "2025-10-23T06:36:11.898679",
+  "totalCount": 63
 }
