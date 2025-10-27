@@ -383,8 +383,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 静かな一日です。 エージェント運用、可観測性、実環境 LLM向けRL：スケーリング則、安定性、オフポリシー 生成メディア、OCR/VLMの急伸、ロボティクス インフラとモデルプラットフォーム ルーティングと提供の忠実度...",
       "filename": "2025-10-23.html"
+    },
+    {
+      "date": "2025-10-24",
+      "title": "静かな一日",
+      "summary": "静かな一日 --- 提供・運用プラットフォーム：vLLM × NVIDIA、Mistral AI Studio、Baseten性能、InspectAI評価 中国モデル競争：MiniMax M2急伸、Zhipu GLM-4.6-Air更新...",
+      "filename": "2025-10-24.html"
     }
   ],
-  "lastUpdated": "2025-10-24T18:32:38.827881",
-  "totalCount": 64
+  "lastUpdated": "2025-10-27T02:02:13.346802",
+  "totalCount": 65
 }

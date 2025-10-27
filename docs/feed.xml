@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 24 Oct 2025 18:32:38 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Oct 2025 02:02:13 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-24.html</link>
+      <description><![CDATA[静かな一日 --- 提供・運用プラットフォーム：vLLM × NVIDIA、Mistral AI Studio、Baseten性能、InspectAI評価 中国モデル競争：MiniMax M2急伸、Zhipu GLM-4.6-Air更新...]]></description>
+      <pubDate>Fri, 24 Oct 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-24.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-23.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[もうすぐ到達です！...]]></description>
       <pubDate>Thu, 25 Sep 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-25.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-24.html</link>
-      <description><![CDATA[静かな一日 AIE Parisの2日目はこちらでご覧いただけます。ここではAIE Europe 2026のチケットが発表されました。また、11月にNYCで開催されるAIE CODE 第2波への応募もおすすめします。大規模なイベントになる予定です。...]]></description>
-      <pubDate>Wed, 24 Sep 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-24.html</guid>
     </item>
   </channel>
 </rss>
