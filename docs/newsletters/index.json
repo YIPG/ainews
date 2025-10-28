@@ -389,8 +389,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 --- 提供・運用プラットフォーム：vLLM × NVIDIA、Mistral AI Studio、Baseten性能、InspectAI評価 中国モデル競争：MiniMax M2急伸、Zhipu GLM-4.6-Air更新...",
       "filename": "2025-10-24.html"
+    },
+    {
+      "date": "2025-10-27",
+      "title": "オープンモデルにとっての大きな勝利",
+      "summary": "4か月前にMiniMax M1を発表したHailuo AIが、MiniMax M2を発表しました（無料チャットボット、モデルウェイト、GitHub、ドキュメント）。今回の発表では、非常に高い23倍のスパース性（Qwen-Nextの方が依然として上回る）や、オープンソースとしては最先端の性能を謳...",
+      "filename": "2025-10-27.html"
     }
   ],
-  "lastUpdated": "2025-10-27T02:02:13.346802",
-  "totalCount": 65
+  "lastUpdated": "2025-10-28T06:37:43.944871",
+  "totalCount": 66
 }
