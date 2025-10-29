@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 28 Oct 2025 06:37:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Oct 2025 12:52:51 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>すごい。</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-28.html</link>
+      <description><![CDATA[すごい。 Microsoftは独占権を放棄する代わりに、OpenAIがAzureへの支出を2,500億ドルコミットする契約を締結しました。これによりOpenAIは他のベンダーとも自由に取引できるようになり、Satya Nadella氏は次のように発言しています：...]]></description>
+      <pubDate>Tue, 28 Oct 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-28.html</guid>
+    </item>
     <item>
       <title>オープンモデルにとっての大きな勝利</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-27.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[Claudeはこれさえあれば十分です。...]]></description>
       <pubDate>Mon, 29 Sep 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-29.html</guid>
-    </item>
-    <item>
-      <title>静かな週末の締めくくり</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-26.html</link>
-      <description><![CDATA[静かな週末の締めくくり 来週は多くの新製品発表が予定されているため、今は一息つける状況です。AIE CODE 第2ラウンドへの応募はこちら。 --- Googleの9月アップデート：Gemini Robotics 1.5、Live、Veo 3、Flash価格改定...]]></description>
-      <pubDate>Fri, 26 Sep 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-26.html</guid>
     </item>
   </channel>
 </rss>
