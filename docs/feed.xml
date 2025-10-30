@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 29 Oct 2025 12:52:51 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Oct 2025 12:51:34 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>エージェント型コーディングがすべてです。</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-29.html</link>
+      <description><![CDATA[エージェント型コーディングがすべてです。 本日は噂されていた Cursor 2.0 のローンチ日で、洗練されたローンチ動画が公開されました。...]]></description>
+      <pubDate>Wed, 29 Oct 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-29.html</guid>
+    </item>
     <item>
       <title>すごい。</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-28.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[あなたの顔がすべてです。 Sora発表から1年半、Sora.comが一般公開されてから10か月が経過し、Metaが物議を醸す「Vibes」アプリを発表してから4日後、Sora 2（リーク情報）が本日リリースされ、好意的な反応を得ています（ただしHNのアップボート数ではSora 1の約7分の1）。...]]></description>
       <pubDate>Tue, 30 Sep 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-30.html</guid>
-    </item>
-    <item>
-      <title>Claudeはこれさえあれば十分です。</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-29.html</link>
-      <description><![CDATA[Claudeはこれさえあれば十分です。...]]></description>
-      <pubDate>Mon, 29 Sep 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-29.html</guid>
     </item>
   </channel>
 </rss>
