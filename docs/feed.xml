@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 30 Oct 2025 12:51:34 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Oct 2025 01:54:42 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-30.html</link>
+      <description><![CDATA[静かな一日...]]></description>
+      <pubDate>Thu, 30 Oct 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-30.html</guid>
+    </item>
     <item>
       <title>エージェント型コーディングがすべてです。</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-29.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[Thinkerと名付けられたかもしれない？ タイミングが非常に偶然に重なっています。 ランディングページによると：...]]></description>
       <pubDate>Wed, 01 Oct 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-01.html</guid>
-    </item>
-    <item>
-      <title>あなたの顔がすべてです。</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-09-30.html</link>
-      <description><![CDATA[あなたの顔がすべてです。 Sora発表から1年半、Sora.comが一般公開されてから10か月が経過し、Metaが物議を醸す「Vibes」アプリを発表してから4日後、Sora 2（リーク情報）が本日リリースされ、好意的な反応を得ています（ただしHNのアップボート数ではSora 1の約7分の1）。...]]></description>
-      <pubDate>Tue, 30 Sep 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-09-30.html</guid>
     </item>
   </channel>
 </rss>
