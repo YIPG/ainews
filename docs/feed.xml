@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 31 Oct 2025 01:54:42 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Nov 2025 01:55:32 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-03.html</link>
+      <description><![CDATA[静かな一日 AIE CODEのチケットとホテルはまもなく完売予定です。詳細はこちら。 --- コンピュート契約、ハードウェア競争、推論インフラ 推論LLM、長文コンテキストメモリ、ベンチマーク エージェントスタック、MCPエコシステム、開発者ツール...]]></description>
+      <pubDate>Mon, 03 Nov 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-03.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-30.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 今日は比較的静かなニュース日ですので、最新の Latent Space with Dylan Field のポッドキャストをご覧いただけます。 また、第一回 AI Engineer Code Summit の招待状配布も始まっています。...]]></description>
       <pubDate>Thu, 02 Oct 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-02.html</guid>
-    </item>
-    <item>
-      <title>Thinkerと名付けられたかもしれない？</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-01.html</link>
-      <description><![CDATA[Thinkerと名付けられたかもしれない？ タイミングが非常に偶然に重なっています。 ランディングページによると：...]]></description>
-      <pubDate>Wed, 01 Oct 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-01.html</guid>
     </item>
   </channel>
 </rss>
