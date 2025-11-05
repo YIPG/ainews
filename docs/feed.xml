@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 04 Nov 2025 01:55:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Nov 2025 06:37:41 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-04.html</link>
+      <description><![CDATA[静かな一日 4日連続の静かな日となりました。 --- コンピュート、エネルギー、AIデータセンター...]]></description>
+      <pubDate>Tue, 04 Nov 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-04.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-03.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[DevDay前の静けさ gm, Anthropic が新しいCTOを迎えました。 最前線のコーディングエージェントとモデル順位（Claude 4.5, Grok Code Fast, GoogleのJules, Qwenの命名, Arenaリーダーボード）...]]></description>
       <pubDate>Fri, 03 Oct 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-03.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-02.html</link>
-      <description><![CDATA[静かな一日 今日は比較的静かなニュース日ですので、最新の Latent Space with Dylan Field のポッドキャストをご覧いただけます。 また、第一回 AI Engineer Code Summit の招待状配布も始まっています。...]]></description>
-      <pubDate>Thu, 02 Oct 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-02.html</guid>
     </item>
   </channel>
 </rss>
