@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 07 Nov 2025 06:37:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Nov 2025 02:00:44 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>人気ベンチマークが自ら改善</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-07.html</link>
+      <description><![CDATA[人気ベンチマークが自ら改善...]]></description>
+      <pubDate>Fri, 07 Nov 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-07.html</guid>
+    </item>
     <item>
       <title>Open Weightsはすべてを解決するのか？</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-06.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[300枚のスライドがあれば十分です。 Reflection、Mastra、Datacurve、Spellbook、Kernel の資金調達成功、おめでとうございます。...]]></description>
       <pubDate>Thu, 09 Oct 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-09.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-08.html</link>
-      <description><![CDATA[静かな一日 OpenAIのDevDayで発表された内容について質問がある場合、OpenAIチームは明日のReddit AMAに向けて、特にAIエンジニアの皆様からの良い質問を募集しています。投稿はこちらからお願いします：here。...]]></description>
-      <pubDate>Wed, 08 Oct 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-08.html</guid>
     </item>
   </channel>
 </rss>
