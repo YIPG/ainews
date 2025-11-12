@@ -449,8 +449,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 Moonshot AIのKimi K2 Thinking：AMAの要点、評価、INT4設計、今後のVision対応 音声・コンピュータ操作モデル：MetaのOmnilingual ASRとGelato-30B-A3B...",
       "filename": "2025-11-10.html"
+    },
+    {
+      "date": "2025-11-11",
+      "title": "静かな一日",
+      "summary": "静かな一日 推論ベンチマークと学習技術...",
+      "filename": "2025-11-11.html"
     }
   ],
-  "lastUpdated": "2025-11-11T06:38:07.664735",
-  "totalCount": 75
+  "lastUpdated": "2025-11-12T01:56:19.189874",
+  "totalCount": 76
 }

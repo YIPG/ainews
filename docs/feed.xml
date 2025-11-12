@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 11 Nov 2025 06:38:07 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Nov 2025 01:56:19 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-11.html</link>
+      <description><![CDATA[静かな一日 推論ベンチマークと学習技術...]]></description>
+      <pubDate>Tue, 11 Nov 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-11.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-10.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[ASICこそが全て。 OpenAIは最近、「人類史上最大の共同産業プロジェクト」を目指し、数々の半導体取引を進めています。 そして本日、最後の一手が発表されました。 GoogleのTPU出身者を採用した後、噂通りのスケジュールで...]]></description>
       <pubDate>Mon, 13 Oct 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-13.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-10.html</link>
-      <description><![CDATA[静かな一日 AIE CODEの第2回応募はあと5日で締め切りです。 --- 推論：FrontierMath対決、Markovian Thinking、そして「推論トレーニング」が実際に教えること システムと推論：Blackwell + vLLM、適応型スペキュレーター、スパースアテンションKV階層化...]]></description>
-      <pubDate>Fri, 10 Oct 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-10.html</guid>
     </item>
   </channel>
 </rss>
