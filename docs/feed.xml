@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 14 Nov 2025 12:51:24 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Nov 2025 01:57:50 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>Gemini 3はいつ？</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-14.html</link>
+      <description><![CDATA[Gemini 3はいつ？ こちらでGemini 3に関する多くの示唆が見られます。GDMがAIE CODEの大規模オープニングで何を計画しているのか気になります。 （追記：チケットは完売しましたが、サイドイベントに参加したり、ボランティアとして無料で参加することも可能です）...]]></description>
+      <pubDate>Fri, 14 Nov 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-14.html</guid>
+    </item>
     <item>
       <title>一日ごとの着実な改善。</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-13.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[Anthropicが珍しい快挙を達成しました。Agent Skillsという新機能で、ファイルやフォルダを使って専門的なエージェントを構築する新しい方法を発表し、連続してAIニュースの見出しを飾っています。最近Claudeが追加したPDF、Doc、PPTなどの作成・読み込み機能は、すべてこのS...]]></description>
       <pubDate>Fri, 17 Oct 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-17.html</guid>
-    </item>
-    <item>
-      <title>yay fast Claude</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-15.html</link>
-      <description><![CDATA[yay fast Claude...]]></description>
-      <pubDate>Wed, 15 Oct 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-15.html</guid>
     </item>
   </channel>
 </rss>
