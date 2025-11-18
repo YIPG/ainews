@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 17 Nov 2025 01:57:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Nov 2025 01:56:24 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>控えめながら良質な改善</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-17.html</link>
+      <description><![CDATA[控えめながら良質な改善...]]></description>
+      <pubDate>Mon, 17 Nov 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-17.html</guid>
+    </item>
     <item>
       <title>Gemini 3はいつ？</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-14.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[Visionはすべてに必要？ ハワイでICCVが開幕する中、DeepSeekが引き続き存在感を示しています。今回発表されたのは、著者3名による比較的小規模な論文と3Bモデルですが、SAM＋CLIP＋圧縮器を組み合わせたDeepEncoderという新しいアプローチが注目されています。...]]></description>
       <pubDate>Mon, 20 Oct 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-20.html</guid>
-    </item>
-    <item>
-      <title>Claudeはこれだけで十分</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-17.html</link>
-      <description><![CDATA[Anthropicが珍しい快挙を達成しました。Agent Skillsという新機能で、ファイルやフォルダを使って専門的なエージェントを構築する新しい方法を発表し、連続してAIニュースの見出しを飾っています。最近Claudeが追加したPDF、Doc、PPTなどの作成・読み込み機能は、すべてこのS...]]></description>
-      <pubDate>Fri, 17 Oct 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-17.html</guid>
     </item>
   </channel>
 </rss>
