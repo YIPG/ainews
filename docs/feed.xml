@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 18 Nov 2025 01:56:24 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Nov 2025 06:37:10 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>Googleアカウントだけで十分？</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-18.html</link>
+      <description><![CDATA[ついに待望の Gemini 3 のローンチ が発表されました。ほぼ全ての分野で最新のベンチマークを更新（一部例外あり）、Gemini 2.5より価格は60％高く、主要なArenaリーダーボードで1位 を獲得しました。（予想通り、Gemini 3は昨日発表されたGrok 4.1を上回り、Text...]]></description>
+      <pubDate>Tue, 18 Nov 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-18.html</guid>
+    </item>
     <item>
       <title>控えめながら良質な改善</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-17.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[Chromiumさえあれば十分です。 7月にリークされた情報（さらに以前にも）通り、OpenAIはついにChromiumをベースにしたAIブラウザ「Atlas」をMacOS向けに発表しました（現時点ではMacOSのみですが、他プラットフォームも順次対応予定。ダウンロード／公式サイトはこちら）。...]]></description>
       <pubDate>Tue, 21 Oct 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-21.html</guid>
-    </item>
-    <item>
-      <title>Visionはすべてに必要？</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-20.html</link>
-      <description><![CDATA[Visionはすべてに必要？ ハワイでICCVが開幕する中、DeepSeekが引き続き存在感を示しています。今回発表されたのは、著者3名による比較的小規模な論文と3Bモデルですが、SAM＋CLIP＋圧縮器を組み合わせたDeepEncoderという新しいアプローチが注目されています。...]]></description>
-      <pubDate>Mon, 20 Oct 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-20.html</guid>
     </item>
   </channel>
 </rss>
