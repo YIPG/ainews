@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 19 Nov 2025 06:37:10 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Nov 2025 01:54:19 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>もうついていけない</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-19.html</link>
+      <description><![CDATA[もうついていけない ソフトウェアエンジニアリングタスクの期間と、各AIモデルがその50%を完了できるまでの時間をリリース日ごとに示したグラフ さらに新しい「xhigh」パラメータでの性能向上も確認されています。...]]></description>
+      <pubDate>Wed, 19 Nov 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-19.html</guid>
+    </item>
     <item>
       <title>Googleアカウントだけで十分？</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-18.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日。...]]></description>
       <pubDate>Wed, 22 Oct 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-22.html</guid>
-    </item>
-    <item>
-      <title>Chromiumさえあれば十分です。</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-21.html</link>
-      <description><![CDATA[Chromiumさえあれば十分です。 7月にリークされた情報（さらに以前にも）通り、OpenAIはついにChromiumをベースにしたAIブラウザ「Atlas」をMacOS向けに発表しました（現時点ではMacOSのみですが、他プラットフォームも順次対応予定。ダウンロード／公式サイトはこちら）。...]]></description>
-      <pubDate>Tue, 21 Oct 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-21.html</guid>
     </item>
   </channel>
 </rss>
