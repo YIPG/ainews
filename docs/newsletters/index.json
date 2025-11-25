@@ -497,8 +497,14 @@
       "title": "AIE CODE Day 1",
       "summary": "AIE CODE Day 1...",
       "filename": "2025-11-20.html"
+    },
+    {
+      "date": "2025-11-24",
+      "title": "今日はAnthropicの番です",
+      "summary": "今日はAnthropicの番です SWE-Bench Verifiedの進歩は非常に安定しており、偶然とは言い難い状況です。 Opus 4.5がSWE-bench Verifiedベンチマークで他モデルを上回る棒グラフ...",
+      "filename": "2025-11-24.html"
     }
   ],
-  "lastUpdated": "2025-11-21T06:38:01.682091",
-  "totalCount": 83
+  "lastUpdated": "2025-11-25T06:38:50.981521",
+  "totalCount": 84
 }
