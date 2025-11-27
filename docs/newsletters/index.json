@@ -503,8 +503,14 @@
       "title": "今日はAnthropicの番です",
       "summary": "今日はAnthropicの番です SWE-Bench Verifiedの進歩は非常に安定しており、偶然とは言い難い状況です。 Opus 4.5がSWE-bench Verifiedベンチマークで他モデルを上回る棒グラフ...",
       "filename": "2025-11-24.html"
+    },
+    {
+      "date": "2025-11-25",
+      "title": "Open Weightsモデルの好調な復活",
+      "summary": "Open Weightsモデルの好調な復活 過去に2024年8月のBFLのFLUX.1、Qwen-Image、2025年8月のnano bananaを取り上げ、先週はNano Banana Proに大いに盛り上がりました。そして本日、FLUX.2のリリースがタイトルニュースとなっています。...",
+      "filename": "2025-11-25.html"
     }
   ],
-  "lastUpdated": "2025-11-25T06:38:50.981521",
-  "totalCount": 84
+  "lastUpdated": "2025-11-27T01:55:26.534484",
+  "totalCount": 85
 }
