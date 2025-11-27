@@ -509,8 +509,14 @@
       "title": "Open Weightsモデルの好調な復活",
       "summary": "Open Weightsモデルの好調な復活 過去に2024年8月のBFLのFLUX.1、Qwen-Image、2025年8月のnano bananaを取り上げ、先週はNano Banana Proに大いに盛り上がりました。そして本日、FLUX.2のリリースがタイトルニュースとなっています。...",
       "filename": "2025-11-25.html"
+    },
+    {
+      "date": "2025-11-26",
+      "title": "感謝祭おめでとうございます！",
+      "summary": "感謝祭おめでとうございます！ --- エージェントシステム：長時間稼働のハーネス、MCPタスク、プロダクション展開 Claude Opus 4.5：評価、コスト/UXの知見、新機能 効率的推論とマルチエージェント通信...",
+      "filename": "2025-11-26.html"
     }
   ],
-  "lastUpdated": "2025-11-27T01:55:26.534484",
-  "totalCount": 85
+  "lastUpdated": "2025-11-27T06:39:00.779902",
+  "totalCount": 86
 }
