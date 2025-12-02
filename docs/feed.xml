@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 27 Nov 2025 06:39:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Dec 2025 06:39:41 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>クジラがすべてを解決する。</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-02.html</link>
+      <description><![CDATA[クジラがすべてを解決する。...]]></description>
+      <pubDate>Tue, 02 Dec 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-02.html</guid>
+    </item>
     <item>
       <title>感謝祭おめでとうございます！</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-26.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[エージェント型コーディングがすべてです。 本日は噂されていた Cursor 2.0 のローンチ日で、洗練されたローンチ動画が公開されました。...]]></description>
       <pubDate>Wed, 29 Oct 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-29.html</guid>
-    </item>
-    <item>
-      <title>すごい。</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-28.html</link>
-      <description><![CDATA[すごい。 Microsoftは独占権を放棄する代わりに、OpenAIがAzureへの支出を2,500億ドルコミットする契約を締結しました。これによりOpenAIは他のベンダーとも自由に取引できるようになり、Satya Nadella氏は次のように発言しています：...]]></description>
-      <pubDate>Tue, 28 Oct 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-28.html</guid>
     </item>
   </channel>
 </rss>
