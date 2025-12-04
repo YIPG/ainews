@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 02 Dec 2025 06:39:41 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Dec 2025 02:00:28 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かなNeurIPS</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-03.html</link>
+      <description><![CDATA[静かなNeurIPS 最近は OpenAIのCode Red対応 や AnthropicのIPO計画 が話題となっています。 --- AI動画・画像分野：Kling 2.6ネイティブオーディオ、Kling O1ショット制御、Runway Gen‑4.5、Nano Banana Pro (Gemini...]]></description>
+      <pubDate>Wed, 03 Dec 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-03.html</guid>
+    </item>
     <item>
       <title>クジラがすべてを解決する。</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-02.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日...]]></description>
       <pubDate>Thu, 30 Oct 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-30.html</guid>
-    </item>
-    <item>
-      <title>エージェント型コーディングがすべてです。</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-29.html</link>
-      <description><![CDATA[エージェント型コーディングがすべてです。 本日は噂されていた Cursor 2.0 のローンチ日で、洗練されたローンチ動画が公開されました。...]]></description>
-      <pubDate>Wed, 29 Oct 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-29.html</guid>
     </item>
   </channel>
 </rss>

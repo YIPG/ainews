@@ -521,8 +521,14 @@
       "title": "クジラがすべてを解決する。",
       "summary": "クジラがすべてを解決する。...",
       "filename": "2025-12-02.html"
+    },
+    {
+      "date": "2025-12-03",
+      "title": "静かなNeurIPS",
+      "summary": "静かなNeurIPS 最近は OpenAIのCode Red対応 や AnthropicのIPO計画 が話題となっています。 --- AI動画・画像分野：Kling 2.6ネイティブオーディオ、Kling O1ショット制御、Runway Gen‑4.5、Nano Banana Pro (Gemini...",
+      "filename": "2025-12-03.html"
     }
   ],
-  "lastUpdated": "2025-12-02T06:39:41.339266",
-  "totalCount": 87
+  "lastUpdated": "2025-12-04T02:00:28.948272",
+  "totalCount": 88
 }
