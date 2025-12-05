@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 04 Dec 2025 02:00:28 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Dec 2025 06:39:24 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>データこそがすべて。</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-04.html</link>
+      <description><![CDATA[データこそがすべて。...]]></description>
+      <pubDate>Thu, 04 Dec 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-04.html</guid>
+    </item>
     <item>
       <title>静かなNeurIPS</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-03.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 AIE CODEのチケットとホテルはまもなく完売予定です。詳細はこちら。 --- コンピュート契約、ハードウェア競争、推論インフラ 推論LLM、長文コンテキストメモリ、ベンチマーク エージェントスタック、MCPエコシステム、開発者ツール...]]></description>
       <pubDate>Mon, 03 Nov 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-03.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-10-30.html</link>
-      <description><![CDATA[静かな一日...]]></description>
-      <pubDate>Thu, 30 Oct 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-10-30.html</guid>
     </item>
   </channel>
 </rss>

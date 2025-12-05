@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>データこそがすべて。 | AIニュース</title>
+    <meta name="description" content="データこそがすべて。 - AIニュース 2025-12-04。最新のAI技術動向を日本語でお届け。">
+    <meta name="keywords" content="AI,人工知能,ニュースレター,2025-12-04,機械学習,深層学習,日本語">
+    <meta name="author" content="AIニュース">
+    <link rel="canonical" href="https://yipg.github.io/ainews/docs/newsletters/2025-12-04.html">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="データこそがすべて。 | AIニュース">
+    <meta property="og:description" content="データこそがすべて。 - AIニュース 2025-12-04。最新のAI技術動向を日本語でお届け。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yipg.github.io/ainews/docs/newsletters/2025-12-04.html">
+    <meta property="og:image" content="https://yipg.github.io/ainews/newsletters/og/2025-12-04.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:site_name" content="AIニュース">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2025-12-04T09:00:00+00:00">
+    <meta property="article:author" content="AIニュース">
+    <meta property="article:section" content="AI技術ニュース">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="データこそがすべて。 | AIニュース">
+    <meta name="twitter:description" content="データこそがすべて。 - AIニュース 2025-12-04。最新のAI技術動向を日本語でお届け。">
+    <meta name="twitter:image" content="https://yipg.github.io/ainews/newsletters/og/2025-12-04.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+    <link rel="alternate icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="AIニュース RSS Feed" href="../feed.xml">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 1em;
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            color: #111;
+            word-wrap: break-word;
+        }
+        
+        nav {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        
+        .site-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #111;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        
+        .site-title:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-links {
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+        
+        .nav-links a {
+            color: #111;
+            text-decoration: none;
+            margin-left: 12px;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        h1, h2, h3, h4, h5, h6 {
+            margin: 35px 0 20px 0;
+            line-height: 1.3;
+            color: #111;
+            letter-spacing: 0.01em;
+        }
+        
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.3em; }
+        h3 { font-size: 1.1em; }
+        
+        p {
+            margin: 20px 0;
+        }
+        
+        a {
+            color: #0969da;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        blockquote {
+            border-left: 3px solid #ccc;
+            margin: 25px 0;
+            padding: 0 25px;
+            color: #555;
+            font-style: italic;
+        }
+        
+        code {
+            background-color: #f6f8fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            padding: 20px;
+            overflow-x: auto;
+            margin: 25px 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 25px 0;
+            border-radius: 3px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 35px 0;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #555;
+            font-size: 0.85em;
+        }
+        
+        footer a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+                font-size: 0.95em;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .nav-links {
+                font-size: 0.8em;
+            }
+            
+            .nav-links a {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+            
+            .article-title {
+                font-size: 1.4em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 0.9em;
+                padding: 12px;
+            }
+            
+            .site-title {
+                font-size: 1em;
+            }
+            
+            .nav-links {
+                font-size: 0.75em;
+            }
+            
+            .article-title {
+                font-size: 1.3em;
+            }
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+                color: #eee;
+            }
+            
+            nav {
+                border-bottom-color: #444;
+            }
+            
+            .site-title, .nav-links a, .article-title, h1, h2, h3, h4, h5, h6 {
+                color: #eee;
+            }
+            
+            .article-date {
+                color: #ccc;
+            }
+            
+            blockquote {
+                border-left-color: #555;
+                color: #ccc;
+            }
+            
+            code {
+                background-color: #2d3748;
+                color: #e2e8f0;
+            }
+            
+            pre {
+                background-color: #2d3748;
+            }
+            
+            hr, footer {
+                border-color: #444;
+            }
+            
+            footer, footer a {
+                color: #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="site-title">✏️ AIニュース</a>
+        <div class="nav-links">
+            <a href="../index.html">ホーム</a>
+            <a href="./archive.html">アーカイブ</a>
+            <a href="../feed.xml">RSS</a>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+        </div>
+    </nav>
+
+    <main>
+        <p><strong>データこそがすべて。</strong></p>
+<p>OpenRouterが初の調査結果を公開しました。<a href="https://openrouter.ai/state-of-ai">web版</a>と<a href="https://openrouter.ai/assets/State-of-AI.pdf">pdf版</a>があり、非常に完成度の高い内容です。もちろんOpenRouterにはバイアスがあります（利用の52%がいわゆる「ロールプレイ」用途）が、他にも大量のトークンを消費するプレイヤーは存在します。しかし、週あたり7兆トークン規模のオープンデータプロキシをこのレベルで提供しているのはほぼOpenRouterだけです。</p>
+<p>主なポイント：</p>
+<ul>
+<li>Deepseekのオープンモデル市場シェア50%が急落<br />
+<a href="https://resend-attachments.s3.amazonaws.com/iNWx03qmrMiRP68">グラフ</a>によると、コーディング用途の増加によりDeepseekはほとんど使われなくなっています。</li>
+<li>推論モデルの利用がゼロから50%以上に急増<br />
+<a href="https://resend-attachments.s3.amazonaws.com/w5xn5WbKA583Dvh">グラフ</a>では推論トークンの割合が急上昇しています。</li>
+<li>Grok Code Fastの利用が高水準（無料プロモ除外でも）<br />
+<a href="https://resend-attachments.s3.amazonaws.com/c3YLyLKYM0WjP7A">グラフ</a>でトップに。</li>
+<li>Anthropicがツール呼び出しとコーディングで圧倒的シェア<br />
+<a href="https://resend-attachments.s3.amazonaws.com/kwlM5i7c6Gv5G3K">グラフ</a>で約60%を占有。</li>
+<li>今年、入力トークンは4倍、出力トークンは3倍に増加<br />
+<a href="https://resend-attachments.s3.amazonaws.com/gvqejRi2B53yOy8">グラフ</a>の背景はプログラミング用途の増加。</li>
+<li>プログラミング用途はコストとボリュームのバランスが良い<br />
+<a href="https://resend-attachments.s3.amazonaws.com/iAkVnVSLMuiLAgR">グラフ</a>参照。</li>
+</ul>
+<hr />
+<h1 id="ai-twitter">AI Twitterまとめ</h1>
+<p><strong>推論とモデルアーキテクチャ：Gemini 3 Deep ThinkとGoogle「Titans」</strong></p>
+<ul>
+<li><strong>Gemini 3 Deep Think（展開＋ベンチマーク）</strong>：GoogleがGeminiアプリ内のGoogle AI Ultra加入者向けにDeep Thinkモードを提供開始。「並列思考」（複数仮説を並行検討）を採用し、IMO/ICPCで金メダル級のバリアントから派生。ARC-AGI-2やHLEでGemini 3 Proを上回る成果を報告。例としてARC-AGI-2で45.1%達成。<a href="https://twitter.com/GoogleAI/status/1996657213390155927">詳細</a>。利用方法はGeminiアプリのプロンプトバーで「Deep Think」を選択し、「Thinking」モデルを選ぶ。</li>
+<li><strong>Titans：長文コンテキスト対応ニューラルメモリ</strong>：GoogleがRNNの効率性とTransformerの性能を組み合わせたアーキテクチャを発表。2Mトークン以上のコンテキストに対応。NeurIPSで初期結果を発表。<a href="https://twitter.com/GoogleResearch/status/1996674393842614338">詳細</a>。</li>
+</ul>
+<p><strong>コーディングモデルとエージェントハーネス</strong></p>
+<ul>
+<li><strong>OpenAI GPT-5.1-Codex Max（エージェント型コーディング）</strong>：Responses APIで利用可能。Codexエージェントハーネス内で推奨。VS Code、Cursor、Windsurf、Linearなどに統合。<a href="https://twitter.com/OpenAIDevs/status/1996643999097274560">詳細</a>。</li>
+<li><strong>Mistral Large 3（OSSコーディングモデル首位）</strong>：lmarenaで#1を獲得。Ollamaクラウドで利用可能。<a href="https://twitter.com/MistralAI/status/1996580307336638951">詳細</a>。</li>
+<li><strong>DeepSeek V3.2</strong>：BasetenがTTFT約0.22秒、191tpsの性能を公開。Math/Legal/Scienceカテゴリで高評価。<a href="https://twitter.com/basetenco/status/1996623218040254793">詳細</a>。</li>
+<li><strong>低計算量RLとトレーニング基盤</strong>：QwenがFP8 RLトレーニングを5GB VRAMで実行。<a href="https://twitter.com/Alibaba_Qwen/status/1996474298169802799">詳細</a>。</li>
+</ul>
+<p><strong>動画・画像・生成メディア</strong></p>
+<ul>
+<li><strong>Kling 2.6 + Avatar 2.0</strong>：音声同期動画生成、長尺入力と感情表現向上。<a href="https://twitter.com/Kling_ai/status/1996474009266126883">詳細</a>。</li>
+<li><strong>Runway Gen-4.5</strong>：美的コントロール強化、キャラクターモーフィングが強み。<a href="https://twitter.com/runwayml/status/1996586320110440848">詳細</a>。</li>
+<li><strong>画像リーダーボード</strong>：Bytedance Seedream 4.5がImage Editで#3、Text-to-Imageで#7。<a href="https://twitter.com/arena/status/1996641968005566876">詳細</a>。</li>
+<li><strong>SVG生成による推論・コーディング評価</strong>：YuppがSVGリーダーボードとデータセット公開。<a href="https://twitter.com/yupp_ai/status/1996697775585787924">詳細</a>。</li>
+<li><strong>Microsoft VibeVoice-Realtime-0.5B</strong>：軽量リアルタイム音声モデル。<a href="https://twitter.com/_akhaliq/status/1996602953885499466">詳細</a>。</li>
+</ul>
+<p><strong>エージェント、スキャフォールド、信頼性</strong></p>
+<ul>
+<li><strong>エージェントスキャフォールドの重要性</strong>：管理プロセス的スキャフォールドや自動圧縮、オントロジーの明確化が重要。<a href="https://twitter.com/AlexGDimakis/status/1996444591852302648">詳細</a>。</li>
+<li><strong>信頼性ツール</strong>：LangChain 1.1がモデル/ツール再試行ミドルウェアを追加。<a href="https://twitter.com/sydneyrunkle/status/1996577642749862282">詳細</a>。</li>
+<li><strong>「コードをツールとして」</strong>：CodeVisionがPythonで画像操作を構成し、OCRタスクの堅牢性を向上。<a href="https://twitter.com/dair_ai/status/1996624052493209730">詳細</a>。</li>
+<li><strong>SkillFactoryと後処理学習</strong>：検証＋再試行を示すデータ再構成でSFT→RLを改善。<a href="https://twitter.com/ZayneSprague/status/1996615552987546050">詳細</a>。</li>
+<li><strong>推論高速化</strong>：AutoJudgeが重要トークンを学習し、1.5〜2倍の速度向上。<a href="https://twitter.com/togethercompute/status/1996654662456639913">詳細</a>。</li>
+<li><strong>セキュリティ現実チェック</strong>：SUSVIBESベンチマークでClaude Sonnet 4が機能的正解61%だが安全性10.5%。<a href="https://twitter.com/omarsar0/status/1996595107924263287">詳細</a>。</li>
+</ul>
+<p><strong>評価・測定・信頼</strong></p>
+<ul>
+<li><strong>リーダーボードの課題と独立評価</strong>：NeurIPSで「Leaderboard Illusion」が議論。<a href="https://twitter.com/mziizm/status/1996489947159961740">詳細</a>。</li>
+<li><strong>ベンチマークと落とし穴</strong>：Global MMLU 2.0公開。<a href="https://twitter.com/mziizm/status/1996517093039382879">詳細</a>。</li>
+<li><strong>信頼と測定科学</strong>：Andrew Ngが公共の信頼低下に警鐘。<a href="https://twitter.com/AndrewYNg/status/1996631366470132053">詳細</a>。</li>
+</ul>
+<p><strong>組織動向とエコシステム</strong></p>
+<ul>
+<li><strong>Google DeepMindがシンガポールに新チーム</strong>：Yi Tay率いる高度推論・LLM/RLチーム。<a href="https://twitter.com/YiTayML/status/1996640869584445882">詳細</a>。</li>
+<li><strong>モデル提供とプラットフォーム</strong>：MiniMax-M2がAmazon Bedrockに参加。<a href="https://twitter.com/MiniMax__AI/status/1996485276609503561">詳細</a>。</li>
+<li><strong>Anthropic Interviewer</strong>：職場でのAIに関するインタビュー結果とデータセット公開。<a href="https://twitter.com/AnthropicAI/status/1996627123021426919">詳細</a>。</li>
+<li><strong>Perplexity資金調達</strong>：Cristiano Ronaldoが投資。<a href="https://twitter.com/Cristiano/status/1996626923720462425">詳細</a>。</li>
+</ul>
+<p><strong>トップツイート（エンゲージメント順）</strong></p>
+<ul>
+<li>Cristiano RonaldoがPerplexityに投資 — 46.9k</li>
+<li>ロボットの動きの「人間らしさ」は訓練による擬似的なもの — 36.7k</li>
+<li>Excel Copilot「Agent Mode」 — 2.8k</li>
+<li>Gemini 3 Deep Thinkの展開とベンチマーク結果 — 2.8k</li>
+<li>Mistral Large 3がOSSコーディング首位を獲得 — 1.7k</li>
+<li>Microsoft VibeVoice-Realtime-0.5B — 1.3k</li>
+<li>「RIP ‘you’re absolutely right’」 — 1.2k</li>
+</ul>
+<hr />
+<h1 id="ai-reddit">AI Redditまとめ</h1>
+<h2 id="rlocalllama-rlocalllm">/r/LocalLlama + /r/localLLM</h2>
+<h3 id="1-microsoft-vibevoice-realtime">1. Microsoft VibeVoice-Realtimeモデル発表</h3>
+<p><a href="https://www.reddit.com/r/LocalLLaMA/comments/1pdu46s/new_model_microsoftvibevoicerealtime05b/">詳細</a>：Microsoftの新しいリアルタイムTTSモデル。英語と中国語対応、約300msで音声生成開始。長文音声生成に強み。Mandarinの発音品質や未公開モデルへのリンク切れが議論に。</p>
+<h3 id="2-quant-legend">2. ユーモラスなQuant Legend比較</h3>
+<p><a href="https://www.reddit.com/r/LocalLLaMA/comments/1pdzn2n/legends/">詳細</a>：古典的数学者と現代的ネット文化の対比ミーム。EXLやGGUFモデル開発者への感謝も。</p>
+<h2 id="less-technical-ai-subreddit">Less Technical AI Subreddit</h2>
+<h3 id="1-gemini-3-deep-think">1. Gemini 3 Deep Thinkリリースとベンチマーク</h3>
+<p><a href="https://www.reddit.com/r/singularity/comments/1pe8t8u/gemini_3_deep_think_now_available/">詳細</a>：Google AI Ultra加入者向け新モード。ARC-AGI-2で45.1%達成、GPT-5.1の17.6%を大きく上回る。</p>
+<h3 id="2-z-image">2. Z-Imageのプロンプト適合性とスタイル</h3>
+<p><a href="https://www.reddit.com/r/StableDiffusion/comments/1pdsz9x/the_prompt_adherence_of_zimage_is_unreal_i_cant/">詳細</a>：NVIDIA 3060でも高速に高精度生成。否定プロンプトの効果や特定スタイル再現の限界が議論に。</p>
+<h3 id="3-ai">3. AIが技術職と社会に与える影響</h3>
+<p><a href="https://www.reddit.com/r/ClaudeAI/comments/1pe6q11/deep_down_we_all_know_that_this_is_the_beginning/">詳細</a>：AIによる技術職需要減少の懸念。ステークホルダー管理やレガシー統合など人間の役割は残るとの意見も。</p>
+<hr />
+<h1 id="ai-discord">AI Discordまとめ</h1>
+<p><strong>1. フロンティアコーディングモデル、OpenRouter動向、IDE統合</strong><br />
+OpenRouterのレポートでは、OSSモデル利用の半分以上がロールプレイ、プログラミングは有料モデル利用の半分以上、推論モデルが全トークンの半分以上を処理。Claudeがコーディングで約60%シェア。<br />
+GPT-5.1 ThinkingとCodex MaxがGemini 3を上回るバグ検出性能。<br />
+Nous ResearchがHermes 4.3を発表、性能は70B級に匹敵しつつサイズ半分。</p>
+<p><strong>2. セキュリティ、ジェイルブレイク、エージェント安全性</strong><br />
+Sora 2やGemini Webでフィルタ回避事例。DeepSeekでマルウェア生成成功例。<br />
+エージェントへのプロンプトインジェクションやリプレイ攻撃のシミュレーション。UUIDの扱いに関する議論。</p>
+<p><strong>3. GPUシステム、量子化、カーネル競技</strong><br />
+TorchAOのMoE量子化改善。NvFP4 GEMM競技でINFバグ修正。Sparse Attentionの実用化課題。CUDA cp.asyncの挙動解析。</p>
+<p><strong>4. 新しい最適化・評価・研究方向</strong><br />
+高速ODEソルバーで8ステップ4K画像生成。STRAWによる入力ごとの低ランク重み書き換え。CFGの早期記憶化現象。<br />
+軽量ローカル評価ツールsmallevals公開。</p>
+<p><strong>5. オンデバイス、小型モデル、エージェント/ツールエコシステム</strong><br />
+スマホでQwenやGemmaを実行。MCP Apps SDK公開。SLM活用のエージェント事例。UUID設計のベストプラクティス。</p>
+<hr />
+<p>この後、各Discordチャンネルごとの詳細な議論やリンクが続きますが、要約としては上記の通りです。</p>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+            <a href="https://news.smol.ai/">news.smol.ai</a>
+        </p>
+    </footer>
+</body>
+</html>
