@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 05 Dec 2025 06:39:24 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Dec 2025 02:01:30 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>NeurIPSの静かな終わり</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-05.html</link>
+      <description><![CDATA[NeurIPSの静かな終わり 推論・コーディングモデルと推論インフラ：vLLM 0.12.0、NVIDIA CUDA Tile、Transformers v5、エージェント運用...]]></description>
+      <pubDate>Fri, 05 Dec 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-05.html</guid>
+    </item>
     <item>
       <title>データこそがすべて。</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-04.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 4日連続の静かな日となりました。 --- コンピュート、エネルギー、AIデータセンター...]]></description>
       <pubDate>Tue, 04 Nov 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-04.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-03.html</link>
-      <description><![CDATA[静かな一日 AIE CODEのチケットとホテルはまもなく完売予定です。詳細はこちら。 --- コンピュート契約、ハードウェア競争、推論インフラ 推論LLM、長文コンテキストメモリ、ベンチマーク エージェントスタック、MCPエコシステム、開発者ツール...]]></description>
-      <pubDate>Mon, 03 Nov 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-03.html</guid>
     </item>
   </channel>
 </rss>

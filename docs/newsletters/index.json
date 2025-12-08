@@ -533,8 +533,14 @@
       "title": "データこそがすべて。",
       "summary": "データこそがすべて。...",
       "filename": "2025-12-04.html"
+    },
+    {
+      "date": "2025-12-05",
+      "title": "NeurIPSの静かな終わり",
+      "summary": "NeurIPSの静かな終わり 推論・コーディングモデルと推論インフラ：vLLM 0.12.0、NVIDIA CUDA Tile、Transformers v5、エージェント運用...",
+      "filename": "2025-12-05.html"
     }
   ],
-  "lastUpdated": "2025-12-05T06:39:24.147422",
-  "totalCount": 89
+  "lastUpdated": "2025-12-08T02:01:29.998633",
+  "totalCount": 90
 }
