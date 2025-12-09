@@ -539,8 +539,14 @@
       "title": "NeurIPSの静かな終わり",
       "summary": "NeurIPSの静かな終わり 推論・コーディングモデルと推論インフラ：vLLM 0.12.0、NVIDIA CUDA Tile、Transformers v5、エージェント運用...",
       "filename": "2025-12-05.html"
+    },
+    {
+      "date": "2025-12-08",
+      "title": "静かな一日",
+      "summary": "静かな一日 Claude Code + Hugging Face SkillsによるオープンLLMトレーニングの自動化 重要性：インフラ選定、データセット接続、ログ管理、成果物のアップロードなどの煩雑な作業を、HF Jobs + Hubによる再現性・監査可能なエージェントワークフローに統合します。...",
+      "filename": "2025-12-08.html"
     }
   ],
-  "lastUpdated": "2025-12-08T02:01:29.998633",
-  "totalCount": 90
+  "lastUpdated": "2025-12-09T06:40:28.438132",
+  "totalCount": 91
 }
