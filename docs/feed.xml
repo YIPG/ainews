@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 09 Dec 2025 06:40:28 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Dec 2025 06:40:35 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>Open AIエンジニアリングにとって良い一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-09.html</link>
+      <description><![CDATA[珍しい企業横断の動きとして、Linux Foundationの下にAgentic AI Foundationが設立され、AnthropicのMCPがOpenAIのAgents.mdやBlockのGooseと共に創設プロジェクトとして参加しました。...]]></description>
+      <pubDate>Tue, 09 Dec 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-09.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-08.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[Kimiがこのリリースに向けてオープンソースエコシステムを準備してきたことは以前から話題になっていましたが、驚くべきはベンチマーク結果です。初めて、オープンモデルが主要な重要ベンチマークでSOTAのクローズドモデル（GPT‑5、Claude 4.5 Sonnet Thinking）を上回ると主...]]></description>
       <pubDate>Thu, 06 Nov 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-06.html</guid>
-    </item>
-    <item>
-      <title>静かな一日。</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-05.html</link>
-      <description><![CDATA[静かな一日。 Gemini 3 と GPT 5.x の登場が待ちきれません… Kimi-K2 がオープン推論スタックに登場、Perplexity が兆パラメータ規模の MoE カーネルを解放 エージェントシステム、MCP、コーディングスタックの本番化...]]></description>
-      <pubDate>Wed, 05 Nov 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-05.html</guid>
     </item>
   </channel>
 </rss>

@@ -545,8 +545,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 Claude Code + Hugging Face SkillsによるオープンLLMトレーニングの自動化 重要性：インフラ選定、データセット接続、ログ管理、成果物のアップロードなどの煩雑な作業を、HF Jobs + Hubによる再現性・監査可能なエージェントワークフローに統合します。...",
       "filename": "2025-12-08.html"
+    },
+    {
+      "date": "2025-12-09",
+      "title": "Open AIエンジニアリングにとって良い一日",
+      "summary": "珍しい企業横断の動きとして、Linux Foundationの下にAgentic AI Foundationが設立され、AnthropicのMCPがOpenAIのAgents.mdやBlockのGooseと共に創設プロジェクトとして参加しました。...",
+      "filename": "2025-12-09.html"
     }
   ],
-  "lastUpdated": "2025-12-09T06:40:28.438132",
-  "totalCount": 91
+  "lastUpdated": "2025-12-10T06:40:35.464793",
+  "totalCount": 92
 }
