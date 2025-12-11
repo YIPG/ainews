@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 10 Dec 2025 06:40:35 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Dec 2025 12:57:43 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>最後のリリースラッシュ前の静けさ</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-10.html</link>
+      <description><![CDATA[最後のリリースラッシュ前の静けさ RL talks from AIE Codeをご覧ください。 --- 数学と推論のオープン化：小規模アクティブパラメータ＋エージェントでトップ性能を達成 エージェント型コーディングシステム、オーケストレーション、評価...]]></description>
+      <pubDate>Wed, 10 Dec 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-10.html</guid>
+    </item>
     <item>
       <title>Open AIエンジニアリングにとって良い一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-09.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[人気ベンチマークが自ら改善...]]></description>
       <pubDate>Fri, 07 Nov 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-07.html</guid>
-    </item>
-    <item>
-      <title>Open Weightsはすべてを解決するのか？</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-06.html</link>
-      <description><![CDATA[Kimiがこのリリースに向けてオープンソースエコシステムを準備してきたことは以前から話題になっていましたが、驚くべきはベンチマーク結果です。初めて、オープンモデルが主要な重要ベンチマークでSOTAのクローズドモデル（GPT‑5、Claude 4.5 Sonnet Thinking）を上回ると主...]]></description>
-      <pubDate>Thu, 06 Nov 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-06.html</guid>
     </item>
   </channel>
 </rss>

@@ -551,8 +551,14 @@
       "title": "Open AIエンジニアリングにとって良い一日",
       "summary": "珍しい企業横断の動きとして、Linux Foundationの下にAgentic AI Foundationが設立され、AnthropicのMCPがOpenAIのAgents.mdやBlockのGooseと共に創設プロジェクトとして参加しました。...",
       "filename": "2025-12-09.html"
+    },
+    {
+      "date": "2025-12-10",
+      "title": "最後のリリースラッシュ前の静けさ",
+      "summary": "最後のリリースラッシュ前の静けさ RL talks from AIE Codeをご覧ください。 --- 数学と推論のオープン化：小規模アクティブパラメータ＋エージェントでトップ性能を達成 エージェント型コーディングシステム、オーケストレーション、評価...",
+      "filename": "2025-12-10.html"
     }
   ],
-  "lastUpdated": "2025-12-10T06:40:35.464793",
-  "totalCount": 92
+  "lastUpdated": "2025-12-11T12:57:43.257000",
+  "totalCount": 93
 }
