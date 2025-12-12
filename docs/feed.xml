@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 11 Dec 2025 12:57:43 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 12:55:18 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>OpenAIはこれだけで十分。</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-11.html</link>
+      <description><![CDATA[OpenAIはこれだけで十分。 本日はOpenAI設立10周年であり、同社はGPT‑5.2のアップデートを発表しました（ブログ、ドキュメント、システムカード）。価格は40%の値上げとなりましたが、全体的に大幅な性能向上が見られます。...]]></description>
+      <pubDate>Thu, 11 Dec 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-11.html</guid>
+    </item>
     <item>
       <title>最後のリリースラッシュ前の静けさ</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-10.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 Moonshot AIのKimi K2 Thinking：AMAの要点、評価、INT4設計、今後のVision対応 音声・コンピュータ操作モデル：MetaのOmnilingual ASRとGelato-30B-A3B...]]></description>
       <pubDate>Mon, 10 Nov 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-10.html</guid>
-    </item>
-    <item>
-      <title>人気ベンチマークが自ら改善</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-07.html</link>
-      <description><![CDATA[人気ベンチマークが自ら改善...]]></description>
-      <pubDate>Fri, 07 Nov 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-07.html</guid>
     </item>
   </channel>
 </rss>
