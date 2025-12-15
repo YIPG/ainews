@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 12 Dec 2025 12:55:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Dec 2025 02:07:45 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな金曜日。</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-12.html</link>
+      <description><![CDATA[静かな金曜日。 --- フロンティアモデル評価：GPT‑5.2 vs Opus 4.5、Gemini 3、コストとコンテキスト設定 オープンモデル、RLスケーリング、スパース化 エージェントプラットフォームとツール...]]></description>
+      <pubDate>Fri, 12 Dec 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-12.html</guid>
+    </item>
     <item>
       <title>OpenAIはこれだけで十分。</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-11.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 推論ベンチマークと学習技術...]]></description>
       <pubDate>Tue, 11 Nov 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-11.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-10.html</link>
-      <description><![CDATA[静かな一日 Moonshot AIのKimi K2 Thinking：AMAの要点、評価、INT4設計、今後のVision対応 音声・コンピュータ操作モデル：MetaのOmnilingual ASRとGelato-30B-A3B...]]></description>
-      <pubDate>Mon, 10 Nov 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-10.html</guid>
     </item>
   </channel>
 </rss>
