@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 16 Dec 2025 06:41:36 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Dec 2025 06:40:48 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>厳しい時期の珍しい失敗</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-16.html</link>
+      <description><![CDATA[厳しい時期の珍しい失敗...]]></description>
+      <pubDate>Tue, 16 Dec 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-16.html</guid>
+    </item>
     <item>
       <title>オープンソースのアメリカ製AIにとって良い一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-15.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[一日ごとの着実な改善。 OpenAIのGPT‑5.1展開とエコシステムの採用状況 エージェント、具現化、メモリアーキテクチャ 解釈可能性とトレーニング科学 モデルリリースとマルチモーダル/動画 インフラ、プラットフォーム、性能...]]></description>
       <pubDate>Thu, 13 Nov 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-13.html</guid>
-    </item>
-    <item>
-      <title>漸進的な一歩</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-12.html</link>
-      <description><![CDATA[漸進的な一歩 GPT 5.1 が本日 ChatGPT にローンチされ、API は「今週後半」に提供予定です。 GPT5.0 は「レガシーモデル」となり、3か月後に廃止予定です。...]]></description>
-      <pubDate>Wed, 12 Nov 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-12.html</guid>
     </item>
   </channel>
 </rss>
