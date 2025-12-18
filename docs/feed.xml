@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 17 Dec 2025 06:40:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Dec 2025 06:40:48 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>Geminiはこれだけで十分です。</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-17.html</link>
+      <description><![CDATA[Geminiはこれだけで十分です。...]]></description>
+      <pubDate>Wed, 17 Dec 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-17.html</guid>
+    </item>
     <item>
       <title>厳しい時期の珍しい失敗</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-16.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[Gemini 3はいつ？ こちらでGemini 3に関する多くの示唆が見られます。GDMがAIE CODEの大規模オープニングで何を計画しているのか気になります。 （追記：チケットは完売しましたが、サイドイベントに参加したり、ボランティアとして無料で参加することも可能です）...]]></description>
       <pubDate>Fri, 14 Nov 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-14.html</guid>
-    </item>
-    <item>
-      <title>一日ごとの着実な改善。</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-13.html</link>
-      <description><![CDATA[一日ごとの着実な改善。 OpenAIのGPT‑5.1展開とエコシステムの採用状況 エージェント、具現化、メモリアーキテクチャ 解釈可能性とトレーニング科学 モデルリリースとマルチモーダル/動画 インフラ、プラットフォーム、性能...]]></description>
-      <pubDate>Thu, 13 Nov 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-13.html</guid>
     </item>
   </channel>
 </rss>
