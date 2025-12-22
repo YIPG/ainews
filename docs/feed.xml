@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 19 Dec 2025 06:39:25 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 02:09:01 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな金曜日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-19.html</link>
+      <description><![CDATA[静かな金曜日 --- オープンなマルチモーダル＋「クリエイティブツール」リリース（Qwen Image Layered、Kling Motion Control、Runway GWM） ---...]]></description>
+      <pubDate>Fri, 19 Dec 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-19.html</guid>
+    </item>
     <item>
       <title>スキルはMCPの道を辿る！</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-18.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[ついに待望の Gemini 3 のローンチ が発表されました。ほぼ全ての分野で最新のベンチマークを更新（一部例外あり）、Gemini 2.5より価格は60％高く、主要なArenaリーダーボードで1位 を獲得しました。（予想通り、Gemini 3は昨日発表されたGrok 4.1を上回り、Text...]]></description>
       <pubDate>Tue, 18 Nov 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-18.html</guid>
-    </item>
-    <item>
-      <title>控えめながら良質な改善</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-17.html</link>
-      <description><![CDATA[控えめながら良質な改善...]]></description>
-      <pubDate>Mon, 17 Nov 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-17.html</guid>
     </item>
   </channel>
 </rss>
