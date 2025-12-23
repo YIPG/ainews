@@ -599,8 +599,14 @@
       "title": "静かな金曜日",
       "summary": "静かな金曜日 --- オープンなマルチモーダル＋「クリエイティブツール」リリース（Qwen Image Layered、Kling Motion Control、Runway GWM） ---...",
       "filename": "2025-12-19.html"
+    },
+    {
+      "date": "2025-12-22",
+      "title": "よくやった、中国AI",
+      "summary": "よくやった、中国AI Z.aiのGLM 4.7とBaiduのERNIE 5.0は注目されましたが、前者は段階的な改良、後者は未公開のため今回は対象外となりました。 一方で、先端エージェント研究所からは3つの新しいAIE CODEトークが公開されています。...",
+      "filename": "2025-12-22.html"
     }
   ],
-  "lastUpdated": "2025-12-22T02:09:01.178574",
-  "totalCount": 100
+  "lastUpdated": "2025-12-23T06:42:07.321280",
+  "totalCount": 101
 }

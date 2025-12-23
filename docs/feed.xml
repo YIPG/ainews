@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 22 Dec 2025 02:09:01 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Dec 2025 06:42:07 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>よくやった、中国AI</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-22.html</link>
+      <description><![CDATA[よくやった、中国AI Z.aiのGLM 4.7とBaiduのERNIE 5.0は注目されましたが、前者は段階的な改良、後者は未公開のため今回は対象外となりました。 一方で、先端エージェント研究所からは3つの新しいAIE CODEトークが公開されています。...]]></description>
+      <pubDate>Mon, 22 Dec 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-22.html</guid>
+    </item>
     <item>
       <title>静かな金曜日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-19.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[もうついていけない ソフトウェアエンジニアリングタスクの期間と、各AIモデルがその50%を完了できるまでの時間をリリース日ごとに示したグラフ さらに新しい「xhigh」パラメータでの性能向上も確認されています。...]]></description>
       <pubDate>Wed, 19 Nov 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-19.html</guid>
-    </item>
-    <item>
-      <title>Googleアカウントだけで十分？</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-18.html</link>
-      <description><![CDATA[ついに待望の Gemini 3 のローンチ が発表されました。ほぼ全ての分野で最新のベンチマークを更新（一部例外あり）、Gemini 2.5より価格は60％高く、主要なArenaリーダーボードで1位 を獲得しました。（予想通り、Gemini 3は昨日発表されたGrok 4.1を上回り、Text...]]></description>
-      <pubDate>Tue, 18 Nov 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-18.html</guid>
     </item>
   </channel>
 </rss>
