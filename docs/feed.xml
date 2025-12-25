@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 23 Dec 2025 06:42:07 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Dec 2025 02:04:34 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>Execuhiresが再び登場！</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-24.html</link>
+      <description><![CDATA[Groqは、ほとんどの経営陣がNvidiaに参加するための「非独占的ライセンス契約」を結んだことを5文の投稿で発表しました。GroqCloudは残され、現CFOが旧GroqのCEOに就任します。報道によれば、総額200億ドルの現金取引です。...]]></description>
+      <pubDate>Wed, 24 Dec 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-24.html</guid>
+    </item>
     <item>
       <title>よくやった、中国AI</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-22.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[AIE CODE Day 1...]]></description>
       <pubDate>Thu, 20 Nov 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-20.html</guid>
-    </item>
-    <item>
-      <title>もうついていけない</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-19.html</link>
-      <description><![CDATA[もうついていけない ソフトウェアエンジニアリングタスクの期間と、各AIモデルがその50%を完了できるまでの時間をリリース日ごとに示したグラフ さらに新しい「xhigh」パラメータでの性能向上も確認されています。...]]></description>
-      <pubDate>Wed, 19 Nov 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-19.html</guid>
     </item>
   </channel>
 </rss>
