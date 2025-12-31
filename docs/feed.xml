@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 30 Dec 2025 06:40:39 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 31 Dec 2025 12:54:27 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-30.html</link>
+      <description><![CDATA[静かな一日 DeepSeek v4はどこに？？ --- Z.ai / GLM: IPOと「AIネイティブLLM企業の上場」 --- MetaがManusを約40〜50億ドルで買収：「ラッパー」論争の変化 ---...]]></description>
+      <pubDate>Tue, 30 Dec 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-30.html</guid>
+    </item>
     <item>
       <title>エージェントラボの夏です。</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-29.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[Open Weightsモデルの好調な復活 過去に2024年8月のBFLのFLUX.1、Qwen-Image、2025年8月のnano bananaを取り上げ、先週はNano Banana Proに大いに盛り上がりました。そして本日、FLUX.2のリリースがタイトルニュースとなっています。...]]></description>
       <pubDate>Tue, 25 Nov 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-25.html</guid>
-    </item>
-    <item>
-      <title>今日はAnthropicの番です</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-24.html</link>
-      <description><![CDATA[今日はAnthropicの番です SWE-Bench Verifiedの進歩は非常に安定しており、偶然とは言い難い状況です。 Opus 4.5がSWE-bench Verifiedベンチマークで他モデルを上回る棒グラフ...]]></description>
-      <pubDate>Mon, 24 Nov 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-24.html</guid>
     </item>
   </channel>
 </rss>
