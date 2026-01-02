@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 31 Dec 2025 12:54:27 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Jan 2026 06:41:28 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>AI Twitter Recap</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-31.html</link>
+      <description><![CDATA[韓国の「Sovereign AI Foundation Model」構想（緩やかな商用利用可・ゼロからの学習・MoE重視） --- オープン画像生成：Qwen-Image-2512が急速にエコシステムに浸透...]]></description>
+      <pubDate>Wed, 31 Dec 2025 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-31.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-30.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[感謝祭おめでとうございます！ --- エージェントシステム：長時間稼働のハーネス、MCPタスク、プロダクション展開 Claude Opus 4.5：評価、コスト/UXの知見、新機能 効率的推論とマルチエージェント通信...]]></description>
       <pubDate>Wed, 26 Nov 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-26.html</guid>
-    </item>
-    <item>
-      <title>Open Weightsモデルの好調な復活</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-11-25.html</link>
-      <description><![CDATA[Open Weightsモデルの好調な復活 過去に2024年8月のBFLのFLUX.1、Qwen-Image、2025年8月のnano bananaを取り上げ、先週はNano Banana Proに大いに盛り上がりました。そして本日、FLUX.2のリリースがタイトルニュースとなっています。...]]></description>
-      <pubDate>Tue, 25 Nov 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-11-25.html</guid>
     </item>
   </channel>
 </rss>
