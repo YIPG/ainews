@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 02 Jan 2026 18:37:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jan 2026 02:07:04 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-05.html</link>
+      <description><![CDATA[静かな一日 注目度の高かったツイート エージェント型コーディングの一般化：ハーネス、メモリ、そして「ソフトウェアエンジニアリング時代」の議論 オープンツール＋推論効率化：プルーニング、軽量vLLMクローン、メモリ／VRAM計算機、そして（噂の）1-bit CPU推論...]]></description>
+      <pubDate>Mon, 05 Jan 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-05.html</guid>
+    </item>
     <item>
       <title>Whaleチームの皆さん、おめでとうございます！</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-02.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かなNeurIPS 最近は OpenAIのCode Red対応 や AnthropicのIPO計画 が話題となっています。 --- AI動画・画像分野：Kling 2.6ネイティブオーディオ、Kling O1ショット制御、Runway Gen‑4.5、Nano Banana Pro (Gemini...]]></description>
       <pubDate>Wed, 03 Dec 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-03.html</guid>
-    </item>
-    <item>
-      <title>クジラがすべてを解決する。</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-02.html</link>
-      <description><![CDATA[クジラがすべてを解決する。...]]></description>
-      <pubDate>Tue, 02 Dec 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-02.html</guid>
     </item>
   </channel>
 </rss>
