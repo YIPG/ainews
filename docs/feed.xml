@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 07 Jan 2026 06:41:55 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Jan 2026 12:57:34 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-07.html</link>
+      <description><![CDATA[静かな一日 静かな一日でした。 注目ツイート（エンゲージメント順） エージェント & 開発者ツール: 「agent harnesses」、DeepAgents、Cursorコンテキスト、MCPの普及...]]></description>
+      <pubDate>Wed, 07 Jan 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-07.html</guid>
+    </item>
     <item>
       <title>ハードコアなAIエンジニアこそが必要です。</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-06.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[NeurIPSの静かな終わり 推論・コーディングモデルと推論インフラ：vLLM 0.12.0、NVIDIA CUDA Tile、Transformers v5、エージェント運用...]]></description>
       <pubDate>Fri, 05 Dec 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-05.html</guid>
-    </item>
-    <item>
-      <title>データこそがすべて。</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-04.html</link>
-      <description><![CDATA[データこそがすべて。...]]></description>
-      <pubDate>Thu, 04 Dec 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-04.html</guid>
     </item>
   </channel>
 </rss>
