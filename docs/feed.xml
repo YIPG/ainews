@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 09 Jan 2026 06:42:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Jan 2026 02:12:41 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>DeepSeek v4が登場予定…</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-09.html</link>
+      <description><![CDATA[DeepSeek v4が登場予定… Claude Codeがさまざまな理由でニュースに登場し続けています。詳細は以下をご覧ください。 「コーディングエージェント」エコシステムを形作るポリシーとプラットフォームの変化...]]></description>
+      <pubDate>Fri, 09 Jan 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-09.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-08.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[珍しい企業横断の動きとして、Linux Foundationの下にAgentic AI Foundationが設立され、AnthropicのMCPがOpenAIのAgents.mdやBlockのGooseと共に創設プロジェクトとして参加しました。...]]></description>
       <pubDate>Tue, 09 Dec 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-09.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-08.html</link>
-      <description><![CDATA[静かな一日 Claude Code + Hugging Face SkillsによるオープンLLMトレーニングの自動化 重要性：インフラ選定、データセット接続、ログ管理、成果物のアップロードなどの煩雑な作業を、HF Jobs + Hubによる再現性・監査可能なエージェントワークフローに統合します。...]]></description>
-      <pubDate>Mon, 08 Dec 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-08.html</guid>
     </item>
   </channel>
 </rss>
