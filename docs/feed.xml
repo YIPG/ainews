@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 12 Jan 2026 02:12:41 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jan 2026 18:38:28 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>Apple、ついに方針転換</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-12.html</link>
+      <description><![CDATA[Apple、ついに方針転換...]]></description>
+      <pubDate>Mon, 12 Jan 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-12.html</guid>
+    </item>
     <item>
       <title>DeepSeek v4が登場予定…</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-09.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[最後のリリースラッシュ前の静けさ RL talks from AIE Codeをご覧ください。 --- 数学と推論のオープン化：小規模アクティブパラメータ＋エージェントでトップ性能を達成 エージェント型コーディングシステム、オーケストレーション、評価...]]></description>
       <pubDate>Wed, 10 Dec 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-10.html</guid>
-    </item>
-    <item>
-      <title>Open AIエンジニアリングにとって良い一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-09.html</link>
-      <description><![CDATA[珍しい企業横断の動きとして、Linux Foundationの下にAgentic AI Foundationが設立され、AnthropicのMCPがOpenAIのAgents.mdやBlockのGooseと共に創設プロジェクトとして参加しました。...]]></description>
-      <pubDate>Tue, 09 Dec 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-09.html</guid>
     </item>
   </channel>
 </rss>
