@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 14 Jan 2026 18:40:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Jan 2026 06:41:53 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-15.html</link>
+      <description><![CDATA[静かな一日 GPT-5.2 Codex APIのローンチと、Cursorがこれを使って1週間自律的に稼働し、ある程度動作するブラウザを構築した事例が話題になっています。 --- OpenAI + GitHub + Cursor: GPT-5.2-Codexが「長期タスク」に対応し各所で採用...]]></description>
+      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-15.html</guid>
+    </item>
     <item>
       <title>Anthropicのプロダクトスタジオが進化</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-13.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな金曜日。 --- フロンティアモデル評価：GPT‑5.2 vs Opus 4.5、Gemini 3、コストとコンテキスト設定 オープンモデル、RLスケーリング、スパース化 エージェントプラットフォームとツール...]]></description>
       <pubDate>Fri, 12 Dec 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-12.html</guid>
-    </item>
-    <item>
-      <title>OpenAIはこれだけで十分。</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-11.html</link>
-      <description><![CDATA[OpenAIはこれだけで十分。 本日はOpenAI設立10周年であり、同社はGPT‑5.2のアップデートを発表しました（ブログ、ドキュメント、システムカード）。価格は40%の値上げとなりましたが、全体的に大幅な性能向上が見られます。...]]></description>
-      <pubDate>Thu, 11 Dec 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-11.html</guid>
     </item>
   </channel>
 </rss>
