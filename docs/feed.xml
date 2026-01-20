@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 19 Jan 2026 02:19:44 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Jan 2026 18:50:53 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-19.html</link>
+      <description><![CDATA[静かな一日 時間があれば、ARC AGI 2025 Reportをご覧になることをおすすめします。 --- 「メモリ」とコンテキストをスケーリングする新しいアーキテクチャ モデルリリース：GLM-4.7-Flashと「MLA＋小規模MoE」の潮流...]]></description>
+      <pubDate>Mon, 19 Jan 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-19.html</guid>
+    </item>
     <item>
       <title>消費者のマネタイズこそが全てです。</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-16.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[厳しい時期の珍しい失敗...]]></description>
       <pubDate>Tue, 16 Dec 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-16.html</guid>
-    </item>
-    <item>
-      <title>オープンソースのアメリカ製AIにとって良い一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-15.html</link>
-      <description><![CDATA[NvidiaのNemotronは、オープンモデルのトップ層に頻繁に登場するわけではありませんが、「モデルの重み、トレーニング前後のソフトウェア、レシピ、再配布権を持つすべてのデータを完全に公開する」という完全公開の姿勢で際立っています（Nemotron 3 論文）。さらに米国発のモデルです。N...]]></description>
-      <pubDate>Mon, 15 Dec 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-15.html</guid>
     </item>
   </channel>
 </rss>
