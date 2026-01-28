@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 27 Jan 2026 13:03:21 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jan 2026 06:45:33 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>中国、オープンモデルでさらに大きな飛躍</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-27.html</link>
+      <description><![CDATA[Kimiは過去1年間で目覚ましい進展を遂げ、昨年11月にはKimi K2 Thinkingを発表しました。今回のK2.5もK2同様、32B active-1Tパラメータモデル（384エキスパート）であり、「Kimi-K2-Base上に15兆の視覚・テキスト混合トークンによる継続的事前学習で構築...]]></description>
+      <pubDate>Tue, 27 Jan 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-27.html</guid>
+    </item>
     <item>
       <title>豊かな生成UIこそがすべてです。</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-26.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[よくやった、中国AI Z.aiのGLM 4.7とBaiduのERNIE 5.0は注目されましたが、前者は段階的な改良、後者は未公開のため今回は対象外となりました。 一方で、先端エージェント研究所からは3つの新しいAIE CODEトークが公開されています。...]]></description>
       <pubDate>Mon, 22 Dec 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-22.html</guid>
-    </item>
-    <item>
-      <title>静かな金曜日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-19.html</link>
-      <description><![CDATA[静かな金曜日 --- オープンなマルチモーダル＋「クリエイティブツール」リリース（Qwen Image Layered、Kling Motion Control、Runway GWM） ---...]]></description>
-      <pubDate>Fri, 19 Dec 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-19.html</guid>
     </item>
   </channel>
 </rss>
