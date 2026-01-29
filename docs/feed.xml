@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 28 Jan 2026 06:45:33 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Jan 2026 06:56:45 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-28.html</link>
+      <description><![CDATA[静かな一日 --- フロンティアモデルの「性格分裂」と実際の利用方法 --- Kimi K2.5（＋「clawdbot」／スウォームモード）が今週のオープンモデルの焦点に --- エージェントエンジニアリング：スキル、ハーネス、評価、信頼性の課題...]]></description>
+      <pubDate>Wed, 28 Jan 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-28.html</guid>
+    </item>
     <item>
       <title>中国、オープンモデルでさらに大きな飛躍</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-27.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[Groqは、ほとんどの経営陣がNvidiaに参加するための「非独占的ライセンス契約」を結んだことを5文の投稿で発表しました。GroqCloudは残され、現CFOが旧GroqのCEOに就任します。報道によれば、総額200億ドルの現金取引です。...]]></description>
       <pubDate>Wed, 24 Dec 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-24.html</guid>
-    </item>
-    <item>
-      <title>よくやった、中国AI</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-22.html</link>
-      <description><![CDATA[よくやった、中国AI Z.aiのGLM 4.7とBaiduのERNIE 5.0は注目されましたが、前者は段階的な改良、後者は未公開のため今回は対象外となりました。 一方で、先端エージェント研究所からは3つの新しいAIE CODEトークが公開されています。...]]></description>
-      <pubDate>Mon, 22 Dec 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-22.html</guid>
     </item>
   </channel>
 </rss>
