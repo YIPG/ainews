@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 29 Jan 2026 06:56:45 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Jan 2026 06:58:25 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>xAI、最前線ラボとしての地位を確立</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-29.html</link>
+      <description><![CDATA[xAI、最前線ラボとしての地位を確立...]]></description>
+      <pubDate>Thu, 29 Jan 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-29.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-28.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[エージェントラボの夏です。...]]></description>
       <pubDate>Mon, 29 Dec 2025 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-29.html</guid>
-    </item>
-    <item>
-      <title>Execuhiresが再び登場！</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2025-12-24.html</link>
-      <description><![CDATA[Groqは、ほとんどの経営陣がNvidiaに参加するための「非独占的ライセンス契約」を結んだことを5文の投稿で発表しました。GroqCloudは残され、現CFOが旧GroqのCEOに就任します。報道によれば、総額200億ドルの現金取引です。...]]></description>
-      <pubDate>Wed, 24 Dec 2025 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2025-12-24.html</guid>
     </item>
   </channel>
 </rss>
