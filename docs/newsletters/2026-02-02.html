@@ -291,96 +291,61 @@
 <blockquote>
 <p>AIニュース（2026年1月30日〜2月2日）</p>
 </blockquote>
+<p>今日は本来ならOpenAIをトップニュースにしない予定でした。というのも、<a href="https://x.com/tanayj/status/2018460616747540834?s=46">XaiがSpaceXに約1,770億ドルで買収された</a>という大きな話題があったからです。しかし、OpenAIが発表したのは既存のCLIやクラウドアプリ、VS Code拡張のデスクトップUI版であり、<a href="http://conductor.build/">Conductor</a>や<a href="https://github.com/Dimillian/CodexMonitor">Codex Monitor</a>、<a href="https://www.youtube.com/shorts/yC-Cv37E-dM">Antigravity’s Inbox</a>と似た「AIエージェント・コマンドセンター」的なアプリです。</p>
+<p>あなたはどのようなマルチエージェントアプリのデザインに取り組んでいますか？</p>
+<p><a href="https://en.wikipedia.org/wiki/Carcinisation">カニ化現象</a>のように、形態は収束していくものですが、もしかするとカニ型が最適なのかもしれません。</p>
+<p>さて。</p>
+<p>昨年12月、Steve Yegge氏とGene Kim氏は<a href="https://www.youtube.com/watch?v=7Dtu2bilcFs&amp;pp=2AbMBw%3D%3D">IDEの終焉を予測</a>しました。そして2026年現在、かつて<a href="https://news.smol.ai/issues/25-07-24-cogsurf-cursor">Windsurfに30億ドルの買収提案をした</a>OpenAIが、VS CodeフォークではないコーディングエージェントUXを提供しています。Anthropicも同様にClaude CodeやClaude Coworkアプリを展開しています。IDEなしで本格的なコーディングアプリが成立するほど、コーディングモデルは進化してきたと言えるでしょう（Codexは必要に応じてIDE連携も可能ですが、それは例外的な扱いです）。</p>
+<p>かつて「英語で指示を書くだけでコードを見ずにアプリを構築できる」ツールは、ノンテク層向けの「アプリビルダー」でした。しかしCodexは明確に開発者向けにマーケティングされており、コードを書くことに強い愛着を持つ層に「コードを見るのは必須ではない」と伝えています。</p>
+<p>もう一つの注目点は<strong>マルチタスクとワークツリー</strong>の活用です。これはエージェントの自律性向上に対する自然なUI進化と言えるでしょう。</p>
+<p>さらに見逃されがちな新機能が「Automations」です。これは「スキルをcronジョブ化」するもので、OpenAIが主要プレイヤーとして初めてGAで提供しました。</p>
 <hr />
 <h1 id="ai-twitter">AI Twitterまとめ</h1>
-<p><strong>OpenAIのCodexアプリ：エージェントネイティブなコーディング用「コマンドセンター」</strong></p>
+<p><strong>OpenAIのCodexアプリ：エージェントネイティブなコーディング用コマンドセンター</strong></p>
 <ul>
-<li><strong>CodexアプリがmacOSで提供開始（Windows版は「近日中」）</strong>：OpenAIは、複数のエージェントを並行実行し、変更を<strong>組み込みのworktree</strong>で分離し、<strong>skills</strong>や<strong>定期的な自動化</strong>で機能拡張できる専用のCodexデスクトップアプリを発表しました（<a href="https://twitter.com/OpenAI/status/2018385565289267236">OpenAI発表</a>、<a href="https://twitter.com/OpenAI/status/2018385568992752059">レート制限・提供状況</a>、<a href="https://twitter.com/OpenAIDevs/status/2018385865207419124">OpenAIDevs機能概要</a>）。繰り返し強調されているテーマは、<strong>モデルだけでなくUIそのものが製品になっている</strong>という点です。</li>
-<li><strong>開発者ワークフローの重要ポイント</strong>：アプリは、(a) タスクやPRごとのworktreeによる並列化と衝突回避、(b) <code>/plan</code>による事前分解と質問の強制、(c) FigmaやLinear、Vercelなど外部サービスと接続可能な再利用可能なskills、(d) 定期的なバックグラウンドジョブの自動化を重視しています（<a href="https://twitter.com/reach_vb/status/2018456051792982339">Planモード</a>、<a href="https://twitter.com/reach_vb/status/2018390580330389728">skillsランディングページ</a>）。</li>
-<li><strong>利用状況と採用事例</strong>：CLIやIDE拡張よりも大規模リポジトリや長期タスク管理において大きな進歩だとする声が多く、特に並列スレッドやレビュー可能な差分管理で効果的とのことです。<a href="https://twitter.com/gdb/status/2018387844222578818">@gdb</a>は「ターミナルに戻るのは過去に戻るようだ」と述べ、<a href="https://twitter.com/sama/status/2018414858015039504">@sama</a>は予想以上に気に入ったとコメント、<a href="https://twitter.com/skirano/status/2018398337938960715">@skirano</a>はCursorやClaude Codeを置き換えたと述べています。</li>
-<li><strong>エコシステムの標準化圧力</strong>：すでに「skills」フォルダの標準化提案があり、Codexが<code>.agents/skills</code>を読み込み、<code>.codex/skills</code>を廃止する案が出ています（<a href="https://twitter.com/embirico/status/2018415923930206718">@embirico</a>）。これは、<code>.github/</code>や<code>pyproject.toml</code>のようなツール規約が形成され始めている兆候です。</li>
-<li><strong>製品ループによる「自己改善」</strong>：Codex自身をCodexで構築する事例が複数紹介されており、人間とエージェントの協働による製品改善ループとして、実際に出荷されている「再帰的改善」事例として注目されています（<a href="https://twitter.com/OpenAIDevs/status/2018385663457116379">OpenAIDevs</a>、<a href="https://twitter.com/ajambrosino/status/2018385459936923656">@ajambrosino</a>、<a href="https://twitter.com/thsottiaux/status/2018258151603388639">@thsottiaux</a>）。</li>
+<li><strong>CodexアプリがmacOSで提供開始（Windows版は近日予定）</strong>：OpenAIは複数エージェントを並行実行し、変更をワークツリーで分離し、スキルやスケジュール自動化を拡張できる専用デスクトップアプリを発表しました（<a href="https://twitter.com/OpenAI/status/2018385565289267236">公式発表</a>、<a href="https://twitter.com/OpenAI/status/2018385568992752059">利用制限・提供状況</a>、<a href="https://twitter.com/OpenAIDevs/status/2018385865207419124">機能概要</a>）。</li>
+<li><strong>開発者向けワークフローの特徴</strong>：タスク/PRごとのワークツリーによる並列化と衝突回避、<code>/plan</code>による事前分解と質問、外部サービス（Figma/Linear/Vercel等）接続可能なスキル、定期実行のAutomationsなど（<a href="https://twitter.com/reach_vb/status/2018456051792982339">Planモード</a>、<a href="https://twitter.com/reach_vb/status/2018390580330389728">スキル一覧</a>）。</li>
+<li><strong>利用者の評価</strong>：CLIやIDE拡張より大規模リポジトリや長期タスクで有効との声。<a href="https://twitter.com/gdb/status/2018387844222578818">@gdb</a>は「ターミナルに戻るのは過去に戻るよう」と評し、<a href="https://twitter.com/sama/status/2018414858015039504">@sama</a>も好意的、<a href="https://twitter.com/skirano/status/2018398337938960715">@skirano</a>はCursor＋Claude Codeから乗り換えたと述べています。</li>
+<li><strong>エコシステムの標準化圧力</strong>：<code>.agents/skills</code>への統一提案など、GitHubやpyproject.tomlのような慣習形成の兆し（<a href="https://twitter.com/embirico/status/2018415923930206718">@embirico</a>）。</li>
+<li><strong>自己改善型プロダクトループ</strong>：Codex自身をCodexで開発する事例が注目され、AGIではなく人間＋エージェントの製品改善ループとして紹介されています。</li>
 </ul>
 <p><strong>コーディングエージェントの実践：信頼性、テスト、並列化、そして「エージェント軍団」化</strong></p>
 <ul>
-<li><strong>CLAUDE.md/AGENTS.mdのベストプラクティス</strong>：バグ報告時にはまず再現テストを書き、その後修正し、テストが通ることを確認するという「テストファースト」指示が、エージェント性能と開発者の精神衛生に最も効果的だとされています（<a href="https://twitter.com/nbaschez/status/2018027072720130090">@nbaschez</a>）。</li>
-<li><strong>「指揮者」モデル</strong>：1人の開発者が5〜10のエージェントを並行稼働させ、コードを完全には読まずに出荷するスタイルが広がっています（<a href="https://twitter.com/Yuchenj_UW/status/2018029206542946582">@Yuchenj_UW</a>）。一方で、人間のコンテキスト切り替え限界や品質低下を警告する声もあります（<a href="https://twitter.com/badlogicgames/status/2018117758991384754">@badlogicgames</a>）。</li>
-<li><strong>ニューロシンボリックな説明</strong>：コーディングエージェントが成功する理由は、ソフトウェアが検証可能な領域であり、テストやコンパイラ、シェルなどのツールがLLMのためのシンボリックな足場を提供しているためだと説明されています（<a href="https://twitter.com/random_walker/status/2018342421696766147">@random_walker</a>）。</li>
-<li><strong>ベンチマークへの懐疑</strong>：弱いワークフロー（例：チャットサイドバーのみ）を使った軽量な「LLM生産性」研究への批判があり、急速に進化するツールを考慮しない結果は生産性向上を過小評価していると指摘されています。</li>
-<li><strong>オープンソースエージェントの安全性・運用課題</strong>：OpenClawやMoltbookのエコシステムは期待と懸念の両方を呼び、セッション管理やポリシー適用のためのゲートウェイ導入や、AI専用SNSが即座にボットやスパムに汚染される危険性が議論されています。</li>
+<li><strong>CLAUDE.md/AGENTS.mdのベストプラクティス</strong>：バグ報告時は再現テスト→修正→テスト合格の順で進めることが最大の改善効果（<a href="https://twitter.com/nbaschez/status/2018027072720130090">@nbaschez</a>）。</li>
+<li><strong>「指揮者」型エンジニアリング</strong>：1人で5〜10エージェントを並行運用し、コードを完全には読まず監督役に徹するモデル（<a href="https://twitter.com/Yuchenj_UW/status/2018029206542946582">@Yuchenj_UW</a>）。ただし過剰並列は品質低下の懸念あり（<a href="https://twitter.com/badlogicgames/status/2018117758991384754">@badlogicgames</a>）。</li>
+<li><strong>ニューロシンボリックな成功要因</strong>：ソフトウェアは検証可能な領域であり、テストやコンパイラなどの象徴的足場をLLMが活用できるため成功しているとの分析（<a href="https://twitter.com/random_walker/status/2018342421696766147">@random_walker</a>）。</li>
+<li><strong>ベンチマークへの懐疑</strong>：弱いワークフロー（チャットサイドバー等）での評価は生産性向上を過小評価するとの批判。</li>
+<li><strong>オープンソースエージェントの安全性・運用課題</strong>：セッション管理やポリシー適用のゲートウェイ導入議論、AI専用SNSのスパム化懸念など。</li>
 </ul>
-<p><strong>エージェント的コーディング向けオープンモデル：StepFun Step-3.5-FlashとKimi K2.5が注目</strong></p>
+<p><strong>オープンモデルによるエージェント型コーディング：StepFun Step-3.5-FlashとKimi K2.5が焦点</strong></p>
 <ul>
-<li><strong>StepFun Step-3.5-Flashの公開</strong>：196B総パラメータ／約11B稼働の疎MoEモデルで、256Kコンテキスト、3:1スライディングウィンドウ＋全注意、MTP-3マルチトークン予測などを備え、速度と長文コンテキストのエージェントワークフローに最適化されています。</li>
-<li><strong>即時インフラ対応</strong>：vLLMがDay-0サポートとデプロイレシピを提供し、実運用スタックでの採用を後押ししています。</li>
-<li><strong>コミュニティ評価</strong>：ベンチマークの選択バイアスへの懸念があり、標準化されたベースラインと第三者検証を求める声が多くあります。</li>
-<li><strong>Kimi K2.5の強み</strong>：Code Arenaでオープンモデル1位、総合5位と報告され、プロプライエタリモデルに匹敵する性能を示していますが、特定ワークフローでのツール追従性に弱点があるとの指摘もあります。</li>
-<li><strong>プロバイダー信頼性問題</strong>：ツール呼び出しや解析の失敗がモデル評価を下げることがあり、統合の正確性が実運用での品質を左右します。</li>
+<li><strong>StepFun Step-3.5-Flashの公開</strong>：196B総パラメータ／11B稼働のSparse MoEモデル、256Kコンテキスト、MTP-3など高速・長文対応（<a href="https://twitter.com/StepFun_ai/status/2018370831538180167">公式発表</a>）。</li>
+<li><strong>即日インフラ対応</strong>：vLLMがDay-0サポートを提供。</li>
+<li><strong>コミュニティ評価</strong>：ベンチマーク選定の偏り懸念、第三者検証の必要性。</li>
+<li><strong>Kimi K2.5の強み</strong>：Code Arenaでオープンモデル1位、総合5位。ツール追従性の弱点も指摘あり。</li>
+<li><strong>プロバイダ信頼性問題</strong>：ツール呼び出し失敗が品質低下に見える事例。</li>
 </ul>
 <p><strong>合成データ、評価、そして「パープレキシティを盲信するな」</strong></p>
 <ul>
-<li><strong>合成事前学習の詳細分析</strong>：合成データパイプラインとその失敗モード（崩壊、分布ドリフト）への関心が再燃しています。</li>
-<li><strong>パープレキシティの罠</strong>：次トークン予測指標だけを最適化すると、下流タスクやツール利用の安定性、指示遵守が損なわれる可能性があります。</li>
-<li><strong>無限RLVRタスク生成</strong>：検証不能なウェブテキストから推論ステップをマスクし、撹乱選択肢を生成することで、既存RLVRデータに飽和したモデルを再活性化できる手法が紹介されています。</li>
-<li><strong>圧縮＋長文コンテキストインフラ</strong>：Cartridgesやgistトークン、KVキャッシュ圧縮など、メモリ削減と生成速度向上のためのアプローチが議論されています。</li>
+<li><strong>合成事前学習の深掘り</strong>：パイプラインの崩壊や分布ドリフトなどの課題。</li>
+<li><strong>パープレキシティの罠</strong>：次トークン予測だけに最適化すると下流タスクやツール安定性を見落とす。</li>
+<li><strong>無限RLVRタスク生成</strong>：ウェブテキストから推論ステップをマスクして生成。</li>
+<li><strong>長文コンテキストの圧縮技術</strong>：メモリ削減と速度向上のための新手法。</li>
 </ul>
-<p><strong>エージェントシステムとインフラ：メモリ制約、可観測性、RAGのクエリ依存チャンク化</strong></p>
+<p><strong>エージェントシステムとインフラ：メモリ制約、可観測性、RAGチャンク最適化</strong></p>
 <ul>
-<li><strong>推論ボトルネックがFLOPsからメモリ容量へ</strong>：1Mコンテキストでバッチサイズ1の場合、DeepSeek-R1リクエストに約900GBのメモリが必要になる例が示され、プレフィルとデコードを分離した提供や異種アクセラレータの活用が提案されています。</li>
-<li><strong>可観測性がエージェントの「スタックトレース」に</strong>：エージェントはクラッシュせずに失敗するため、トレースが主要なデバッグ手段となり、可観測性と評価のツールが注目されています。</li>
-<li><strong>RAGチャンク化の実験</strong>：クエリごとに最適チャンクサイズを選ぶオラクル実験で、固定サイズより20〜40%のリコール向上が報告されています。</li>
-<li><strong>「ディープエージェント」アーキテクチャパターンのパッケージ化</strong>：LangChain JSが<code>deepagents</code>を導入し、堅牢なシステム構築に寄与する4つのパターンを提示しています。</li>
+<li><strong>推論のボトルネックがFLOPsからメモリ容量へ</strong>：1Mコンテキストで900GB必要な例。</li>
+<li><strong>可観測性がエージェントの「スタックトレース」に</strong>：失敗時の主要なデバッグ手段。</li>
+<li><strong>RAGチャンクの動的最適化</strong>：クエリごとにチャンクサイズを変えると20〜40%リコール向上。</li>
+<li><strong>「ディープエージェント」アーキテクチャのパターン化</strong>：堅牢性の理由を4パターンに整理。</li>
 </ul>
-<p><strong>エンゲージメント上位ツイート</strong></p>
+<p><strong>トップツイート</strong></p>
 <ul>
-<li><strong>KarpathyがRSS回帰を提案</strong>：エンジニア向けの「信号品質」に関するメタコメント。</li>
-<li><strong>OpenAI Codexアプリの発表</strong>：今回のセットで最も注目を集めたAIエンジニアリング関連リリース。</li>
+<li><strong>Karpathy氏のRSS回帰</strong>：エンジニア向けの「信号品質」論。</li>
+<li><strong>OpenAI Codexアプリ発表</strong>：今回最大の話題。</li>
 </ul>
 <hr />
-<h1 id="ai-reddit">AI Redditまとめ</h1>
-<h2 id="rlocalllama-rlocalllm">/r/LocalLlama + /r/localLLMまとめ</h2>
-<h3 id="1-step-35-flash">1. Step-3.5-Flashモデル性能</h3>
-<ul>
-<li><strong>Step-3.5-Flash-int4が128GBデバイス向けローカルLLMの新王者に</strong>：M1 Ultra Mac Studioなど128GB RAM搭載機で256kコンテキストをフル稼働でき、RAM効率が高く、llama-benchで高性能を記録。</li>
-<li><strong>Step-3.5-FlashがGLM-4.7やDeepSeek v3.2を上回る</strong>：総パラメータ196B／稼働11Bで、より大きなモデルを凌駕する性能を示し、llama.cpp統合のPRも進行中。</li>
-</ul>
-<h3 id="2-glm-5ai">2. GLM-5と今後のAIリリース</h3>
-<ul>
-<li><strong>GLM-5が2月に登場予定</strong>：DeepSeek V4、Alibaba Qwen 3.5、GPT-5.3などと並び、主要モデルのアップデートが集中する見込み。</li>
-<li><strong>Mistral Vibe 2.0</strong>：Devstral 2モデルを活用したターミナルネイティブなコーディングエージェントで、カスタムサブエージェントやスラッシュコマンドスキルを搭載。</li>
-</ul>
-<h3 id="3-falcon-h1-tiny">3. Falcon-H1-Tinyと専門特化マイクロモデル</h3>
-<ul>
-<li><strong>Falcon-H1-Tiny（90M）</strong>：小規模ながら専門タスクで高性能を発揮するモデル群で、Muonオプティマイザを採用。</li>
-<li><strong>4chanデータで性能向上</strong>：Assistant_Pepe_8Bがベースモデルを上回る性能を示し、データソースによるモデルの性質変化が議論されています。</li>
-</ul>
-<h2 id="ai-subreddit">技術色の薄いAI Subredditまとめ</h2>
-<h3 id="1-claude-sonnet-5">1. Claude Sonnet 5のリリースと特徴</h3>
-<ul>
-<li><strong>Sonnet 5が近日登場予定</strong>：1Mコンテキスト、Opus 4.5の半額、TPUでの学習、エージェント的コーディング性能向上が期待されています。</li>
-</ul>
-<h3 id="2-ai">2. 革新的なAIモデル・ツールの発表</h3>
-<ul>
-<li><strong>MITの熱駆動シリコンチップ</strong>：廃熱を利用して計算を行い、99%の精度で行列ベクトル積を実行。</li>
-<li><strong>上海の繊維チップ</strong>：髪の毛ほどの細さで高耐久、スマートテキスタイルやBCIへの応用が期待。</li>
-</ul>
-<h3 id="3-ai">3. プロ・研究現場でのAI活用</h3>
-<ul>
-<li><strong>MSR Cambridge vs Amazon Applied Scienceインターン比較</strong>：研究適合性と長期的キャリア価値からMSRを推す声多数。</li>
-<li><strong>OpenClawエージェントのレッドチーム／ブルーチームテスト</strong>：間接的な攻撃経路の防御難易度が浮き彫りに。</li>
-<li><strong>BCGが36,000以上のカスタムGPTを展開</strong>：コンサル業務の基盤としてAIを活用。</li>
-</ul>
-<hr />
-<h1 id="ai-discord">AI Discordまとめ</h1>
-<p>（以下、各Discordサーバーでの主要トピックを要約）</p>
-<ul>
-<li><strong>CodexアプリのmacOS版提供開始</strong>、LM StudioのAnthropic API互換機能、Arena Modeによるモデル評価のゲーム化</li>
-<li><strong>Kimi K2.5、GLM-4.7 Flash、Step-3.5-Flash</strong>など新モデルの評価と比較</li>
-<li><strong>強化学習の報酬設計改善</strong>、新アーキテクチャ（Token-Routed MLPなど）、Moltbookデータセット公開</li>
-<li><strong>GPUカーネル最適化</strong>（FlashAttention v3のRDNA対応、Triton-Viz v3.0など）</li>
-<li><strong>プロンプトインジェクション防御</strong>、決定論的推論モード、OpenClawの運用リスク</li>
-</ul>
-<p>…（詳細は各Discordチャンネル別のまとめに続く）</p>
+<p>（以下、Reddit・Discordの詳細まとめは省略）</p>
     </main>
 
     <footer>
