@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTA Audioモデルがすべてを変える | AIニュース</title>
+    <meta name="description" content="SOTA Audioモデルがすべてを変える - AIニュース 2026-02-04。最新のAI技術動向を日本語でお届け。">
+    <meta name="keywords" content="AI,人工知能,ニュースレター,2026-02-04,機械学習,深層学習,日本語">
+    <meta name="author" content="AIニュース">
+    <link rel="canonical" href="https://yipg.github.io/ainews/docs/newsletters/2026-02-04.html">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="SOTA Audioモデルがすべてを変える | AIニュース">
+    <meta property="og:description" content="SOTA Audioモデルがすべてを変える - AIニュース 2026-02-04。最新のAI技術動向を日本語でお届け。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yipg.github.io/ainews/docs/newsletters/2026-02-04.html">
+    <meta property="og:image" content="https://yipg.github.io/ainews/newsletters/og/2026-02-04.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:site_name" content="AIニュース">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-02-04T09:00:00+00:00">
+    <meta property="article:author" content="AIニュース">
+    <meta property="article:section" content="AI技術ニュース">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SOTA Audioモデルがすべてを変える | AIニュース">
+    <meta name="twitter:description" content="SOTA Audioモデルがすべてを変える - AIニュース 2026-02-04。最新のAI技術動向を日本語でお届け。">
+    <meta name="twitter:image" content="https://yipg.github.io/ainews/newsletters/og/2026-02-04.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+    <link rel="alternate icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="AIニュース RSS Feed" href="../feed.xml">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 1em;
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            color: #111;
+            word-wrap: break-word;
+        }
+        
+        nav {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        
+        .site-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #111;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        
+        .site-title:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-links {
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+        
+        .nav-links a {
+            color: #111;
+            text-decoration: none;
+            margin-left: 12px;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        h1, h2, h3, h4, h5, h6 {
+            margin: 35px 0 20px 0;
+            line-height: 1.3;
+            color: #111;
+            letter-spacing: 0.01em;
+        }
+        
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.3em; }
+        h3 { font-size: 1.1em; }
+        
+        p {
+            margin: 20px 0;
+        }
+        
+        a {
+            color: #0969da;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        blockquote {
+            border-left: 3px solid #ccc;
+            margin: 25px 0;
+            padding: 0 25px;
+            color: #555;
+            font-style: italic;
+        }
+        
+        code {
+            background-color: #f6f8fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            padding: 20px;
+            overflow-x: auto;
+            margin: 25px 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 25px 0;
+            border-radius: 3px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 35px 0;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #555;
+            font-size: 0.85em;
+        }
+        
+        footer a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+                font-size: 0.95em;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .nav-links {
+                font-size: 0.8em;
+            }
+            
+            .nav-links a {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+            
+            .article-title {
+                font-size: 1.4em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 0.9em;
+                padding: 12px;
+            }
+            
+            .site-title {
+                font-size: 1em;
+            }
+            
+            .nav-links {
+                font-size: 0.75em;
+            }
+            
+            .article-title {
+                font-size: 1.3em;
+            }
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+                color: #eee;
+            }
+            
+            nav {
+                border-bottom-color: #444;
+            }
+            
+            .site-title, .nav-links a, .article-title, h1, h2, h3, h4, h5, h6 {
+                color: #eee;
+            }
+            
+            .article-date {
+                color: #ccc;
+            }
+            
+            blockquote {
+                border-left-color: #555;
+                color: #ccc;
+            }
+            
+            code {
+                background-color: #2d3748;
+                color: #e2e8f0;
+            }
+            
+            pre {
+                background-color: #2d3748;
+            }
+            
+            hr, footer {
+                border-color: #444;
+            }
+            
+            footer, footer a {
+                color: #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="site-title">✏️ AIニュース</a>
+        <div class="nav-links">
+            <a href="../index.html">ホーム</a>
+            <a href="./archive.html">アーカイブ</a>
+            <a href="../feed.xml">RSS</a>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+        </div>
+    </nav>
+
+    <main>
+        <p><strong>SOTA Audioモデルがすべてを変える</strong></p>
+<p>AI企業が<strong>デカコーン</strong>（評価額100億ドル以上）に到達した際には、その成長を振り返り称えることを方針としていますが、最近ではその希少性が薄れてきているようです。本日は、Sequoia、a16z、ICONIQが<a href="https://x.com/matiii/status/2019048833687126248?s=46">Eleven@11ラウンドを主導</a>したニュースがありましたが、すぐにCerebrasの発表にかき消されました。Cerebrasは<a href="https://openai.com/index/cerebras-partnership/?utm_source=chatgpt.com">OpenAIとの750MW契約（3年間で100億ドル規模）</a>の後、わずか5か月前に<a href="https://www.cerebras.ai/press-release/series-g?utm_source=chatgpt.com">評価額80億ドル</a>だったにもかかわらず、Tiger Globalから<strong>評価額230億ドルで10億ドル調達</strong>という「ダブル・デカコーン」ラウンドを実現しました。</p>
+<p>また、Vibe Codingの1周年を迎え、Andrej氏は<a href="http://1%20year%20anniversary%20of%20vibe%20coding/">Agentic Engineering</a>を今年の新しいメタとして提案しています。一方で、<a href="https://x.com/kimmonismus/status/2019174066565849193?s=46">METRはGPT 5.2 High</a>を<a href="https://x.com/METR_Evals/status/2019169900317798857">新しい6.6時間の人間タスクモデル</a>として認定し、Opus 4.5を上回りました。さらに、sama氏は<a href="https://x.com/sama/status/2019219967250669741?s=20">Codexの月間アクティブユーザー数が100万人に到達</a>したことを発表しました。</p>
+<hr />
+<h1 id="ai-twitter">AI Twitterまとめ</h1>
+<p><strong>ビッグテックの製品化：Gemini 3があらゆる場所に（Chrome、アプリ規模、「ゲーム」評価）</strong></p>
+<ul>
+<li><strong>ChromeサイドパネルにGemini 3搭載</strong>：GoogleはGemini 3を搭載した新しい<strong>Chromeサイドパネル体験</strong>を提供開始しました。さらに「Nano Banana」統合（Googleの表現）やその他UX変更も加え、ブラウザワークフローとLLM機能の密接な連携を継続しています（<a href="https://twitter.com/Google/status/2019083586314395653">Google</a>）。</li>
+<li><strong>Geminiのスケールとコスト曲線</strong>：Google幹部やアナリストはGeminiの急速な普及と提供コストの大幅削減を強調。Sundar氏は<strong>「Gemini 3の採用は他のどのモデルよりも速い」</strong>と報告し、Alphabetは<strong>年間売上4000億ドル超</strong>を達成（<a href="https://twitter.com/sundarpichai/status/2019155348264042934">@sundarpichai</a>）。別の報告では2025年にGemini提供コストが<strong>78%削減</strong>されたとされています（<a href="https://twitter.com/financialjuice/status/2019164355636654281">financialjuice</a>）。さらに、Geminiアプリは2025年第4四半期に<strong>月間アクティブユーザー7億5000万人超</strong>を記録（<a href="https://twitter.com/OfficialLoganK/status/2019166152199459074">OfficialLoganK</a>）。</li>
+<li><strong>ゲームによるベンチマーク</strong>：Googleはモデルの「ソフトスキル」評価として、Poker、Werewolf、Chessなどのゲームで競わせる<strong>Kaggle Game Arena</strong>を推進。これは不確実性下での計画・コミュニケーション・意思決定能力を配備前に試験する枠組みです（<a href="https://twitter.com/Google/status/2019094596588839191">Google</a>ほか）。</li>
+</ul>
+<p><strong>IDE内でのコーディングエージェント統合：VS Code「Agent Sessions」、GitHub Copilot Agents、Codex + Claude</strong></p>
+<ul>
+<li><strong>VS Codeのエージェント戦略転換</strong>：VS Codeは「コーディングエージェントの拠点」と位置づける大型アップデートを実施。ローカル・バックグラウンド・クラウドエージェントを統合する<strong>Agent Sessions</strong>ワークスペース、Claude + Codex対応、並列サブエージェント、統合ブラウザなどを搭載（<a href="https://twitter.com/code/status/2019120117884309718">VS Code</a>）。</li>
+<li><strong>GitHub Copilotのモデル/エージェント選択機能</strong>：GitHubはCopilot Pro+/Enterpriseで<strong>Claude</strong>や<strong>OpenAI Codex</strong>エージェントを選択可能にし、意図に応じてエージェントを選び既存ワークフロー内で非同期処理を実行できるようにしました（<a href="https://twitter.com/github/status/2019093909981257849">GitHub</a>）。</li>
+<li><strong>Codexの配布とハーネス詳細</strong>：OpenAIはCodexの採用状況（初期50万DL、後に100万アクティブユーザー超）やApp/CLI/Web/IDE統合を発表。共通の「Codexハーネス」をJSON-RPC「Codex App Server」プロトコル経由で提供（<a href="https://twitter.com/OpenAI/status/2019173348132188330">OpenAI</a>）。</li>
+<li><strong>課題も残る</strong>：一部ユーザーはCodexがCPUのみの環境で動作しGPUが使えないと報告し、GPU対応を要望（<a href="https://twitter.com/Yuchenj_UW/status/2019146114147185005">Yuchenj_UW</a>）。</li>
+<li><strong>OpenClaw/エージェントコミュニティのプラットフォーム化</strong>：OpenClawミートアップやClawHubなどのツール群が、ワークフロー・セキュリティ・配布を中心に急速にプロフェッショナル化。</li>
+</ul>
+<hr />
+<p>この後も、エージェントアーキテクチャ、モデルベンチマーク、マルチモーダル生成、研究ノート、Reddit・Discordでの議論などが続きますが、全体としてのトレンドは以下の通りです。</p>
+<ul>
+<li><strong>Gemini 3の急速な普及と低コスト化</strong></li>
+<li><strong>IDE内でのエージェント統合とワークフロー革新</strong></li>
+<li><strong>オープンソース音声生成モデルACE-Step 1.5の登場</strong></li>
+<li><strong>Qwen3-Coder-Nextなどローカル実行可能な高性能コーディングモデル</strong></li>
+<li><strong>Kling 3.0などの高度な映像生成技術</strong></li>
+<li><strong>GPT 5.2やARC-AGIベンチマークでの性能議論</strong></li>
+<li><strong>AI企業間の広告戦略を巡る競争（Anthropic vs OpenAI）</strong></li>
+<li><strong>Discordでのモデル運用・セキュリティ・GPU最適化議論</strong></li>
+</ul>
+<p>これらは、AI技術の商用化・性能向上・利用環境の多様化が加速していることを示しています。</p>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+            <a href="https://news.smol.ai/">news.smol.ai</a>
+        </p>
+    </footer>
+</body>
+</html>

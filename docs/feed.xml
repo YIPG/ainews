@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 04 Feb 2026 07:01:13 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Feb 2026 13:15:13 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>SOTA Audioモデルがすべてを変える</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-02-04.html</link>
+      <description><![CDATA[SOTA Audioモデルがすべてを変える...]]></description>
+      <pubDate>Wed, 04 Feb 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-02-04.html</guid>
+    </item>
     <item>
       <title>静かな一日だからこそ、じわじわと盛り上がるテーマを特集します。</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-02-03.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 注目度の高かったツイート エージェント型コーディングの一般化：ハーネス、メモリ、そして「ソフトウェアエンジニアリング時代」の議論 オープンツール＋推論効率化：プルーニング、軽量vLLMクローン、メモリ／VRAM計算機、そして（噂の）1-bit CPU推論...]]></description>
       <pubDate>Mon, 05 Jan 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-05.html</guid>
-    </item>
-    <item>
-      <title>Whaleチームの皆さん、おめでとうございます！</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-02.html</link>
-      <description><![CDATA[Whaleチームの皆さん、おめでとうございます！...]]></description>
-      <pubDate>Fri, 02 Jan 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-02.html</guid>
     </item>
   </channel>
 </rss>
