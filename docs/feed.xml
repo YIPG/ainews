@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 05 Feb 2026 13:15:13 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 07:02:28 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>SOTAコーディングモデルの戦いがさらに激化</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-02-05.html</link>
+      <description><![CDATA[SOTAコーディングモデルの戦いがさらに激化...]]></description>
+      <pubDate>Thu, 05 Feb 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-02-05.html</guid>
+    </item>
     <item>
       <title>SOTA Audioモデルがすべてを変える</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-02-04.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[ハードコアなAIエンジニアこそが必要です。 xAI（Elon Musk氏のAI企業）は、Series E資金調達の完了を正式発表しました。調達額は200億ドルに達し、当初目標の150億ドルを上回りました。...]]></description>
       <pubDate>Tue, 06 Jan 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-06.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-05.html</link>
-      <description><![CDATA[静かな一日 注目度の高かったツイート エージェント型コーディングの一般化：ハーネス、メモリ、そして「ソフトウェアエンジニアリング時代」の議論 オープンツール＋推論効率化：プルーニング、軽量vLLMクローン、メモリ／VRAM計算機、そして（噂の）1-bit CPU推論...]]></description>
-      <pubDate>Mon, 05 Jan 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-05.html</guid>
     </item>
   </channel>
 </rss>
