@@ -767,8 +767,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 最先端コーディングモデル：GPT-5.3-Codex vs Claude Opus 4.6（そして「agentic」の新しい意味） --- エージェント群と「箱入りソフトウェアチーム」 --- 評価の信頼性、ベンチマークの変動、新しい「信頼できる」スコアのためのインフラ...",
       "filename": "2026-02-06.html"
+    },
+    {
+      "date": "2026-02-09",
+      "title": "静かな一日",
+      "summary": "静かな一日 OpenAIのCodex推進（GPT‑5.3‑Codex）＋「You can just build things」という製品戦略 Claude Opus 4.6、「fast mode」、そして評価がポストベンチマーク時代へ移行...",
+      "filename": "2026-02-09.html"
     }
   ],
-  "lastUpdated": "2026-02-09T02:44:30.885752",
-  "totalCount": 128
+  "lastUpdated": "2026-02-10T07:14:08.260073",
+  "totalCount": 129
 }

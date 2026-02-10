@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Feb 2026 02:44:30 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Feb 2026 07:14:08 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-02-09.html</link>
+      <description><![CDATA[静かな一日 OpenAIのCodex推進（GPT‑5.3‑Codex）＋「You can just build things」という製品戦略 Claude Opus 4.6、「fast mode」、そして評価がポストベンチマーク時代へ移行...]]></description>
+      <pubDate>Mon, 09 Feb 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-02-09.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-02-06.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 注目ツイート（エンゲージメント順） --- オープンウェイトモデル：GLM-4.7の勢い、Qwenマルチモーダル検索、小型推論特化モデル --- 推論・カーネル最適化：vLLMスループット向上、KVオフロード、AI生成カーネル...]]></description>
       <pubDate>Thu, 08 Jan 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-08.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-07.html</link>
-      <description><![CDATA[静かな一日 静かな一日でした。 注目ツイート（エンゲージメント順） エージェント & 開発者ツール: 「agent harnesses」、DeepAgents、Cursorコンテキスト、MCPの普及...]]></description>
-      <pubDate>Wed, 07 Jan 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-07.html</guid>
     </item>
   </channel>
 </rss>
