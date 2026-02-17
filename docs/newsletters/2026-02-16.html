@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qwen、おめでとう！ | AIニュース</title>
+    <meta name="description" content="Qwen、おめでとう！ - AIニュース 2026-02-16。最新のAI技術動向を日本語でお届け。">
+    <meta name="keywords" content="AI,人工知能,ニュースレター,2026-02-16,機械学習,深層学習,日本語">
+    <meta name="author" content="AIニュース">
+    <link rel="canonical" href="https://yipg.github.io/ainews/docs/newsletters/2026-02-16.html">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Qwen、おめでとう！ | AIニュース">
+    <meta property="og:description" content="Qwen、おめでとう！ - AIニュース 2026-02-16。最新のAI技術動向を日本語でお届け。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yipg.github.io/ainews/docs/newsletters/2026-02-16.html">
+    <meta property="og:image" content="https://yipg.github.io/ainews/newsletters/og/2026-02-16.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:site_name" content="AIニュース">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-02-16T09:00:00+00:00">
+    <meta property="article:author" content="AIニュース">
+    <meta property="article:section" content="AI技術ニュース">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Qwen、おめでとう！ | AIニュース">
+    <meta name="twitter:description" content="Qwen、おめでとう！ - AIニュース 2026-02-16。最新のAI技術動向を日本語でお届け。">
+    <meta name="twitter:image" content="https://yipg.github.io/ainews/newsletters/og/2026-02-16.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+    <link rel="alternate icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="AIニュース RSS Feed" href="../feed.xml">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 1em;
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            color: #111;
+            word-wrap: break-word;
+        }
+        
+        nav {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        
+        .site-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #111;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        
+        .site-title:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-links {
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+        
+        .nav-links a {
+            color: #111;
+            text-decoration: none;
+            margin-left: 12px;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        h1, h2, h3, h4, h5, h6 {
+            margin: 35px 0 20px 0;
+            line-height: 1.3;
+            color: #111;
+            letter-spacing: 0.01em;
+        }
+        
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.3em; }
+        h3 { font-size: 1.1em; }
+        
+        p {
+            margin: 20px 0;
+        }
+        
+        a {
+            color: #0969da;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        blockquote {
+            border-left: 3px solid #ccc;
+            margin: 25px 0;
+            padding: 0 25px;
+            color: #555;
+            font-style: italic;
+        }
+        
+        code {
+            background-color: #f6f8fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            padding: 20px;
+            overflow-x: auto;
+            margin: 25px 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 25px 0;
+            border-radius: 3px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 35px 0;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #555;
+            font-size: 0.85em;
+        }
+        
+        footer a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+                font-size: 0.95em;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .nav-links {
+                font-size: 0.8em;
+            }
+            
+            .nav-links a {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+            
+            .article-title {
+                font-size: 1.4em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 0.9em;
+                padding: 12px;
+            }
+            
+            .site-title {
+                font-size: 1em;
+            }
+            
+            .nav-links {
+                font-size: 0.75em;
+            }
+            
+            .article-title {
+                font-size: 1.3em;
+            }
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+                color: #eee;
+            }
+            
+            nav {
+                border-bottom-color: #444;
+            }
+            
+            .site-title, .nav-links a, .article-title, h1, h2, h3, h4, h5, h6 {
+                color: #eee;
+            }
+            
+            .article-date {
+                color: #ccc;
+            }
+            
+            blockquote {
+                border-left-color: #555;
+                color: #ccc;
+            }
+            
+            code {
+                background-color: #2d3748;
+                color: #e2e8f0;
+            }
+            
+            pre {
+                background-color: #2d3748;
+            }
+            
+            hr, footer {
+                border-color: #444;
+            }
+            
+            footer, footer a {
+                color: #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="site-title">✏️ AIニュース</a>
+        <div class="nav-links">
+            <a href="../index.html">ホーム</a>
+            <a href="./archive.html">アーカイブ</a>
+            <a href="../feed.xml">RSS</a>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+        </div>
+    </nav>
+
+    <main>
+        <p><strong>Qwen、おめでとう！</strong></p>
+<p><strong>Qwenによる優れたモデル刷新</strong></p>
+<p><a href="https://x.com/sama/status/2023150230905159801">OpenAIに参加したPete Steinberger氏</a>にお祝い申し上げます。以前の予測通りの展開ですので、詳細は割愛します。</p>
+<p>今回の注目はQwen 3.5です。これは、中国の他のモデルラボである <a href="https://www.latent.space/p/ainews-zai-glm-5-new-sota-open-weights">Z.ai</a>、<a href="https://www.latent.space/p/ainews-new-gemini-3-deep-think-anthropic">Minimax</a>、<a href="https://www.latent.space/p/ainews-moonshot-kimi-k25-beats-sonnet">Kimi</a> に続く刷新ですが、Qwen 3.5はKimiと同じ規模（400Bパラメータ）で、スパース率は4.3%とKimiの3.25%より控えめです。全分野でのSOTA（最先端）を主張しているわけではなく、特にコーディングベンチマークではそうではありませんが、<a href="https://news.smol.ai/issues/25-09-05-1t-models">Qwen3-Max</a>や<a href="https://news.smol.ai/issues/25-09-23-alibaba-yunqi">Qwen3-VL</a>と比較して着実な改善を示しています。</p>
+<p>ネイティブなマルチモーダル対応と<a href="https://qwen.ai/blog?id=qwen3.5#spatial-intelligence">空間認識機能</a>が目玉で、公式ブログの例を見ることをおすすめします。中国で最も多くのオープンモデルを発表してきたラボによる歓迎すべき刷新であり、DeepSeek v4前の最後の大型更新となる可能性があります。</p>
+<hr />
+<h1 id="ai-twitter">AI Twitterまとめ</h1>
+<p><strong>AlibabaのQwen3.5オープンウェイト「フロンティアMoE」リリースと推論・インフラへの影響</strong></p>
+<ul>
+<li><strong>Qwen3.5-397B-A17Bリリース</strong>：AlibabaはQwen3.5シリーズ初のオープンウェイトモデル <strong>Qwen3.5-397B-A17B</strong> を発表しました。ネイティブマルチモーダル対応、「思考モード」と「非思考モード」、ハイブリッド線形アテンション＋スパースMoE、大規模RL環境スケーリング、201言語対応、Apache-2.0ライセンスです（<a href="https://twitter.com/Alibaba_Qwen/status/2023331062433153103">公式発表</a>、<a href="https://twitter.com/JustinLin610/status/2023332446713070039">@JustinLin610</a>による補足）。また、<strong>Qwen3.5-Plusは同じベースモデルのAPI版</strong>で、1Mコンテキスト（モデルネイティブは256K）に加え検索やコードインタプリタ統合が含まれると説明しています（<a href="https://twitter.com/JustinLin610/status/2023340126479569140">補足</a>）。</li>
+<li><strong>アーキテクチャとKVキャッシュの影響</strong>：コミュニティでは、Gated Delta Networks（GatedDeltaNet）＋スパースMoEが長コンテキスト推論を可能にしていると議論されました。vLLMは初日からサポートし、397B総パラメータのうち17Bがアクティブ、マルチモーダル対応、スループット・レイテンシの優位性を強調しました（<a href="https://twitter.com/vllm_project/status/2023341059343061138">vLLMレシピ</a>）。KVキャッシュの試算では、BF16で262Kコンテキスト時に約8.05GB（FP8では約4GB）と軽量であることが示されています（<a href="https://twitter.com/bnjmn_marie/status/2023424404504342608">KV計算</a>）。</li>
+<li><strong>巨大モデルだが意外と動く</strong>：BF16で約800GB規模にもかかわらず、Apple SiliconでMLX/Q4によるローカル実行報告があり（RAM約225GB）（<a href="https://twitter.com/pcuenq/status/2023369902011121869">mlx報告</a>、<a href="https://twitter.com/awnihannun/status/2023462412092059679">デモ</a>）、Unslothは256GB Mac/RAMで4bit実行ガイドを提示し、トップクローズドモデルに匹敵すると主張しました（<a href="https://twitter.com/UnslothAI/status/2023338222601064463">Unsloth</a>）。Ollamaも迅速にクラウド提供を開始しました（<a href="https://twitter.com/ollama/status/2023334181804069099">Ollama</a>）。</li>
+<li><strong>ベンチマークと効率性議論</strong>：Qwen3-Maxや既存Qwen VLモデルより改善し、特に視覚性能が向上。推論効率の証拠を求める声もあり（<a href="https://twitter.com/scaling01/status/2023343368399704506">scaling01</a>）、一部ではagentic RLによる改善と推測されています（<a href="https://twitter.com/teortaxesTex/status/2023331885402009779">コメント</a>）。一方でブラックボックス評価やSVGタスクでの失敗も指摘されています（<a href="https://twitter.com/andonlabs/status/2023450768406364238">Vending-Bench</a>、<a href="https://twitter.com/scaling01/status/2023364296277721300">SVG比較</a>）。</li>
+<li><strong>価格設定の議論</strong>：API価格が高すぎるとの声が複数あり、KimiやGLMとの比較がなされています（<a href="https://twitter.com/scaling01/status/2023346718377406840">価格批判</a>、<a href="https://twitter.com/scaling01/status/2023349177443377370">追加</a>）。「優れたモデルだが提供コストが不明」というテーマが繰り返し浮上しました。</li>
+</ul>
+<hr />
+<p>この後も、OpenClawとOpenAIの動向、Codexの利用急増、中国の旧正月に合わせたモデルラッシュ、研究・技術スレッド、オープンvsクローズドの議論、労働・教育への影響、そして「味覚（選択眼）」と検証能力の重要性など、多岐にわたる話題が続きます。</p>
+<hr />
+<h1 id="ai-reddit">AI Redditまとめ</h1>
+<h2 id="rlocalllama-rlocalllm">/r/LocalLlama + /r/localLLM</h2>
+<h3 id="1-qwen-35">1. Qwen 3.5モデルのリリースと性能</h3>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/LocalLLaMA/comments/1r656d7/qwen35397ba17b_is_out/">Qwen3.5-397B-A17Bリリース</a></strong>：397Bパラメータ、ネイティブコンテキスト262,144トークン、最大1,010,000トークンまで拡張可能。GGUF版も提供され、性能試験への期待が高まっています。</li>
+<li><strong><a href="https://www.reddit.com/r/LocalLLaMA/comments/1r6599e/qwen35397ba17b_unsloth_ggufs/">Qwen3.5-397B-A17B Unsloth GGUF版</a></strong>：3bitで192GB RAM Mac、4bit（MXFP4）で256GB RAM M3 Ultra上で実行可能。Gemini 3 ProやClaude Opus 4.5、GPT-5.2と競合する性能を持ち、動的GGUFで柔軟な展開が可能です。</li>
+</ul>
+<hr />
+<p>この後も、ローカルLLMの課題、MiniMax-2.5やOpenClawの議論、SingularityやOpenAI関連の倫理問題、Discordでの詳細な議論などが続きます。</p>
+<hr />
+<h1 id="ai-discord">AI Discordまとめ</h1>
+<h2 id="frontiergpu">Frontierモデル、エージェントスタック、GPUカーネル最適化、推論手法、インフラ・価格動向など</h2>
+<ul>
+<li>Qwen3.5、GLM-5、MiniMax 2.5、Opus 4.6、Step 3.5 Flashなどの最新モデルの性能比較と実行環境の議論</li>
+<li>OpenClawによるマルチエージェント運用やビデオ通話モードの実装事例</li>
+<li>CUDA/Triton DSLによるGPUカーネル最適化とエージェントによるコード生成</li>
+<li>CommonLIDなど新ベンチマークやCoVe、Rubric RLなどの推論手法</li>
+<li>PerplexityやKimiの価格改定とユーザー移行、OpenAIモデルの廃止による抗議活動</li>
+</ul>
+<hr />
+<p>このニュースレター全体は、最新のAIモデルリリース、技術的進展、コミュニティの反応、そして業界の倫理・経済的課題を網羅しています。</p>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+            <a href="https://news.smol.ai/">news.smol.ai</a>
+        </p>
+    </footer>
+</body>
+</html>
