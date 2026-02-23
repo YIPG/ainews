@@ -815,8 +815,14 @@
       "title": "Googleの番です。",
       "summary": "Googleの番です。...",
       "filename": "2026-02-20.html"
+    },
+    {
+      "date": "2026-02-21",
+      "title": "静かな一日",
+      "summary": "静かな一日 フロンティアモデル評価：Gemini 3.1 Pro、SWE-bench、MRCR、そして「二極的」な実世界性能 Claude Opus/Sonnet 4.6：タイムホライゾン評価、コスト、信頼性の課題...",
+      "filename": "2026-02-21.html"
     }
   ],
-  "lastUpdated": "2026-02-20T07:04:08.290951",
-  "totalCount": 136
+  "lastUpdated": "2026-02-23T02:43:01.221550",
+  "totalCount": 137
 }
