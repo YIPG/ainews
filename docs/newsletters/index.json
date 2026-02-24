@@ -821,8 +821,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 フロンティアモデル評価：Gemini 3.1 Pro、SWE-bench、MRCR、そして「二極的」な実世界性能 Claude Opus/Sonnet 4.6：タイムホライゾン評価、コスト、信頼性の課題...",
       "filename": "2026-02-21.html"
+    },
+    {
+      "date": "2026-02-24",
+      "title": "輸出規制が大きく前進",
+      "summary": "AnthropicによるClaude「蒸留攻撃」疑惑（そして業界からの反発） コーディングエージェント：実利用、失敗事例、そして「エージェント工学」手引き ベンチマークと評価の信頼性：SWE-Bench Verified廃止、新リーダーボード、リポジトリ生成の壁...",
+      "filename": "2026-02-24.html"
     }
   ],
-  "lastUpdated": "2026-02-23T02:43:01.221550",
-  "totalCount": 137
+  "lastUpdated": "2026-02-24T07:07:55.861739",
+  "totalCount": 138
 }
