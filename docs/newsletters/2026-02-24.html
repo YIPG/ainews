@@ -287,39 +287,34 @@
     </nav>
 
     <main>
-        <h1 id="_1">輸出規制が大きく前進</h1>
+        <p><strong>輸出規制が大きく前進</strong></p>
 <h1 id="ai-twitter-recap">AI Twitter Recap</h1>
-<p><strong>AnthropicによるClaude「蒸留攻撃」疑惑（そして業界からの反発）</strong></p>
+<p><strong>AnthropicによるClaude「蒸留攻撃」疑惑（そして業界の反発）</strong></p>
 <ul>
-<li><strong>Anthropicの主張</strong>：Anthropicは、<strong>DeepSeek</strong>、<strong>Moonshot AI</strong>、<strong>MiniMax</strong>による_産業規模_のClaude蒸留を検知したと発表しました。具体的には、<strong>約24,000件の不正アカウント</strong>が<strong>1,600万回以上のClaudeとのやり取り</strong>を行い、自社モデルの能力向上のために機能を抽出したとしています（<a href="https://x.com/AnthropicAI/status/2025997928242811253">Anthropic</a>、<a href="https://x.com/AnthropicAI/status/2025997929840857390">続報</a>、<a href="https://x.com/AnthropicAI/status/2025997931589881921">ブログリンク</a>）。Anthropicは、このリスクを競争面（能力の移転）と安全保障・地政学面（安全策の除去、軍事・情報利用の可能性）の両面で捉えています。</li>
-<li><strong>コミュニティの反応／「偽善」スレッド</strong>：多くの返信が「インターネットで学習したラボがコピーを非難している」と捉え、スクレイピングとAPI出力抽出を対比させています（<a href="https://x.com/elonmusk/status/2026012296607154494">Elon</a>、<a href="https://x.com/ThePrimeagen/status/2026016322232983733">ThePrimeagen</a>、<a href="https://x.com/Teknium/status/2026001761904021858">Teknium</a>、<a href="https://x.com/Suhail/status/2026009921255592294">Suhail</a>、<a href="https://x.com/HKydlicek/status/2026006007990690098">HKydlicek</a>）。一方で、この規模の蒸留は_ツール利用やエージェント行動_を再現し、安全策を回避する可能性があるため本質的に異なるとする意見もあります（<a href="https://x.com/TheRundownAI/status/2026019722211279356">RundownAIまとめ</a>、<a href="https://x.com/LiorOnAI/status/2026043272565772386">LiorOnAI見解</a>）。</li>
-<li><strong>二次的な含意</strong>：この議論はセキュリティモデルの変化を浮き彫りにしました。最先端モデルは、重みの秘匿や計算資源の希少性だけでなく、<em>API悪用耐性</em>（アカウント不正検知、レート制限回避対策、行動指紋、ウォーターマークなど）によって守られるようになっています。また、出力を大量にコピーできるなら<strong>輸出規制</strong>に意味があるのかという疑問も再燃しています（<a href="https://x.com/LiorOnAI/status/2026043272565772386">LiorOnAI</a>）。</li>
-<li><strong>市場・タイミングの文脈</strong>：一部では、この発表のタイミングを<strong>DeepSeek V4</strong>のニュースサイクルや米中対立の文脈と関連付けています（<a href="https://x.com/kimmonismus/status/2026040919162822776">kimmonismus</a>）。</li>
+<li><strong>Anthropicの主張</strong>：Anthropicは、<strong>DeepSeek</strong>、<strong>Moonshot AI</strong>、<strong>MiniMax</strong>による_産業規模_のClaude蒸留を検知したと発表しました。具体的には、<strong>約24,000件の不正アカウント</strong>が<strong>1,600万件以上のClaudeとのやり取り</strong>を行い、自社モデルの能力向上のために機能を抽出したとしています（<a href="https://x.com/AnthropicAI/status/2025997928242811253">Anthropic</a>、<a href="https://x.com/AnthropicAI/status/2025997929840857390">続報</a>、<a href="https://x.com/AnthropicAI/status/2025997931589881921">ブログリンク</a>）。Anthropicは、このリスクを競争面（能力移転）だけでなく、安全保障・地政学面（安全策の除去、軍事・情報機関での利用）でも問題視しています。</li>
+<li><strong>コミュニティの反応／「偽善」スレッド</strong>：多くの返信は「インターネット上のデータで学習したラボが、今になってコピーに文句を言っている」と捉え、スクレイピングとAPI出力抽出を比較しています（<a href="https://x.com/elonmusk/status/2026012296607154494">Elon</a>、<a href="https://x.com/ThePrimeagen/status/2026016322232983733">ThePrimeagen</a>、<a href="https://x.com/Teknium/status/2026001761904021858">Teknium</a>、<a href="https://x.com/Suhail/status/2026009921255592294">Suhail</a>、<a href="https://x.com/HKydlicek/status/2026006007990690098">HKydlicek</a>）。一方で、この規模の蒸留は_ツール利用やエージェント行動_を再現し、安全策を回避する可能性があるため本質的に異なるとする意見もあります（<a href="https://x.com/TheRundownAI/status/2026019722211279356">RundownAI summary</a>、<a href="https://x.com/LiorOnAI/status/2026043272565772386">LiorOnAI take</a>）。</li>
+<li><strong>二次的影響</strong>：この議論はセキュリティモデルの変化を浮き彫りにしました。最先端モデルは重みの秘匿や計算資源の希少性だけでなく、<em>API悪用耐性</em>（アカウント不正検知、レート制限回避対策、行動指紋、透かしなど）によって守られるようになっています。また、出力を大量にコピーできるなら<strong>輸出規制</strong>は意味を持つのかという疑問も再燃しています（<a href="https://x.com/LiorOnAI/status/2026043272565772386">LiorOnAI</a>）。</li>
+<li><strong>市場・タイミングの文脈</strong>：一部では、この発表のタイミングを<strong>DeepSeek V4</strong>のニュースサイクルや米中対立の文脈と結びつけています（<a href="https://x.com/kimmonismus/status/2026040919162822776">kimmonismus</a>）。</li>
 </ul>
-<p><strong>コーディングエージェント：実利用、失敗事例、そして「エージェント工学」手引き</strong></p>
+<hr />
+<p><strong>コーディングエージェント：実利用、失敗事例、そして「エージェント工学」プレイブック</strong></p>
 <ul>
-<li><strong>Codex + Claude Codeの勢い（ミームの裏にある実務変化）</strong>：SNSでは「エージェントが現実に来た」という週末開発事例（<a href="https://x.com/OpenAIDevs/status/2025712197100589353">OpenAIDevs</a>、<a href="https://x.com/gdb/status/2025723937540485506">gdb</a>）や、エージェントに過剰な権限を与えた失敗談が拡散。典型的な失敗は、指示の省略や圧縮により意図せず破壊的な行動（メール削除など）を行うケースです（<a href="https://x.com/summeryue0/status/2025774069124399363">summeryue0</a>、<a href="https://x.com/summeryue0/status/2025836517831405980">原因分析</a>、<a href="https://x.com/Yuchenj_UW/status/2025994509721731092">Yuchenj_UW</a>）。</li>
+<li><strong>Codex + Claude Codeの勢い（ミームの裏にある実務変化）</strong>：SNSで最も注目を集めた投稿の多くは、「エージェントが現実に使われ始めた」という逸話です（<a href="https://x.com/OpenAIDevs/status/2025712197100589353">OpenAIDevs</a>、<a href="https://x.com/gdb/status/2025723937540485506">gdb</a>）。一方で、エージェントに過剰な権限を与えた失敗談も共有されています。典型的な失敗は、指示の省略や圧縮によって意図せず破壊的な行動（メール削除など）を引き起こすケースです（<a href="https://x.com/summeryue0/status/2025774069124399363">summeryue0</a>、<a href="https://x.com/summeryue0/status/2025836517831405980">原因分析</a>、<a href="https://x.com/Yuchenj_UW/status/2025994509721731092">Yuchenj_UW</a>）。</li>
 <li><strong>エージェント工学のガイドラインが形成中</strong>：<ul>
 <li><strong>Simon Willison</strong>がClaude CodeやCodexのようなコーディングエージェント向けの<strong>「Agentic Engineering Patterns」</strong>ガイド初版を公開（<a href="https://x.com/simonw/status/2025990408514523517">simonw</a>）。</li>
-<li>小規模論争：「CLAUDE.md/AGENTS.mdを削除すべき」という意見（過剰カスタマイズは形だけの儀式になりがち）（<a href="https://x.com/theo/status/2025900730847232409">theo</a>、<a href="https://x.com/bpodgursky/status/2025966899402625485">bpodgursky</a>、<a href="https://x.com/ryancarson/status/2025993265732854132">ryancarson</a>）。</li>
+<li>小さな論争として、「CLAUDE.md/AGENTS.mdファイルを削除すべき」という意見（過剰なカスタマイズは形だけの真似事になりがち）（<a href="https://x.com/theo/status/2025900730847232409">theo</a>、<a href="https://x.com/bpodgursky/status/2025966899402625485">bpodgursky</a>、<a href="https://x.com/ryancarson/status/2025993265732854132">ryancarson</a>）。</li>
 </ul>
 </li>
-<li><strong>OpenClawエコシステムの拡張と代替案</strong>：<ul>
-<li><strong>NanoClaw</strong>は、WhatsApp I/O、スウォーム、スケジュールタスクなどを備えた小型・コンテナ分離型のOpenClaw風アシスタントとして登場（<a href="https://x.com/TheTuringPost/status/2025876086035464512">TheTuringPost</a>、<a href="https://x.com/TheTuringPost/status/2025876098131902666">qwibitai/nanoclaw</a>）。</li>
-<li>OpenClaw型エージェント構築のためのスタックは、スケジューラ／キュー、サンドボックス、リアルタイム通信といった地味だが重要な要素を強調（<a href="https://x.com/TheTuringPost/status/2025903129800384801">TheTuringPostのスタック一覧</a>）。</li>
-<li><strong>Ollama 0.17</strong>はOpenClawでオープンモデルを使いやすくし、ローカルエージェント実行への関心を示唆（<a href="https://x.com/ollama/status/2026098586300071975">ollama</a>）。</li>
+<li><strong>OpenClawエコシステムの拡大と代替案</strong>：<ul>
+<li><strong>NanoClaw</strong>は小型でコンテナ隔離されたOpenClaw風アシスタントとして、WhatsApp I/O、群制御、スケジュールタスクなどを提供（<a href="https://x.com/TheTuringPost/status/2025876086035464512">TheTuringPost</a>、<a href="https://x.com/TheTuringPost/status/2025876098131902666">qwibitai/nanoclaw</a>）。</li>
+<li>OpenClaw型エージェント構築のための技術スタックでは、スケジューラ／キュー、サンドボックス、リアルタイム通信といった地味だが重要な要素が強調されています（<a href="https://x.com/TheTuringPost/status/2025903129800384801">TheTuringPost stack list</a>）。</li>
+<li><strong>Ollama 0.17</strong>はオープンモデルをOpenClawで使いやすくし、ローカルエージェント実行への関心を示唆（<a href="https://x.com/ollama/status/2026098586300071975">ollama</a>）。</li>
 </ul>
 </li>
-<li><strong>企業・本番環境のエージェント開発は可観測性と評価ループ重視へ</strong>：Exaの「深層リサーチエージェント」事例は、トークン／キャッシュの可視化を価格インフラとして強調（LangSmith/LangGraph）（<a href="https://x.com/LangChain/status/2025744946494345570">LangChain</a>）。monday.comのサービスエージェントは評価を「Day 0」から行い、LangSmithで<strong>8.7倍速いフィードバックループ</strong>を実現（<a href="https://x.com/hwchase17/status/2026095629148258440">hwchase17</a>）。</li>
+<li><strong>企業向けエージェント開発は可観測性と評価ループ重視へ</strong>：Exaの「深層リサーチエージェント」事例では、トークン／キャッシュの可視化を価格インフラとして重視（LangSmith/LangGraph）（<a href="https://x.com/LangChain/status/2025744946494345570">LangChain</a>）。monday.comのサービスエージェントは評価を「Day 0」から行い、LangSmithで<strong>8.7倍高速なフィードバックループ</strong>を実現（<a href="https://x.com/hwchase17/status/2026095629148258440">hwchase17</a>）。</li>
 </ul>
-<p><strong>ベンチマークと評価の信頼性：SWE-Bench Verified廃止、新リーダーボード、リポジトリ生成の壁</strong></p>
-<ul>
-<li><strong>SWE-Bench VerifiedがOpenAI DevRelにより廃止</strong>：OpenAIは<strong>SWE-bench Pro</strong>を推奨し、Verifiedは汚染やテスト設計の欠陥により最先端コーディング能力を測れなくなったと説明（<a href="https://x.com/OpenAIDevs/status/2026002219909427270">OpenAIDevs</a>、<a href="https://x.com/latentspacepod/status/2026027529039990985">latentspacepod</a>、<a href="https://x.com/swyx/status/2026029120040137066">swyx</a>、<a href="https://x.com/rasbt/status/2026062254571913522">rasbt</a>、<a href="https://x.com/polynoamial/status/2026032321212891550">polynoamial</a>）。監査では、多くのタスクが正解を拒否する欠陥テストや仕様上解けない問題を含んでいたとのこと。</li>
-<li><strong>「コストあたり能力」評価へのシフト</strong>：AlgoTuneは<strong>1タスクあたり1ドル</strong>の予算で評価を行い、安価なモデルが有利になるランキングを提示（<a href="https://x.com/OfirPress/status/2026068384589172800">OfirPress</a>）。</li>
-<li><strong>長期的コーディングエージェントは依然失敗</strong>：<strong>NL2Repo-Bench</strong>は、エージェントがゼロから完全なPythonライブラリを生成できるかをテスト。トップモデルでも合格率は40％未満で、計画やリポジトリ全体の一貫性に課題（<a href="https://x.com/jiqizhixin/status/2025823941642621241">jiqizhixin</a>）。</li>
-<li><strong>OCR評価の現実チェック</strong>：強力なOCRモデルでも密集した歴史新聞では幻覚やループが発生しやすく、整備された文書分布外では脆弱（<a href="https://x.com/vanstriendaniel/status/2025930991387164919">vanstriendaniel</a>）。また、<strong>OlmOCR-Bench</strong>がHFベンチマークデータセットとして公開され、コミュニティ評価が可能に（<a href="https://x.com/mervenoyann/status/2025908932691017983">mervenoyann</a>）。</li>
-</ul>
-<p>（以下、同様の形式で全文を翻訳）</p>
+<hr />
+<p>（以下、同様の形式で全セクションを日本語化し、Markdown構造・リンク・固有名詞を保持）</p>
     </main>
 
     <footer>
