@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 25 Feb 2026 02:40:21 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 02:35:44 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>コーディングは永遠に変わってしまった — 単なる「いつもの」ハイプ以上の大きな変化が広がっているという不安感</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-02-25.html</link>
+      <description><![CDATA[コーディングは永遠に変わってしまった — 単なる「いつもの」ハイプ以上の大きな変化が広がっているという不安感 --- Perplexity「Computer」：オーケストレーション重視のエージェント製品（マルチモデル、ツール＋環境、使用量ベース課金）...]]></description>
+      <pubDate>Wed, 25 Feb 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-02-25.html</guid>
+    </item>
     <item>
       <title>輸出規制が大きく前進</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-02-24.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[Kimiは過去1年間で目覚ましい進展を遂げ、昨年11月にはKimi K2 Thinkingを発表しました。今回のK2.5もK2同様、32B active-1Tパラメータモデル（384エキスパート）であり、「Kimi-K2-Base上に15兆の視覚・テキスト混合トークンによる継続的事前学習で構築...]]></description>
       <pubDate>Tue, 27 Jan 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-27.html</guid>
-    </item>
-    <item>
-      <title>豊かな生成UIこそがすべてです。</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-26.html</link>
-      <description><![CDATA[豊かな生成UIこそがすべてです。...]]></description>
-      <pubDate>Mon, 26 Jan 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-26.html</guid>
     </item>
   </channel>
 </rss>
