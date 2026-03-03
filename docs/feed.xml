@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Feb 2026 02:35:44 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2026 13:10:55 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-03-02.html</link>
+      <description><![CDATA[静かな一日 Qwen 3.5「small」オープンモデル：長文コンテキスト＋マルチモーダルのオンデバイス実行が現実に --- コーディングエージェント＋信頼性＋「可用性が新たなフロンティア」 ---...]]></description>
+      <pubDate>Mon, 02 Mar 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-03-02.html</guid>
+    </item>
     <item>
       <title>コーディングは永遠に変わってしまった — 単なる「いつもの」ハイプ以上の大きな変化が広がっているという不安感</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-02-25.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 --- フロンティアモデルの「性格分裂」と実際の利用方法 --- Kimi K2.5（＋「clawdbot」／スウォームモード）が今週のオープンモデルの焦点に --- エージェントエンジニアリング：スキル、ハーネス、評価、信頼性の課題...]]></description>
       <pubDate>Wed, 28 Jan 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-28.html</guid>
-    </item>
-    <item>
-      <title>中国、オープンモデルでさらに大きな飛躍</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-01-27.html</link>
-      <description><![CDATA[Kimiは過去1年間で目覚ましい進展を遂げ、昨年11月にはKimi K2 Thinkingを発表しました。今回のK2.5もK2同様、32B active-1Tパラメータモデル（384エキスパート）であり、「Kimi-K2-Base上に15兆の視覚・テキスト混合トークンによる継続的事前学習で構築...]]></description>
-      <pubDate>Tue, 27 Jan 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-01-27.html</guid>
     </item>
   </channel>
 </rss>
