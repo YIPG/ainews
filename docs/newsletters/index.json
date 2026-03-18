@@ -845,8 +845,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 Gemini 3.1 Flash‑Lite 発表：「dynamic thinking levels」＋攻めた価格性能比 OpenAI: GPT‑5.3 Instant ロールアウト＋「説教臭さ軽減」＋GPT‑5.4予告...",
       "filename": "2026-03-03.html"
+    },
+    {
+      "date": "2026-03-16",
+      "title": "静かな一日",
+      "summary": "静かな一日 アーキテクチャ研究：MoonshotのAttention Residualsと先行研究を巡る議論 コーディングエージェント、ハーネス、スキル基盤 オープンソースエージェント：Hermesの躍進、OpenClaw統合、エージェントUX...",
+      "filename": "2026-03-16.html"
     }
   ],
-  "lastUpdated": "2026-03-04T06:57:06.294168",
-  "totalCount": 141
+  "lastUpdated": "2026-03-18T07:09:52.742593",
+  "totalCount": 142
 }
