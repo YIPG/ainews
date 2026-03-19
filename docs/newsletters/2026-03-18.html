@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniMaxおめでとう！ | AIニュース</title>
+    <meta name="description" content="MiniMaxおめでとう！ - AIニュース 2026-03-18。最新のAI技術動向を日本語でお届け。">
+    <meta name="keywords" content="AI,人工知能,ニュースレター,2026-03-18,機械学習,深層学習,日本語">
+    <meta name="author" content="AIニュース">
+    <link rel="canonical" href="https://yipg.github.io/ainews/docs/newsletters/2026-03-18.html">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="MiniMaxおめでとう！ | AIニュース">
+    <meta property="og:description" content="MiniMaxおめでとう！ - AIニュース 2026-03-18。最新のAI技術動向を日本語でお届け。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yipg.github.io/ainews/docs/newsletters/2026-03-18.html">
+    <meta property="og:image" content="https://yipg.github.io/ainews/newsletters/og/2026-03-18.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:site_name" content="AIニュース">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-03-18T09:00:00+00:00">
+    <meta property="article:author" content="AIニュース">
+    <meta property="article:section" content="AI技術ニュース">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MiniMaxおめでとう！ | AIニュース">
+    <meta name="twitter:description" content="MiniMaxおめでとう！ - AIニュース 2026-03-18。最新のAI技術動向を日本語でお届け。">
+    <meta name="twitter:image" content="https://yipg.github.io/ainews/newsletters/og/2026-03-18.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+    <link rel="alternate icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="AIニュース RSS Feed" href="../feed.xml">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 1em;
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            color: #111;
+            word-wrap: break-word;
+        }
+        
+        nav {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        
+        .site-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #111;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        
+        .site-title:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-links {
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+        
+        .nav-links a {
+            color: #111;
+            text-decoration: none;
+            margin-left: 12px;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        h1, h2, h3, h4, h5, h6 {
+            margin: 35px 0 20px 0;
+            line-height: 1.3;
+            color: #111;
+            letter-spacing: 0.01em;
+        }
+        
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.3em; }
+        h3 { font-size: 1.1em; }
+        
+        p {
+            margin: 20px 0;
+        }
+        
+        a {
+            color: #0969da;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        blockquote {
+            border-left: 3px solid #ccc;
+            margin: 25px 0;
+            padding: 0 25px;
+            color: #555;
+            font-style: italic;
+        }
+        
+        code {
+            background-color: #f6f8fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            padding: 20px;
+            overflow-x: auto;
+            margin: 25px 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 25px 0;
+            border-radius: 3px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 35px 0;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #555;
+            font-size: 0.85em;
+        }
+        
+        footer a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+                font-size: 0.95em;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .nav-links {
+                font-size: 0.8em;
+            }
+            
+            .nav-links a {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+            
+            .article-title {
+                font-size: 1.4em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 0.9em;
+                padding: 12px;
+            }
+            
+            .site-title {
+                font-size: 1em;
+            }
+            
+            .nav-links {
+                font-size: 0.75em;
+            }
+            
+            .article-title {
+                font-size: 1.3em;
+            }
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+                color: #eee;
+            }
+            
+            nav {
+                border-bottom-color: #444;
+            }
+            
+            .site-title, .nav-links a, .article-title, h1, h2, h3, h4, h5, h6 {
+                color: #eee;
+            }
+            
+            .article-date {
+                color: #ccc;
+            }
+            
+            blockquote {
+                border-left-color: #555;
+                color: #ccc;
+            }
+            
+            code {
+                background-color: #2d3748;
+                color: #e2e8f0;
+            }
+            
+            pre {
+                background-color: #2d3748;
+            }
+            
+            hr, footer {
+                border-color: #444;
+            }
+            
+            footer, footer a {
+                color: #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="site-title">✏️ AIニュース</a>
+        <div class="nav-links">
+            <a href="../index.html">ホーム</a>
+            <a href="./archive.html">アーカイブ</a>
+            <a href="../feed.xml">RSS</a>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+        </div>
+    </nav>
+
+    <main>
+        <p><strong>MiniMaxおめでとう！</strong></p>
+<blockquote>
+<p>AIニュース（2026年3月18日〜3月19日）</p>
+</blockquote>
+<p><a href="https://www.cnbc.com/2026/01/09/minimax-hong-kong-ipo-ai-tigers-zhipu.html">IPO</a>からわずか2か月、そして<a href="https://www.minimax.io/news/minimax-global-announces-full-year-2025-financial-results">初の公開四半期決算</a>を経て、MiniMaxは再びニュースに登場しました。今回発表された<a href="https://x.com/MiniMax_AI/status/2034315320337522881#m">MiniMax 2.7</a>は、中国のオープンモデル分野における明るい話題であり、<a href="https://x.com/swyx/status/2033030744352993296">Qwenの変化</a>後の注目株です。性能面では<a href="https://www.latent.space/p/ainews-zai-glm-5-new-sota-open-weights?utm_source=publication-search">Z.aiのGLM-5</a>と同等ですが、今回の焦点は効率性にあります（<a href="https://x.com/ArtificialAnlys/status/2034313314420019462#m">Artificial Analysisのチャート</a>の緑の象限を参照）。</p>
+<p>チームは「<a href="https://x.com/MiniMax_AI/status/2034335605145182659">Early Echoes of Self-Evolution</a>」と呼び、「モデル自身が進化に深く関与した初めての事例」と説明しています。これは<a href="https://www.latent.space/p/ainews-autoresearch-sparks-of-recursive">KarpathyのAutoresearch</a>を想起させますが、彼らの主張は「M2.7はワークフローの30〜50%を処理可能」というものです。</p>
+<p>さらに、複数エージェント協働（"Agent Teams"）の研究や、AnthropicやOpenAIに倣って金融分野への応用も進めています。最後に、エンターテインメント用途向けのオープンソースデモ<a href="https://www.openroom.ai/">OpenRoom</a>を公開しました。</p>
+<hr />
+<h1 id="ai-twitter">AI Twitterまとめ</h1>
+<p><strong>MiniMax M2.7、Xiaomi MiMo-V2-Pro、そして拡大する「自己進化型エージェント」モデル群</strong></p>
+<ul>
+<li><strong>MiniMax M2.7が注目のモデルリリース</strong><br />
+<a href="https://x.com/MiniMax_AI/status/2034315320337522881#m">M2.7</a>は「自己進化に深く関与した初めてのモデル」と位置づけられ、SWE-Proで56.22%、Terminal Bench 2で57.0%、40以上のスキルで97%の遵守率、OpenClawでSonnet 4.6と同等の性能を達成。内部評価環境も自己改善し、フィードバック収集、評価セット構築、スキル/MCP・メモリ・アーキテクチャの反復改善を行ったと報告されています（<a href="https://x.com/MiniMax_AI/status/2034315323109953605#m">スレッド</a>）。第三者も「自己進化」フレーミングを支持。</li>
+<li><strong>Artificial AnalysisはM2.7をコスト／性能の最前線に位置付け</strong><br />
+<a href="https://x.com/ArtificialAnlys/status/2034313314420019462#m">Artificial Analysis</a>によると、Intelligence Indexで50を記録し、GLM-5（Reasoning）と同等ながら、1M入力／出力トークンあたり$0.30／$1.20で、GLM-5の3分の1以下のコスト。GDPval-AA Eloでは1494と、MiMo-V2-Pro（1426）、GLM-5（1406）、Kimi K2.5（1283）を上回り、M2.5比で幻覚率大幅減。即時配布も実施。</li>
+<li><strong>Xiaomi MiMo-V2-Proは中国発API専用推論モデルとして有力候補</strong><br />
+<a href="https://x.com/ArtificialAnlys/status/2034239267052896516#m">Artificial Analysis</a>によると、Intelligence Indexで49、1Mコンテキスト、価格は$1／$3、GDPval-AA Eloは1426。トークン効率が高く、幻覚率低減によるAA-Omniscienceスコア+5が特徴。以前のオープンウェイトMiMo-V2-Flashに続く製品で、V2-Proは現状API専用。</li>
+<li><strong>Mamba-3登場、ハイブリッドアーキテクチャ視点で評価</strong><br />
+  Cartesiaが<a href="https://x.com/cartesia/status/2034338862559121475#m">Mamba-3</a>を発表。推論重視のSSMで、Mamba-3をTransformerハイブリッドに組み込む動きが注目されています。</li>
+</ul>
+<hr />
+<p><strong>エージェント環境、スキル、MCP、そして「プロンプト」からシステム設計への移行</strong></p>
+<ul>
+<li><strong>環境構築（ハーネス）技術が差別化要因に</strong><br />
+  モデル本体よりも周辺実行環境がボトルネックとの指摘が増加。</li>
+<li><strong>スキルがエージェントスタック間の共通抽象に</strong><br />
+  スキル配布やバージョン管理の課題解決にMCP活用が提案されています。</li>
+<li><strong>オープンエージェントスタックはモデル＋ランタイム＋ハーネスに収束</strong><br />
+  各種インフラリリースも進行。</li>
+<li><strong>MCPの勢いと反発</strong><br />
+  Google ColabのMCPサーバー公開など有用事例がある一方、CLI回帰を望む声も。</li>
+<li><strong>エージェントネイティブ企業アプリと「ヘッドレスSaaS」</strong><br />
+  従来UIなしのAPI型ソフトウェアが増加。</li>
+</ul>
+<hr />
+<p><strong>インフラ、カーネル、モデル・システム共同設計</strong></p>
+<ul>
+<li><strong>Attention Residualが共同設計の事例に</strong><br />
+  モデル研究とインフラ最適化の連携が重要。</li>
+<li><strong>カスタムカーネル共有が容易に</strong><br />
+  Hugging Faceの<code>kernels</code>ライブラリが登場。</li>
+<li><strong>推論最適化は依然重要テーマ</strong><br />
+  NVLink帯域の誤解なども指摘。</li>
+<li><strong>計算資源のボトルネックは依然上流に</strong><br />
+  ASML EUV機の供給制限がAIスケーリングの天井に。</li>
+</ul>
+<hr />
+<p><strong>ドキュメント、OCR、検索、コンテキスト設計</strong></p>
+<ul>
+<li><strong>Document AIはエンドツーエンド多モード解析へ</strong><br />
+  BaiduやVik Paruchuriが新OCRモデルを発表。</li>
+<li><strong>遅延インタラクション型検索がメモリ／品質トレードオフを改善</strong><br />
+  MUVERAがメモリ70%削減を報告。</li>
+<li><strong>コンテキスト設計が製品カテゴリに</strong><br />
+  Prompt設計の後継として構造化解析が重要に。</li>
+</ul>
+<hr />
+<p><strong>評価、学習手法、注目ベンチマーク</strong></p>
+<ul>
+<li><strong>LLM-as-judgeの再現性問題再燃</strong><br />
+  評価モデル選択が結論を左右する事例。</li>
+<li><strong>事前学習データ構成が重要レバーに再浮上</strong><br />
+  SFTデータ混合の有効性が報告。</li>
+<li><strong>ベンチマークは「未解決かつ有用」へシフト</strong><br />
+  実世界課題解決型評価が注目。</li>
+</ul>
+<hr />
+<p><strong>注目ツイート（技術関連）</strong></p>
+<ul>
+<li><strong>OpenAI Parameter Golfチャレンジ</strong><br />
+  16MBアーティファクトを短時間で学習する競技。</li>
+<li><strong>Anthropicの8.1万人調査</strong><br />
+  Claudeによる大規模定性調査。</li>
+<li><strong>Runwayリアルタイム動画生成プレビュー</strong><br />
+  100ms未満でHD動画生成。</li>
+<li><strong>Hugging Faceのエージェント向け論文ビュー提供</strong><br />
+  研究ワークフロー支援。</li>
+<li><strong>VS Code統合ブラウザデバッグ</strong><br />
+  エンドツーエンドWebアプリ開発に有用。</li>
+</ul>
+<hr />
+<h1 id="ai-reddit">AI Redditまとめ</h1>
+<h2 id="rlocalllama-rlocalllm">/r/LocalLlama + /r/localLLM</h2>
+<h3 id="1-minimax-m27">1. MiniMax-M2.7モデル発表</h3>
+<ul>
+<li>ベンチマーク性能と自己進化能力が注目される一方、実運用での汎用性に懐疑的な声も。</li>
+</ul>
+<h3 id="2-unsloth-studio">2. Unsloth Studioの公開</h3>
+<ul>
+<li>Mac/Windows/Linux対応のオープンソースLLMトレーニング・実行UI。VRAM70%削減、500以上のモデル対応。</li>
+</ul>
+<h3 id="3-hugging-facekrasis-llm">3. Hugging FaceとKrasis LLMの新機能</h3>
+<ul>
+<li><code>llmfit</code>による自動モデル選択やKrasis LLM Runtimeによる大規模モデルの単一GPU実行。</li>
+</ul>
+<hr />
+<h2 id="ai-subreddit">技術色の薄いAI Subredditまとめ</h2>
+<h3 id="1">1. モデルリリースとベンチマーク</h3>
+<ul>
+<li>NVIDIA Nemotron 3 Ultra BaseやGPT-5.4シリーズ、Gemini 3.1 Flash-Liteの性能・価格比較。</li>
+</ul>
+<h3 id="2-claude-ai">2. Claude AIの利用とフィードバック</h3>
+<ul>
+<li>Claude Proの利用制限やClaude Codeによる業務自動化事例、Claude Coworkのリモートアクセス機能。</li>
+</ul>
+<h3 id="3-ai">3. AIツールとオープンソース革新</h3>
+<ul>
+<li>Netryxの画像位置特定ツール、Topaz NeuroStreamによるVRAM削減、Lightricksのオープンウェイト戦略。</li>
+</ul>
+<hr />
+<h1 id="ai-discord">AI Discord</h1>
+<p>Discordへのアクセスが停止されました。</p>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/YIPG/ainews">GitHub</a>
+            <a href="https://news.smol.ai/">news.smol.ai</a>
+        </p>
+    </footer>
+</body>
+</html>
