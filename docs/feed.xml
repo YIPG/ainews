@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 24 Mar 2026 07:12:35 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 07:10:39 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-03-24.html</link>
+      <description><![CDATA[静かな一日 エージェント基盤、コンピュータ利用、Design-to-Actionツール オープンエージェントプラットフォーム、ベンチマーク、RL環境スタック 推論、ストレージ、システム最適化 セキュリティ、サプライチェーンリスク、エージェントソフトウェアのガードレール...]]></description>
+      <pubDate>Tue, 24 Mar 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-03-24.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-03-23.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 最先端コーディングモデル：GPT-5.3-Codex vs Claude Opus 4.6（そして「agentic」の新しい意味） --- エージェント群と「箱入りソフトウェアチーム」 --- 評価の信頼性、ベンチマークの変動、新しい「信頼できる」スコアのためのインフラ...]]></description>
       <pubDate>Fri, 06 Feb 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-02-06.html</guid>
-    </item>
-    <item>
-      <title>SOTAコーディングモデルの戦いがさらに激化</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-02-05.html</link>
-      <description><![CDATA[SOTAコーディングモデルの戦いがさらに激化...]]></description>
-      <pubDate>Thu, 05 Feb 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-02-05.html</guid>
     </item>
   </channel>
 </rss>
