@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 06 Apr 2026 03:19:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 07:44:12 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-04-07.html</link>
+      <description><![CDATA[静かな一日 トップニュース: Anthropicの収益開示分析とClaude Mythosの詳細...]]></description>
+      <pubDate>Tue, 07 Apr 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-04-07.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-04-03.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[Anthropic、再び成果を上げる...]]></description>
       <pubDate>Tue, 17 Feb 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-02-17.html</guid>
-    </item>
-    <item>
-      <title>Qwen、おめでとう！</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-02-16.html</link>
-      <description><![CDATA[Qwen、おめでとう！ Qwenによる優れたモデル刷新 OpenAIに参加したPete Steinberger氏にお祝い申し上げます。以前の予測通りの展開ですので、詳細は割愛します。...]]></description>
-      <pubDate>Mon, 16 Feb 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-02-16.html</guid>
     </item>
   </channel>
 </rss>
