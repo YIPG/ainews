@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 09 Apr 2026 02:48:54 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 03:30:35 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-04-10.html</link>
+      <description><![CDATA[静かな一日 オープンモデル、コーディングエージェント、そして新しいAdvisorパターン エージェントハーネス、Hermesの勢い、そして「ポータブルスキル」スタック （以下省略）...]]></description>
+      <pubDate>Fri, 10 Apr 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-04-10.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-04-08.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[Googleの番です。...]]></description>
       <pubDate>Fri, 20 Feb 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-02-20.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-02-18.html</link>
-      <description><![CDATA[静かな一日 --- フロンティアモデルとベンチマーク更新（Claude 4.6、Qwen3.5、GLM‑5、Gemini 3.1 Pro、MiniMax M2.5）...]]></description>
-      <pubDate>Wed, 18 Feb 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-02-18.html</guid>
     </item>
   </channel>
 </rss>
