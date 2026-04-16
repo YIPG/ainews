@@ -935,8 +935,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 Agent Harnesses、コーディングワークフロー、単一モデルからシステム設計への移行 --- Hermes Agentのダッシュボードリリース、OpenClawとの比較、オープンエージェントスタック...",
       "filename": "2026-04-13.html"
+    },
+    {
+      "date": "2026-04-15",
+      "title": "静かな一日",
+      "summary": "静かな一日 OpenAI Agents SDKの拡張と新しいサンドボックス指向のエージェントスタック CloudflareのProject Think、Agent Lee、音声エージェント Hermes Agentの自己改善ワークフローと競合ポジション...",
+      "filename": "2026-04-15.html"
     }
   ],
-  "lastUpdated": "2026-04-14T13:58:09.507778",
-  "totalCount": 156
+  "lastUpdated": "2026-04-16T07:57:17.134789",
+  "totalCount": 157
 }
