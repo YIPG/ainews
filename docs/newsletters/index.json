@@ -953,8 +953,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 AnthropicのClaude Opus 4.7とClaude Designの展開 コンピュータ利用、コーディングエージェント、ハーネス設計 （以下略）...",
       "filename": "2026-04-17.html"
+    },
+    {
+      "date": "2026-04-20",
+      "title": "静かな一日",
+      "summary": "静かな一日 Kimi K2.6とQwen3.6-Max-Previewがオープンなエージェント型コーディングを前進 Hermes Agentの急速なエコシステム拡大とマルチエージェントオーケストレーションパターン...",
+      "filename": "2026-04-20.html"
     }
   ],
-  "lastUpdated": "2026-04-20T03:30:50.978627",
-  "totalCount": 159
+  "lastUpdated": "2026-04-21T03:22:39.977462",
+  "totalCount": 160
 }
