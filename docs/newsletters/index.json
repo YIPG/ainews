@@ -959,8 +959,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 Kimi K2.6とQwen3.6-Max-Previewがオープンなエージェント型コーディングを前進 Hermes Agentの急速なエコシステム拡大とマルチエージェントオーケストレーションパターン...",
       "filename": "2026-04-20.html"
+    },
+    {
+      "date": "2026-04-21",
+      "title": "静かな一日",
+      "summary": "静かな一日 OpenAIによるGPT-Image-2の発表と、画像生成が本格的な製品機能として復活 エージェント基盤：Hugging Faceのml-intern、Hermesの拡張、研究/実行ハーネスの台頭...",
+      "filename": "2026-04-21.html"
     }
   ],
-  "lastUpdated": "2026-04-21T03:22:39.977462",
-  "totalCount": 160
+  "lastUpdated": "2026-04-22T03:21:08.988826",
+  "totalCount": 161
 }
