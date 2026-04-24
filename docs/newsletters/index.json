@@ -971,8 +971,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 オープンモデル：Qwen3.6-27B、OpenAI Privacy Filter、Xiaomi MiMo-V2.5 Google Cloud Next: TPU v8、Gemini Enterprise Agent Platform、Workspace Intelligence...",
       "filename": "2026-04-22.html"
+    },
+    {
+      "date": "2026-04-23",
+      "title": "静かな一日",
+      "summary": "静かな一日 トップニュース: GPT-5.5のローンチ...",
+      "filename": "2026-04-23.html"
     }
   ],
-  "lastUpdated": "2026-04-23T03:24:23.966115",
-  "totalCount": 162
+  "lastUpdated": "2026-04-24T03:26:48.280406",
+  "totalCount": 163
 }

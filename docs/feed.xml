@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 23 Apr 2026 03:24:23 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2026 03:26:48 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-04-23.html</link>
+      <description><![CDATA[静かな一日 トップニュース: GPT-5.5のローンチ...]]></description>
+      <pubDate>Thu, 23 Apr 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-04-23.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-04-22.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 AIコーディングエージェント、開発者向けツール、そしてIDE支配を巡る競争 エージェント、マルチエージェントランタイム、企業向けエージェント管理基盤 モデルリリース、ベンチマーク、検索・推論結果 マルチモーダルモデル、OCR、ドキュメント解析、クリエイティブツール...]]></description>
       <pubDate>Thu, 19 Mar 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-03-19.html</guid>
-    </item>
-    <item>
-      <title>MiniMaxおめでとう！</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-03-18.html</link>
-      <description><![CDATA[MiniMaxおめでとう！...]]></description>
-      <pubDate>Wed, 18 Mar 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-03-18.html</guid>
     </item>
   </channel>
 </rss>
