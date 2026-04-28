@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 27 Apr 2026 03:37:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 03:42:13 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-04-27.html</link>
+      <description><![CDATA[静かな一日 OpenAIの配信方針変更、GPT-5.5のベンチマーク、Codex/Copilotの価格動向 Xiaomi MiMo-V2.5、Kimi K2.6、中国のエージェント志向オープンウェイト推進 エージェントランタイム、オーケストレーション、ローカルファーストツール...]]></description>
+      <pubDate>Mon, 27 Apr 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-04-27.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-04-24.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 Claudeのコンピュータ操作、エージェント基盤、そして「コード生成」から完全なワークフロー自動化への移行 自己改善エージェント、RLポストトレーニング、ベンチマーク生成の研究 ワールドモデル、JEPA、メカニスティック解釈、学習理論の進展...]]></description>
       <pubDate>Mon, 23 Mar 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-03-23.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-03-20.html</link>
-      <description><![CDATA[静かな一日 Coding Agents、モデル帰属、そしてCursor/Kimi Composer 2論争 オープンなコーディングツール群：Claude Code、T3 Code、Deep Agents、Fleet、Hermes...]]></description>
-      <pubDate>Fri, 20 Mar 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-03-20.html</guid>
     </item>
   </channel>
 </rss>
