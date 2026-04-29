@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 28 Apr 2026 03:42:13 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 03:40:14 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-04-28.html</link>
+      <description><![CDATA[静かな一日 Inference Systems、vLLM 0.20、そしてDeepSeek V4を巡るハードウェア／カーネル競争 オープンモデルリリース: Poolside Laguna XS.2、NVIDIA Nemotron 3 Nano Omni、TRELLIS.2...]]></description>
+      <pubDate>Tue, 28 Apr 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-04-28.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-04-27.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 エージェント基盤、コンピュータ利用、Design-to-Actionツール オープンエージェントプラットフォーム、ベンチマーク、RL環境スタック 推論、ストレージ、システム最適化 セキュリティ、サプライチェーンリスク、エージェントソフトウェアのガードレール...]]></description>
       <pubDate>Tue, 24 Mar 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-03-24.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-03-23.html</link>
-      <description><![CDATA[静かな一日 Claudeのコンピュータ操作、エージェント基盤、そして「コード生成」から完全なワークフロー自動化への移行 自己改善エージェント、RLポストトレーニング、ベンチマーク生成の研究 ワールドモデル、JEPA、メカニスティック解釈、学習理論の進展...]]></description>
-      <pubDate>Mon, 23 Mar 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-03-23.html</guid>
     </item>
   </channel>
 </rss>
