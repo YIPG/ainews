@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 01 May 2026 03:54:26 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 03:45:00 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-05-01.html</link>
+      <description><![CDATA[静かな一日 Grok 4.3のリリース、ベンチマーク差異、そしてオープンvsクローズドの最前線 DeepSeek V4 Pro、ビジョン／空間推論、そしてオープンウェイトが差を縮める Codexの急速な製品拡張 vs Claude Code、Devin、その他エージェントランタイム...]]></description>
+      <pubDate>Fri, 01 May 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-05-01.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-04-30.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 オープンウェイト推論・ビジョンコーディングモデルのリリース：Arcee Trinity-Large-Thinking、Z.ai GLM-5V-Turbo、Falcon Perception、Holo3...]]></description>
       <pubDate>Wed, 01 Apr 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-04-01.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-03-30.html</link>
-      <description><![CDATA[静かな一日 Claude Codeのコンピュータ利用、Codexとの相互運用、そしてコーディングエージェントのハーネス競争 Hermes Agentの急成長、マルチエージェントプロファイル、そしてオープンハーネスエコシステム...]]></description>
-      <pubDate>Mon, 30 Mar 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-03-30.html</guid>
     </item>
   </channel>
 </rss>

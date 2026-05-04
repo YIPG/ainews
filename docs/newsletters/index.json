@@ -1007,8 +1007,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 OpenAIのGPT-5.5、Codex拡張、そしてサイバー能力評価 オープンウェイトモデルの動き：Qwen3.6、Tencent Hy3-preview、Grok 4.3、Ling 2.6 1T...",
       "filename": "2026-04-30.html"
+    },
+    {
+      "date": "2026-05-01",
+      "title": "静かな一日",
+      "summary": "静かな一日 Grok 4.3のリリース、ベンチマーク差異、そしてオープンvsクローズドの最前線 DeepSeek V4 Pro、ビジョン／空間推論、そしてオープンウェイトが差を縮める Codexの急速な製品拡張 vs Claude Code、Devin、その他エージェントランタイム...",
+      "filename": "2026-05-01.html"
     }
   ],
-  "lastUpdated": "2026-05-01T03:54:26.132807",
-  "totalCount": 168
+  "lastUpdated": "2026-05-04T03:45:00.272498",
+  "totalCount": 169
 }
