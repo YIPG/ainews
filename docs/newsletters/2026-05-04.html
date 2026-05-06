@@ -290,21 +290,70 @@
         <p><strong>静かな一日</strong></p>
 <hr />
 <h1 id="ai-twitter">AI Twitterまとめ</h1>
-<p><strong>Harnessエンジニアリング、エージェントオーケストレーション、モデルからコンテキストパイプラインへのシフト</strong></p>
+<p><strong>OpenAIのGPT-5.5 Instant、パーソナライズ機能の展開、音声・エージェント基盤のアップデート</strong></p>
 <ul>
-<li><strong>Harnessが製品境界になりつつある</strong>：この日の繰り返しテーマは、モデル品質が唯一の競争優位ではなくなっているという点です。<a href="https://x.com/AnthonyMaio/status/2050976650943213964">Anthony Maio</a>氏は、ロックインは<strong>コンテキストパイプライン</strong>—リポジトリの状態を取得し、順位付けし、プロンプトに圧縮する方法—から生まれるのであって、Harnessのシェル自体からではないと主張しました。この点は<a href="https://x.com/masondrxy/status/2051016743905305007">Mason Drxy</a>氏によって補強され、Harness内のプロンプトやミドルウェアを変更することで、<strong>gpt-5.2-codexがTerminal-Bench 2.0で52.8%から66.5%に向上</strong>し、<strong>gpt-5.3-codexがtau2-benchで20%改善</strong>したと報告されています。実務的なポイントとして、エージェントの性能は<strong>モデル × Harness × メモリ／コンテキスト戦略</strong>の組み合わせによって決まり、重みだけではないということです。</li>
-<li><strong>オープンHarnessの成熟が急速に進行</strong>：最も目立つ動きは<strong>Hermes / deepagents / Flueスタイル</strong>のエコシステムからでした。<a href="https://x.com/Teknium/status/2051001156005151226"> @Teknium</a>氏は視覚的なマルチエージェント調整のための<strong>Hermes Agent Kanban</strong>を発表し、<a href="https://x.com/naroh/status/2050998576486973759">@naroh</a>氏はHermesオーケストレーション上にスペイン語の「戦争室」UIを披露しました。LangChain側では、<a href="https://x.com/hwchase17/status/2051004516674457965">@hwchase17</a>、<a href="https://x.com/sydneyrunkle/status/2051382622517887479">@sydneyrunkle</a>、<a href="https://x.com/LangChain/status/2051360793904529439">@LangChain</a>が、モデル固有のHarness設定プロファイル、スキーマ移行、ノードレベルのエラーハンドラー、タイムアウト、新しいストリーミングプリミティブなどのdeepagents/LangGraph改善を紹介しました。<a href="https://x.com/Shashikant86/status/2050999432569651221">PyFlue</a>も「エージェントHarness」コンセプトをPythonに拡張し、Harnessを生のモデル呼び出しと耐久性のあるエージェントの間の欠けた層として位置付けています。</li>
-<li><strong>モデル非依存のオーケストレーションが設計目標に</strong>：複数の投稿が、次の波は「1つのフロンティアAPIを選ぶ」ではなく<strong>オープンモデル＋オープンHarness</strong>であると述べています。<a href="https://x.com/Vtrivedy10/status/2051148084567052690">Vtrivedy</a>氏は、優れたHarness内でオープンモデルを調整することで<strong>20倍以上安価</strong>なエージェントが得られると主張し、<a href="https://x.com/masondrxy/status/2051359502918648319">Mason Drxy</a>氏はdeepagents-cliが<strong>Kimi、Qwen、GLM、ホスト型Ollama、OpenRouter、LiteLLM、Baseten</strong>などに対応する強力なコーディングHarnessになっていると説明しました。<a href="https://x.com/LangChain/status/2051367244060598312">LangChain Fleet</a>は、異なるステップで異なるモデルを使用できる<strong>マルチモデル・サブエージェントルーティング</strong>を追加しました。これはAPIロックインへの構造的対抗策であり、オーケストレーション層をモデル提供者から分離するという考え方です。</li>
+<li><strong>GPT-5.5 InstantがChatGPTの新しいデフォルトに</strong>：OpenAIはChatGPTおよびAPIに<code>gpt-5.5-chat-latest</code>として<strong>GPT-5.5 Instant</strong>を導入しました。これは<strong>事実性、基礎的知能、画像理解、トーン</strong>の幅広い改善を伴うアップグレードと位置付けられています。今回のリリースでは、より強力なパーソナライズ機能も同時に提供され、ChatGPTが<strong>保存されたメモリー、過去のチャット、ファイル、接続されたGmail</strong>を利用できるようになり、ユーザーが返信に影響したコンテキストを確認できる<strong>「memory sources」</strong>も公開されました。詳細は<a href="https://x.com/OpenAI/status/2051709028250915275">@OpenAI</a>のメインスレッド、<a href="https://x.com/OpenAI/status/2051709035347694047">@OpenAI</a>による展開情報、<a href="https://x.com/michpokrass/status/2051709536130802022">@michpokrass</a>の製品解説、<a href="https://x.com/ericmitchellai/status/2051711459886059963">@ericmitchellai</a>や<a href="https://x.com/sama/status/2051716909629153573">@sama</a>の反応をご覧ください。</li>
+<li><strong>OpenAIがリアルタイム製品の基盤詳細を公開</strong>：<a href="https://x.com/OpenAIDevs/status/2051453905343828350">@OpenAIDevs</a>は、ChatGPT音声機能とRealtime APIのために<strong>WebRTCスタック</strong>を再構築した内容を共有しました。これは<strong>薄いリレー</strong>と<strong>ステートフルトランシーバ</strong>を用いて遅延を削減し、会話を音声ペースで維持する設計です。<a href="https://x.com/kimmonismus/status/2051571219040735423">@kimmonismus</a>や<a href="https://x.com/sama/status/2051464865634742334">@sama</a>が指摘するように、これは音声機能刷新の兆候と一致しています。</li>
+<li><strong>開発者向けOpenAIエージェントツールが拡大</strong>：<a href="https://x.com/OpenAIDevs/status/2051725072873001338">@OpenAIDevs</a>は<strong>TypeScript用Agents SDK</strong>を発表し、<strong>sandbox agents</strong>や<strong>オープンソースのハーネス</strong>を含んでいます。別途、OpenAIはCodex UXや自動化機能を強化しており、<a href="https://x.com/reach_vb/status/2051655026574057593">@reach_vb</a>が紹介したタスク進捗UIや、<a href="https://x.com/reach_vb/status/2051782942314078553">@reach_vb</a>による低摩擦承認の<strong>Auto Review</strong>などがあります。コミュニティの意見では、5.5は<strong>高トークン予算のコーディングや非コーディング作業</strong>に特に強いとされています（<a href="https://x.com/sama/status/2051724685231214650">@sama</a>、<a href="https://x.com/sama/status/2051783339502375418">@sama</a>）。</li>
 </ul>
-<p><strong>コーディングエージェント、コスト曲線、ワークフローの変化</strong></p>
+<p><strong>コーディングエージェント、ハーネス設計、ベンチマーク圧力</strong></p>
 <ul>
-<li><strong>コーディングエージェントのUXが開発者行動をベンチマークより早く変化させている</strong>：Codex、Claude Code、Hermes、Devinのようなシステムでのコーディングの現実を描いた投稿が複数ありました。<a href="https://x.com/dbreunig/status/2051081626139210202">dbreunig</a>氏はエージェント型コーディングの「戒律」—<strong>学ぶために実装する、頻繁に再構築する、E2Eテストは金、意図を文書化する、仕様を維持する</strong>—を提案し、<a href="https://x.com/dbreunig/status/2051083366410400132">dbreunig</a>氏は長期的にはファイルシステムがエージェントにとって適切な抽象化なのか疑問を呈しました。<a href="https://x.com/zachtratar/status/2051002668735410193">zachtratar</a>氏は、Notion→会議メモ→仕様→コーディングエージェントというワークフローで「3か月の問題」を数日に圧縮する方法を示し、強力なコーディングエージェントがあっても整合性アーティファクトが依然必要であることを強調しました。</li>
-<li><strong>エージェント型ワークロードでは価格／課金モデルが不安定</strong>：<a href="https://x.com/theo/status/2051218167780041147"> @theo</a>氏のスレッドが際立ち、単一のCopilotメッセージで<strong>6000万トークン以上</strong>を消費し、<strong>40ドルのサブスクリプション</strong>に対して数十〜数百ドルの推論コストを推定、その後<a href="https://x.com/theo/status/2051395816410210604">15メッセージで約221ドル分のトークン</a>と更新しました。これは、チャットターン向けに設計された定額料金が、長時間実行するコーディングエージェントに渡すと脆弱になることを示しています。<a href="https://x.com/petergostev/status/2051076960911077796">petergostev</a>氏は使用制限を可視化するCodex UIを紹介し、<a href="https://x.com/cheatyyyy/status/2051332852546228533">cheatyyyy</a>氏は入力価格が高い場合にキャッシュヒットを逃すことへの新たな不安を指摘しました。</li>
-<li><strong>エージェントはコーディング以外のワークフローにも拡大</strong>：<a href="https://x.com/reach_vb/status/2051019108028969251">reach_vb</a>氏は脅威モデリング、脆弱性発見、検証、攻撃経路分析を含む5つのAppSecワークフローを備えた<strong>Codex Securityプラグイン</strong>を提供し、<a href="https://x.com/gabrielchua/status/2051113129317408925">gabrielchua</a>氏は<strong>Google Slides生成</strong>をCodexでリアルタイム構築するデモを披露しました。<a href="https://x.com/paulabartabajo_/status/2051152294146617674">paulabartabajo_</a>氏はllama.cpp上で<strong>完全ローカルアシスタント</strong>を構築するガイドを公開し、<a href="https://x.com/UfukDegen/status/2051088239579345329">UfukDegen</a>氏はHermesベースの動画生成ワークフロー<strong>Noustiny</strong>を紹介しました。</li>
+<li><strong>ハーネス品質が主要な差別化要因に</strong>：<a href="https://x.com/Vtrivedy10/status/2051451869017584112">@Vtrivedy10</a>は、モデル品質だけではエージェント性能を説明できなくなっていると指摘し、<strong>Model–Harness–Taskの適合</strong>が抽象的なベンチマークより重要と述べています。<a href="https://x.com/sydneyrunkle/status/2051637638239567953">@sydneyrunkle</a>はLangChainによる長時間稼働ハーネスの構造解説を紹介し、<a href="https://x.com/masondrxy/status/2051714091924828480">@masondrxy</a>は<strong>ACPスタイルの分離</strong>を提案しています。</li>
+<li><strong>エージェントのコーディングUXは分裂傾向</strong>：<a href="https://x.com/0xSero/status/2051689733793755405">@0xSero</a>は<strong>Droid</strong>をPi、Amp、OpenCode、Codex CLIより上位と評価。<a href="https://x.com/teortaxesTex/status/2051549309707928028">@teortaxesTex</a>は<strong>Hermes</strong>がdeepseek-tuiやOpenCodeより成功率、速度、コストで優れていると述べています。商業面では<a href="https://x.com/kimmonismus/status/2051515496567292310">@kimmonismus</a>がCodexがClaude Codeをダウンロード数で上回ったと報告。</li>
+<li><strong>新ベンチマーク：ProgramBench</strong>：Meta研究者が<strong>ProgramBench</strong>を発表。SQLiteやFFmpeg、PHPコンパイラなどを仕様から生成する200タスクで、最高精度は0%と報告されています。</li>
+<li><strong>CI/セキュリティへの自動化進展</strong>：<a href="https://x.com/cursor_ai/status/2051739625958584659">@cursor_ai</a>はGitHubを監視しCI失敗を自動修正するエージェントを発表。<a href="https://x.com/cognition/status/2051708729880416614">@cognition</a>は<strong>Devin for Security</strong>を導入しました。</li>
 </ul>
-<p>（以下略）</p>
+<p><strong>推論・システム・効率：Gemma 4 drafters、SGLang/RadixArk、プロバイダー経済</strong></p>
+<ul>
+<li><strong>Gemma 4がオープンスタック全体でMTP drafterを導入</strong>：Googleは<strong>Gemma 4 MTP drafter</strong>をリリースし、品質低下なしで最大3倍のデコード速度を実現すると発表しました。</li>
+<li><strong>RadixArkがSGLang + Milesで1億ドルのシード資金調達</strong>：<a href="https://x.com/BanghuaZ/status/2051650922892476904">@BanghuaZ</a>は、推論、学習、RL、オーケストレーション、カーネル、多ハードウェアシステムをカバーすると説明。</li>
+<li><strong>推論経済はプロバイダーごとに大きく異なる</strong>：<a href="https://x.com/ArtificialAnlys/status/2051735255044997215">@ArtificialAnlys</a>はMiniMax-M2.7を6プロバイダーで比較し、速度・価格・キャッシュ割引に大きな差があると報告。</li>
+<li><strong>コールドスタートと分散学習が依然ボトルネック</strong>：<a href="https://x.com/kamilsindi/status/2051674592750494094">@kamilsindi</a>はGPU上に既に格納された重みを利用することでコールドスタートを60倍短縮したと述べています。</li>
+</ul>
+<p><strong>エージェント、RL環境、可観測性、長期的研究</strong></p>
+<ul>
+<li><strong>RL基盤が長期アクションシステムへ移行</strong>：<a href="https://x.com/adithya_s_k/status/2051660068471603352">@adithya_s_k</a>はLLM時代のRL環境フレームワーク比較ガイドを公開。</li>
+<li><strong>長期的失敗は容量問題ではなく地平問題として捉えられる傾向</strong>：Microsoft Researchの論文では、目標の地平が学習のボトルネックになると指摘。</li>
+<li><strong>可観測性がフィードバック駆動の改善ループへ成熟</strong>：<a href="https://x.com/hwchase17/status/2051708980435853513">@hwchase17</a>は、トレースだけでは不十分で、フィードバックを付与することが重要と述べています。</li>
+</ul>
+<p><strong>企業向け垂直化：金融、法務、プロアクティブアシスタント</strong></p>
+<ul>
+<li><strong>AnthropicとPerplexityが金融ワークフローに注力</strong>：Anthropicは金融サービス向けエージェントテンプレートを発表。Perplexityは<strong>Perplexity Computer for Professional Finance</strong>を導入。</li>
+<li><strong>Perplexityが医療・専門健康情報源に拡大</strong>：NEJMやBMJなどへのアクセスを提供。</li>
+<li><strong>プロアクティブアシスタントが製品カテゴリに</strong>：<a href="https://x.com/kimmonismus/status/2051618156385366305">@kimmonismus</a>は<strong>Anthropic Orbit</strong>のリークを報告。</li>
+</ul>
+<p><strong>エンゲージメント上位ツイート</strong></p>
+<ul>
+<li>Anthropicの金融テンプレート発表</li>
+<li>OpenAIのGPT-5.5 Instant発表</li>
+<li>Gemma 4の高速化</li>
+<li>Perplexityの金融製品発表</li>
+</ul>
 <hr />
-<p>このように、Harnessやエージェントオーケストレーションの進化、コーディングエージェントのUX変化、価格モデルの課題、そしてモデル非依存の設計思想など、AI開発の現場では構造的な変化が進行しています。</p>
+<h1 id="ai-reddit">AI Redditまとめ</h1>
+<h2 id="rlocalllama-rlocalllm">/r/LocalLlama + /r/localLLMまとめ</h2>
+<h3 id="1-gemma-4-mtpllamacppspeculative-decoding">1. Gemma 4 MTPとllama.cppのSpeculative Decoding</h3>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/LocalLLaMA/comments/1t4jq6h/gemma_4_mtp_released/">Gemma 4 MTPリリース</a></strong>：GoogleがGemma 4用のMulti-Token Prediction（MTP）drafterチェックポイントを公開。最大2倍のデコード速度を実現し、品質は維持されると説明。</li>
+<li><strong><a href="https://www.reddit.com/r/LocalLLaMA/comments/1t3guzw/llamacpp_mtp_support_now_in_beta/">Llama.cpp MTPサポートがベータに</a></strong>：<code>llama.cpp</code>がMTPをベータ実装。Qwen3.x MTPモデルを対象に、最大2倍以上のトークン生成スループットを達成。</li>
+</ul>
+<h3 id="2">2. エージェントとコーディングの低コスト代替</h3>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/LocalLLM/comments/1t3pjkn/qwen3627b_is_the_first_local_model_that_actually/">Qwen3.6:27BがClaude Codeに匹敵する初のローカルモデル</a></strong>：Qwen3.6:27Bがローカル環境で実用的と評価されるも、難しいタスクではClaude Codeに劣るとの意見。</li>
+<li><strong><a href="https://www.reddit.com/r/LocalLLaMA/comments/1t47qbw/deepseek_v4_pro_matches_gpt52_on_foodtruck_bench/">DeepSeek V4 ProがGPT-5.2に匹敵</a></strong>：FoodTruck BenchでGPT-5.2に近い性能を達成し、約17倍安価と報告。</li>
+</ul>
+<h2 id="ai-subreddit">技術度の低いAI Subredditまとめ</h2>
+<h3 id="1-ai">1. AIコーディングと本番ソフトウェア開発</h3>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/ClaudeAI/comments/1t3bk3x/vibe_coding_vs_production_reality/">Vibe Coding vs. Production reality</a></strong>：AIでMVPを迅速に構築できても、本番運用にはセキュリティや運用面の課題が残ると指摘。</li>
+<li><strong><a href="https://www.reddit.com/r/ClaudeCode/comments/1t3yqbo/sr_software_engineer_havent_written_a_line_of/">Sr Software Engineer - 数ヶ月コードを書いていない</a></strong>：AIがコード生成を担い、エンジニアは設計や技術選定に注力する傾向。</li>
+<li><strong><a href="https://www.reddit.com/r/ClaudeAI/comments/1t3xs80/anthropic_ai_will_fully_replace_software/">Anthropic: 2027年までにソフトウェアエンジニアを完全置換と予測、同時に122人採用</a></strong>：予測と採用状況の矛盾を指摘する投稿。</li>
+</ul>
+<h3 id="2-ai">2. AIアカウント・エージェントの悪用事例</h3>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/ChatGPT/comments/1t4atbx/warning_anthropics_gift_max_exploit_drained_800/">Anthropicの「Gift Max」悪用で€800以上損失</a></strong>：不正請求を受け、銀行が詐欺として返金処理。</li>
+<li><strong><a href="https://www.reddit.com/r/singularity/comments/1t3hw53/a_twitter_user_tricked_grok_to_send_200k_usd_to/">TwitterユーザーがGrokを騙して20万ドル送金させた</a></strong>：Grokが直接送金したのではなく、生成したコマンドを別のボットが実行したと説明。</li>
+</ul>
     </main>
 
     <footer>
