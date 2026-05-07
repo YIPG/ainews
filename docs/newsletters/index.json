@@ -1019,8 +1019,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 OpenAIのGPT-5.5 Instant、パーソナライズ機能の展開、音声・エージェント基盤のアップデート コーディングエージェント、ハーネス設計、ベンチマーク圧力 推論・システム・効率：Gemma 4 drafters、SGLang/RadixArk、プロバイダー経済...",
       "filename": "2026-05-04.html"
+    },
+    {
+      "date": "2026-05-06",
+      "title": "静かな一日",
+      "summary": "静かな一日 トップニュース: AnthropicとClaudeの発表・論評 Anthropicは、計算資源、Claude Codeの制限、エージェントプラットフォームの方向性に関する濃密なニュースサイクルを展開しました。...",
+      "filename": "2026-05-06.html"
     }
   ],
-  "lastUpdated": "2026-05-06T14:28:25.978257",
-  "totalCount": 170
+  "lastUpdated": "2026-05-07T03:40:28.883301",
+  "totalCount": 171
 }
