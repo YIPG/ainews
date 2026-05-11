@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 08 May 2026 07:48:38 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 04:01:22 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-05-08.html</link>
+      <description><![CDATA[静かな一日 OpenAIのGPT-5.5 / Codex展開、サイバー向けモデル、安全性計測 オープンモデルとインフラ：ZyphraのZAYA1、vLLM/SGLang最適化、低コストコーディングスタック...]]></description>
+      <pubDate>Fri, 08 May 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-05-08.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-05-07.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 Meta Superintelligence LabsによるMuse Sparkの発表とMetaのフロンティア復帰 オープンモデルとホスト型モデルの競争：GLM-5.1、Qwen3.6 Plus、オープンエコシステム...]]></description>
       <pubDate>Wed, 08 Apr 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-04-08.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-04-07.html</link>
-      <description><![CDATA[静かな一日 トップニュース: Anthropicの収益開示分析とClaude Mythosの詳細...]]></description>
-      <pubDate>Tue, 07 Apr 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-04-07.html</guid>
     </item>
   </channel>
 </rss>
