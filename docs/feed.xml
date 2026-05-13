@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 12 May 2026 08:48:15 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 03:53:51 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-05-12.html</link>
+      <description><![CDATA[静かな一日 研究ベンチマーク、難易度の高い評価、そして科学分野のエージェント型システム トレーニング、最適化、スケーリング則の技術 推論システム、提供スタック、ランタイムインフラ 製品・モデルリリース：マルチモーダル、動画、検索、埋め込み...]]></description>
+      <pubDate>Tue, 12 May 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-05-12.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-05-11.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 Agent Harnesses、コーディングワークフロー、単一モデルからシステム設計への移行 --- Hermes Agentのダッシュボードリリース、OpenClawとの比較、オープンエージェントスタック...]]></description>
       <pubDate>Mon, 13 Apr 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-04-13.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-04-10.html</link>
-      <description><![CDATA[静かな一日 オープンモデル、コーディングエージェント、そして新しいAdvisorパターン エージェントハーネス、Hermesの勢い、そして「ポータブルスキル」スタック （以下省略）...]]></description>
-      <pubDate>Fri, 10 Apr 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-04-10.html</guid>
     </item>
   </channel>
 </rss>
