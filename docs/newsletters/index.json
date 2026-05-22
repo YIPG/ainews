@@ -1073,8 +1073,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 Coding Agents、Agent Ops、そしてチャットから自動化への移行...",
       "filename": "2026-05-18.html"
+    },
+    {
+      "date": "2026-05-21",
+      "title": "静かな一日",
+      "summary": "静かな一日 モデル・ベンチマーク・研究アップデート：RAEv2、Gated DeltaNet-2、データフィルタリング、そして数学分野 --- エージェント・ハーネス・開発者ツール：Codex、Gemini、Devin、エージェント基盤...",
+      "filename": "2026-05-21.html"
     }
   ],
-  "lastUpdated": "2026-05-19T04:03:58.048879",
-  "totalCount": 179
+  "lastUpdated": "2026-05-22T09:38:15.273480",
+  "totalCount": 180
 }
