@@ -1091,8 +1091,14 @@
       "title": "AI Twitterまとめ",
       "summary": "Anthropicが大規模な資金調達を発表し、同時にClaude Opus 4.8をリリースしました。...",
       "filename": "2026-05-28.html"
+    },
+    {
+      "date": "2026-05-29",
+      "title": "静かな一日",
+      "summary": "静かな一日 Claude Opus 4.8の展開、ベンチマーク評価の摩擦、APIの使いやすさ エージェントハーネス、マルチターンRLのバグ、自律性を支えるインフラ オープンモデル、ローカルAI、OSSツールチェーンの強化...",
+      "filename": "2026-05-29.html"
     }
   ],
-  "lastUpdated": "2026-05-29T04:09:25.706015",
-  "totalCount": 182
+  "lastUpdated": "2026-06-01T04:49:55.670821",
+  "totalCount": 183
 }
