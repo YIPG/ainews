@@ -1097,8 +1097,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 Claude Opus 4.8の展開、ベンチマーク評価の摩擦、APIの使いやすさ エージェントハーネス、マルチターンRLのバグ、自律性を支えるインフラ オープンモデル、ローカルAI、OSSツールチェーンの強化...",
       "filename": "2026-05-29.html"
+    },
+    {
+      "date": "2026-06-01",
+      "title": "静かな一日",
+      "summary": "静かな一日 NVIDIAのCosmos 3、Nemotron 3 Ultra、そしてOpen Physical AIへの推進...",
+      "filename": "2026-06-01.html"
     }
   ],
-  "lastUpdated": "2026-06-01T04:49:55.670821",
-  "totalCount": 183
+  "lastUpdated": "2026-06-02T04:38:41.311445",
+  "totalCount": 184
 }
