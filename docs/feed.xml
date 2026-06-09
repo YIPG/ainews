@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 08 Jun 2026 04:41:03 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2026 09:55:08 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-06-08.html</link>
+      <description><![CDATA[静かな一日 Coding Agents、ループ、そして「テスト合格」からマージ可能なソフトウェアへのシフト モデルリリース、ローカル推論、サービングスタックのアップグレード ベンチマーク、評価手法、実世界エージェント測定...]]></description>
+      <pubDate>Mon, 08 Jun 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-06-08.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-06-05.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 Grok 4.3のリリース、ベンチマーク差異、そしてオープンvsクローズドの最前線 DeepSeek V4 Pro、ビジョン／空間推論、そしてオープンウェイトが差を縮める Codexの急速な製品拡張 vs Claude Code、Devin、その他エージェントランタイム...]]></description>
       <pubDate>Fri, 01 May 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-05-01.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-04-30.html</link>
-      <description><![CDATA[静かな一日 OpenAIのGPT-5.5、Codex拡張、そしてサイバー能力評価 オープンウェイトモデルの動き：Qwen3.6、Tencent Hy3-preview、Grok 4.3、Ling 2.6 1T...]]></description>
-      <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-04-30.html</guid>
     </item>
   </channel>
 </rss>
