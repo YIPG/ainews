@@ -1133,8 +1133,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 トップニュース：Anthropic Claude Fable 5とMythos 5のリリース Anthropicは次世代モデルファミリーの2つのバージョンを発表しました。一般提供のClaude Fable 5と限定アクセスのClaude Mythos 5です。...",
       "filename": "2026-06-09.html"
+    },
+    {
+      "date": "2026-06-19",
+      "title": "静かな一日",
+      "summary": "静かな一日 GLM-5.2の躍進、オープンウェイトのコーディング、そしてZhipu/DeepSeekの動き エージェントエンジニアリング：ファンアウト、ループ信頼性、Hermesの急速な進化 モデルアクセス、主権、Anthropic「Mythos/Fable」の衝撃...",
+      "filename": "2026-06-19.html"
     }
   ],
-  "lastUpdated": "2026-06-10T04:13:29.749436",
-  "totalCount": 189
+  "lastUpdated": "2026-06-22T05:01:16.761605",
+  "totalCount": 190
 }

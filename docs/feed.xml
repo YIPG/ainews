@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 10 Jun 2026 04:13:29 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 05:01:16 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-06-19.html</link>
+      <description><![CDATA[静かな一日 GLM-5.2の躍進、オープンウェイトのコーディング、そしてZhipu/DeepSeekの動き エージェントエンジニアリング：ファンアウト、ループ信頼性、Hermesの急速な進化 モデルアクセス、主権、Anthropic「Mythos/Fable」の衝撃...]]></description>
+      <pubDate>Fri, 19 Jun 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-06-19.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-06-09.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 トップニュース: AnthropicとClaudeの発表・論評 Anthropicは、計算資源、Claude Codeの制限、エージェントプラットフォームの方向性に関する濃密なニュースサイクルを展開しました。...]]></description>
       <pubDate>Wed, 06 May 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-05-06.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-05-04.html</link>
-      <description><![CDATA[静かな一日 OpenAIのGPT-5.5 Instant、パーソナライズ機能の展開、音声・エージェント基盤のアップデート コーディングエージェント、ハーネス設計、ベンチマーク圧力 推論・システム・効率：Gemma 4 drafters、SGLang/RadixArk、プロバイダー経済...]]></description>
-      <pubDate>Mon, 04 May 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-05-04.html</guid>
     </item>
   </channel>
 </rss>
