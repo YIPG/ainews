@@ -1151,8 +1151,14 @@
       "title": "静かな一日",
       "summary": "静かな一日 Agentic RLインフラとトレーニング後のトリリオンパラメータ規模 Agent Harness、バックグラウンドエージェント、そして「Async Teammate」UX オープンモデル、小型モデル、そしてGLM-5.2の勢い...",
       "filename": "2026-06-23.html"
+    },
+    {
+      "date": "2026-06-24",
+      "title": "静かな一日",
+      "summary": "静かな一日 OpenAIのJalapeñoチップとフルスタックAIインフラへの競争 エージェントUXは「ツール」から「同僚」へ—新たなセキュリティとコスト課題 Qwen-AgentWorld、OpenThoughts-Agent、そして記憶が次のエージェント拡張軸に...",
+      "filename": "2026-06-24.html"
     }
   ],
-  "lastUpdated": "2026-06-24T04:03:24.357117",
-  "totalCount": 192
+  "lastUpdated": "2026-06-25T04:03:58.198544",
+  "totalCount": 193
 }
