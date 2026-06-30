@@ -5,8 +5,15 @@
     <link>https://yipg.github.io/ainews/</link>
     <description>AI技術に関する最新ニュースの日本語翻訳ニュースレター</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 29 Jun 2026 04:26:14 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2026 09:50:24 +0000</lastBuildDate>
     <generator>AI Newsletter Archive System</generator>
+    <item>
+      <title>静かな一日</title>
+      <link>https://yipg.github.io/ainews/docs/newsletters/2026-06-29.html</link>
+      <description><![CDATA[静かな一日 脳-コンピュータインターフェースと科学向けAIツール 推論システム：DSpark、vLLM、デコードの仕組み エージェントハーネス、ルーティング、マルチモデルオーケストレーション オープンモデル、中国ラボ、アクセス商業化...]]></description>
+      <pubDate>Mon, 29 Jun 2026 09:00:00 +0000</pubDate>
+      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-06-29.html</guid>
+    </item>
     <item>
       <title>静かな一日</title>
       <link>https://yipg.github.io/ainews/docs/newsletters/2026-06-26.html</link>
@@ -139,13 +146,6 @@
       <description><![CDATA[静かな一日 コーディングエージェントツール：Codex Mobile、GitHubの新アプリ、VS CodeマルチエージェントUX、そしてHermes/Codexの相互運用 エージェントインフラと自己改善ループ：LangSmith Engine、SmithDB、サンドボックス、継続学習...]]></description>
       <pubDate>Thu, 14 May 2026 09:00:00 +0000</pubDate>
       <guid>https://yipg.github.io/ainews/docs/newsletters/2026-05-14.html</guid>
-    </item>
-    <item>
-      <title>静かな一日</title>
-      <link>https://yipg.github.io/ainews/docs/newsletters/2026-05-13.html</link>
-      <description><![CDATA[静かな一日 エージェントインフラ、ハーネス、開発者プラットフォーム モデル訓練、アーキテクチャ、データ効率 企業向けAI価格、プラットフォーム競争、配布 自律科学、サイバー能力、ロボティクス エンゲージメント上位ツイート...]]></description>
-      <pubDate>Wed, 13 May 2026 09:00:00 +0000</pubDate>
-      <guid>https://yipg.github.io/ainews/docs/newsletters/2026-05-13.html</guid>
     </item>
   </channel>
 </rss>
